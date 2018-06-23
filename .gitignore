@@ -38,9 +38,9 @@ themes/*
 
 # Ignore npm packages #
 # =================== #
-themes/[YOUR-THEME-NAME]/node_modules/*
+themes/food-colour/node_modules/*
 
 # Ignore build files #
 # ================== #
-themes/[YOUR-THEME-NAME]/gulpfile.js
-themes/[YOUR-THEME-NAME]/build/*
+themes/food-colour/gulpfile.js
+themes/food-colour/build/*
