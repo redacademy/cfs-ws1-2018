@@ -29,12 +29,12 @@ access_log
 # Ignore everything in "plugins" except certain plugins. #
 # ========================================================== #
 plugins/*
-!plugins/[YOUR-FUNCTIONALITY-PLUGIN-NAME]/
+!plugins/food-colour-functionality/
 
 # Ignore everything in "themes" except the active theme. #
 # ====================================================== #
 themes/*
-!themes/[YOUR-THEME-NAME]/
+!themes/food-colour/
 
 # Ignore npm packages #
 # =================== #
