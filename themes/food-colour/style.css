@@ -294,8 +294,7 @@ select,
 textarea {
   color: #333333;
   font-family: Roboto, sans-serif;
-  font-size: 16px;
-  font-size: 1rem;
+  font-size: 14px;
   line-height: 1.5; }
 
 /* Headings */
@@ -476,11 +475,11 @@ textarea {
 --------------------------------------------------------------*/
 /* Links */
 a {
-  color: royalblue; }
+  color: #333333; }
   a:visited {
-    color: purple; }
+    color: #333333; }
   a:hover, a:focus, a:active {
-    color: midnightblue; }
+    color: #333333; }
   a:focus {
     outline: thin dotted; }
   a:hover, a:active {
@@ -523,7 +522,11 @@ a {
       left: auto; }
   .main-navigation li {
     float: left;
-    position: relative; }
+    font-family: Montserrat, sans-serif;
+    font-weight: bold;
+    padding-left: 0.75rem;
+    position: relative;
+    text-transform: uppercase; }
   .main-navigation a {
     display: block;
     text-decoration: none; }
@@ -731,3 +734,9 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+/* Header */
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1.5rem 0; }

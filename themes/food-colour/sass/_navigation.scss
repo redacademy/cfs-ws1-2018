@@ -27,7 +27,6 @@ a {
 /* Menus */
 
 .main-navigation {
-
 	clear: both;
 	display: flex;
 	width: 100%;
@@ -79,8 +78,12 @@ a {
 	}
 	li {
 		float: left;
+		font-family: $font__headings;
+		font-weight: bold;
+		padding-left: $base__space-unit/2;
 		position: relative;
-
+		text-transform: uppercase;
+		
 		&:hover > a,
 		&.focus > a {
 		}
