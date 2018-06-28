@@ -27,10 +27,11 @@ a {
 /* Menus */
 
 .main-navigation {
+
 	clear: both;
-	display: block;
-	float: left;
+	display: flex;
 	width: 100%;
+	flex-direction: row-reverse;
 
 	ul {
 		display: none;
