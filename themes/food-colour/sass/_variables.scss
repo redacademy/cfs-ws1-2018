@@ -1,11 +1,16 @@
 // Structure
 
 $base__space-unit: 1.5rem;
+$desktop-width: 620px;
 
 // Colors
 
 $color__background-body: #fff;
-$color__text-main: #404040;
+$color__text-main: #333333;
+$color__text-light: #828282;
+$color__text-white: #FFFFFF;
+$color__brand-blue: #2F80ED;
+$color__footer-bottom: #BDBDBD;
 
 $color__background-screen: #f1f1f1;
 $color__text-screen: #21759b;
@@ -20,8 +25,19 @@ $color__link-visited: purple;
 $color__link-hover: midnightblue;
 
 // Typography
+/*
+FONT WEIGHT
+Montserrat: Regular - normal
+            Bold - 700
+            ExtraBold - 900
+Roboto:     Light - 100
+            Regular - normal
+            Bold - 700
+            Black - 900
+*/
 
-$font__main: sans-serif;
+$font__main: Roboto, sans-serif;
+$font__headings: Montserrat, sans-serif;
 $font__code: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
 $font__pre: "Courier 10 Pitch", Courier, monospace;
 $font__line-height-body: 1.5;
