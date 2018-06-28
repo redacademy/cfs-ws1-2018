@@ -22,6 +22,9 @@
 
 			<header id="masthead" class="site-header" role="banner">
 				<div class="site-branding">
+					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+						<img src="<?php echo esc_url(get_bloginfo('template_directory')); ?>/assets/images/the_colours_of_food_security_logo.svg" alt="colours of food security logo"/>
+					</a>
 					<h1 class="site-title screen-reader-text"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 					<p class="site-description"><?php bloginfo( 'description' ); ?></p>
 				</div><!-- .site-branding -->
