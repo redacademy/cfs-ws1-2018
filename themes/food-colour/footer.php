@@ -10,8 +10,16 @@
 			</div><!-- #content -->
 
 			<footer id="colophon" class="site-footer" role="contentinfo">
-				<div class="site-info">
-					<a href="<?php echo esc_url( 'https://wordpress.org/' ); ?>"><?php printf( esc_html( 'Proudly powered by %s' ), 'WordPress' ); ?></a>
+			<div class="footer-info-container">
+						<div class="footer-text">
+							<h3>Liu institute For Global Issues</h3>
+								<p class="social-media-icons">
+									<i class="fa fa-facebook-square" aria-hidden="true"></i>
+									<i class="fa fa-youtube"></i>
+									<i class="fa fa-twitter-square" aria-hidden="true"></i>
+									<i class="fab fa-linkedin"></i>
+								</p>						
+					</div>
 				</div><!-- .site-info -->
 			</footer><!-- #colophon -->
 		</div><!-- #page -->
