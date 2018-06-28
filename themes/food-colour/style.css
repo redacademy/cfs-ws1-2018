@@ -734,6 +734,17 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+.footer-info-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 300px;
+  width: 1120px;
+  padding-top: 1.5rem;
+  margin-left: 10rem; }
+
 /* Header */
 header {
   display: -webkit-box;

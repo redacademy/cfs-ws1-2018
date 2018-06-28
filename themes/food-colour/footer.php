@@ -17,7 +17,7 @@
 									<i class="fa fa-facebook-square" aria-hidden="true"></i>
 									<i class="fa fa-youtube"></i>
 									<i class="fa fa-twitter-square" aria-hidden="true"></i>
-									<i class="fab fa-linkedin"></i>
+									<i class="fa fa-linkedin"></i>
 								</p>						
 					</div>
 				</div><!-- .site-info -->
