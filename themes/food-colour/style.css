@@ -822,3 +822,24 @@ header {
   display: -ms-flexbox;
   display: flex;
   padding: 1.5rem 0; }
+
+.single-exhibition {
+  display: block; }
+  .single-exhibition header {
+    display: none; }
+  @media only screen and (orientation: portrait) and (max-width: 620px) {
+    .single-exhibition {
+      height: 100vw;
+      -webkit-transform: rotate(90deg);
+              transform: rotate(90deg); } }
+  @media only screen and (orientation: landscape) and (max-width: 620px) {
+    .single-exhibition {
+      -webkit-transform: rotate(0deg);
+              transform: rotate(0deg); } }
+
+.exhibition-container {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  width: 100vw; }

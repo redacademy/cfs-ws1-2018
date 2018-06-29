@@ -16,3 +16,15 @@
       @content;
     }
 }
+
+@mixin mobile-portrait {
+	@media only screen and (orientation:portrait) and (max-width: $desktop-width) {
+		@content;
+	}
+}
+
+@mixin mobile-landscape {
+	@media only screen and (orientation:landscape) and (max-width: $desktop-width) {
+		@content;
+	}
+}
