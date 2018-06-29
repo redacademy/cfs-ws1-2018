@@ -23,9 +23,13 @@
 							Vancouver, BC, Canada, V6T 1Z2
 							Tel 604 822 1558
 							Fax 604 822 6966</p>
-							
 							<p>All copyrights reserved to LUGE - 2018</p>
+							<div class="red">
+							<p>Designed by RED Academy Students</p>
+							</div>
 					</div>
+						
+							
 			</footer><!-- #colophon -->
 				</div><!-- .site-info -->
 		</div><!-- #page -->

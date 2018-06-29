@@ -792,11 +792,29 @@ object {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  height: 300px;
   padding-top: 9.5rem; }
 
 .footer-text p {
   max-width: 10rem; }
+
+.fa-facebook-square:before {
+  content: "\f082";
+  color: #0e0eca; }
+
+.fa-youtube:before {
+  content: "\f167";
+  color: red; }
+
+.fa-twitter-square:before {
+  content: "\f081";
+  color: #1f99c1; }
+
+.fa-linkedin:before {
+  content: "\f0e1";
+  color: #3131e0; }
+
+.fa {
+  font-size: 43px; }
 
 /* Header */
 header {
