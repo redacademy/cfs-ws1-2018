@@ -31,12 +31,20 @@
             $image_2 = CFS()->get('image_2');
             $title_2 = CFS()->get('title_2');
             $title_2_text = CFS()->get('title_2_text');
+            echo "<div class='hero-text-wrapper'>";
+            echo "<div class='icon-title'>";
             echo "<img src=" . $image_1 . ">";
             echo "<h2>" . "<a>" . $title_1 . "</a>" . "</h2>";
+            echo "</div>";
             echo "<p>" . $title_1_text . "</p>";
+            echo "</div>";
+            echo "<div class='hero-text-wrapper'>";
+            echo "<div class='icon-title'>";
             echo "<img src=" . $image_2 . ">";
             echo "<h2>" . "<a>" . $title_2 . "</a>" . "</h2>";
+            echo "</div>";
             echo "<p>" . $title_2_text . "</p>";
+            echo "</div>";
          ?>
     </div>
     <?php get_footer(); ?>

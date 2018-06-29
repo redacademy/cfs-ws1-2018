@@ -396,7 +396,7 @@ dd {
 img {
   height: auto;
   /* Make sure images are scaled correctly. */
-  max-width: 100%;
+  width: 100%;
   /* Adhere to container width. */ }
 
 table {
@@ -734,6 +734,58 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+.hero-image {
+  position: relative; }
+  .hero-image img {
+    -webkit-filter: brightness(80%);
+            filter: brightness(80%);
+    max-width: unset;
+    width: 100%; }
+  .hero-image article {
+    margin: 0; }
+    .hero-image article .entry-header {
+      position: absolute;
+      left: 5%;
+      z-index: 1; }
+      .hero-image article .entry-header a {
+        font-family: Montserrat;
+        font-style: normal;
+        font-size: 24px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        text-decoration: none;
+        letter-spacing: 1px;
+        font-weight: bold; }
+    .hero-image article .entry-content {
+      position: absolute;
+      left: 5%;
+      top: 21%;
+      z-index: 1; }
+      .hero-image article .entry-content p {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 100;
+        line-height: 34px;
+        font-size: 16px;
+        color: #FFFFFF;
+        letter-spacing: 1px; }
+
+.entry-content .hero-text-wrapper {
+  width: 90%;
+  margin: 0 auto; }
+  .entry-content .hero-text-wrapper .icon-title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 35px;
+    margin: 0 0 25px 0; }
+    .entry-content .hero-text-wrapper .icon-title img {
+      max-width: 100%;
+      width: auto; }
+    .entry-content .hero-text-wrapper .icon-title h2 {
+      margin: 0;
+      padding-left: 10px; }
+
 .footer-info-container {
   display: -webkit-box;
   display: -ms-flexbox;
