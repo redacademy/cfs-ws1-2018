@@ -1,0 +1,24 @@
+.single-exhibition {
+    header {
+        display: none;
+    }
+
+    display: block;
+
+    @include mobile-portrait {
+        height: 100vw;
+        transform: rotate(90deg);
+    }
+
+    @include mobile-landscape {
+        transform: rotate(0deg);
+    }
+}
+
+.exhibition-container {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+}
