@@ -20,5 +20,101 @@
     background-repeat: no-repeat;
     background-position: center;
     height: 100vh;
+    position: relative;
     width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    // align-content: center;
+
+    @include mobile-portrait {
+        width: 100vh;
+    }  
+}
+
+.exhibition-nav-container {
+    display: flex;
+    flex-flow: column;
+    height: 100vh;
+    justify-content: center;
+    max-height: 100vh;
+
+    .exhibition-nav-toggle img {
+        height: 40px;
+        width: 40px;
+    }
+
+    .exhibition-nav {
+        align-self: center;
+        background: $color__text-main;
+        border-radius: 2px;
+        display: grid;
+        grid-template-columns: 50px 50px;
+        grid-template-rows: repeat(6, 17.5%);
+        height: 80%;
+        width: 100px;
+    
+        @include desktop {
+            grid-template-columns: 50px;
+            grid-template-rows: repeat(11, 9.09%);
+            width: 50px;
+        }
+
+        .exhibition-icon, .exhibition-icon img {
+            border-radius: 2px;
+            height: 100%;
+            width: 100%;
+        }
+
+        .exhibition-icon-active {
+            background: $color__background-body;
+        }
+
+        .exhibition-icon-active img {
+            filter: invert(.9);
+        }
+    }
+}
+
+.exhibition-description {
+    align-self: center;
+    background: $color__background-body;
+    border-radius: 5px;
+    color: $color__text-main;
+    margin-left: $base__space-unit;
+    padding: $base__space-unit;
+    position: relative;
+    // visibility: hidden;
+    width: 400px;
+
+    @include desktop {
+        width: 400px;
+    }
+
+    .close-btn {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+    }
+}
+
+.exhibition-back {
+    align-items: center;
+    color: $color__text-white !important;
+    display: flex;
+    font-weight: bold;
+    position: absolute;
+    text-decoration: none;
+    bottom: 3rem;
+    right: 3rem;
+    
+    @include desktop {
+        bottom: 100%;
+        top: 3rem;
+    }
+
+    img {
+        height: 30px;
+        margin-left: $base__space-unit/2;
+        width: 30px;
+    }
 }
