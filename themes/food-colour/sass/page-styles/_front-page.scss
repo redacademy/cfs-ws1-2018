@@ -1,0 +1,13 @@
+.image-wrapper {
+    position: relative;
+    .background-map-main {
+        position: absolute;
+        top: -64px;
+        right: 0;
+        width: auto;
+    }
+    #content {
+        position: absolute;
+        top: 0;
+    }
+}
