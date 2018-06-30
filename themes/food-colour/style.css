@@ -737,8 +737,8 @@ object {
 .hero-image {
   position: relative; }
   .hero-image img {
-    -webkit-filter: brightness(80%);
-            filter: brightness(80%);
+    -webkit-filter: brightness(75%);
+            filter: brightness(75%);
     max-width: unset;
     width: 100%; }
   .hero-image article {
@@ -746,6 +746,7 @@ object {
     .hero-image article .entry-header {
       position: absolute;
       left: 5%;
+      top: 15%;
       z-index: 1; }
       .hero-image article .entry-header a {
         font-family: Montserrat;
@@ -759,7 +760,7 @@ object {
     .hero-image article .entry-content {
       position: absolute;
       left: 5%;
-      top: 21%;
+      top: 30%;
       z-index: 1; }
       .hero-image article .entry-content p {
         font-family: Roboto;
