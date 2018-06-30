@@ -39,13 +39,13 @@ get_header(); ?>
                   
 
                     <div class="exhibition-description">
-                        <span class="close-btn">&#10006;</span>
+                        <a class="close-btn">&#10006;</a>
                         <h1><?php the_title(); ?></h1>
                         <p><?php echo CFS()->get('description') ?></p>
                         <?php echo CFS()->get('metadata') ?>
                         <div class="exhibition-social">
-                            <button>Twitter</button>
-                            <button>Facebook</button>
+                            <button><i class="fab fa-twitter"></i>Twitter</button>
+                            <button><i class="fab fa-facebook-f"></i>Facebook</button>
                         </div>
                     </div>
 
@@ -58,4 +58,5 @@ get_header(); ?>
 
 		</main><!-- #main -->
 
-	</div><!-- #primary -->
+    </div><!-- #primary -->
+    <?php get_footer(); ?>

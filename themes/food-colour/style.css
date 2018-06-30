@@ -826,7 +826,7 @@ header {
 
 .single-exhibition {
   display: block; }
-  .single-exhibition header {
+  .single-exhibition header, .single-exhibition footer {
     display: none; }
   @media only screen and (orientation: portrait) and (max-width: 620px) {
     .single-exhibition {
@@ -878,11 +878,13 @@ header {
     grid-template-columns: 50px 50px;
     grid-template-rows: repeat(6, 17.5%);
     height: 80%;
+    visibility: hidden;
     width: 100px; }
     @media (min-width: 620px) {
       .exhibition-nav-container .exhibition-nav {
         grid-template-columns: 50px;
         grid-template-rows: repeat(11, 9.09%);
+        visibility: visible;
         width: 50px; } }
     .exhibition-nav-container .exhibition-nav .exhibition-icon, .exhibition-nav-container .exhibition-nav .exhibition-icon img {
       border-radius: 2px;

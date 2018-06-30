@@ -1,5 +1,5 @@
 .single-exhibition {
-    header {
+    header, footer {
         display: none;
     }
 
@@ -51,11 +51,13 @@
         grid-template-columns: 50px 50px;
         grid-template-rows: repeat(6, 17.5%);
         height: 80%;
+        visibility: hidden;
         width: 100px;
     
         @include desktop {
             grid-template-columns: 50px;
             grid-template-rows: repeat(11, 9.09%);
+            visibility: visible;
             width: 50px;
         }
 
