@@ -774,26 +774,69 @@ object {
   padding-top: 9.5rem; }
 
 .footer-text p {
-  max-width: 10rem; }
+  max-width: 8rem;
+  font-size: 0.7rem; }
+
+.copy {
+  margin-left: 0rem; }
+
+.info {
+  font-family: Montserrat, sans-serif; }
+
+.social-media-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 3rem; }
 
 .fa-facebook-square:before {
   content: "\f082";
-  color: #0e0eca; }
+  color: #0e0eca;
+  font-size: 4rem; }
 
 .fa-youtube:before {
   content: "\f167";
-  color: red; }
+  color: red;
+  font-size: 4rem; }
 
 .fa-twitter-square:before {
   content: "\f081";
-  color: #1f99c1; }
+  color: #1f99c1;
+  font-size: 4rem; }
 
 .fa-linkedin:before {
   content: "\f0e1";
-  color: #3131e0; }
+  color: #3131e0;
+  font-size: 4rem; }
 
 .fa {
   font-size: 43px; }
+
+.logos {
+  height: 69px;
+  width: 49%; }
+
+.logo {
+  height: 69px;
+  width: 100%;
+  background-color: #e2e2f3; }
+
+.red {
+  height: 35px;
+  width: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  background-color: #e2dede; }
+
+.redtext {
+  font-weight: bold; }
 
 /* Header */
 header {
