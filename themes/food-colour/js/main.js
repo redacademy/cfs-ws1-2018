@@ -7,7 +7,9 @@ jQuery(document).ready(function($) {
         $('.exhibition-description').hide();
     });   
 
-    $('.exhibition-icon-active').on('click', function() {
+    $('.exhibition-icon-active').on('click', function(event) {
+        event.preventDefault();
+        console.log('click');
         $('.exhibition-description').show();
     });
 

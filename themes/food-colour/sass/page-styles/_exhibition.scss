@@ -48,14 +48,14 @@
         background: $color__text-main;
         border-radius: 2px;
         display: grid;
-        grid-template-columns: 50px 50px;
+        grid-template-columns: 1fr 1fr;
         grid-template-rows: repeat(6, 17.5%);
         height: 80%;
         visibility: hidden;
         width: 100px;
     
         @include desktop {
-            grid-template-columns: 50px;
+            grid-template-columns: 1fr;
             grid-template-rows: repeat(11, 9.09%);
             visibility: visible;
             width: 50px;
@@ -85,10 +85,11 @@
     margin-left: $base__space-unit;
     padding: $base__space-unit;
     position: relative;
-    // visibility: hidden;
+    display: none;
     width: 400px;
 
     @include desktop {
+        display: block;
         width: 400px;
     }
 
@@ -96,6 +97,73 @@
         position: absolute;
         right: 10px;
         top: 10px;
+
+        img {
+            filter: invert(.9);
+        }
+    }
+
+    hr {
+        width: 30%;
+        margin-left: 0;
+    }
+
+    .exhibition-meta {
+        color: $color__text-light;
+        display: block;
+        font-size: $font__size-small;
+
+        &::before {
+            width: 20px;
+            height: 20px;
+            background: black;
+            border-top: 1px solid $color__brand-blue;
+        }
+
+        a {
+            color: $color__brand-blue !important;
+
+            &:hover {
+                color: darken($color__brand-blue, 10) !important;
+            }
+        }
+
+        .exhibition-social {
+            display: flex;
+            justify-content: space-between;
+
+            a {
+                border-radius: 3px;
+                color: $color__text-white !important;
+                flex-basis: 49%;
+                font-family: $font__headings;
+                font-weight: bold;
+                padding: $base__space-unit/2;
+                padding-left: 0;
+                text-transform: uppercase;
+            }
+
+            .exhibition-twitter {
+                background: $color__twitter;
+
+                &:hover {
+                    background: darken($color__twitter, 10);
+                }
+            }
+
+            .exhibition-facebook {
+                background: $color__facebook;
+
+                &:hover {
+                    background: darken($color__facebook, 10);
+                }
+            }
+
+            .fab {
+                font-size: 20px;
+                margin-right: $base__space-unit; 
+            }
+        }
     }
 }
 

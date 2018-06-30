@@ -42,10 +42,21 @@ get_header(); ?>
                         <a class="close-btn">&#10006;</a>
                         <h1><?php the_title(); ?></h1>
                         <p><?php echo CFS()->get('description') ?></p>
-                        <?php echo CFS()->get('metadata') ?>
-                        <div class="exhibition-social">
-                            <button><i class="fab fa-twitter"></i>Twitter</button>
-                            <button><i class="fab fa-facebook-f"></i>Facebook</button>
+                        <hr>
+                        <div class="exhibition-meta">
+                            <?php echo CFS()->get('metadata') ?>
+                            <div class="exhibition-social">
+                                <?php 
+                                    $twitter_title = "Colours of Food Security " . get_the_title();
+                                $title = get_the_title();
+                                $title = str_replace(" ", "_", $title);
+                                $title = "Colours_of_Food_Security_" . $title 
+                                
+                                ?>
+                                
+                                <a class="exhibition-facebook" href="http://www.facebook.com/sharer/sharer.php?u=<?php the_permalink(); ?>" onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"><i class="fab fa-facebook-f"></i>Share it</a>
+                                <a class="exhibition-twitter" href="http://twitter.com/share?text=<?php $twitter_title ?>&url=<?php get_the_permalink(); ?>" onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"><i class="fab fa-twitter"></i>Tweet</a>
+                            </div>
                         </div>
                     </div>
 
