@@ -3,7 +3,7 @@
 * Template Name: take part
 */
 ?>
-<body id="primary" class="about-content-area">
+<body id="primary" class="take-content-area">
     <?php get_header(); ?>
 
         <section class="hero-image">
@@ -19,7 +19,7 @@
                 <?php endif; ?>
             <?php 
             $featured_img_url_2 = CFS()->get('banner2'); 
-            echo '<img src="'.esc_url($featured_img_url_2).'" rel="lightbox">'; 
+            // echo '<img src="'.esc_url($featured_img_url_2).'" rel="lightbox">'; 
             ?>
         </section>
 

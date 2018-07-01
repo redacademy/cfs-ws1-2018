@@ -978,3 +978,30 @@ header {
     height: 30px;
     margin-left: 0.75rem;
     width: 30px; }
+
+.image-wrapper {
+  position: relative; }
+  .image-wrapper .background-map-main {
+    position: absolute;
+    top: -64px;
+    right: 0;
+    width: auto; }
+  .image-wrapper #content {
+    position: absolute;
+    top: 0; }
+
+.entry-content .take-text-wrapper {
+  width: 90%;
+  margin: 0 auto; }
+  .entry-content .take-text-wrapper .icons-title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 35px;
+    margin: 0 0 25px 0; }
+    .entry-content .take-text-wrapper .icons-title img {
+      max-width: 100%;
+      width: auto; }
+    .entry-content .take-text-wrapper .icons-title h2 {
+      margin: 0;
+      padding-left: 10px; }
