@@ -9,5 +9,15 @@
     #content {
         position: absolute;
         top: 0;
+        max-width: 1240px;
+        margin: 0 10%;
+        color: white;
+        .title-1 h1{
+            font-size: 100px;
+        }
+        .title-2 {
+            display: grid;
+            grid-template-columns: 55% 45%;
+        }
     }
 }
