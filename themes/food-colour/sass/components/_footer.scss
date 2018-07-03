@@ -1,5 +1,4 @@
 .footer-info-container{
-  display:flex;
 	justify-content: space-around;
 	padding-top:9.5rem;
 }
@@ -8,7 +7,9 @@
 		max-width: 8rem;
 		font-size: 0.7rem;
 }
-
+.footer-text img{
+	width:auto;
+}
 .copy{
 	margin-left:0rem;
 }
@@ -49,12 +50,9 @@
 }
 
 .logos{
-	height: 69px;
-	width: 49%;
+	
 }
 .logo{
-	height: 69px;
-	width: 100%;
 	background-color: #e2e2f3;
 }
 .red{
@@ -66,6 +64,9 @@
 }
 .redtext{
 	font-weight:bold;
+}
+.copyrights{
+	display:flex;
 }
 
 
