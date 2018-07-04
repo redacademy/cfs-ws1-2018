@@ -15,7 +15,21 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
 
 
+
 	<?php wp_head(); ?>
+
+	
+		<meta property="og:title" content="<?php echo the_title(); ?>">
+		<meta property="og:description" content="<?php echo CFS()->get('description'); ?>">
+		<meta property="og:type" content="article">
+		<meta property="og:url" content="<?php echo the_permalink(); ?>">
+		<meta property="og:site_name" content="<?php echo get_bloginfo(); ?>">
+		<meta property="og:image" content="<?php echo esc_url( CFS()->get('map') ); ?>">
+
+		<meta name="twitter:card" content="summary_large_image">
+		<meta name="twitter:title" content="<?php echo the_title(); ?>">
+		<meta name="twitter:description" content="<?php echo CFS()->get('description'); ?>">
+		<meta name="twitter:image" content="<?php echo esc_url( CFS()->get('map') ); ?>">
 	</head>
 
 	<body <?php body_class(); ?>>

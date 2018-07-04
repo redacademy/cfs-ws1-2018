@@ -970,6 +970,7 @@ header {
         font-weight: bold;
         padding: 0.75rem;
         padding-left: 0;
+        text-align: center;
         text-transform: uppercase; }
       .exhibition-description .exhibition-meta .exhibition-social .exhibition-twitter {
         background: #55ACEE; }
