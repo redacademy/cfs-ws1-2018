@@ -24,7 +24,6 @@
     width: 100vw;
     display: flex;
     flex-wrap: wrap;
-    // align-content: center;
 
     @include mobile-portrait {
         width: 100vh;
@@ -140,6 +139,7 @@
                 font-weight: bold;
                 padding: $base__space-unit/2;
                 padding-left: 0;
+                text-align: center;
                 text-transform: uppercase;
             }
 
