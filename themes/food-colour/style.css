@@ -820,14 +820,15 @@ object {
 
 .red {
   height: 35px;
-  width: auto;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  background-color: #e2dede; }
+  background-color: #e2dede;
+  margin-bottom: -1.5rem; }
 
 .redtext {
   font-weight: bold; }
@@ -1024,9 +1025,22 @@ header {
       display: grid;
       grid-template-columns: 55% 45%; }
 
+.take-content-area .iconbutton {
+  background-color: #2F80ED;
+  color: white;
+  font-family: monsterrat;
+  text-shadow: none;
+  width: 14rem;
+  margin-bottom: 1.5rem; }
+
 .take-content-area .take-text-wrapper {
   width: 90%;
   margin: 0 auto; }
+  .take-content-area .take-text-wrapper p {
+    margin-bottom: 1.5rem;
+    width: 69%;
+    margin-left: 2rem;
+    font-family: Roboto, sans-serif; }
   .take-content-area .take-text-wrapper .icons-title {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1035,7 +1049,8 @@ header {
     margin: 0 0 25px 0; }
     .take-content-area .take-text-wrapper .icons-title img {
       max-width: 100%;
-      width: auto; }
+      width: 2rem; }
     .take-content-area .take-text-wrapper .icons-title h2 {
       margin: 0;
-      padding-left: 10px; }
+      padding-left: 10px;
+      font-family: Roboto, sans-serif; }

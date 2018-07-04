@@ -1,18 +1,33 @@
 .take-content-area {
-  .take-text-wrapper{
+  .iconbutton{
+        background-color: #2F80ED;
+        color: white;
+        font-family: monsterrat;
+        text-shadow: none;
+        width: 14rem;
+        margin-bottom: 1.5rem;
+      }
+    .take-text-wrapper{
       width: 90%;
       margin: 0 auto;
+      p {
+         margin-bottom: 1.5rem;
+         width: 69%;
+         margin-left: 2rem; 
+         font-family:$font__main;
+      }
       .icons-title {
           display: flex;
           height: 35px;
           margin: 0 0 25px 0;
           img {
               max-width: 100%;
-              width: auto;
+              width: 2rem;
           }
           h2 {
               margin: 0;
               padding-left: 10px;
+              font-family:$font__main;
           }
       }
   }

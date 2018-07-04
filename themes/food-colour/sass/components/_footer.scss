@@ -57,10 +57,11 @@
 }
 .red{
 	height: 35px;
-	width: auto;
+	width: 100%;
 	display: flex;
 	justify-content: flex-end;
 	background-color: #e2dede;
+	margin-bottom: -1.5rem;
 }
 .redtext{
 	font-weight:bold;

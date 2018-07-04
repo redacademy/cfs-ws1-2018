@@ -18,7 +18,7 @@
                     <?php get_template_part( 'template-parts/content', 'none' ); ?>
                 <?php endif; ?>
             <?php 
-            $featured_img_url_2 = CFS()->get('banner2'); 
+            $featured_img_url_2 = CFS()->get('bannertake'); 
             ?>
         </section>
 
@@ -42,35 +42,39 @@
             echo "<div class='take-text-wrapper'>";
             echo "<div class='icons-title'>";
             echo "<img src=" . $image . ">";
-            echo "<h2>" . "<a>" . $title . "</a>" . "</h2>";
+            echo "<h2>" . $title . "</h2>";
             echo "</div>";
             echo "<p>" . $title_text . "</p>";
+            echo "<button class='iconbutton'>GOT IT, NEXT!</button>";
             echo "</div>";
             echo "<div class='take-text-wrapper'>";
             echo "<div class='icons-title'>";
             echo "<img src=" . $image_2 . ">";
-            echo "<h2>" . "<a>" . $title_2 . "</a>" . "</h2>";
+            echo "<h2>" . $title_2 . "</h2>";
             echo "</div>";
             echo "<p>" . $title_2_text . "</p>";
+            echo "<button class='iconbutton'>GOT IT, NEXT!</button>";
             echo "</div>";
             echo "<div class='take-text-wrapper'>";
             echo "<div class='icons-title'>";
             echo "<img src=" . $image_3 . ">";
-            echo "<h2>" . "<a>" . $title_3 . "</a>" . "</h2>";
+            echo "<h2>" . $title_3 . "</h2>";
             echo "</div>";
             echo "<p>" . $title_3_text . "</p>";
+            echo "<button class='iconbutton'>FILL THE FORM</button>";
             echo "</div>";
             echo "<div class='take-text-wrapper'>";
             echo "<div class='icons-title'>";
             echo "<img src=" . $image_4 . ">";
-            echo "<h2>" . "<a>" . $title_4 . "</a>" . "</h2>";
+            echo "<h2>" . $title_4 . "</h2>";
             echo "</div>";
             echo "<p>" . $title_4_text . "</p>";
+            echo "<button class='iconbutton'>DOWNLOAD</button>";
             echo "</div>";
             echo "<div class='take-text-wrapper'>";
             echo "<div class='icons-title'>";
             echo "<img src=" . $image_5 . ">";
-            echo "<h2>" . "<a>" . $title_5 . "</a>" . "</h2>";
+            echo "<h2>" . $title_5 . "</h2>";
             echo "</div>";
             echo "<p>" . $title_5_text . "</p>";
             echo "</div>";
