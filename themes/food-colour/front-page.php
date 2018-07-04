@@ -26,24 +26,28 @@ get_header(); ?>
 				$fpimage_3 = CFS()->get('fp_image_3');
 
 				echo "<section class='title-1'>";
-				echo "<h1>" .  $fptitle_1 . "</h1>";
+					echo "<h1>" .  $fptitle_1 . "</h1>";
 					echo "<p>" . $fptext_1 . "</p>";
-					echo "<button>";
+					echo "<button>Exhibition</button>";
 				echo "</section>";
 				echo "<section class='title-2'>";
-					echo '<img src="'.esc_url($fpimage_2).'" rel="lightbox">'; 
-					echo "<div class='side-text'>";
+					echo "<div>";
+					echo "<hr align='left'>";
 					echo "<h1>" . $fptitle_2 . "</h1>";
-					echo "<p> . $fptext_2 . </p>";
-					echo "<button>";
 					echo "</div>";
+					echo '<img src="'.esc_url($fpimage_2).'" rel="lightbox">'; 
+					echo "<p> . $fptext_2 . </p>";
+					echo "<button>About</button>";
 				echo "</section>";
 				echo "<section class='title-3'>";
+					echo "<hr align='left'>";
 					echo "<h1>" . $fptitle_3 . "</h1>";
-					echo "<p> . $fptext_3 . </p>";
-					echo "<button>";
 					echo '<img src="'.esc_url($fpimage_3).'" rel="lightbox">'; 
+					echo "<p> . $fptext_3 . </p>";
+					echo "<button>Download Files</button>";
 				echo "</section>";
+				echo "<hr class='bottom-line' align='center'>";
+				echo "<p class='hashtag'>#ColourFoodSecurity</p>";
 				
 			?>
 
