@@ -1,7 +1,11 @@
 .image-wrapper {
     position: relative;
+    .background-image-main {
+        height: 1484px;
+    }
     .background-map-main {
         position: absolute;
+        visibility: hidden;
         top: -64px;
         right: 0;
         width: auto;
@@ -9,15 +13,135 @@
     #content {
         position: absolute;
         top: 0;
-        max-width: 1240px;
-        margin: 0 10%;
+        min-width: 300px;
+        padding: 0 10%;
         color: white;
-        .title-1 h1{
-            font-size: 100px;
+        .title-1 h1::first-line {
+            letter-spacing: 7px;
         }
-        .title-2 {
-            display: grid;
-            grid-template-columns: 55% 45%;
+        .title-1 {
+            h1{
+                line-height: 35px;
+                font-size: 35px;
+    
+            }
+            button {
+                width: 100%;
+                color: $color__button__FrontPage;
+                font-weight: 700;
+                letter-spacing: 1.5px;
+                text-transform: uppercase;
+                border-color: white;
+                background-color: white;
+            }
+        }
+        .title-2 h1{
+            font-size: 25px;
+            font-weight: 500;
+        }
+        .title-2 button {
+            width: 100%;
+            color: $color__button__FrontPage;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            border-color: white;
+            background-color: white;
+        }
+        .title-3 h1{
+            font-size: 25px;
+            font-weight: 500;
+        }
+        .title-3 button {
+            width: 100%;
+            color: $color__button__FrontPage;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            border-color: white;
+            background-color: white;
+        }
+        .title-3 img {
+            position: relative;
+            bottom: 40px;
+        }
+        .hashtag {
+            text-align: center;
+            font-size: 25px;
+        }
+        hr {
+            background-color: white;
+            width: 90px;
+            height: 2px;
+            margin: 30px 0 5px 0;
+        }
+    }
+    @include desktop {
+        .title-1 h1::first-line {
+            letter-spacing: 17px !important;
+        }
+        .background-image-main {
+            height: 1704px;
+        }
+        .background-map-main {
+            visibility: visible;
+        }
+        #content {
+            max-width: 1240px;
+            margin: 0 10%;
+            color: white;
+            .title-1 {
+                button {
+                    width: 150px;
+                }
+                h1{
+                    font-size: 100px;
+                    letter-spacing: 5px;
+                    line-height: 90px !important;
+                }
+            }
+            .title-2 {
+                display: grid;
+                grid-template-columns: 60% 40%;
+                margin: 50px 0 150px 0;
+                img {
+                    grid-column-start: 1;
+                    grid-row-start: 1;
+                    grid-row-end: 4;
+                }
+                button {
+                    width: 150px;
+                }
+                p {
+                    margin: 15px 60px 15px 0;
+                }
+            }
+            .title-3 {
+                display: grid;
+                grid-template-columns: 40% 60%;
+                grid-template-rows: 0fr 0fr 0fr;
+                img {
+                    grid-column-start: 2;
+                    grid-row-start: 1;
+                    grid-row-end: 4;
+                    height: 400px;
+                    bottom: 100px;
+                }
+                button {
+                    width: 200px;
+                }
+                p {
+                    margin: 15px 60px 15px 0;
+                }
+            }
+            .bottom-line {
+                width: 100%;
+                margin: 40px 0;
+            }
+            .hashtag {
+                font-size: 100px;
+                margin: 100px 0;
+            }
         }
     }
 }
