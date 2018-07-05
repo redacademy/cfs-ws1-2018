@@ -1,7 +1,7 @@
 .image-wrapper {
     position: relative;
     .background-image-main {
-        height: 1450px;
+        height: 1484px;
     }
     .background-map-main {
         position: absolute;
@@ -16,17 +16,24 @@
         min-width: 300px;
         padding: 0 10%;
         color: white;
-        .title-1 h1{
-            font-size: 27px;
+        .title-1 h1::first-line {
+            letter-spacing: 7px;
         }
-        .title-1 button {
-            width: 100%;
-            color: $color__button__FrontPage;
-            font-weight: 700;
-            letter-spacing: 1.5px;
-            text-transform: uppercase;
-            border-color: white;
-            background-color: white;
+        .title-1 {
+            h1{
+                line-height: 35px;
+                font-size: 35px;
+    
+            }
+            button {
+                width: 100%;
+                color: $color__button__FrontPage;
+                font-weight: 700;
+                letter-spacing: 1.5px;
+                text-transform: uppercase;
+                border-color: white;
+                background-color: white;
+            }
         }
         .title-2 h1{
             font-size: 25px;
@@ -70,8 +77,11 @@
         }
     }
     @include desktop {
+        .title-1 h1::first-line {
+            letter-spacing: 17px !important;
+        }
         .background-image-main {
-            height: 1505px;
+            height: 1704px;
         }
         .background-map-main {
             visibility: visible;
@@ -80,23 +90,31 @@
             max-width: 1240px;
             margin: 0 10%;
             color: white;
-            .title-1 h1{
-                font-size: 100px;
-            }
-            .title-1 button {
-                width: 150px;
+            .title-1 {
+                button {
+                    width: 150px;
+                }
+                h1{
+                    font-size: 100px;
+                    letter-spacing: 5px;
+                    line-height: 90px !important;
+                }
             }
             .title-2 {
                 display: grid;
                 grid-template-columns: 60% 40%;
+                margin: 50px 0 150px 0;
                 img {
                     grid-column-start: 1;
                     grid-row-start: 1;
                     grid-row-end: 4;
                 }
-            }
-            .title-2 button {
-                width: 150px;
+                button {
+                    width: 150px;
+                }
+                p {
+                    margin: 15px 60px 15px 0;
+                }
             }
             .title-3 {
                 display: grid;
@@ -106,12 +124,15 @@
                     grid-column-start: 2;
                     grid-row-start: 1;
                     grid-row-end: 4;
-                    height: 350px;
-                    bottom: 50px;
+                    height: 400px;
+                    bottom: 100px;
                 }
-            }
-            .title-3 button {
-                width: 200px;
+                button {
+                    width: 200px;
+                }
+                p {
+                    margin: 15px 60px 15px 0;
+                }
             }
             .bottom-line {
                 width: 100%;
