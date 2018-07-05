@@ -3,26 +3,36 @@ jQuery(document).ready(function($) {
     /**
      * Hide and show exhibition description
      */
+    $('.exhibition-description').css('opacity', '1');
+
     $('.close-btn').on('click', function() {
-        $('.exhibition-description').hide();
+        $('.exhibition-description').css('opacity', '0');
+        $('.exhibition-description').delay(1000).hide(0);
     });   
 
     $('.exhibition-icon-active').on('click', function(event) {
         event.preventDefault();
-        console.log('click');
-        $('.exhibition-description').show();
+        $('.exhibition-description').show(0);
+        $('.exhibition-description').css('opacity', '1');
     });
 
     /**
      * Toggle exhibition menu
      */
     $('.exhibition-nav-toggle').on('click', function() {
-        if ($('.exhibition-nav').css('visibility') === 'hidden') {
+        if ($('.exhibition-nav').css('opacity') === '0') {
+            $('.exhibition-nav').css('opacity', '1');
             $('.exhibition-nav').css('visibility', 'visible');
         } else {
-            $('.exhibition-nav').css('visibility', 'hidden');
-            $('.exhibition-description').hide();
+            $('.exhibition-nav').css('opacity', '0');
+
+            setTimeout(
+                function() 
+                {
+                    $('.exhibition-nav').css('visibility', 'hidden');
+                }, 500);
+            $('.exhibition-description').css('opacity', '0');
+            $('.exhibition-description').delay(1000).hide(0);  
         }        
     }); 
-
 });

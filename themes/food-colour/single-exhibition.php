@@ -48,19 +48,12 @@ get_header(); ?>
                             <div class="exhibition-social">
                                 <?php 
                                     $title = "Colours of Food Security - " . get_the_title();
-                                    $url = get_the_permalink();
-                                    $img = CFS()->get('map');
-                                // $title = get_the_title();
-                                // $title = str_replace(" ", "_", $title);
-                                // $title = "Colours_of_Food_Security_" . $title 
-                                
                                 ?>
                                 
                                 <a class="exhibition-facebook" href="http://www.facebook.com/sharer/sharer.php?u=<?php the_permalink(); ?>" onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"><i class="fab fa-facebook-f"></i>Share it</a>
 
-                                <a class="exhibition-twitter" href="http://twitter.com/intent/tweet?url=<?php the_permalink(); ?>" onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"><i class="fab fa-twitter"></i>Tweet</a>
+                                <a class="exhibition-twitter" href="http://twitter.com/intent/tweet?text=<?php $title; ?>&amp;url=<?php the_permalink(); ?>" onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"><i class="fab fa-twitter"></i>Tweet</a>
 
-            
                             </div>
                         </div>
                     </div>

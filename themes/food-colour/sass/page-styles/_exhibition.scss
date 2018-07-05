@@ -37,9 +37,11 @@
     justify-content: center;
     max-height: 100vh;
 
-    .exhibition-nav-toggle img {
-        height: 40px;
-        width: 40px;
+    .exhibition-nav-toggle { 
+        img {
+            height: 40px;
+            width: 40px;
+        }
     }
 
     .exhibition-nav {
@@ -48,26 +50,43 @@
         border-radius: 2px;
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: repeat(6, 17.5%);
+        grid-template-rows: repeat(6, 1fr);
         height: 80%;
+        transition: visibility 0s, opacity .5s ease-in-out;
         visibility: hidden;
         width: 100px;
     
         @include desktop {
             grid-template-columns: 1fr;
-            grid-template-rows: repeat(11, 9.09%);
+            grid-template-rows: repeat(11, 1fr);
             visibility: visible;
             width: 50px;
         }
 
-        .exhibition-icon, .exhibition-icon img {
+        .exhibition-icon {
             border-radius: 2px;
             height: 100%;
             width: 100%;
+            transition: all 0.5s ease-in-out;
+
+            img {
+                height: 100%;
+                width: 100%;
+            }
+
+            &:hover {
+                filter: invert(.9);
+
+            }
         }
 
         .exhibition-icon-active {
             background: $color__background-body;
+
+            &:hover {
+                filter: invert(0);
+
+            }
         }
 
         .exhibition-icon-active img {
@@ -84,15 +103,12 @@
     margin-left: $base__space-unit;
     padding: $base__space-unit;
     position: relative;
-    display: none;
+    opacity: 0;
+    transition: visibility 0s, opacity .5s ease-in-out;
     width: 400px;
 
-    @include desktop {
-        display: block;
-        width: 400px;
-    }
-
     .close-btn {
+        cursor: pointer;
         position: absolute;
         right: 10px;
         top: 10px;
@@ -121,6 +137,7 @@
 
         a {
             color: $color__brand-blue !important;
+            transition: all 0.5s ease-in-out;
 
             &:hover {
                 color: darken($color__brand-blue, 10) !important;
@@ -141,21 +158,22 @@
                 padding-left: 0;
                 text-align: center;
                 text-transform: uppercase;
+                transition: all 0.5s ease-in-out;
             }
 
             .exhibition-twitter {
-                background: $color__twitter;
+                background-color: $color__twitter;
 
                 &:hover {
-                    background: darken($color__twitter, 10);
+                    background-color: darken($color__twitter, 10);
                 }
             }
 
             .exhibition-facebook {
-                background: $color__facebook;
+                background-color: $color__facebook;
 
                 &:hover {
-                    background: darken($color__facebook, 10);
+                    background-color: darken($color__facebook, 10);
                 }
             }
 
@@ -176,6 +194,15 @@
     text-decoration: none;
     bottom: 3rem;
     right: 3rem;
+    transition: color 0.5s ease-in-out;
+
+    &:hover {
+        color: darken($color__text-white, 20) !important;
+
+        img {
+            filter: invert(.3);
+        }
+    }
     
     @include desktop {
         bottom: 100%;
@@ -185,6 +212,7 @@
     img {
         height: 30px;
         margin-left: $base__space-unit/2;
+        transition: all 0.5s ease-in-out;
         width: 30px;
     }
 }

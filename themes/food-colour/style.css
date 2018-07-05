@@ -415,6 +415,7 @@ input[type="submit"] {
   border-radius: 3px;
   background: #e6e6e6;
   color: rgba(0, 0, 0, 0.8);
+  font-family: Montserrat, sans-serif;
   padding: .6rem 1rem .4rem;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8); }
 
@@ -473,7 +474,8 @@ a {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse; }
+          flex-direction: row-reverse;
+  z-index: 99; }
   .main-navigation ul {
     display: none;
     list-style: none;
@@ -502,7 +504,7 @@ a {
     float: left;
     font-family: Montserrat, sans-serif;
     font-weight: bold;
-    padding-left: 0.75rem;
+    padding: 0 1.2rem;
     position: relative;
     text-transform: uppercase; }
   .main-navigation a {
@@ -514,7 +516,14 @@ a {
 .main-navigation.toggled ul {
   display: block; }
 
-@media screen and (min-width: 768px) {
+.menu-toggle {
+  background: transparent;
+  border: 0;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase; }
+
+@media screen and (min-width: 620px) {
   .menu-toggle {
     display: none; }
   .main-navigation ul {
@@ -839,10 +848,27 @@ object {
 
 /* Header */
 header {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 1.5rem 0; }
+  height: 100px;
+  margin: 0 5%;
+  max-width: 1240px;
+  padding: 0; }
+  @media (min-width: 620px) {
+    header {
+      margin: 0 10%; } }
+  header .site-branding {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    z-index: 98; }
 
 .single-exhibition {
   display: block; }
@@ -896,22 +922,35 @@ header {
     border-radius: 2px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(6, 17.5%);
+    grid-template-rows: repeat(6, 1fr);
     height: 80%;
+    -webkit-transition: visibility 0s, opacity .5s ease-in-out;
+    transition: visibility 0s, opacity .5s ease-in-out;
     visibility: hidden;
     width: 100px; }
     @media (min-width: 620px) {
       .exhibition-nav-container .exhibition-nav {
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(11, 9.09%);
+        grid-template-rows: repeat(11, 1fr);
         visibility: visible;
         width: 50px; } }
-    .exhibition-nav-container .exhibition-nav .exhibition-icon, .exhibition-nav-container .exhibition-nav .exhibition-icon img {
+    .exhibition-nav-container .exhibition-nav .exhibition-icon {
       border-radius: 2px;
       height: 100%;
-      width: 100%; }
+      width: 100%;
+      -webkit-transition: all 0.5s ease-in-out;
+      transition: all 0.5s ease-in-out; }
+      .exhibition-nav-container .exhibition-nav .exhibition-icon img {
+        height: 100%;
+        width: 100%; }
+      .exhibition-nav-container .exhibition-nav .exhibition-icon:hover {
+        -webkit-filter: invert(0.9);
+                filter: invert(0.9); }
     .exhibition-nav-container .exhibition-nav .exhibition-icon-active {
       background: #fff; }
+      .exhibition-nav-container .exhibition-nav .exhibition-icon-active:hover {
+        -webkit-filter: invert(0);
+                filter: invert(0); }
     .exhibition-nav-container .exhibition-nav .exhibition-icon-active img {
       -webkit-filter: invert(0.9);
               filter: invert(0.9); }
@@ -925,13 +964,12 @@ header {
   margin-left: 1.5rem;
   padding: 1.5rem;
   position: relative;
-  display: none;
+  opacity: 0;
+  -webkit-transition: visibility 0s, opacity .5s ease-in-out;
+  transition: visibility 0s, opacity .5s ease-in-out;
   width: 400px; }
-  @media (min-width: 620px) {
-    .exhibition-description {
-      display: block;
-      width: 400px; } }
   .exhibition-description .close-btn {
+    cursor: pointer;
     position: absolute;
     right: 10px;
     top: 10px; }
@@ -951,7 +989,9 @@ header {
       background: black;
       border-top: 1px solid #2F80ED; }
     .exhibition-description .exhibition-meta a {
-      color: #2F80ED !important; }
+      color: #2F80ED !important;
+      -webkit-transition: all 0.5s ease-in-out;
+      transition: all 0.5s ease-in-out; }
       .exhibition-description .exhibition-meta a:hover {
         color: #1366d6 !important; }
     .exhibition-description .exhibition-meta .exhibition-social {
@@ -971,15 +1011,17 @@ header {
         padding: 0.75rem;
         padding-left: 0;
         text-align: center;
-        text-transform: uppercase; }
+        text-transform: uppercase;
+        -webkit-transition: all 0.5s ease-in-out;
+        transition: all 0.5s ease-in-out; }
       .exhibition-description .exhibition-meta .exhibition-social .exhibition-twitter {
-        background: #55ACEE; }
+        background-color: #55ACEE; }
         .exhibition-description .exhibition-meta .exhibition-social .exhibition-twitter:hover {
-          background: #2795e9; }
+          background-color: #2795e9; }
       .exhibition-description .exhibition-meta .exhibition-social .exhibition-facebook {
-        background: #3B5999; }
+        background-color: #3B5999; }
         .exhibition-description .exhibition-meta .exhibition-social .exhibition-facebook:hover {
-          background: #2d4474; }
+          background-color: #2d4474; }
       .exhibition-description .exhibition-meta .exhibition-social .fab {
         font-size: 20px;
         margin-right: 1.5rem; }
@@ -996,7 +1038,14 @@ header {
   position: absolute;
   text-decoration: none;
   bottom: 3rem;
-  right: 3rem; }
+  right: 3rem;
+  -webkit-transition: color 0.5s ease-in-out;
+  transition: color 0.5s ease-in-out; }
+  .exhibition-back:hover {
+    color: #cccccc !important; }
+    .exhibition-back:hover img {
+      -webkit-filter: invert(0.3);
+              filter: invert(0.3); }
   @media (min-width: 620px) {
     .exhibition-back {
       bottom: 100%;
@@ -1004,6 +1053,8 @@ header {
   .exhibition-back img {
     height: 30px;
     margin-left: 0.75rem;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
     width: 30px; }
 
 .image-wrapper {

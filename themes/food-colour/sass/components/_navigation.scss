@@ -32,6 +32,7 @@ a {
 	display: flex;
 	width: 100%;
 	flex-direction: row-reverse;
+	z-index: 99;
 
 	ul {
 		display: none;
@@ -81,7 +82,7 @@ a {
 		float: left;
 		font-family: $font__headings;
 		font-weight: bold;
-		padding-left: $base__space-unit/2;
+		padding: 0 $base__space-unit*.8;
 		position: relative;
 		text-transform: uppercase;
 		
@@ -106,7 +107,16 @@ a {
 	display: block;
 }
 
-@media screen and (min-width: 768px) {
+.menu-toggle {
+	background: transparent;
+	border: 0;
+	font-size: $font__size-large;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+
+@media screen and (min-width: $desktop-width) {
 	.menu-toggle {
 		display: none;
 	}
