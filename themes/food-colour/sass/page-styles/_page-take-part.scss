@@ -29,6 +29,21 @@
               padding-left: 10px;
               font-family:$font__main;
           }
-      }
+        }
+    }
+    .takebox{
+          height: 69%;
+          width: 71vh;
+          justify-content: center;
+          color: white;
+          margin-top: -47rem;
+          margin-left: 14rem;
+           h1{
+               font-size:5rem;
+               text-transform:uppercase;
+           }
+           p{
+               font-size:1.5rem;
+           }
   }
 }

@@ -26,10 +26,10 @@
 
 						<div class="socials">
 								<p class="social-media-icons">
-									<i class="fa fa-facebook-square" aria-hidden="true"></i>
-									<i class="fa fa-youtube"></i>
-									<i class="fa fa-twitter-square" aria-hidden="true"></i>
-									<i class="fa fa-linkedin"></i>
+									<i class="fab fa-facebook-square" aria-hidden="true"></i>
+									<i class="fab fa-youtube"></i>
+									<i class="fab fa-twitter-square" aria-hidden="true"></i>
+									<i class="fab fa-linkedin"></i>
 								</p>						
 							<h3>Liu institute For Global Issues</h3>
 							<p>6476 NW Marine Drive Vancouver, BC, Canada, V6T 1Z2 Tel 604 822 1558 Fax 604 822 6966

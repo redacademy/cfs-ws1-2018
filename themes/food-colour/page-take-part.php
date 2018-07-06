@@ -5,25 +5,35 @@
 ?>
 <body id="primary" class="take-content-area">
     <?php get_header(); ?>
-
-        <section class="icon-image">
+    <div id="primary" class="content-area">
+        <main id="main" class="site-main" role="main">
+                <img class='takebackground' src="<?php echo esc_url(get_bloginfo('template_directory')); ?>/assets/images/take_part.png" alt="take background"/>
+      <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+      <div class="container"
+        <header class="taketext">
+            
+            
+            
             <?php if ( have_posts() ) : ?>
-                <?php if ( is_home() && ! is_front_page() ) : ?>
-                <?php endif; ?>
+            <?php if ( is_home() && ! is_front_page() ) : ?>
+            <?php endif; ?>
             <?php while ( have_posts() ) : the_post(); ?>
-                    <?php get_template_part( 'template-parts/content' ); ?>
-                <?php endwhile; ?>
-                    <?php the_posts_navigation(); ?>
+            <?php get_template_part( 'template-parts/content' ); ?>
+            <?php endwhile; ?>
+            <?php the_posts_navigation(); ?>
             <?php else : ?>
-                    <?php get_template_part( 'template-parts/content', 'none' ); ?>
-                <?php endif; ?>
-            <?php 
-            $featured_img_url_2 = CFS()->get('bannertake'); 
-            ?>
+            <?php get_template_part( 'template-parts/content', 'none' ); ?>
+            <?php endif; ?>
         </section>
-
+        <div class="takebox">
+            <?php the_title ( '<h1 class="entry-title">', '</h1>' ); ?>
+            <?php echo CFS()->get( 'action' );?>
+        </div>
+        
+        
+        
         <?php
-
+            
             $image = CFS()->get('image');
             $title = CFS()->get('title');
             $title_text = CFS()->get('text');
@@ -39,6 +49,7 @@
             $image_5 = CFS()->get('image_5');
             $title_5 = CFS()->get('title_5');
             $title_5_text = CFS()->get('text_5');
+            echo "<div class='steps-container'>";
             echo "<div class='take-text-wrapper'>";
             echo "<div class='icons-title'>";
             echo "<img src=" . $image . ">";
@@ -78,23 +89,9 @@
             echo "</div>";
             echo "<p>" . $title_5_text . "</p>";
             echo "</div>";
-            
-         ?>
+            echo "</div>";
+            ?>
     </div>
+</div>
     <?php get_footer(); ?>
 </body>
-
-   
-   
-   <div class="entry-content">
-
-<?php	$args = array( 'numberposts' => '5', 'order' => 'ASC');
-    $take_part_posts = get_posts( $args ); ?>
-
-    <?php foreach ( $take_part_posts as $post ) : setup_postdata( $post );?>
-    <article class="icon-entry">
-    <?php the_post_thumbnail( 'medium' ); ?>
-    </article>
-    <?php endforeach; wp_reset_postdata(); ?>
-            
-<?php  
