@@ -12,25 +12,15 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="profile" href="http://gmpg.org/xfn/11">
 		<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
+<<<<<<< HEAD
 		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
 		
     
 
+=======
+>>>>>>> d3c3b172f4e10f249f14f949b2f625b5a4759875
 
 	<?php wp_head(); ?>
-
-	
-		<meta property="og:title" content="<?php echo the_title(); ?>">
-		<meta property="og:description" content="<?php echo CFS()->get('description'); ?>">
-		<meta property="og:type" content="article">
-		<meta property="og:url" content="<?php echo the_permalink(); ?>">
-		<meta property="og:site_name" content="<?php echo get_bloginfo(); ?>">
-		<meta property="og:image" content="<?php echo esc_url( CFS()->get('map') ); ?>">
-
-		<meta name="twitter:card" content="summary_large_image">
-		<meta name="twitter:title" content="<?php echo the_title(); ?>">
-		<meta name="twitter:description" content="<?php echo CFS()->get('description'); ?>">
-		<meta name="twitter:image" content="<?php echo esc_url( CFS()->get('map') ); ?>">
 	</head>
 
 	<body <?php body_class(); ?>>
@@ -39,9 +29,6 @@
 
 			<header id="masthead" class="site-header" role="banner">
 				<div class="site-branding">
-					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-						<img src="<?php echo esc_url(get_bloginfo('template_directory')); ?>/assets/images/the_colours_of_food_security_logo.svg" alt="colours of food security logo"/>
-					</a>
 					<h1 class="site-title screen-reader-text"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 					<p class="site-description"><?php bloginfo( 'description' ); ?></p>
 				</div><!-- .site-branding -->
