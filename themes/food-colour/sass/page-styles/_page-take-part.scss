@@ -32,7 +32,7 @@
         }
     }
     .takebox{
-          height: 69%;
+          height: 100%;
           width: 71vh;
           justify-content: center;
           color: white;
@@ -45,5 +45,23 @@
            p{
                font-size:1.5rem;
            }
-  }
+           hr {
+             background-color: #fff;
+             width: 90px;
+             height: 2px;
+             margin: 30px 0 5px;
+         }  
+        }
+    .sharebox{
+        padding:1rem;
+    }    
+    .sharebackground{
+        margin-left: 2rem;
+        width: 269px;
+        padding: 1rem;
+        }
+    .sharetext{
+        color: #FD5E46;
+        font-size: 48px;
+    }
 }

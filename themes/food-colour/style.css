@@ -777,7 +777,7 @@ object {
 .footer-info-container {
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  padding-top: 9.5rem; }
+  padding-top: 1.5rem; }
 
 .footer-text p {
   max-width: 8rem;
@@ -799,27 +799,27 @@ object {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 3rem; }
+  padding: 5rem; }
 
 .fa-facebook-square:before {
   content: "\f082";
   color: #0e0eca;
-  font-size: 2.5rem; }
+  font-size: 2rem; }
 
 .fa-youtube:before {
   content: "\f167";
   color: red;
-  font-size: 2.5rem; }
+  font-size: 2rem; }
 
 .fa-twitter-square:before {
   content: "\f081";
   color: #1f99c1;
-  font-size: 2.5rem; }
+  font-size: 2rem; }
 
 .fa-linkedin:before {
   content: "\f0e1";
   color: #3131e0;
-  font-size: 2.5rem; }
+  font-size: 2rem; }
 
 .fa {
   font-size: 43px; }
@@ -1201,7 +1201,7 @@ header {
       font-family: Roboto, sans-serif; }
 
 .take-content-area .takebox {
-  height: 69%;
+  height: 100%;
   width: 71vh;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
