@@ -1,0 +1,36 @@
+.error404 {
+    height: 100vh;
+
+    header, footer {
+        display: none;
+    }
+
+    .page-content {
+        margin: 0;
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+
+        img {
+            max-height: 100vh;
+        }
+
+        .error-text-content {  
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            min-height: 100vh;
+            max-height: 100vh;
+            padding: 0 $base__space-unit * 2 $base__space-unit * 2 0;
+
+            h1 {
+                font-size: 60px;
+                line-height: 1;
+                max-width: 250px;
+
+                span {
+                    font-size: 40px;
+                }
+            } 
+        }
+    }
+}
