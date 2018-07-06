@@ -12,13 +12,6 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="profile" href="http://gmpg.org/xfn/11">
 		<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-<<<<<<< HEAD
-		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
-		
-    
-
-=======
->>>>>>> d3c3b172f4e10f249f14f949b2f625b5a4759875
 
 	<?php wp_head(); ?>
 	</head>
