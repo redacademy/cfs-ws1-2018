@@ -138,7 +138,7 @@
             transition: all 0.5s ease-in-out;
 
             &:hover {
-                color: darken($color__brand-blue, 10) !important;
+                color: darken($color__brand-blue, 15) !important;
             }
         }
 
@@ -163,7 +163,7 @@
                 background-color: $color__twitter;
 
                 &:hover {
-                    background-color: darken($color__twitter, 10);
+                    background-color: darken($color__twitter, 15);
                 }
             }
 
@@ -171,7 +171,7 @@
                 background-color: $color__facebook;
 
                 &:hover {
-                    background-color: darken($color__facebook, 10);
+                    background-color: darken($color__facebook, 15);
                 }
             }
 

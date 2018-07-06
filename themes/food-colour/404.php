@@ -15,11 +15,13 @@ get_header(); ?>
 			<section class="error-404 not-found">
 				<!-- <div class="page-content" style="background-image: url(<?php //echo esc_url(get_bloginfo('template_directory')); ?>/assets/images/404_image_Map.png)"> -->
 				<div class="page-content">
-					<img src="<?php echo esc_url(get_bloginfo('template_directory')); ?>/assets/images/404_image_Map.png" alt="404 page map image" />
+					<div class="error-image-container">
+						<img src="<?php echo esc_url(get_bloginfo('template_directory')); ?>/assets/images/404_image_Map.png" alt="404 page map image" />
+					</div>
 
 					<div class="error-text-content">
 						<h1><?php echo 'Oops, <span>something is missing.</span>' ?></h1>
-						<button>Take me home</button>
+						<a href="<?php echo esc_url( home_url( '/' ) ); ?>">Take me home</a>
 					</div>
 
 				</div><!-- .page-content -->

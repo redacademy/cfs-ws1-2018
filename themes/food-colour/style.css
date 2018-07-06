@@ -994,7 +994,7 @@ header {
       -webkit-transition: all 0.5s ease-in-out;
       transition: all 0.5s ease-in-out; }
       .exhibition-description .exhibition-meta a:hover {
-        color: #1366d6 !important; }
+        color: #115bbf !important; }
     .exhibition-description .exhibition-meta .exhibition-social {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -1018,11 +1018,11 @@ header {
       .exhibition-description .exhibition-meta .exhibition-social .exhibition-twitter {
         background-color: #55ACEE; }
         .exhibition-description .exhibition-meta .exhibition-social .exhibition-twitter:hover {
-          background-color: #2795e9; }
+          background-color: #1689e0; }
       .exhibition-description .exhibition-meta .exhibition-social .exhibition-facebook {
         background-color: #3B5999; }
         .exhibition-description .exhibition-meta .exhibition-social .exhibition-facebook:hover {
-          background-color: #2d4474; }
+          background-color: #263962; }
       .exhibition-description .exhibition-meta .exhibition-social .fab {
         font-size: 20px;
         margin-right: 1.5rem; }
@@ -1260,15 +1260,28 @@ header {
     margin-top: 15rem; } }
 
 .error404 {
-  height: 100vh; }
+  height: 100vh;
+  width: 100vw; }
   .error404 header, .error404 footer {
     display: none; }
   .error404 .page-content {
     margin: 0;
     display: grid;
-    grid-template-columns: 2fr 1fr; }
-    .error404 .page-content img {
-      max-height: 100vh; }
+    grid-template-columns: 1.5fr 1fr; }
+    .error404 .page-content .error-image-container {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: flex-start;
+      -webkit-box-pack: end;
+          -ms-flex-pack: end;
+              justify-content: flex-end; }
+      .error404 .page-content .error-image-container img {
+        max-height: 100vh;
+        max-width: 100%;
+        width: auto; }
     .error404 .page-content .error-text-content {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -1282,10 +1295,27 @@ header {
               justify-content: flex-end;
       min-height: 100vh;
       max-height: 100vh;
-      padding: 0 3rem 3rem 0; }
+      max-width: 100%;
+      padding: 0 3rem 3rem 0;
+      width: auto; }
       .error404 .page-content .error-text-content h1 {
         font-size: 60px;
         line-height: 1;
         max-width: 250px; }
         .error404 .page-content .error-text-content h1 span {
           font-size: 40px; }
+      .error404 .page-content .error-text-content a {
+        background-color: #2F80ED;
+        border-radius: 3px;
+        color: #FFFFFF !important;
+        font-family: Montserrat, sans-serif;
+        font-weight: bold;
+        max-width: 250px;
+        padding: 0.75rem;
+        padding-left: 0;
+        text-align: center;
+        text-transform: uppercase;
+        -webkit-transition: all 0.5s ease-in-out;
+        transition: all 0.5s ease-in-out; }
+        .error404 .page-content .error-text-content a:hover {
+          background-color: #115bbf; }
