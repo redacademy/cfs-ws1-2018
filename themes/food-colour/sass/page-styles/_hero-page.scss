@@ -9,7 +9,6 @@
         margin: 0;
         .entry-header {
             position: absolute;
-            left: 5%;
             top: 15%;
             z-index: 1;
             a {
@@ -42,7 +41,7 @@
 }
 .entry-content {
     .hero-text-wrapper{
-        width: 90%;
+        max-width: $max-width;
         margin: 0 auto;
         .icon-title {
             display: flex;
@@ -55,6 +54,24 @@
             h2 {
                 margin: 0;
                 padding-left: 10px;
+            }
+        }
+    }
+}
+@include desktop {
+    .hero-image{
+        article{
+            .entry-header {
+                margin: 0 5%;
+                top: 35%;
+                a {
+                    font-size: 100px;
+                }
+            }
+            .entry-content{
+                max-width: 1240px;
+                margin: 24px auto 0 auto;
+                top: 45%;
             }
         }
     }

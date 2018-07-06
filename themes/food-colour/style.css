@@ -732,7 +732,6 @@ object {
     margin: 0; }
     .hero-image article .entry-header {
       position: absolute;
-      left: 5%;
       top: 15%;
       z-index: 1; }
       .hero-image article .entry-header a {
@@ -759,7 +758,7 @@ object {
         letter-spacing: 1px; }
 
 .entry-content .hero-text-wrapper {
-  width: 90%;
+  max-width: 1240px;
   margin: 0 auto; }
   .entry-content .hero-text-wrapper .icon-title {
     display: -webkit-box;
@@ -773,6 +772,17 @@ object {
     .entry-content .hero-text-wrapper .icon-title h2 {
       margin: 0;
       padding-left: 10px; }
+
+@media (min-width: 620px) {
+  .hero-image article .entry-header {
+    margin: 0 5%;
+    top: 35%; }
+    .hero-image article .entry-header a {
+      font-size: 100px; }
+  .hero-image article .entry-content {
+    max-width: 1240px;
+    margin: 24px auto 0 auto;
+    top: 45%; } }
 
 .footer-info-container {
   -ms-flex-pack: distribute;
@@ -1071,47 +1081,33 @@ header {
   .image-wrapper #content {
     position: absolute;
     top: 0;
-    min-width: 300px;
-    padding: 0 10%;
+    margin: 0 5%;
     color: white; }
     .image-wrapper #content .title-1 h1::first-line {
       letter-spacing: 7px; }
+    .image-wrapper #content button {
+      width: 100%;
+      color: #E05D5D;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      border-color: white;
+      background-color: white; }
+      .image-wrapper #content button:hover {
+        background-color: #e6e6e6; }
     .image-wrapper #content .title-1 h1 {
       line-height: 35px;
       font-size: 35px; }
-    .image-wrapper #content .title-1 button {
-      width: 100%;
-      color: #E05D5D;
-      font-weight: 700;
-      letter-spacing: 1.5px;
-      text-transform: uppercase;
-      border-color: white;
-      background-color: white; }
     .image-wrapper #content .title-2 h1 {
       font-size: 25px;
       font-weight: 500; }
-    .image-wrapper #content .title-2 button {
-      width: 100%;
-      color: #E05D5D;
-      font-weight: 700;
-      letter-spacing: 1.5px;
-      text-transform: uppercase;
-      border-color: white;
-      background-color: white; }
     .image-wrapper #content .title-3 h1 {
       font-size: 25px;
       font-weight: 500; }
-    .image-wrapper #content .title-3 button {
-      width: 100%;
-      color: #E05D5D;
-      font-weight: 700;
-      letter-spacing: 1.5px;
-      text-transform: uppercase;
-      border-color: white;
-      background-color: white; }
     .image-wrapper #content .title-3 img {
       position: relative;
-      bottom: 40px; }
+      bottom: 40px;
+      padding: 0 10%; }
     .image-wrapper #content .hashtag {
       text-align: center;
       font-size: 25px; }
@@ -1136,7 +1132,8 @@ header {
       .image-wrapper #content .title-1 h1 {
         font-size: 100px;
         letter-spacing: 5px;
-        line-height: 90px !important; }
+        line-height: 90px;
+        padding-right: 219px; }
       .image-wrapper #content .title-2 {
         display: grid;
         grid-template-columns: 60% 40%;
@@ -1165,7 +1162,7 @@ header {
           margin: 15px 60px 15px 0; }
       .image-wrapper #content .bottom-line {
         width: 100%;
-        margin: 40px 0; }
+        margin: 70px 0; }
       .image-wrapper #content .hashtag {
         font-size: 100px;
         margin: 100px 0; } }

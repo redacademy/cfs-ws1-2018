@@ -35,4 +35,16 @@ jQuery(document).ready(function($) {
             $('.exhibition-description').delay(1000).hide(0);  
         }        
     }); 
+
+    /**
+     * Nav-Menu toggle
+     */
+    $('.menu-toggle').on('click', function(){
+        $('.main-navigation ul').toggle( function (){
+            console.log('hello it is working');
+            $('.main-navigation ul').css({
+                'border': '2px',
+            });
+        });
+    });
 });
