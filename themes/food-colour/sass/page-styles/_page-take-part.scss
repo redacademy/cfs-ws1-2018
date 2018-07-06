@@ -52,16 +52,44 @@
              margin: 30px 0 5px;
          }  
         }
-    .sharebox{
+    .share-box{
         padding:1rem;
     }    
     .sharebackground{
-        margin-left: 2rem;
-        width: 269px;
+        margin-left: 1rem;
+        width: 42vh;
         padding: 1rem;
         }
-    .sharetext{
+    .share-text{
         color: #FD5E46;
         font-size: 48px;
     }
 }
+
+@media screen and (min-width : 1240px){
+    .steps-container{
+    display:flex;
+ } 
+ .iconbutton{
+     display:none;
+ }
+ .share-box{
+    padding: 6rem;
+    width: 40%;
+    padding-top: 5rem;
+        p{
+            font-size:24px;
+        }
+ }
+ .sharebackground {
+    margin-left: 2rem;
+    width: 900px;
+    height: 700px;
+    padding: 1rem;
+ }
+ .share-container{
+     display:flex;
+     justify-content: center;
+     margin-top: 15rem;
+ }
+}    

@@ -1214,6 +1214,50 @@ header {
     text-transform: uppercase; }
   .take-content-area .takebox p {
     font-size: 1.5rem; }
+  .take-content-area .takebox hr {
+    background-color: #fff;
+    width: 90px;
+    height: 2px;
+    margin: 30px 0 5px; }
+
+.take-content-area .share-box {
+  padding: 1rem; }
+
+.take-content-area .sharebackground {
+  margin-left: 1rem;
+  width: 42vh;
+  padding: 1rem; }
+
+.take-content-area .share-text {
+  color: #FD5E46;
+  font-size: 48px; }
+
+@media screen and (min-width: 1240px) {
+  .steps-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .iconbutton {
+    display: none; }
+  .share-box {
+    padding: 6rem;
+    width: 40%;
+    padding-top: 5rem; }
+    .share-box p {
+      font-size: 24px; }
+  .sharebackground {
+    margin-left: 2rem;
+    width: 900px;
+    height: 700px;
+    padding: 1rem; }
+  .share-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 15rem; } }
 
 .error404 {
   height: 100vh; }

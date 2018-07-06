@@ -92,14 +92,15 @@
             echo "</div>";
             echo "</div>";
             ?>
-
+            <div class=share-container>
             <img class='sharebackground' src="<?php echo esc_url(get_bloginfo('template_directory')); ?>/assets/images/share_now.png" alt="sharebackground"/>
-            <div class=sharebox>
-                <div class=sharetext>
+            <div class=share-box>
+                <div class=share-text>
                 <?php echo CFS()->get( 'sharetext' );?>
                 </div>
                 <?php echo CFS()->get( 'shareinfo' );?>
             </div>
+        </div>
     </div>
 </div>
     <?php get_footer(); ?>
