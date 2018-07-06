@@ -1,19 +1,49 @@
 .take-content-area {
-  .take-text-wrapper{
+  .iconbutton{
+        background-color: #2F80ED;
+        color: white;
+        font-family: monsterrat;
+        text-shadow: none;
+        width: 14rem;
+        margin-bottom: 1.5rem;
+      }
+    .take-text-wrapper{
       width: 90%;
       margin: 0 auto;
+      p {
+         margin-bottom: 1.5rem;
+         width: 69%;
+         margin-left: 2rem; 
+         font-family:$font__main;
+      }
       .icons-title {
           display: flex;
           height: 35px;
           margin: 0 0 25px 0;
           img {
               max-width: 100%;
-              width: auto;
+              width: 2rem;
           }
           h2 {
               margin: 0;
               padding-left: 10px;
+              font-family:$font__main;
           }
-      }
+        }
+    }
+    .takebox{
+          height: 69%;
+          width: 71vh;
+          justify-content: center;
+          color: white;
+          margin-top: -47rem;
+          margin-left: 14rem;
+           h1{
+               font-size:5rem;
+               text-transform:uppercase;
+           }
+           p{
+               font-size:1.5rem;
+           }
   }
 }

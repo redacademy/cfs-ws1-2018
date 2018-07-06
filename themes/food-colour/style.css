@@ -804,22 +804,22 @@ object {
 .fa-facebook-square:before {
   content: "\f082";
   color: #0e0eca;
-  font-size: 4rem; }
+  font-size: 2.5rem; }
 
 .fa-youtube:before {
   content: "\f167";
   color: red;
-  font-size: 4rem; }
+  font-size: 2.5rem; }
 
 .fa-twitter-square:before {
   content: "\f081";
   color: #1f99c1;
-  font-size: 4rem; }
+  font-size: 2.5rem; }
 
 .fa-linkedin:before {
   content: "\f0e1";
   color: #3131e0;
-  font-size: 4rem; }
+  font-size: 2.5rem; }
 
 .fa {
   font-size: 43px; }
@@ -829,14 +829,15 @@ object {
 
 .red {
   height: 35px;
-  width: auto;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  background-color: #e2dede; }
+  background-color: #e2dede;
+  margin-bottom: -1.5rem; }
 
 .redtext {
   font-weight: bold; }
@@ -1169,9 +1170,22 @@ header {
         font-size: 100px;
         margin: 100px 0; } }
 
+.take-content-area .iconbutton {
+  background-color: #2F80ED;
+  color: white;
+  font-family: monsterrat;
+  text-shadow: none;
+  width: 14rem;
+  margin-bottom: 1.5rem; }
+
 .take-content-area .take-text-wrapper {
   width: 90%;
   margin: 0 auto; }
+  .take-content-area .take-text-wrapper p {
+    margin-bottom: 1.5rem;
+    width: 69%;
+    margin-left: 2rem;
+    font-family: Roboto, sans-serif; }
   .take-content-area .take-text-wrapper .icons-title {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1180,7 +1194,23 @@ header {
     margin: 0 0 25px 0; }
     .take-content-area .take-text-wrapper .icons-title img {
       max-width: 100%;
-      width: auto; }
+      width: 2rem; }
     .take-content-area .take-text-wrapper .icons-title h2 {
       margin: 0;
-      padding-left: 10px; }
+      padding-left: 10px;
+      font-family: Roboto, sans-serif; }
+
+.take-content-area .takebox {
+  height: 69%;
+  width: 71vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
+  margin-top: -47rem;
+  margin-left: 14rem; }
+  .take-content-area .takebox h1 {
+    font-size: 5rem;
+    text-transform: uppercase; }
+  .take-content-area .takebox p {
+    font-size: 1.5rem; }
