@@ -19,9 +19,6 @@
         margin: 0 5%;
         color: white;
         width: 90%;
-        .title-1 h1::first-line {
-            letter-spacing: 7px;
-        }
         button {
             width: 100%;
             color: $color__button__FrontPage;
@@ -70,9 +67,6 @@
         }
     }
     @include desktop {
-        .title-1 h1::first-line {
-            letter-spacing: 17px !important;
-        }
         .background-image-main {
             height: 1704px;
         }
@@ -92,7 +86,6 @@
                     font-size: 100px;
                     letter-spacing: 5px;
                     line-height: 90px;
-                    padding-right: 219px;
                 }
             }
             .title-2 {

@@ -34,20 +34,33 @@ jQuery(document).ready(function($) {
             $('.exhibition-description').css('opacity', '0');
             $('.exhibition-description').delay(1000).hide(0);  
         }        
-<<<<<<< HEAD
     }); 
 
     /**
      * Nav-Menu toggle
      */
     $('.menu-toggle').on('click', function(){
-        $('.main-navigation ul').toggle( function (){
+        $('.main-navigation ul').toggle( function(){
             $('.main-navigation ul').css({
-                'border': '2px',
+                
+            });
+            $('.site-header').css({
+                'height': '400px',
+                'align-items': 'baseline',
+            });
+            $('.menu-main-menu-container').css({
+                'position': 'absolute',
+                'top': '50px',
+                'left' : '0px',
+            });
+            $('#primary-menu').css({
+                'align-items': 'center',
+                'display': 'grid',
+                'grid-template-columns': '100%',
+                'grid-template-rows': '1fr 1fr 1fr',
+                'height': '340px',
             });
         });
-    });
-=======
     });
 
     /**
@@ -66,6 +79,4 @@ jQuery(document).ready(function($) {
     $(window).resize(function(){
         setExhibitionNav();
     });
-    
->>>>>>> abcea0103c2b388296cd487763283ab6e70036b9
 });
