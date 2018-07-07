@@ -15,21 +15,31 @@ jQuery(document).ready(function($) {
             items = Math.ceil($('.exhibition-icon-img').length / 2);
         } else {
             items = $('.exhibition-icon-img').length;
-
         }
-        var iconHeight = $('.exhibition-nav').height()/items *.99;
+
+        if($(window).height() > $(window).width() && $(window).width() < 620) {
+            $('.exhibition-nav').css({
+                'height': $(window).width() * .8
+            });
+        }
+
+        var iconHeight = $('.exhibition-nav').height()/items;
         $('.exhibition-icon-img').css({
             'height': iconHeight,
             'width': iconHeight,
         });
         $('.exhibition-icon').css({
+            'flex-basis': iconHeight,
             'height': iconHeight,
             'width': iconHeight,
         });
 
         
         if($(window).height() > $(window).width() && $(window).width() < 620) {
-            // console.log('portrait');
+            $('.exhibition-nav').css({
+                'flex-wrap': 'wrap',
+                'width': iconHeight * 2,
+            });
 
         } else if($(window).height() < 620) {
             $('.exhibition-nav').css({
