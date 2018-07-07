@@ -147,32 +147,15 @@
             justify-content: space-between;
 
             a {
-                border-radius: 3px;
-                color: $color__text-white !important;
                 flex-basis: 49%;
-                font-family: $font__headings;
-                font-weight: bold;
-                padding: $base__space-unit/2;
-                padding-left: 0;
-                text-align: center;
-                text-transform: uppercase;
-                transition: all 0.5s ease-in-out;
             }
 
             .exhibition-twitter {
-                background-color: $color__twitter;
-
-                &:hover {
-                    background-color: darken($color__twitter, 15);
-                }
+                @include button-style($color__twitter, $color__text-white);
             }
 
             .exhibition-facebook {
-                background-color: $color__facebook;
-
-                &:hover {
-                    background-color: darken($color__facebook, 15);
-                }
+                @include button-style($color__facebook, $color__text-white);
             }
 
             .fab {
