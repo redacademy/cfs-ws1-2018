@@ -1138,7 +1138,8 @@ header {
     .image-wrapper #content {
       max-width: 1240px;
       margin: 0 10%;
-      color: white; }
+      color: white;
+      width: 80%; }
       .image-wrapper #content .title-1 button {
         width: 150px; }
       .image-wrapper #content .title-1 h1 {
