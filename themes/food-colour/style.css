@@ -1038,24 +1038,32 @@ header {
           -ms-flex-pack: justify;
               justify-content: space-between; }
       .exhibition-description .exhibition-meta .exhibition-social a {
+        -ms-flex-preferred-size: 49%;
+            flex-basis: 49%; }
+      .exhibition-description .exhibition-meta .exhibition-social .exhibition-twitter {
+        background-color: #55ACEE;
         border-radius: 3px;
         color: #FFFFFF !important;
-        -ms-flex-preferred-size: 49%;
-            flex-basis: 49%;
         font-family: Montserrat, sans-serif;
         font-weight: bold;
         padding: 0.75rem;
-        padding-left: 0;
         text-align: center;
         text-transform: uppercase;
         -webkit-transition: all 0.5s ease-in-out;
         transition: all 0.5s ease-in-out; }
-      .exhibition-description .exhibition-meta .exhibition-social .exhibition-twitter {
-        background-color: #55ACEE; }
         .exhibition-description .exhibition-meta .exhibition-social .exhibition-twitter:hover {
           background-color: #1689e0; }
       .exhibition-description .exhibition-meta .exhibition-social .exhibition-facebook {
-        background-color: #3B5999; }
+        background-color: #3B5999;
+        border-radius: 3px;
+        color: #FFFFFF !important;
+        font-family: Montserrat, sans-serif;
+        font-weight: bold;
+        padding: 0.75rem;
+        text-align: center;
+        text-transform: uppercase;
+        -webkit-transition: all 0.5s ease-in-out;
+        transition: all 0.5s ease-in-out; }
         .exhibition-description .exhibition-meta .exhibition-social .exhibition-facebook:hover {
           background-color: #263962; }
       .exhibition-description .exhibition-meta .exhibition-social .fab {
@@ -1266,6 +1274,23 @@ header {
     text-transform: uppercase; }
   .take-content-area .takebox p {
     font-size: 1.5rem; }
+  .take-content-area .takebox hr {
+    background-color: #fff;
+    width: 90px;
+    height: 2px;
+    margin: 30px 0 5px; }
+
+.take-content-area .sharebox {
+  padding: 1rem; }
+
+.take-content-area .sharebackground {
+  margin-left: 2rem;
+  width: 269px;
+  padding: 1rem; }
+
+.take-content-area .sharetext {
+  color: #FD5E46;
+  font-size: 48px; }
 
 .take-content-area .bannertext {
   position: absolute;
@@ -1398,12 +1423,11 @@ header {
         color: #FFFFFF !important;
         font-family: Montserrat, sans-serif;
         font-weight: bold;
-        max-width: 250px;
         padding: 0.75rem;
-        padding-left: 0;
         text-align: center;
         text-transform: uppercase;
         -webkit-transition: all 0.5s ease-in-out;
-        transition: all 0.5s ease-in-out; }
+        transition: all 0.5s ease-in-out;
+        max-width: 250px; }
         .error404 .page-content .error-text-content a:hover {
           background-color: #115bbf; }

@@ -28,3 +28,20 @@
 		@content;
 	}
 }
+
+
+@mixin button-style ($bg_color: $color__background-body, $color: $color__text-main) {
+	background-color: $bg_color;
+	border-radius: 3px;
+	color: $color !important;
+	font-family: $font__headings;
+	font-weight: bold;
+	padding: $base__space-unit/2;
+	text-align: center;
+	text-transform: uppercase;
+	transition: all 0.5s ease-in-out;
+
+	&:hover {
+		background-color: darken($bg_color, 15);
+	}
+}

@@ -16,13 +16,11 @@
             align-items: flex-start;
             justify-content: flex-end;
             img {
-                // align-self: center;
                 max-height: 100vh;
                 max-width: 100%;
                 width: auto;
             }
         }
-        
 
         .error-text-content {  
             display: flex;
@@ -45,21 +43,8 @@
             }
 
             a {
-                background-color: $color__brand-blue;
-                border-radius: 3px;
-                color: $color__text-white !important;
-                font-family: $font__headings;
-                font-weight: bold;
+                @include button-style($color__brand-blue, $color__text-white);
                 max-width: 250px;
-                padding: $base__space-unit/2;
-                padding-left: 0;
-                text-align: center;
-                text-transform: uppercase;
-                transition: all 0.5s ease-in-out;
-
-                &:hover {
-                    background-color: darken($color__brand-blue, 15);
-                }
             }
         }
     }
