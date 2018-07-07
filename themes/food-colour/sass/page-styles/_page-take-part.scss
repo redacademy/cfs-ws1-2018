@@ -7,6 +7,19 @@
         width: 14rem;
         margin-bottom: 1.5rem;
       }
+      .desktopbutton{
+        background-color: #2F80ED;
+        color: white;
+        font-family: monsterrat;
+        text-shadow: none;
+        width: 28rem;
+        margin-top: 5rem;
+        margin-bottom: 1.5rem;
+    }
+    .bigbutton{
+        display:block;
+        text-align: center;
+    }
     .take-text-wrapper{
       width: 90%;
       margin: 0 auto;
@@ -32,39 +45,50 @@
         }
     }
     .takebox{
-          height: 100%;
-          width: 71vh;
-          justify-content: center;
-          color: white;
-          margin-top: -47rem;
-          margin-left: 14rem;
-           h1{
-               font-size:5rem;
-               text-transform:uppercase;
-           }
-           p{
-               font-size:1.5rem;
-           }
-           hr {
-             background-color: #fff;
-             width: 90px;
-             height: 2px;
-             margin: 30px 0 5px;
-         }  
+        justify-content: center;
+        color: #fff;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        h1{
+            font-size:5rem;
+            text-transform:uppercase;
         }
-    .share-box{
-        padding:1rem;
-    }    
-    .sharebackground{
+        p{
+            font-size:1.5rem;
+        } 
+    }
+    .bannertext{
+        position: absolute;
+        margin-left:5rem;
+        width: 39%;
+    }
+     
+    .mobile-image{
         margin-left: 1rem;
-        width: 42vh;
+        width: 49vh;
         padding: 1rem;
         }
     .share-text{
         color: #FD5E46;
         font-size: 48px;
+        }
     }
-}
+    // # COLOUR FOOD SECURITY BANNER
+    .foodcolour{
+        display: flex;
+        position: relative;
+        justify-content: center;
+        font-size: 5rem;
+        margin-top: 20rem;
+        color:white;
+        .foodhashtag{
+            position: absolute;
+            padding: 2rem;
+        }
+            
+        
+    }
 
 @media screen and (min-width : 1240px){
     .steps-container{
@@ -75,13 +99,13 @@
  }
  .share-box{
     padding: 6rem;
-    width: 40%;
+    width: 54%;
     padding-top: 5rem;
         p{
-            font-size:24px;
+            font-size:29px;
         }
  }
- .sharebackground {
+ .desktop-image {
     margin-left: 2rem;
     width: 900px;
     height: 700px;
@@ -92,4 +116,35 @@
      justify-content: center;
      margin-top: 15rem;
  }
-}    
+} 
+
+/* hide mobile show desktop */
+@media only screen and (min-width: 620px) {
+   .mobile-image {
+       display:none;
+   }
+   .desktop-image {
+       display:block;
+   }
+}
+/* show mobile hide desktop */
+@media only screen and (max-width: 1240px) {
+    .mobile-image {
+        display:block;
+    }
+    .desktop-image {
+        display:none;
+    }
+    .foodcolour{
+        display:none;
+    }
+    .desktopbutton{
+        display:none;
+        background-color: #2F80ED;
+        color: white;
+        font-family: monsterrat;
+        text-shadow: none;
+        width: 14rem;
+        margin-bottom: 1.5rem;
+    }
+}

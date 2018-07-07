@@ -1,6 +1,6 @@
 .footer-info-container{
-	justify-content: space-around;
-	padding-top:1.5rem;
+	padding: 2rem;
+	display: flex;
 }
 
 .footer-text p{
@@ -53,7 +53,7 @@
 }
 .red{
 	height: 35px;
-	width: 100%;
+	width: auto;
 	display: flex;
 	justify-content: flex-end;
 	background-color: #e2dede;
@@ -68,4 +68,35 @@
 
 
 
+.copy{
+	p{
+		padding:1rem 0;
+	}
+}
 
+.design{
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	margin: 0;
+	background: #777;
+	color: white;
+	img{
+		width:auto;
+		height:auto;
+	}
+	p{
+		margin:0;
+		padding-right:1rem;
+	}
+}
+
+.logo-bottom-images{
+	display:flex;
+	flex-wrap: wrap;
+	img{
+		width:auto;
+		height:auto;
+		padding:1rem;
+	}
+}
