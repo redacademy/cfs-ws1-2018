@@ -910,6 +910,10 @@ header {
   display: block; }
   .single-exhibition header, .single-exhibition footer {
     display: none; }
+  @media only screen and (orientation: portrait) and (max-width: 620px) {
+    .single-exhibition {
+      -webkit-transform: rotate(90deg);
+              transform: rotate(90deg); } }
   @media only screen and (orientation: landscape) and (max-width: 620px) {
     .single-exhibition {
       -webkit-transform: rotate(0deg);
@@ -929,6 +933,7 @@ header {
       flex-wrap: wrap; }
   @media only screen and (orientation: portrait) and (max-width: 620px) {
     .exhibition-container {
+      height: 100vw;
       width: 100vh; } }
 
 .exhibition-nav-container {
@@ -953,25 +958,26 @@ header {
       -webkit-filter: invert(0.5);
               filter: invert(0.5); }
   .exhibition-nav-container .exhibition-nav {
-    align-self: center;
+    -ms-flex-item-align: center;
+        align-self: center;
     background: #333333;
     border-radius: 2px;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(11, 1fr);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     height: 80%;
     -webkit-transition: visibility 0s, opacity .5s ease-in-out;
     transition: visibility 0s, opacity .5s ease-in-out;
-    visibility: hidden;
-    width: 100px; }
+    visibility: hidden; }
     @media (min-width: 620px) {
       .exhibition-nav-container .exhibition-nav {
-        visibility: visible;
-        width: 50px; } }
+        visibility: visible; } }
     .exhibition-nav-container .exhibition-nav .exhibition-icon {
       border-radius: 2px;
-      height: 100%;
-      width: 100%;
       -webkit-transition: all 0.5s ease-in-out;
       transition: all 0.5s ease-in-out; }
       .exhibition-nav-container .exhibition-nav .exhibition-icon:hover {
@@ -993,12 +999,14 @@ header {
   border-radius: 5px;
   color: #333333;
   margin-left: 1.5rem;
+  max-width: 400px;
+  overflow: scroll;
   padding: 1.5rem;
   position: relative;
   opacity: 0;
   -webkit-transition: visibility 0s, opacity .5s ease-in-out;
   transition: visibility 0s, opacity .5s ease-in-out;
-  width: 400px; }
+  width: 45%; }
   .exhibition-description .close-btn {
     cursor: pointer;
     position: absolute;
@@ -1269,23 +1277,6 @@ header {
     text-transform: uppercase; }
   .take-content-area .takebox p {
     font-size: 1.5rem; }
-  .take-content-area .takebox hr {
-    background-color: #fff;
-    width: 90px;
-    height: 2px;
-    margin: 30px 0 5px; }
-
-.take-content-area .sharebox {
-  padding: 1rem; }
-
-.take-content-area .sharebackground {
-  margin-left: 2rem;
-  width: 269px;
-  padding: 1rem; }
-
-.take-content-area .sharetext {
-  color: #FD5E46;
-  font-size: 48px; }
 
 .take-content-area .bannertext {
   position: absolute;

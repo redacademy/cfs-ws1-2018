@@ -7,7 +7,7 @@
 
     @include mobile-portrait {
         // height: 100vw;
-        // transform: rotate(90deg);
+        transform: rotate(90deg);
     }
 
     @include mobile-landscape {
@@ -26,6 +26,7 @@
     flex-wrap: wrap;
 
     @include mobile-portrait {
+        height: 100vw;
         width: 100vh;
     }  
 }
@@ -35,6 +36,7 @@
     flex-flow: column;
     height: 100vh;
     justify-content: center;
+    // overflow: scroll;
     max-height: 100vh;
 
     .exhibition-nav-toggle { 
@@ -53,25 +55,18 @@
         align-self: center;
         background: $color__text-main;
         border-radius: 2px;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(11, 1fr);
+        display: flex;
+        flex-direction: column;
         height: 80%;
         transition: visibility 0s, opacity .5s ease-in-out;
         visibility: hidden;
-        width: 100px;
     
         @include desktop {
-            // grid-template-columns: 1fr;
-            // grid-template-rows: repeat(11, 1fr);
             visibility: visible;
-            width: 50px;
         }
 
         .exhibition-icon {
             border-radius: 2px;
-            height: 100%;
-            width: 100%;
             transition: all 0.5s ease-in-out;
 
             &:hover {
@@ -99,11 +94,18 @@
     border-radius: 5px;
     color: $color__text-main;
     margin-left: $base__space-unit;
+    max-width: 400px;
+    overflow: scroll;
     padding: $base__space-unit;
     position: relative;
     opacity: 0;
     transition: visibility 0s, opacity .5s ease-in-out;
-    width: 400px;
+    // visibility: hidden;
+    width: 45%;
+
+    @include desktop {
+        // visibility: visible;
+    }
 
     .close-btn {
         cursor: pointer;

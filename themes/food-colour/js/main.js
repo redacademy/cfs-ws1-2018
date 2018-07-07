@@ -34,23 +34,5 @@ jQuery(document).ready(function($) {
             $('.exhibition-description').css('opacity', '0');
             $('.exhibition-description').delay(1000).hide(0);  
         }        
-    });
-
-    /**
-     * Set height of exhibition nav icons
-     */
-
-    setExhibitionNav();
-
-    function setExhibitionNav() {
-        var iconHeight = $('.exhibition-nav').height()/$('.exhibition-icon-img').length;
-        $('.exhibition-icon-img').css('height', iconHeight);
-        $('.exhibition-icon').css('height', iconHeight);
-        $('.exhibition-nav').css('width', iconHeight);
-    }
-
-    $(window).resize(function(){
-        setExhibitionNav();
-    });
-    
+    });   
 });
