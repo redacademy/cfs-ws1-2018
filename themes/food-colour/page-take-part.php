@@ -26,6 +26,7 @@
             <?php endif; ?>
         </section>
         <div class="takebox">
+                <hr align="left">
             <?php the_title ( '<h1 class="entry-title">', '</h1>' ); ?>
             <?php echo CFS()->get( 'action' );?>
         </div>
@@ -91,6 +92,14 @@
             echo "</div>";
             echo "</div>";
             ?>
+
+            <img class='sharebackground' src="<?php echo esc_url(get_bloginfo('template_directory')); ?>/assets/images/share_now.png" alt="sharebackground"/>
+            <div class=sharebox>
+                <div class=sharetext>
+                <?php echo CFS()->get( 'sharetext' );?>
+                </div>
+                <?php echo CFS()->get( 'shareinfo' );?>
+            </div>
     </div>
 </div>
     <?php get_footer(); ?>
