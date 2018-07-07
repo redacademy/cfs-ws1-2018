@@ -41,7 +41,6 @@ jQuery(document).ready(function($) {
      */
     $('.menu-toggle').on('click', function(){
         $('.main-navigation ul').toggle( function (){
-            console.log('hello it is working');
             $('.main-navigation ul').css({
                 'border': '2px',
             });
