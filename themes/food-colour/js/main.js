@@ -34,6 +34,7 @@ jQuery(document).ready(function($) {
             $('.exhibition-description').css('opacity', '0');
             $('.exhibition-description').delay(1000).hide(0);  
         }        
+<<<<<<< HEAD
     }); 
 
     /**
@@ -79,4 +80,7 @@ jQuery(document).ready(function($) {
     $(window).resize(function(){
         setExhibitionNav();
     });
+=======
+    });   
+>>>>>>> c1454ece6b050d091bad0af26c2316bd0946f912
 });
