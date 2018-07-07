@@ -94,8 +94,9 @@
     border-radius: 5px;
     color: $color__text-main;
     margin-left: $base__space-unit;
+    max-height: 90%;
     max-width: 400px;
-    overflow: scroll;
+    overflow: auto;
     padding: $base__space-unit;
     position: relative;
     opacity: 0;
