@@ -6,8 +6,8 @@
     display: block;
 
     @include mobile-portrait {
-        height: 100vw;
-        transform: rotate(90deg);
+        // height: 100vw;
+        // transform: rotate(90deg);
     }
 
     @include mobile-landscape {
@@ -40,7 +40,12 @@
     .exhibition-nav-toggle { 
         img {
             height: 40px;
+            transition: all 0.5s ease-in-out;
             width: 40px;
+
+            &:hover {
+                filter: invert(.5);
+            }
         }
     }
 
@@ -49,16 +54,16 @@
         background: $color__text-main;
         border-radius: 2px;
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: repeat(6, 1fr);
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(11, 1fr);
         height: 80%;
         transition: visibility 0s, opacity .5s ease-in-out;
         visibility: hidden;
         width: 100px;
     
         @include desktop {
-            grid-template-columns: 1fr;
-            grid-template-rows: repeat(11, 1fr);
+            // grid-template-columns: 1fr;
+            // grid-template-rows: repeat(11, 1fr);
             visibility: visible;
             width: 50px;
         }
@@ -68,11 +73,6 @@
             height: 100%;
             width: 100%;
             transition: all 0.5s ease-in-out;
-
-            img {
-                height: 100%;
-                width: 100%;
-            }
 
             &:hover {
                 filter: invert(.9);

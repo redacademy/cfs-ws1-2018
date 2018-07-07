@@ -875,11 +875,6 @@ header {
   display: block; }
   .single-exhibition header, .single-exhibition footer {
     display: none; }
-  @media only screen and (orientation: portrait) and (max-width: 620px) {
-    .single-exhibition {
-      height: 100vw;
-      -webkit-transform: rotate(90deg);
-              transform: rotate(90deg); } }
   @media only screen and (orientation: landscape) and (max-width: 620px) {
     .single-exhibition {
       -webkit-transform: rotate(0deg);
@@ -916,14 +911,19 @@ header {
   max-height: 100vh; }
   .exhibition-nav-container .exhibition-nav-toggle img {
     height: 40px;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
     width: 40px; }
+    .exhibition-nav-container .exhibition-nav-toggle img:hover {
+      -webkit-filter: invert(0.5);
+              filter: invert(0.5); }
   .exhibition-nav-container .exhibition-nav {
     align-self: center;
     background: #333333;
     border-radius: 2px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(11, 1fr);
     height: 80%;
     -webkit-transition: visibility 0s, opacity .5s ease-in-out;
     transition: visibility 0s, opacity .5s ease-in-out;
@@ -931,8 +931,6 @@ header {
     width: 100px; }
     @media (min-width: 620px) {
       .exhibition-nav-container .exhibition-nav {
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(11, 1fr);
         visibility: visible;
         width: 50px; } }
     .exhibition-nav-container .exhibition-nav .exhibition-icon {
@@ -941,9 +939,6 @@ header {
       width: 100%;
       -webkit-transition: all 0.5s ease-in-out;
       transition: all 0.5s ease-in-out; }
-      .exhibition-nav-container .exhibition-nav .exhibition-icon img {
-        height: 100%;
-        width: 100%; }
       .exhibition-nav-container .exhibition-nav .exhibition-icon:hover {
         -webkit-filter: invert(0.9);
                 filter: invert(0.9); }
