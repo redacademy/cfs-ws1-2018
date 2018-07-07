@@ -775,9 +775,10 @@ object {
       padding-left: 10px; }
 
 .footer-info-container {
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  padding-top: 1.5rem; }
+  padding: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
 
 .footer-text p {
   max-width: 8rem;
@@ -829,7 +830,7 @@ object {
 
 .red {
   height: 35px;
-  width: 100%;
+  width: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -846,6 +847,40 @@ object {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
+
+.copy p {
+  padding: 1rem 0; }
+
+.design {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+  background: #777;
+  color: white; }
+  .design img {
+    width: auto;
+    height: auto; }
+  .design p {
+    margin: 0;
+    padding-right: 1rem; }
+
+.logo-bottom-images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .logo-bottom-images img {
+    width: auto;
+    height: auto;
+    padding: 1rem; }
 
 /* Header */
 header {
@@ -1181,6 +1216,19 @@ header {
   width: 14rem;
   margin-bottom: 1.5rem; }
 
+.take-content-area .desktopbutton {
+  background-color: #2F80ED;
+  color: white;
+  font-family: monsterrat;
+  text-shadow: none;
+  width: 28rem;
+  margin-top: 5rem;
+  margin-bottom: 1.5rem; }
+
+.take-content-area .bigbutton {
+  display: block;
+  text-align: center; }
+
 .take-content-area .take-text-wrapper {
   width: 90%;
   margin: 0 auto; }
@@ -1204,14 +1252,18 @@ header {
       font-family: Roboto, sans-serif; }
 
 .take-content-area .takebox {
-  height: 100%;
-  width: 71vh;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  color: white;
-  margin-top: -47rem;
-  margin-left: 14rem; }
+  color: #fff;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
   .take-content-area .takebox h1 {
     font-size: 5rem;
     text-transform: uppercase; }
@@ -1234,6 +1286,86 @@ header {
 .take-content-area .sharetext {
   color: #FD5E46;
   font-size: 48px; }
+
+.take-content-area .bannertext {
+  position: absolute;
+  margin-left: 5rem;
+  width: 39%; }
+
+.take-content-area .mobile-image {
+  margin-left: 1rem;
+  width: 49vh;
+  padding: 1rem; }
+
+.take-content-area .share-text {
+  color: #FD5E46;
+  font-size: 48px; }
+
+.foodcolour {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 5rem;
+  margin-top: 20rem;
+  color: white; }
+  .foodcolour .foodhashtag {
+    position: absolute;
+    padding: 2rem; }
+
+@media screen and (min-width: 1240px) {
+  .steps-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .iconbutton {
+    display: none; }
+  .share-box {
+    padding: 6rem;
+    width: 54%;
+    padding-top: 5rem; }
+    .share-box p {
+      font-size: 29px; }
+  .desktop-image {
+    margin-left: 2rem;
+    width: 900px;
+    height: 700px;
+    padding: 1rem; }
+  .share-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 15rem; } }
+
+/* hide mobile show desktop */
+@media only screen and (min-width: 620px) {
+  .mobile-image {
+    display: none; }
+  .desktop-image {
+    display: block; } }
+
+/* show mobile hide desktop */
+@media only screen and (max-width: 1240px) {
+  .mobile-image {
+    display: block; }
+  .desktop-image {
+    display: none; }
+  .foodcolour {
+    display: none; }
+  .desktopbutton {
+    display: none;
+    background-color: #2F80ED;
+    color: white;
+    font-family: monsterrat;
+    text-shadow: none;
+    width: 14rem;
+    margin-bottom: 1.5rem; } }
 
 .error404 {
   height: 100vh;
