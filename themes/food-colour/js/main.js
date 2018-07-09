@@ -35,4 +35,48 @@ jQuery(document).ready(function($) {
             $('.exhibition-description').delay(1000).hide(0);  
         }        
     }); 
+
+    /**
+     * Nav-Menu toggle
+     */
+    $('.menu-toggle').on('click', function(){
+        $('.main-navigation ul').toggle( function(){
+            $('.main-navigation ul').css({
+                
+            });
+            $('.site-header').css({
+                'height': '400px',
+                'align-items': 'baseline',
+            });
+            $('.menu-main-menu-container').css({
+                'position': 'absolute',
+                'top': '50px',
+                'left' : '0px',
+            });
+            $('#primary-menu').css({
+                'align-items': 'center',
+                'display': 'grid',
+                'grid-template-columns': '100%',
+                'grid-template-rows': '1fr 1fr 1fr',
+                'height': '340px',
+            });
+        });
+    });
+
+    /**
+     * Set height of exhibition nav icons
+     */
+
+    setExhibitionNav();
+
+    function setExhibitionNav() {
+        var iconHeight = $('.exhibition-nav').height()/$('.exhibition-icon-img').length;
+        $('.exhibition-icon-img').css('height', iconHeight);
+        $('.exhibition-icon').css('height', iconHeight);
+        $('.exhibition-nav').css('width', iconHeight);
+    }
+
+    $(window).resize(function(){
+        setExhibitionNav();
+    });
 });

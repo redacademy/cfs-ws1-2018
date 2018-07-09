@@ -24,12 +24,11 @@ get_header(); ?>
                         <div class="exhibition-nav-container">
                             <a class="exhibition-nav-toggle"><img src= <?php echo esc_url( get_template_directory_uri() ) . "/assets/images/exhibition-menu.svg"; ?> /></a>
                             <nav class="exhibition-nav">  
-                            
                                 <?php while ( $exhibitions->have_posts() ) : $exhibitions->the_post(); ?>
                                     <?php if($site_permalink === get_permalink()) : ?>
-                                        <a class="exhibition-icon exhibition-icon-active " href="<?php the_permalink(); ?>"><img src="<?php echo esc_url( CFS()->get('icon') ); ?>" /></a>   
+                                        <a class="exhibition-icon exhibition-icon-active " href="<?php the_permalink(); ?>"><img class="exhibition-icon-img" src="<?php echo esc_url( CFS()->get('icon') ); ?>" /></a>   
                                     <?php else : ?>
-                                        <a class="exhibition-icon" href="<?php the_permalink(); ?>"><img src="<?php echo esc_url( CFS()->get('icon') ); ?>" /></a>
+                                        <a class="exhibition-icon" href="<?php the_permalink(); ?>"><img  class="exhibition-icon-img" src="<?php echo esc_url( CFS()->get('icon') ); ?>" /></a>
                                     <?php endif; ?>
                                 <?php endwhile; ?>
                                 <?php wp_reset_postdata(); ?>
