@@ -17,7 +17,7 @@
 			<div class="logo-container">
 				<div class="logo-top">
 				<p class="info">Created by</p>
-				<img src="<?php echo esc_url(get_bloginfo('template_directory')); ?>/assets/images/luge_logo.svg" alt="luge logo" class="logo"
+				<img src="<?php echo esc_url(get_bloginfo('template_directory')); ?>/assets/images/luge_logo.jpeg" alt="luge logo" class="logo"
 					/>
 				</div>
 	

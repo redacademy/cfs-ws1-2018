@@ -102,7 +102,7 @@
           <div class=share-container>
             <img class='mobile-image' src="<?php echo esc_url(get_bloginfo('template_directory')); ?>/assets/images/share_now.png" alt="sharebackground"
             />
-            <img class='desktop-image' src="<?php echo esc_url(get_bloginfo('template_directory')); ?>/assets/images/notes.jpeg" alt="sharebackground"
+            <img class='desktop-image' src="<?php echo esc_url(get_bloginfo('template_directory')); ?>/assets/images/notes.png" alt="sharebackground"
             />
             <div class=share-box>
               <div class=share-text>

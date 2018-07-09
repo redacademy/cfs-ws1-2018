@@ -1405,7 +1405,7 @@ header {
   padding: 1rem; }
 
 .take-content-area .share-box {
-  padding: 6rem; }
+  padding: 1rem; }
 
 .take-content-area .share-text {
   color: #FD5E46;
@@ -1438,15 +1438,13 @@ header {
   .iconbutton {
     display: none; }
   .share-box {
-    padding: 6rem;
-    width: 54%;
-    padding-top: 5rem; }
+    padding: 6rem !important;
+    width: 54%; }
     .share-box p {
       font-size: 29px; }
   .desktop-image {
-    margin-left: 2rem;
-    width: 900px;
-    height: 700px;
+    margin-left: 6rem;
+    width: 800px;
     padding: 1rem; }
   .share-container {
     display: -webkit-box;
