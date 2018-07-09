@@ -803,7 +803,8 @@ object {
     width: auto; }
 
 .copy {
-  margin-left: 0rem; }
+  margin-left: 4rem;
+  font-size: 13px; }
 
 .info {
   font-family: Montserrat, sans-serif; }
@@ -882,7 +883,7 @@ object {
           align-items: center;
   margin: 0;
   background: #BDBDBD;
-  color: white; }
+  color: #FFFFFF; }
   .design img {
     width: auto;
     height: auto; }
@@ -909,12 +910,13 @@ object {
     padding: 1rem; }
 
 .links-container {
-  position: relative; }
+  position: relative;
+  left: 25%; }
 
 .share-host {
   position: absolute;
   top: 50px;
-  left: 50%; }
+  left: 23%; }
 
 .footer-navigation {
   display: none; }
@@ -937,10 +939,10 @@ object {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: row-reverse;
-            flex-direction: row-reverse;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     z-index: 99; }
     .footer-navigation ul {
       list-style: none;
@@ -1403,7 +1405,7 @@ header {
   padding: 1rem; }
 
 .take-content-area .share-box {
-  padding: 1rem; }
+  padding: 6rem; }
 
 .take-content-area .share-text {
   color: #FD5E46;

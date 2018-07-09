@@ -14,7 +14,8 @@
 	}
 }
 .copy{
-	margin-left:0rem;
+	margin-left:4rem;
+	font-size:13px;
 }
 
 .info{
@@ -84,7 +85,7 @@
 	align-items: center;
 	margin: 0;
 	background: $color__footer-bottom;
-	color: white;
+	color: $color__text-white;
 	img{
 		width:auto;
 		height:auto;
@@ -110,11 +111,12 @@
 }
 .links-container{
 	position: relative;
+	left: 25%;
 }
 .share-host{
 	position: absolute;
 	top: 50px;
-	left: 50%;
+	left: 23%;
 }
 .footer-navigation{
 	display: none;
@@ -130,7 +132,7 @@
 	display: flex;
 	width: 69%;
 	justify-content: center;
-	flex-direction: row-reverse;
+	flex-direction: column;
 	z-index: 99;
 
 	ul {

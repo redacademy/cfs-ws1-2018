@@ -3,38 +3,39 @@
 * Template Name: take part
 */
 ?>
+
 <body id="primary" class="take-content-area">
-    <?php get_header(); ?>
-    <div id="primary" class="content-area">
-        <main id="main" class="site-main" role="main">
-            <div class="takebox">
-                <img class='takebackground' src="<?php echo esc_url(get_bloginfo('template_directory')); ?>/assets/images/take_part.png" alt="take background"/>
-                <div class="bannertext">
-                <?php the_title ( '<h1 class="entry-title">', '</h1>' ); ?>
-                <?php echo CFS()->get( 'action' );?>
-                </div>
-            </div>
+  <?php get_header(); ?>
+  <div id="primary" class="content-area">
+    <main id="main" class="site-main" role="main">
+      <div class="takebox">
+        <img class='takebackground' src="<?php echo esc_url(get_bloginfo('template_directory')); ?>/assets/images/take_part.png"
+          alt="take background" />
+        <div class="bannertext">
+          <?php the_title ( '<h1 class="entry-title">', '</h1>' ); ?>
+          <?php echo CFS()->get( 'action' );?>
+        </div>
+      </div>
       <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-      <div class="container"
-        <header class="taketext">
-            
-            
-            
-            <?php if ( have_posts() ) : ?>
-            <?php if ( is_home() && ! is_front_page() ) : ?>
-            <?php endif; ?>
-            <?php while ( have_posts() ) : the_post(); ?>
-            <?php get_template_part( 'template-parts/content' ); ?>
-            <?php endwhile; ?>
-            <?php the_posts_navigation(); ?>
-            <?php else : ?>
-            <?php get_template_part( 'template-parts/content', 'none' ); ?>
-            <?php endif; ?>
-        </section>
-        
-        
-        
-        <?php
+        <div class="container" <header class="taketext">
+
+
+
+          <?php if ( have_posts() ) : ?>
+          <?php if ( is_home() && ! is_front_page() ) : ?>
+          <?php endif; ?>
+          <?php while ( have_posts() ) : the_post(); ?>
+          <?php get_template_part( 'template-parts/content' ); ?>
+          <?php endwhile; ?>
+          <?php the_posts_navigation(); ?>
+          <?php else : ?>
+          <?php get_template_part( 'template-parts/content', 'none' ); ?>
+          <?php endif; ?>
+          </section>
+
+
+
+          <?php
             
             $image = CFS()->get('image');
             $title = CFS()->get('title');
@@ -83,7 +84,7 @@
             echo "</div>";
             echo "<p>" . $title_4_text . "</p>";
             echo "<section class='dl'>";
-             echo "<a href='https://drive.google.com/drive/folders/1KR6gb1ulL1tunhDn1yw26WX_2GnKU7-I?usp=sharing'><button class='iconbutton'>DOWNLOAD</button></a>";
+             echo "<a href='https://drive.google.com/drive/folders/1KR6gb1ulL1tunhDn1yw26WX_2GnKU7-I?usp=sharing'><button class='iconbutton'>DOWNLOAD</button><a/>";
              echo "</section>";
             echo "</div>";
             echo "<div class='take-text-wrapper'>";
@@ -98,23 +99,26 @@
             echo "<button class='desktopbutton'>REGISTER & DOWNLOAD</button>";
             echo "</div>"
             ?>
-            <div class=share-container>
-                <img class='mobile-image' src="<?php echo esc_url(get_bloginfo('template_directory')); ?>/assets/images/share_now.png" alt="sharebackground"/>
-                <img class='desktop-image' src="<?php echo esc_url(get_bloginfo('template_directory')); ?>/assets/images/notes.jpeg" alt="sharebackground"/>
-                <div class=share-box>
-                <div class=share-text>
+          <div class=share-container>
+            <img class='mobile-image' src="<?php echo esc_url(get_bloginfo('template_directory')); ?>/assets/images/share_now.png" alt="sharebackground"
+            />
+            <img class='desktop-image' src="<?php echo esc_url(get_bloginfo('template_directory')); ?>/assets/images/notes.jpeg" alt="sharebackground"
+            />
+            <div class=share-box>
+              <div class=share-text>
                 <?php echo CFS()->get( 'sharetext' );?>
-                </div>
-                <?php echo CFS()->get( 'shareinfo' );?>
+              </div>
+              <?php echo CFS()->get( 'shareinfo' );?>
             </div>
+          </div>
+          <div class="foodcolour">
+            <img class='colourbackground' src="<?php echo esc_url(get_bloginfo('template_directory')); ?>/assets/images/colorbg.png"
+              alt="colour background" />
+            <div class="foodhashtag">
+              <h2>#ColourFoodSecurity</h2>
+            </div>
+          </div>
         </div>
-        <div class="foodcolour">
-         <img class='colourbackground' src="<?php echo esc_url(get_bloginfo('template_directory')); ?>/assets/images/colorbg.png" alt="colour background"/>
-         <div class="foodhashtag">
-         <h2>#ColourFoodSecurity</h2>
-        </div>
-        </div>
-    </div>
-</div>
-    <?php get_footer(); ?>
+  </div>
+  <?php get_footer(); ?>
 </body>
