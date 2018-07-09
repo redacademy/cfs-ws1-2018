@@ -82,7 +82,9 @@
             echo "<h2>" . $title_4 . "</h2>";
             echo "</div>";
             echo "<p>" . $title_4_text . "</p>";
-            echo "<a href='https://drive.google.com/drive/folders/1KR6gb1ulL1tunhDn1yw26WX_2GnKU7-I?usp=sharing'><button class='iconbutton'>DOWNLOAD</button>";
+            echo "<section class='dl'>";
+             echo "<a href='https://drive.google.com/drive/folders/1KR6gb1ulL1tunhDn1yw26WX_2GnKU7-I?usp=sharing'><button class='iconbutton'>DOWNLOAD</button></a>";
+             echo "</section>";
             echo "</div>";
             echo "<div class='take-text-wrapper'>";
             echo "<div class='icons-title'>";
@@ -98,7 +100,7 @@
             ?>
             <div class=share-container>
                 <img class='mobile-image' src="<?php echo esc_url(get_bloginfo('template_directory')); ?>/assets/images/share_now.png" alt="sharebackground"/>
-                <img class='desktop-image' src="<?php echo esc_url(get_bloginfo('template_directory')); ?>/assets/images/notes.png" alt="sharebackground"/>
+                <img class='desktop-image' src="<?php echo esc_url(get_bloginfo('template_directory')); ?>/assets/images/notes.jpeg" alt="sharebackground"/>
                 <div class=share-box>
                 <div class=share-text>
                 <?php echo CFS()->get( 'sharetext' );?>

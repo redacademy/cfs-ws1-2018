@@ -33,37 +33,42 @@
 					</div>
 				</div>
 			</div>
+				
+				<nav id="site-navigation" class="footer-navigation" role="navigation">
+					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html( 'Primary Menu' ); ?></button>
+					<div class=links-container>
+						<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+						<div class="share-host">
+							<a>Host</a>
+							<a class="exhibition-facebook" href="http://www.facebook.com/sharer/sharer.php?u=<?php the_permalink(); ?>" onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;">Share</a>
+						</div>
 
-      <div class="socials">
-        <p class="social-media-icons">
-          <i class="fab fa-facebook-square" aria-hidden="true"></i>
-          <i class="fab fa-youtube"></i>
-          <i class="fab fa-twitter-square" aria-hidden="true"></i>
-          <i class="fab fa-linkedin"></i>
-        </p>
-        <h3>Liu institute For Global Issues</h3>
-        <p>6476 NW Marine Drive Vancouver, BC, Canada, V6T 1Z2 Tel 604 822 1558 Fax 604 822 6966
-        </p>
+					</div>
+				</nav><!-- #site-navigation -->
+				
+				<div class="socials">
+					<p class="social-media-icons">
+						<i class="fab fa-facebook-square" aria-hidden="true"></i>
+						<i class="fab fa-youtube"></i>
+						<i class="fab fa-twitter-square" aria-hidden="true"></i>
+						<i class="fab fa-linkedin"></i>
+					</p>
+					<h3>Liu institute For Global Issues</h3>
+					<p class="address">6476 NW Marine Drive Vancouver, BC, Canada, V6T 1Z2 Tel 604 822 1558 Fax 604 822 6966
+						</p>
+					</div>
+					
+				</div>
 			</div>
 			
-    </div>
-  </div>
-
-
-  <!-- <div class="red">
-    <p>Designed by</p>
-    <p class="redtext">RED Academy Students</p>
-    <img src="<?php echo esc_url(get_bloginfo('template_directory')); ?>/assets/images/red_logo.png" alt="red logo" class="red"/>
-	</div> -->
-	
-	<div class="mobile-footer">
-		<p class="copy">All copyrights reserved to <span class="redtext"> LUGE - 2018 </span></p>
-		<div class="design">
-			<p>Designed by <span class="redtext">RED Academy Students</span></p>
-			<img src="<?php echo esc_url(get_bloginfo('template_directory')); ?>/assets/images/red_logo.png" alt="red logo" class="mobile-footer__image"/>
-		</div>
-	</div>
-</footer>
+			<div class="mobile-footer">
+				<p class="copy">All copyrights reserved to <span class="redtext"> LUGE - 2018 </span></p>
+				<div class="design">
+					<p>Designed by <span class="redtext">RED Academy Students</span></p>
+					<img src="<?php echo esc_url(get_bloginfo('template_directory')); ?>/assets/images/red_logo.png" alt="red logo" class="mobile-footer__image"/>
+				</div>
+			</div>
+		</footer>
 <!-- #colophon -->
 </div>
 <!-- .site-info -->
