@@ -23,7 +23,7 @@
             ?>
         </section>
 
-    <div class="entry-content">
+    <div class="about-entry-content">
         <?php  
             $image_1 = CFS()->get('image_1');
             $title_1 = CFS()->get('title_1');
