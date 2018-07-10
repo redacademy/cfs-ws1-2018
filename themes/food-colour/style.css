@@ -1365,8 +1365,9 @@ header {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    height: 35px;
-    margin: 0 0 25px 0; }
+    height: 30px;
+    margin-left: 1rem;
+    margin-top: 5rem; }
     .take-content-area .take-text-wrapper .icons-title img {
       max-width: 100%;
       width: 2rem; }
@@ -1472,12 +1473,18 @@ header {
     display: none; }
   .desktopbutton {
     display: none;
-    background-color: #2F80ED;
-    color: white;
-    font-family: monsterrat;
-    text-shadow: none;
-    width: 14rem;
-    margin-bottom: 1.5rem; } }
+    background-color: #fff;
+    border-radius: 3px;
+    color: #333333 !important;
+    font-family: Montserrat, sans-serif;
+    font-weight: bold;
+    padding: 0.75rem;
+    text-align: center;
+    text-transform: uppercase;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out; }
+    .desktopbutton:hover {
+      background-color: #d9d9d9; } }
 
 .error404 {
   height: 100vh;
