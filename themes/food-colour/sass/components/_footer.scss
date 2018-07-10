@@ -1,17 +1,21 @@
 .footer-info-container{
 	padding: 2rem;
-	display: flex;
 }
 
-.footer-text p{
+.address{
 		max-width: 8rem;
 		font-size: 0.7rem;
 }
-.footer-text img{
-	width:auto;
+.footer-text{
+    display: flex;
+    flex-direction: column;
+	img{
+		width:auto;
+	}
 }
 .copy{
-	margin-left:0rem;
+	margin-left:4rem;
+	font-size:13px;
 }
 
 .info{
@@ -19,10 +23,14 @@
 }
 
 // social media icons
-.social-media-icons{
+.socials{
 	  display: flex;
-    justify-content: space-between;
-    padding: 5rem;
+		flex-direction: column;
+		margin:auto;
+}
+
+.social-media-icons{
+    padding: 1.5rem;
 }
 
 .fa-facebook-square:before {
@@ -65,9 +73,6 @@
 .copyrights{
 	display:flex;
 }
-
-
-
 .copy{
 	p{
 		padding:1rem 0;
@@ -79,8 +84,8 @@
 	justify-content: flex-end;
 	align-items: center;
 	margin: 0;
-	background: #777;
-	color: white;
+	background: $color__footer-bottom;
+	color: $color__text-white;
 	img{
 		width:auto;
 		height:auto;
@@ -91,6 +96,10 @@
 	}
 }
 
+.logo-container{
+	display: flex;
+	flex-wrap: wrap;
+}
 .logo-bottom-images{
 	display:flex;
 	flex-wrap: wrap;
@@ -99,4 +108,96 @@
 		height:auto;
 		padding:1rem;
 	}
+}
+.links-container{
+	position: relative;
+	left: 25%;
+}
+.share-host{
+	position: absolute;
+	top: 50px;
+	left: 23%;
+}
+.footer-navigation{
+	display: none;
+}
+
+@media screen and (min-width : 1240px){
+	.footer-text{
+		flex-direction: row;
+    align-items: center;
+ }
+ .footer-navigation {
+	display:block;
+	display: flex;
+	width: 69%;
+	justify-content: center;
+	flex-direction: column;
+	z-index: 99;
+
+	ul {
+		list-style: none;
+		margin: 0;
+		padding-left: 0;
+
+		ul {
+			box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+			float: left;
+			position: absolute;
+			top: $base__space-unit;
+			left: -999rem;
+			z-index: 99999;
+
+			ul {
+				left: -999rem;
+				top: 0;
+			}
+
+			li {
+				&:hover > ul,
+				&.focus > ul {
+					left: 100%;
+				}
+			}
+
+			a {
+				width: 200px;
+			}
+
+			:hover > a,
+			.focus > a {
+			}
+
+			a:hover,
+			a.focus {
+			}
+		}
+
+		li:hover > ul,
+		li.focus > ul {
+			left: auto;
+		}
+	}
+	li {
+		float: left;
+		font-family: $font__headings;
+		font-weight: bold;
+		padding: 0 $base__space-unit*.8;
+		position: relative;
+		text-transform: uppercase;
+		
+		&:hover > a,
+		&.focus > a {
+		}
+	}
+	a {
+		display: block;
+		text-decoration: none;
+	}
+
+	.current_page_item > a,
+	.current-menu-item > a,
+	.current_page_ancestor > a {
+	}
+}
 }

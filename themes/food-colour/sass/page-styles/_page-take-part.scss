@@ -1,17 +1,11 @@
 .take-content-area {
   .iconbutton{
-        background-color: #2F80ED;
-        color: white;
-        font-family: monsterrat;
-        text-shadow: none;
-        width: 14rem;
-        margin-bottom: 1.5rem;
+        @include button-style($color__brand-blue, $color__text-white);
+        margin-top: 3rem;
+        margin-bottom: 3rem;
       }
       .desktopbutton{
-        background-color: #2F80ED;
-        color: white;
-        font-family: monsterrat;
-        text-shadow: none;
+        @include button-style($color__brand-blue, $color__text-white);
         width: 28rem;
         margin-top: 5rem;
         margin-bottom: 1.5rem;
@@ -66,9 +60,12 @@
      
     .mobile-image{
         margin-left: 1rem;
-        width: 49vh;
+        width: 40vh;
         padding: 1rem;
         }
+    .share-box{
+        padding: 1rem;
+    }
     .share-text{
         color: #FD5E46;
         font-size: 48px;
@@ -94,21 +91,24 @@
     .steps-container{
     display:flex;
  } 
+ .icons-title {
+    display: inline-block!important;
+    height: 35px;
+    margin: 0 0 25px;
+}
  .iconbutton{
      display:none;
  }
  .share-box{
-    padding: 6rem;
+    padding: 6rem!important;
     width: 54%;
-    padding-top: 5rem;
         p{
             font-size:29px;
         }
  }
  .desktop-image {
-    margin-left: 2rem;
-    width: 900px;
-    height: 700px;
+    margin-left: 6rem;
+    width: 800px;
     padding: 1rem;
  }
  .share-container{
