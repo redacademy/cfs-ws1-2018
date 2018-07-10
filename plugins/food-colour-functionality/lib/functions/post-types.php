@@ -60,7 +60,7 @@ function exhibition_custom_post_type() {
 }
 add_action( 'init', 'exhibition_custom_post_type', 0 );
 
-// Register Custom Post Type
+// Register Events Custom Post Type
 function event_custom_post_type() {
 
 	$labels = array(
