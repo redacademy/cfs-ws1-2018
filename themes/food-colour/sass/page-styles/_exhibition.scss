@@ -6,8 +6,8 @@
     display: block;
 
     @include mobile-portrait {
-        height: 100vw;
-        transform: rotate(90deg);
+        // height: 100vw;
+        // transform: rotate(90deg);
     }
 
     @include mobile-landscape {
