@@ -39,7 +39,7 @@
         }
     }
 }
-.entry-content {
+.about-entry-content {
     .hero-text-wrapper{
         max-width: $max-width;
         margin: 0 auto;
@@ -68,11 +68,16 @@
                     font-size: 100px;
                 }
             }
-            .entry-content{
+            .entry-content {
                 max-width: 1240px;
                 margin: 24px auto 0 auto;
                 top: 45%;
             }
         }
+    }
+    .about-entry-content{
+        max-width: 1240px;
+        margin: 0 10%;
+        width: 80%;
     }
 }
