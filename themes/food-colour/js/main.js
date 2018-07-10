@@ -45,10 +45,7 @@ jQuery(document).ready(function($) {
      * Nav-Menu toggle
      */
     $('.menu-toggle').on('click', function(){
-        $('.main-navigation ul').toggle( function(){
-            $('.main-navigation ul').css({
-                
-            });
+        if ($('.site-header').height() <= 200) {
             $('.site-header').css({
                 'height': '400px',
                 'align-items': 'baseline',
@@ -65,7 +62,34 @@ jQuery(document).ready(function($) {
                 'grid-template-rows': '1fr 1fr 1fr',
                 'height': '340px',
             });
-        });
+        } else if ($('.site-header').height() >= 200) {
+            $('.site-header').css({
+                'height': '100px',
+                'align-items': 'center',
+            });
+            $('#primary-menu').css({
+                'display': 'none',
+                'grid-template-columns': 'none',
+                'height': 'auto',
+            });
+          }
+    });
+    
+    /**`
+     * Set height of exhibition nav icons
+     */
+
+    setExhibitionNav();
+
+    function setExhibitionNav() {
+        var iconHeight = $('.exhibition-nav').height()/$('.exhibition-icon-img').length;
+        $('.exhibition-icon-img').css('height', iconHeight);
+        $('.exhibition-icon').css('height', iconHeight);
+        $('.exhibition-nav').css('width', iconHeight);
+    }
+
+    $(window).resize(function(){
+        setExhibitionNav();
     });
 });
 
