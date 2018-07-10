@@ -11,7 +11,7 @@ jQuery(document).ready(function($) {
 
     function setExhibitionNav() {
         var items;
-        if($(window).height() < 620) {
+        if($(window).height() < 620 &&$(window).width() > 620) {
             items = Math.ceil($('.exhibition-icon-img').length / 2);
         } else {
             items = $('.exhibition-icon-img').length;
@@ -24,6 +24,7 @@ jQuery(document).ready(function($) {
         }
 
         var iconHeight = $('.exhibition-nav').height()/items;
+
         $('.exhibition-icon-img').css({
             'height': iconHeight,
             'width': iconHeight,
@@ -33,7 +34,6 @@ jQuery(document).ready(function($) {
             'height': iconHeight,
             'width': iconHeight,
         });
-
         
         if($(window).height() > $(window).width() && $(window).width() < 620) {
             $('.exhibition-nav').css({
@@ -53,5 +53,7 @@ jQuery(document).ready(function($) {
                 'width': iconHeight,
             }); 
         }
+
+        console.log(iconHeight, $('.exhibition-icon-img').width(), $('.exhibition-icon-img').height());
     }
 });

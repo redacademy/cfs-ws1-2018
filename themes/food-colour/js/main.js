@@ -3,7 +3,12 @@ jQuery(document).ready(function($) {
     /**
      * Hide and show exhibition description
      */
-    $('.exhibition-description').css('opacity', '1');
+    if($(window).width() > 620) {
+        $('.exhibition-description').css('opacity', '1');  
+    } else {
+        $('.exhibition-description').css('opacity', '0');  
+    }
+    
 
     $('.close-btn').on('click', function() {
         $('.exhibition-description').css('opacity', '0');
@@ -61,23 +66,6 @@ jQuery(document).ready(function($) {
                 'height': '340px',
             });
         });
-    });
-
-    /**
-     * Set height of exhibition nav icons
-     */
-
-    setExhibitionNav();
-
-    function setExhibitionNav() {
-        var iconHeight = $('.exhibition-nav').height()/$('.exhibition-icon-img').length;
-        $('.exhibition-icon-img').css('height', iconHeight);
-        $('.exhibition-icon').css('height', iconHeight);
-        $('.exhibition-nav').css('width', iconHeight);
-    }
-
-    $(window).resize(function(){
-        setExhibitionNav();
     });
 });
 

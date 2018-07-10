@@ -6,7 +6,7 @@
     display: block;
 
     @include mobile-portrait {
-        // height: 100vw;
+        height: 100vw;
         transform: rotate(90deg);
     }
 
@@ -36,7 +36,6 @@
     flex-flow: column;
     height: 100vh;
     justify-content: center;
-    // overflow: scroll;
     max-height: 100vh;
 
     .exhibition-nav-toggle { 
@@ -101,12 +100,7 @@
     position: relative;
     opacity: 0;
     transition: visibility 0s, opacity .5s ease-in-out;
-    // visibility: hidden;
     width: 45%;
-
-    @include desktop {
-        // visibility: visible;
-    }
 
     .close-btn {
         cursor: pointer;
@@ -132,7 +126,12 @@
     .exhibition-meta {
         color: $color__text-light;
         display: block;
-        font-size: $font__size-small;
+        font-size: $font__size-xsmall;
+
+        @include desktop {
+            font-size: $font__size-small;
+        }
+        
 
         &::before {
             width: 20px;
@@ -167,8 +166,14 @@
             }
 
             .fab {
-                font-size: 20px;
-                margin-right: $base__space-unit; 
+                font-size: 15px;
+                margin-right: $base__space-unit/3;
+                
+
+                @include desktop {
+                    font-size: 20px;
+                    margin-right: $base__space-unit;
+                }
             }
         }
     }

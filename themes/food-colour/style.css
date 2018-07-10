@@ -1019,6 +1019,7 @@ header {
     display: none; }
   @media only screen and (orientation: portrait) and (max-width: 620px) {
     .single-exhibition {
+      height: 100vw;
       -webkit-transform: rotate(90deg);
               transform: rotate(90deg); } }
   @media only screen and (orientation: landscape) and (max-width: 620px) {
@@ -1134,7 +1135,10 @@ header {
   .exhibition-description .exhibition-meta {
     color: #828282;
     display: block;
-    font-size: 12px; }
+    font-size: 10px; }
+    @media (min-width: 620px) {
+      .exhibition-description .exhibition-meta {
+        font-size: 12px; } }
     .exhibition-description .exhibition-meta::before {
       width: 20px;
       height: 20px;
@@ -1183,8 +1187,12 @@ header {
         .exhibition-description .exhibition-meta .exhibition-social .exhibition-facebook:hover {
           background-color: #263962; }
       .exhibition-description .exhibition-meta .exhibition-social .fab {
-        font-size: 20px;
-        margin-right: 1.5rem; }
+        font-size: 15px;
+        margin-right: 0.5rem; }
+        @media (min-width: 620px) {
+          .exhibition-description .exhibition-meta .exhibition-social .fab {
+            font-size: 20px;
+            margin-right: 1.5rem; } }
 
 .exhibition-back {
   -webkit-box-align: center;
