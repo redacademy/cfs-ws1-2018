@@ -133,7 +133,7 @@ $('a[href*="#"]')
 });
 
 $("#forms").click(function(){
-    $("gform_1").toggle();
+    $("#gform_1").toggle();
 });
 });
 
