@@ -2,6 +2,13 @@
     .gform_ajax_spinner{
         display:none;
     }
+    .gform_wrapper{
+        text-align: left;
+        max-width: 40%;
+        margin: 0 auto;
+        
+        
+    }   
   .iconbutton{
         @include button-style($color__brand-blue, $color__text-white);
         margin-top: 3rem;
@@ -87,14 +94,9 @@
             padding: 2rem;
         }
         
-    }
-            .gform_wrapper form {
-                text-align: left;
-                max-width: 59%;
-                margin: 0 auto;
-            }    
-
-@media screen and (min-width : 1240px){
+    } 
+            
+@include desktop{
     .steps-container{
     display:flex;
  } 
@@ -135,7 +137,7 @@
    }
 }
 /* show mobile hide desktop */
-@media only screen and (max-width: 1240px) {
+@include mobile-portrait {
     .mobile-image {
         display:block;
     }
@@ -152,7 +154,7 @@
     }
 }
 
-@media only screen and (max-width: 320px) {
+@include mobile-portrait {
     .take-text-wrapper{
         width: 90%;
         margin: 0 auto;

@@ -93,7 +93,7 @@
             echo "</div>";
             echo "</div>";
             echo "<div class='bigbutton' id='host'>";
-            echo "<button class='desktopbutton'>REGISTER & DOWNLOAD</button>";
+            echo "<button class='desktopbutton' id='forms'>REGISTER & DOWNLOAD</button>";
             echo "</div>"
             ?>
             <?php echo CFS()->get('form');?>

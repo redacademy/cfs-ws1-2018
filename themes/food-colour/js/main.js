@@ -126,10 +126,14 @@ $('a[href*="#"]')
         } else {
           $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
           $target.focus(); // Set focus again
-        };
+        }
       });
     }
   }
-});  
+});
+
+$("#forms").click(function(){
+    $("gform_1").toggle();
+});
 });
 
