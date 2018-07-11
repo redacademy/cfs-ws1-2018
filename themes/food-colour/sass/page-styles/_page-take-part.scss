@@ -28,12 +28,11 @@
       }
       .icons-title {
           display: flex;
-          height: 30px;
           margin-left:1rem;
           margin-top:5rem;
           img {
-              max-width: 100%;
-              width: 2rem;
+            height: 2rem;
+            width: 2rem;
           }
           h2 {
               margin: 0;
@@ -87,9 +86,13 @@
             position: absolute;
             padding: 2rem;
         }
-            
         
     }
+            .gform_wrapper form {
+                text-align: left;
+                max-width: 59%;
+                margin: 0 auto;
+            }    
 
 @media screen and (min-width : 1240px){
     .steps-container{

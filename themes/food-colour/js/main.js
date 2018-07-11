@@ -75,7 +75,6 @@ jQuery(document).ready(function($) {
           }
     });
     
-<<<<<<< HEAD
     //* take part steps 1,2,3,4,5 toggle on click
     var $firstItem = $($('.take-text-wrapper')[0]);
     $firstItem.addClass('active');
@@ -93,24 +92,46 @@ jQuery(document).ready(function($) {
       }
       var nextItem = $this.index() + 1;
       $($('.take-text-wrapper')[nextItem]).addClass('active');
-=======
-    /**`
-     * Set height of exhibition nav icons
-     */
-
-    setExhibitionNav();
-
-    function setExhibitionNav() {
-        var iconHeight = $('.exhibition-nav').height()/$('.exhibition-icon-img').length;
-        $('.exhibition-icon-img').css('height', iconHeight);
-        $('.exhibition-icon').css('height', iconHeight);
-        $('.exhibition-nav').css('width', iconHeight);
-    }
-
-    $(window).resize(function(){
-        setExhibitionNav();
->>>>>>> 46060d3c4e1a0e0d38167e6c5f130ce5ff0bb3c1
     });
+
+// smooth scroll from css tricks //
+// Select all links with hashes
+$('a[href*="#"]')
+// Remove links that don't actually link to anything
+.not('[href="#"]')
+.not('[href="#0"]')
+.click(function(event) {
+  // On-page links
+  if (
+    location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+    && 
+    location.hostname == this.hostname
+  ) {
+    // Figure out element to scroll to
+    var target = $(this.hash);
+    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+    // Does a scroll target exist?
+    if (target.length) {
+      // Only prevent default if animation is actually gonna happen
+      event.preventDefault();
+      $('html, body').animate({
+        scrollTop: target.offset().top
+      }, 1000, function() {
+        // Callback after animation
+        // Must change focus!
+        var $target = $(target);
+        $target.focus();
+        if ($target.is(":focus")) { // Checking if the target was focused
+          return false;
+        } else {
+          $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+          $target.focus(); // Set focus again
+        };
+      });
+    }
+  }
+  
+});
   
   
   

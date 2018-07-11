@@ -12,7 +12,7 @@
         <img class='takebackground' src="<?php echo esc_url(get_bloginfo('template_directory')); ?>/assets/images/take_part.png"
           alt="take background" />
         <div class="bannertext">
-        <h1><?php //the_title(); ?></h1>
+        <h1><?php the_title(); ?></h1>
           <?php echo CFS()->get( 'action' );?>
         </div>
       </div>
@@ -32,9 +32,8 @@
           <?php endif; ?>
           </section>
 
-
-
-          <?php
+ 
+ <?php
             $image = CFS()->get('image');
             $title = CFS()->get('title');
             $title_text = CFS()->get('text');
@@ -82,8 +81,8 @@
             echo "</div>";
             echo "<p>" . $title_4_text . "</p>";
             echo "<section class='dl'>";
-             echo "<a href='https://drive.google.com/drive/folders/1KR6gb1ulL1tunhDn1yw26WX_2GnKU7-I?usp=sharing'><button class='iconbutton'>DOWNLOAD</button><a/>";
-             echo "</section>";
+            echo "<a href='https://drive.google.com/drive/folders/1KR6gb1ulL1tunhDn1yw26WX_2GnKU7-I?usp=sharing'><button class='iconbutton'>DOWNLOAD</button><a/>";
+            echo "</section>";
             echo "</div>";
             echo "<div class='take-text-wrapper'>";
             echo "<div class='icons-title'>";
@@ -93,11 +92,13 @@
             echo "<p>" . $title_5_text . "</p>";
             echo "</div>";
             echo "</div>";
-            echo "<div class='bigbutton'>";
+            echo "<div class='bigbutton' id='host'>";
             echo "<button class='desktopbutton'>REGISTER & DOWNLOAD</button>";
             echo "</div>"
             ?>
-          <div class=share-container>
+            <?php echo CFS()->get('form');?>
+            
+          <div class='share-container' id='share'>
             <img class='mobile-image' src="<?php echo esc_url(get_bloginfo('template_directory')); ?>/assets/images/share_now.png" alt="sharebackground"
             />
             <img class='desktop-image' src="<?php echo esc_url(get_bloginfo('template_directory')); ?>/assets/images/notes.png" alt="sharebackground"
@@ -110,10 +111,10 @@
             </div>
           </div>
           
-          <div class="foodcolour">
+          <div class='foodcolour'>
             <img class='colourbackground' src="<?php echo esc_url(get_bloginfo('template_directory')); ?>/assets/images/colorbg.png"
-              alt="colour background" />
-            <div class="foodhashtag">
+              alt='colour background' />
+            <div class='foodhashtag'>
               <h2>#ColourFoodSecurity</h2>
             </div>
           </div>
