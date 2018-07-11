@@ -94,7 +94,7 @@ jQuery(document).ready(function($) {
       $($('.take-text-wrapper')[nextItem]).addClass('active');
     });
 
-// smooth scroll from css tricks //
+// smooth scroll from css tricks // for Host/Share links @ take part page
 // Select all links with hashes
 $('a[href*="#"]')
 // Remove links that don't actually link to anything
@@ -130,12 +130,6 @@ $('a[href*="#"]')
       });
     }
   }
-  
-});
-  
-  
-  
-  
-
+});  
 });
 
