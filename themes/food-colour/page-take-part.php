@@ -12,14 +12,13 @@
         <img class='takebackground' src="<?php echo esc_url(get_bloginfo('template_directory')); ?>/assets/images/take_part.png"
           alt="take background" />
         <div class="bannertext">
-          <?php the_title ( '<h1 class="entry-title">', '</h1>' ); ?>
+        <h1><?php //the_title(); ?></h1>
           <?php echo CFS()->get( 'action' );?>
         </div>
       </div>
       <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
         <div class="container" <header class="taketext">
-
-
+        
 
           <?php if ( have_posts() ) : ?>
           <?php if ( is_home() && ! is_front_page() ) : ?>
@@ -36,7 +35,6 @@
 
 
           <?php
-            
             $image = CFS()->get('image');
             $title = CFS()->get('title');
             $title_text = CFS()->get('text');
@@ -111,6 +109,7 @@
               <?php echo CFS()->get( 'shareinfo' );?>
             </div>
           </div>
+          
           <div class="foodcolour">
             <img class='colourbackground' src="<?php echo esc_url(get_bloginfo('template_directory')); ?>/assets/images/colorbg.png"
               alt="colour background" />

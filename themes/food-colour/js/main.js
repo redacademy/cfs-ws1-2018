@@ -62,22 +62,29 @@ jQuery(document).ready(function($) {
             });
         });
     });
-
-    /**
-     * Set height of exhibition nav icons
-     */
-
-    setExhibitionNav();
-
-    function setExhibitionNav() {
-        var iconHeight = $('.exhibition-nav').height()/$('.exhibition-icon-img').length;
-        $('.exhibition-icon-img').css('height', iconHeight);
-        $('.exhibition-icon').css('height', iconHeight);
-        $('.exhibition-nav').css('width', iconHeight);
-    }
-
-    $(window).resize(function(){
-        setExhibitionNav();
+    
+    //* take part steps 1,2,3,4,5 toggle on click
+    var $firstItem = $($('.take-text-wrapper')[0]);
+    $firstItem.addClass('active');
+    var clicked2 = false;
+    var clicked3 = false;
+    $('.iconbutton').click(function(e) {
+      var $this = $(this).closest('.take-text-wrapper');
+      if ($this.index() == 2 && clicked2 == false) {
+        clicked2 = true;
+          e.preventDefault();
+      }
+      if ($this.index() == 3 && clicked3 == false) {
+        clicked3 = true;
+          e.preventDefault();
+      }
+      var nextItem = $this.index() + 1;
+      $($('.take-text-wrapper')[nextItem]).addClass('active');
     });
+  
+  
+  
+  
+
 });
 

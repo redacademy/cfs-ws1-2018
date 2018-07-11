@@ -1,4 +1,7 @@
 .take-content-area {
+    .gform_ajax_spinner{
+        display:none;
+    }
   .iconbutton{
         @include button-style($color__brand-blue, $color__text-white);
         margin-top: 3rem;
@@ -143,5 +146,16 @@
         display:none;
         @include button-style;
         
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .take-text-wrapper{
+        width: 90%;
+        margin: 0 auto;
+        display:none;
+        &.active {
+            display:block;
+        }
     }
 }
