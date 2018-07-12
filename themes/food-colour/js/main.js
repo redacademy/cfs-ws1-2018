@@ -74,22 +74,5 @@ jQuery(document).ready(function($) {
             });
           }
     });
-    
-    /**`
-     * Set height of exhibition nav icons
-     */
-
-    setExhibitionNav();
-
-    function setExhibitionNav() {
-        var iconHeight = $('.exhibition-nav').height()/$('.exhibition-icon-img').length;
-        $('.exhibition-icon-img').css('height', iconHeight);
-        $('.exhibition-icon').css('height', iconHeight);
-        $('.exhibition-nav').css('width', iconHeight);
-    }
-
-    $(window).resize(function(){
-        setExhibitionNav();
-    });
 });
 
