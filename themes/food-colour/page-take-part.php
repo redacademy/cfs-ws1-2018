@@ -111,14 +111,44 @@
             </div>
           </div>
           
+          
+          
+          
+          
           <div class='foodcolour'>
             <img class='colourbackground' src="<?php echo esc_url(get_bloginfo('template_directory')); ?>/assets/images/colorbg.png"
-              alt='colour background' />
+            alt='colour background' />
             <div class='foodhashtag'>
               <h2>#ColourFoodSecurity</h2>
             </div>
           </div>
         </div>
+      </div>
+      <?php get_footer(); ?>
+    </body>
+
+
+    <!-- <?php while ( have_posts() ) : the_post(); ?>
+
+<?php $site_permalink = get_the_permalink(); ?>
+  
+  <?php
+      $args = array( 
+          'post_type' => 'event',
+          'posts_per_page' => 4, 
+      ); 
+      $events = new WP_Query( $args );
+  ?>
+  <div class="event-description">
+      <h1><?php the_title(); ?></h1>
+      <p><?php echo CFS()->get('organization') ?></p>
+      <p><?php echo CFS()->get('address') ?></p>
+      <p><?php echo CFS()->get('title') ?></p>
+      <p><?php echo CFS()->get('date') ?></p>
+      <hr>
+      </div>
   </div>
-  <?php get_footer(); ?>
-</body>
+
+
+<?php endwhile; // End of the loop. ?>
+     -->
