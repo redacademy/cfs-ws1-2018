@@ -64,7 +64,6 @@ jQuery(document).ready(function($) {
             });
             $('#primary-menu > li > a').css({
                 'border-width': 'thin',
-                'color': 'blue',
             });
         } else if ($('.site-header').height() >= 200) {
             $('.site-header').css({
@@ -144,9 +143,9 @@ $('a[href*="#"]')
     $(window).resize(function(){
         setExhibitionNav();
     });
-});
-$("#forms").click(function(){
-    $("#gform_1").toggle();
-});
+    
+    $("#forms").click(function(){
+        $("#gform_1").toggle();
+    });
 });
 
