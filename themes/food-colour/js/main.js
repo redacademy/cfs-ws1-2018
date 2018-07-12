@@ -62,6 +62,10 @@ jQuery(document).ready(function($) {
                 'grid-template-rows': '1fr 1fr 1fr',
                 'height': '340px',
             });
+            $('#primary-menu > li > a').css({
+                'border-width': 'thin',
+                'color': 'blue',
+            });
         } else if ($('.site-header').height() >= 200) {
             $('.site-header').css({
                 'height': '100px',
@@ -75,7 +79,6 @@ jQuery(document).ready(function($) {
           }
     });
     
-<<<<<<< HEAD
     //* take part steps 1,2,3,4,5 toggle on click
     var $firstItem = $($('.take-text-wrapper')[0]);
     $firstItem.addClass('active');
@@ -93,7 +96,7 @@ jQuery(document).ready(function($) {
       }
       var nextItem = $this.index() + 1;
       $($('.take-text-wrapper')[nextItem]).addClass('active');
-=======
+    });
     /**`
      * Set height of exhibition nav icons
      */
@@ -109,12 +112,5 @@ jQuery(document).ready(function($) {
 
     $(window).resize(function(){
         setExhibitionNav();
->>>>>>> 46060d3c4e1a0e0d38167e6c5f130ce5ff0bb3c1
     });
-  
-  
-  
-  
-
 });
-
