@@ -62,6 +62,9 @@ jQuery(document).ready(function($) {
                 'grid-template-rows': '1fr 1fr 1fr',
                 'height': '340px',
             });
+            $('#primary-menu > li > a').css({
+                'border-width': 'thin',
+            });
         } else if ($('.site-header').height() >= 200) {
             $('.site-header').css({
                 'height': '100px',

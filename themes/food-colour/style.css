@@ -1323,6 +1323,17 @@ header {
         font-size: 100px;
         margin: 100px 0; } }
 
+.take-content-area .gform_ajax_spinner {
+  display: none; }
+
+.take-content-area #gform_1 {
+  display: none; }
+
+.take-content-area .gform_wrapper {
+  text-align: left;
+  max-width: 40%;
+  margin: 0 auto; }
+
 .take-content-area .iconbutton {
   background-color: #2F80ED;
   border-radius: 3px;
@@ -1372,11 +1383,10 @@ header {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    height: 30px;
     margin-left: 1rem;
     margin-top: 5rem; }
     .take-content-area .take-text-wrapper .icons-title img {
-      max-width: 100%;
+      height: 2rem;
       width: 2rem; }
     .take-content-area .take-text-wrapper .icons-title h2 {
       margin: 0;
@@ -1434,7 +1444,7 @@ header {
     position: absolute;
     padding: 2rem; }
 
-@media screen and (min-width: 1240px) {
+@media (min-width: 620px) {
   .steps-container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1471,7 +1481,7 @@ header {
     display: block; } }
 
 /* show mobile hide desktop */
-@media only screen and (max-width: 1240px) {
+@media only screen and (orientation: portrait) and (max-width: 620px) {
   .mobile-image {
     display: block; }
   .desktop-image {
@@ -1492,6 +1502,14 @@ header {
     transition: all 0.5s ease-in-out; }
     .desktopbutton:hover {
       background-color: #d9d9d9; } }
+
+@media only screen and (orientation: portrait) and (max-width: 620px) {
+  .take-text-wrapper {
+    width: 90%;
+    margin: 0 auto;
+    display: none; }
+    .take-text-wrapper.active {
+      display: block; } }
 
 .error404 {
   height: 100vh;
