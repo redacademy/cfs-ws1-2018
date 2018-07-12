@@ -39,8 +39,8 @@
 					<div class=links-container>
 						<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 						<div class="share-host">
-							<a>Host</a>
-							<a class="exhibition-facebook" href="http://www.facebook.com/sharer/sharer.php?u=<?php the_permalink(); ?>" onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;">Share</a>
+							<a href="#host">Host</a>
+							<a href="#share">Share</a>
 						</div>
 
 					</div>

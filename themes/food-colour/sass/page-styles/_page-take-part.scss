@@ -2,6 +2,16 @@
     .gform_ajax_spinner{
         display:none;
     }
+    #gform_1{
+        display:none;
+    }
+    .gform_wrapper{
+        text-align: left;
+        max-width: 40%;
+        margin: 0 auto;
+        
+        
+    }   
   .iconbutton{
         @include button-style($color__brand-blue, $color__text-white);
         margin-top: 3rem;
@@ -28,12 +38,11 @@
       }
       .icons-title {
           display: flex;
-          height: 30px;
           margin-left:1rem;
           margin-top:5rem;
           img {
-              max-width: 100%;
-              width: 2rem;
+            height: 2rem;
+            width: 2rem;
           }
           h2 {
               margin: 0;
@@ -87,11 +96,10 @@
             position: absolute;
             padding: 2rem;
         }
-            
         
-    }
-
-@media screen and (min-width : 1240px){
+    } 
+            
+@include desktop{
     .steps-container{
     display:flex;
  } 
@@ -132,7 +140,7 @@
    }
 }
 /* show mobile hide desktop */
-@media only screen and (max-width: 1240px) {
+@include mobile-portrait {
     .mobile-image {
         display:block;
     }
@@ -149,7 +157,7 @@
     }
 }
 
-@media only screen and (max-width: 320px) {
+@include mobile-portrait {
     .take-text-wrapper{
         width: 90%;
         margin: 0 auto;
