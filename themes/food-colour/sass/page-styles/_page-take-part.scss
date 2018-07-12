@@ -58,11 +58,11 @@
         display: flex;
         flex-direction: column;
         h1{
-            font-size:5rem;
+            font-size:1.3rem;
             text-transform:uppercase;
         }
         p{
-            font-size:1.5rem;
+            font-size:0.5rem;
         } 
     }
     .bannertext{
@@ -98,7 +98,8 @@
         }
         
     } 
-            
+    
+    
 @include desktop{
     .steps-container{
     display:flex;
@@ -119,15 +120,15 @@
         }
  }
  .desktop-image {
-    margin-left: 6rem;
-    width: 800px;
-    padding: 1rem;
- }
- .share-container{
-     display:flex;
-     justify-content: center;
-     margin-top: 15rem;
- }
+     margin-left: 6rem;
+     width: 800px;
+     padding: 1rem;
+    }
+    .share-container{
+        display:flex;
+        justify-content: center;
+        margin-top: 15rem;
+    }
 } 
 
 /* hide mobile show desktop */

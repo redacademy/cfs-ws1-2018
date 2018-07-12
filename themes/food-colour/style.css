@@ -1411,10 +1411,10 @@ header {
       -ms-flex-direction: column;
           flex-direction: column; }
   .take-content-area .takebox h1 {
-    font-size: 5rem;
+    font-size: 1.3rem;
     text-transform: uppercase; }
   .take-content-area .takebox p {
-    font-size: 1.5rem; }
+    font-size: 0.5rem; }
 
 .take-content-area .bannertext {
   position: absolute;
