@@ -40,6 +40,7 @@
 	text-align: center;
 	text-transform: uppercase;
 	transition: all 0.5s ease-in-out;
+	letter-spacing: 1.5px;
 
 	&:hover {
 		background-color: darken($bg_color, 15);

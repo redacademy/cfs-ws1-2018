@@ -1169,7 +1169,8 @@ header {
         text-align: center;
         text-transform: uppercase;
         -webkit-transition: all 0.5s ease-in-out;
-        transition: all 0.5s ease-in-out; }
+        transition: all 0.5s ease-in-out;
+        letter-spacing: 1.5px; }
         .exhibition-description .exhibition-meta .exhibition-social .exhibition-twitter:hover {
           background-color: #1689e0; }
       .exhibition-description .exhibition-meta .exhibition-social .exhibition-facebook {
@@ -1182,7 +1183,8 @@ header {
         text-align: center;
         text-transform: uppercase;
         -webkit-transition: all 0.5s ease-in-out;
-        transition: all 0.5s ease-in-out; }
+        transition: all 0.5s ease-in-out;
+        letter-spacing: 1.5px; }
         .exhibition-description .exhibition-meta .exhibition-social .exhibition-facebook:hover {
           background-color: #263962; }
       .exhibition-description .exhibition-meta .exhibition-social .fab {
@@ -1345,6 +1347,7 @@ header {
   text-transform: uppercase;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
+  letter-spacing: 1.5px;
   margin-top: 3rem;
   margin-bottom: 3rem; }
   .take-content-area .iconbutton:hover {
@@ -1361,6 +1364,7 @@ header {
   text-transform: uppercase;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
+  letter-spacing: 1.5px;
   width: 28rem;
   margin-top: 5rem;
   margin-bottom: 1.5rem; }
@@ -1499,7 +1503,8 @@ header {
     text-align: center;
     text-transform: uppercase;
     -webkit-transition: all 0.5s ease-in-out;
-    transition: all 0.5s ease-in-out; }
+    transition: all 0.5s ease-in-out;
+    letter-spacing: 1.5px; }
     .desktopbutton:hover {
       background-color: #d9d9d9; } }
 
@@ -1592,6 +1597,7 @@ header {
         text-transform: uppercase;
         -webkit-transition: all 0.5s ease-in-out;
         transition: all 0.5s ease-in-out;
+        letter-spacing: 1.5px;
         max-width: 250px; }
         .error404 .page-content .error-text-content a:hover {
           background-color: #115bbf; }
