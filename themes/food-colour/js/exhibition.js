@@ -4,23 +4,21 @@ jQuery(document).ready(function($) {
      */
     if($('.single-exhibition').length === 1) {
         setExhibitionNav();
-        checkPortrait();
-     
+
         $(window).resize(function(){
             setExhibitionNav();
-            checkPortrait();
         });
     }
 
-    function setExhibitionNav() {
+    function setExhibitionNav() {  
         var items;
-        if($(window).height() < 620 && $(window).width() > 620) {
+        if($(window).height() < 620 || $(window).width() < 620) {
             items = Math.ceil($('.exhibition-icon-img').length / 2);
         } else {
             items = $('.exhibition-icon-img').length;
         }
 
-        var iconHeight = $('.exhibition-nav').height()/items;
+        var iconHeight = setPortrait(items);
 
         $('.exhibition-icon-img').css({
             'height': iconHeight,
@@ -31,8 +29,11 @@ jQuery(document).ready(function($) {
             'height': iconHeight,
             'width': iconHeight,
         });
+        $('.exhibition-nav').css({
+            'height': iconHeight * items,
+        });
         
-        if($(window).height() < 620) {
+        if($(window).height() < 620 || $(window).width() < 620) {
             $('.exhibition-nav').css({
                 'flex-wrap': 'wrap',
                 'width': iconHeight * 2, 
@@ -41,13 +42,12 @@ jQuery(document).ready(function($) {
             $('.exhibition-nav').css({
                 'flex-wrap': 'nowrap',
                 'width': iconHeight,
-            }); 
+            });
         }
     }
 
-    function checkPortrait() {
-        var items = Math.ceil($('.exhibition-icon-img').length / 2);
-        var iconHeight = $('.exhibition-nav').height()/items;
+    function setPortrait(items) {
+        var iconHeight;
         if($(window).height() > $(window).width() && $(window).width() < 620) {
             $('html').css({
                 'transform': 'rotate(-90deg)',
@@ -59,19 +59,17 @@ jQuery(document).ready(function($) {
                 'left': '0',
             });
             $('.exhibition-nav-container ').css({
-                'display': 'block'
+                    'display': 'block'
             });
-            $('.exhibition-nav ').css({
-                'height': $(window).width()* .8
-            });
-            $('.exhibition-nav').css({
-                // 'flex-wrap': 'wrap',
-                // 'width': iconHeight * 2,
-            });
+           iconHeight = $(window).width()*.8/items;
+
         } else {
             $('html').removeAttr('style');
+            $('.exhibition-nav-container ').css({
+                'display': 'flex'
+            });
+            iconHeight = $(window).height()*.8/items;
         }
-        setExhibitionNav();
+        return iconHeight;
     }
-
 });
