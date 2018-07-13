@@ -47,15 +47,22 @@
 				</nav><!-- #site-navigation -->
 				
 				<div class="socials">
-					<p class="social-media-icons">
+					<div class="social-media-icons">
 						<i class="fab fa-facebook-square" aria-hidden="true"></i>
 						<i class="fab fa-youtube"></i>
 						<i class="fab fa-twitter-square" aria-hidden="true"></i>
 						<i class="fab fa-linkedin"></i>
-					</p>
+					</div>
 					<h3>Liu institute For Global Issues</h3>
-					<p class="address">6476 NW Marine Drive Vancouver, BC, Canada, V6T 1Z2 Tel 604 822 1558 Fax 604 822 6966
-						</p>
+					<p class="address">
+						6476 NW Marine Drive
+						<br>
+						Vancouver, BC, Canada, V6T 1Z2
+						<br>
+						Tel 604 822 1558
+						<br>
+						Fax 604 822 6966
+					</p>
 					</div>
 					
 				</div>

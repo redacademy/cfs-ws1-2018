@@ -1,46 +1,4 @@
 jQuery(document).ready(function($) {
-
-    /**
-     * Hide and show exhibition description
-     */
-    if($(window).width() > 620) {
-        $('.exhibition-description').css('opacity', '1');  
-    } else {
-        $('.exhibition-description').css('opacity', '0');  
-    }
-    
-
-    $('.close-btn').on('click', function() {
-        $('.exhibition-description').css('opacity', '0');
-        $('.exhibition-description').delay(1000).hide(0);
-    });   
-
-    $('.exhibition-icon-active').on('click', function(event) {
-        event.preventDefault();
-        $('.exhibition-description').show(0);
-        $('.exhibition-description').css('opacity', '1');
-    });
-
-    /**
-     * Toggle exhibition menu
-     */
-    $('.exhibition-nav-toggle').on('click', function() {
-        if ($('.exhibition-nav').css('opacity') === '0') {
-            $('.exhibition-nav').css('opacity', '1');
-            $('.exhibition-nav').css('visibility', 'visible');
-        } else {
-            $('.exhibition-nav').css('opacity', '0');
-
-            setTimeout(
-                function() 
-                {
-                    $('.exhibition-nav').css('visibility', 'hidden');
-                }, 500);
-            $('.exhibition-description').css('opacity', '0');
-            $('.exhibition-description').delay(1000).hide(0);  
-        }        
-    }); 
-
     /**
      * Nav-Menu toggle
      */
@@ -62,6 +20,7 @@ jQuery(document).ready(function($) {
             })
         }
     });
+    
     //* take part steps 1,2,3,4,5 toggle on click
     var $firstItem = $($('.take-text-wrapper')[0]);
     $firstItem.addClass('active');
@@ -107,7 +66,7 @@ jQuery(document).ready(function($) {
         event.preventDefault();
         $('html, body').animate({
             scrollTop: target.offset().top
-        }, 1000, function() {
+        }, 1100, function() {
             // Callback after animation
             // Must change focus!
             var $target = $(target);
@@ -122,8 +81,9 @@ jQuery(document).ready(function($) {
         }
     }
     });
-
+//click big button to show forms
     $("#forms").click(function(){
         $("#gform_1").toggle();
     });
 });
+
