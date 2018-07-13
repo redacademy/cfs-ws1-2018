@@ -16,6 +16,7 @@
         @include button-style($color__brand-blue, $color__text-white);
         margin-top: 3rem;
         margin-bottom: 3rem;
+        width:100%;
       }
       .desktopbutton{
         @include button-style($color__brand-blue, $color__text-white);
@@ -32,21 +33,22 @@
       margin: 0 auto;
       p {
          margin-bottom: 1.5rem;
-         width: 69%;
-         margin-left: 2rem; 
+         width: 78%;
+         margin-left: 3rem;
+         margin-top: 2rem; 
          font-family:$font__main;
       }
       .icons-title {
-          display: flex;
           margin-left:1rem;
           margin-top:5rem;
           img {
-            height: 2rem;
-            width: 2rem;
+            height: 3rem;
+            width: 3rem;
+            
           }
           h2 {
               margin: 0;
-              padding-left: 10px;
+              padding-left: 2rem;
               font-family:$font__main;
           }
         }
@@ -103,12 +105,20 @@
 @include desktop{
     .steps-container{
     display:flex;
+    margin-left: 5rem;
+    width:$max-width;
  } 
  .icons-title {
     display: inline-block!important;
     height: 35px;
     margin: 0 0 25px;
+    img {
+        margin-bottom: 0.5rem;
+        margin-left: 1.8rem;
+        
+      }
 }
+
  .iconbutton{
      display:none;
  }
@@ -128,6 +138,7 @@
         display:flex;
         justify-content: center;
         margin-top: 15rem;
+        background: rgba(224,224,224,1);
     }
 } 
 
@@ -166,5 +177,24 @@
         &.active {
             display:block;
         }
+        p{
+            margin-left: 4rem!important;
+        }
+        h2{
+            padding-left: 3rem!important;
+        }
+    }
+    .icons-title img{
+        height: 3rem;
+        width: 3rem;
+        margin-left: -1rem;
+    }
+    .icons{
+        position:absolute;
+        margin-left:-1;
+    }
+    .town{
+            margin-left: 2rem;
+            margin-top: 0.5rem;
     }
 }

@@ -99,7 +99,7 @@ jQuery(document).ready(function($) {
         event.preventDefault();
         $('html, body').animate({
             scrollTop: target.offset().top
-        }, 1000, function() {
+        }, 1100, function() {
             // Callback after animation
             // Must change focus!
             var $target = $(target);
@@ -114,7 +114,7 @@ jQuery(document).ready(function($) {
         }
     }
     });
-
+//click big button to show forms
     $("#forms").click(function(){
         $("#gform_1").toggle();
     });
