@@ -45,58 +45,23 @@ jQuery(document).ready(function($) {
      * Nav-Menu toggle
      */
     $('.menu-toggle').on('click', function(){
-        if ($('.site-header').height() <= 200) {
-            $('.site-header').css({
+        if ($('header').height() <= 100) {
+            $('#masthead').css({
                 'height': '400px',
                 'align-items': 'baseline',
             });
-            $('.menu-main-menu-container').css({
-                'position': 'absolute',
-                'top': '106px',
-                'left' : '0px',
-            });
             $('#primary-menu').css({
-                'align-items': 'center',
                 'display': 'grid',
-                'grid-template-columns': '100%',
-                'grid-template-rows': '1fr 1fr 1fr',
-                'height': '340px',
-            });
-            $('#primary-menu > li > a').css({
-                'border-width': 'medium',
-            });
-            $('.site-branding').css({
-                'position': 'relative',
-                'top': '31px',
-            });
-            $('.menu-toggle').css({
-                'position': 'relative',
-                'top': '28px',
-            });
-        } else if ($('.site-header').height() >= 200) {
-            $('.site-header').css({
+            })
+        } else if ($('header').height() >= 200) {
+            $('#masthead').css({
                 'height': '100px',
-                'align-items': 'center',
             });
             $('#primary-menu').css({
                 'display': 'none',
-                'grid-template-columns': 'none',
-                'height': 'auto',
-            });
-            $('#primary-menu > li > a').css({
-                'border-width': 'inherit',
-            });
-            $('.site-branding').css({
-                'top': '0px',
-            });
-            $('.menu-toggle').css({
-                'position': 'relative',
-                'top': '0',
-            });
-          }
+            })
+        }
     });
-<<<<<<< HEAD
-    
     //* take part steps 1,2,3,4,5 toggle on click
     var $firstItem = $($('.take-text-wrapper')[0]);
     $firstItem.addClass('active');
@@ -161,7 +126,4 @@ jQuery(document).ready(function($) {
     $("#forms").click(function(){
         $("#gform_1").toggle();
     });
-=======
->>>>>>> 31c6e5d9cb1749585933e2e2a4ede61d172ef873
 });
-
