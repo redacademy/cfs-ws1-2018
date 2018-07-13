@@ -53,7 +53,6 @@ jQuery(document).ready(function($) {
             });
           }
     });
-<<<<<<< HEAD
     
     //* take part steps 1,2,3,4,5 toggle on click
     var $firstItem = $($('.take-text-wrapper')[0]);
@@ -119,7 +118,5 @@ jQuery(document).ready(function($) {
     $("#forms").click(function(){
         $("#gform_1").toggle();
     });
-=======
->>>>>>> 31c6e5d9cb1749585933e2e2a4ede61d172ef873
 });
 

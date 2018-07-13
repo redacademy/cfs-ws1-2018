@@ -1,6 +1,6 @@
 <?php
 /**
-* Template Name: take part
+* Template Name: take_part
 */
 ?>
 
