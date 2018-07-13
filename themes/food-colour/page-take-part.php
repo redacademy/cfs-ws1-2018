@@ -8,7 +8,7 @@
   <?php get_header(); ?>
   <div id="primary" class="content-area">
     <main id="main" class="site-main" role="main">
-      <div class="takebox">
+      <div class="takebox" id="host">
         <img class='takebackground' src="<?php echo esc_url(get_bloginfo('template_directory')); ?>/assets/images/take_part.png"
           alt="take background" />
         <div class="bannertext">
@@ -32,7 +32,7 @@
           <?php endif; ?>
           </section>
 
- 
+
  <?php
             $image = CFS()->get('image');
             $title = CFS()->get('title');
@@ -52,47 +52,45 @@
             echo "<div class='steps-container'>";
             echo "<div class='take-text-wrapper'>";
             echo "<div class='icons-title'>";
-            echo "<img src=" . $image . ">";
+            echo "<img src=" . $image . " class='icons'>";
             echo "<h2>" . $title . "</h2>";
+            echo "<p class='town'>" . $title_text . "</p>";
             echo "</div>";
-            echo "<p>" . $title_text . "</p>";
-            echo "<button class='iconbutton'>GOT IT, NEXT!</button>";
+            echo "<a href='#next'><button class='iconbutton'>GOT IT, NEXT!</button></a>";
             echo "</div>";
             echo "<div class='take-text-wrapper'>";
             echo "<div class='icons-title'>";
-            echo "<img src=" . $image_2 . ">";
-            echo "<h2>" . $title_2 . "</h2>";
+            echo "<img src=" . $image_2 . " class='icons'>";
+            echo "<h2 id='next'>" . $title_2 . "</h2>";
             echo "</div>";
             echo "<p>" . $title_2_text . "</p>";
-            echo "<button class='iconbutton'>GOT IT, NEXT!</button>";
+            echo "<a href='#fill'><button class='iconbutton'>GOT IT, NEXT!</button></a>";
             echo "</div>";
             echo "<div class='take-text-wrapper'>";
             echo "<div class='icons-title'>";
-            echo "<img src=" . $image_3 . ">";
-            echo "<h2>" . $title_3 . "</h2>";
+            echo "<img src=" . $image_3 . " class='icons'>";
+            echo "<h2 id='fill'>" . $title_3 . "</h2>";
             echo "</div>";
             echo "<p>" . $title_3_text . "</p>";
-            echo "<button class='iconbutton'>FILL THE FORM</button>";
+            echo "<a href='#done'<button class='iconbutton'>FILL THE FORM</button></a>";
             echo "</div>";
             echo "<div class='take-text-wrapper'>";
             echo "<div class='icons-title'>";
-            echo "<img src=" . $image_4 . ">";
-            echo "<h2>" . $title_4 . "</h2>";
+            echo "<img src=" . $image_4 . " class='icons'>";
+            echo "<h2 id='done'>" . $title_4 . "</h2>";
             echo "</div>";
             echo "<p>" . $title_4_text . "</p>";
-            echo "<section class='dl'>";
-            echo "<a href='https://drive.google.com/drive/folders/1KR6gb1ulL1tunhDn1yw26WX_2GnKU7-I?usp=sharing'><button class='iconbutton'>DOWNLOAD</button><a/>";
-            echo "</section>";
+            echo "<a href='#finish'https://drive.google.com/drive/folders/1KR6gb1ulL1tunhDn1yw26WX_2GnKU7-I?usp=sharing'><button class='iconbutton'>DOWNLOAD</button><a/>";
             echo "</div>";
             echo "<div class='take-text-wrapper'>";
             echo "<div class='icons-title'>";
-            echo "<img src=" . $image_5 . ">";
-            echo "<h2>" . $title_5 . "</h2>";
+            echo "<img src=" . $image_5 . " class='icons'>";
+            echo "<h2 id='finish'>" . $title_5 . "</h2>";
             echo "</div>";
             echo "<p>" . $title_5_text . "</p>";
             echo "</div>";
             echo "</div>";
-            echo "<div class='bigbutton' id='host'>";
+            echo "<div class='bigbutton'>";
             echo "<button class='desktopbutton' id='forms'>REGISTER & DOWNLOAD</button>";
             echo "</div>"
             ?>
@@ -110,11 +108,33 @@
               <?php echo CFS()->get( 'shareinfo' );?>
             </div>
           </div>
-          
-          
-          
-          
-          
+
+
+
+<div>
+<?php while ( have_posts() ) : the_post(); ?>
+<img class='eventmap-image' src="<?php echo esc_url(get_bloginfo('template_directory')); ?>/assets/images/event_map.png" alt="sharebackground"/>
+
+<?php
+  $args = array( 'post_type' => 'event', 'posts_per_page' => 4,);
+  $event = new WP_Query( $args );
+  ?>
+  <?php while ( $event->have_posts() ) : $event->the_post();
+  the_title();
+  echo '<div class="content">';
+  the_content();
+  echo '</div>';
+endwhile;
+?>
+
+
+<p><?php echo CFS()->get('date');?></p>
+
+<?php wp_reset_postdata(); ?>
+
+<?php endwhile; // End of the loop. ?>     
+</div>
+
           <div class='foodcolour'>
             <img class='colourbackground' src="<?php echo esc_url(get_bloginfo('template_directory')); ?>/assets/images/colorbg.png"
             alt='colour background' />
@@ -125,30 +145,9 @@
         </div>
       </div>
       <?php get_footer(); ?>
-    </body>
-
-
-    <!-- <?php while ( have_posts() ) : the_post(); ?>
-
-<?php $site_permalink = get_the_permalink(); ?>
+    
   
-  <?php
-      $args = array( 
-          'post_type' => 'event',
-          'posts_per_page' => 4, 
-      ); 
-      $events = new WP_Query( $args );
-  ?>
-  <div class="event-description">
-      <h1><?php the_title(); ?></h1>
-      <p><?php echo CFS()->get('organization') ?></p>
-      <p><?php echo CFS()->get('address') ?></p>
-      <p><?php echo CFS()->get('title') ?></p>
-      <p><?php echo CFS()->get('date') ?></p>
-      <hr>
-      </div>
-  </div>
+    </div>
+  </body>
 
 
-<?php endwhile; // End of the loop. ?>
-     -->

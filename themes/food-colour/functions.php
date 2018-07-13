@@ -89,6 +89,9 @@ function add_file_types_to_uploads($file_types){
 	}
 add_action('upload_mimes', 'add_file_types_to_uploads');
 
+
+
+
 /**
  * Custom template tags for this theme.
  */
@@ -105,3 +108,4 @@ require get_template_directory() . '/inc/Login-logo-link.php';
  * Enqueues
  */
 require get_template_directory() . '/inc/enqueues.php';
+

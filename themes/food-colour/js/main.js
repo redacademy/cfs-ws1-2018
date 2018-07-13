@@ -95,7 +95,6 @@ jQuery(document).ready(function($) {
             });
           }
     });
-<<<<<<< HEAD
     
     //* take part steps 1,2,3,4,5 toggle on click
     var $firstItem = $($('.take-text-wrapper')[0]);
@@ -142,7 +141,7 @@ jQuery(document).ready(function($) {
         event.preventDefault();
         $('html, body').animate({
             scrollTop: target.offset().top
-        }, 1000, function() {
+        }, 1100, function() {
             // Callback after animation
             // Must change focus!
             var $target = $(target);
@@ -157,11 +156,9 @@ jQuery(document).ready(function($) {
         }
     }
     });
-
+//click big button to show forms
     $("#forms").click(function(){
         $("#gform_1").toggle();
     });
-=======
->>>>>>> 31c6e5d9cb1749585933e2e2a4ede61d172ef873
 });
 

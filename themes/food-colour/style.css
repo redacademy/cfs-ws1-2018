@@ -1349,7 +1349,8 @@ header {
   transition: all 0.5s ease-in-out;
   letter-spacing: 1.5px;
   margin-top: 3rem;
-  margin-bottom: 3rem; }
+  margin-bottom: 3rem;
+  width: 100%; }
   .take-content-area .iconbutton:hover {
     background-color: #115bbf; }
 
@@ -1380,21 +1381,19 @@ header {
   margin: 0 auto; }
   .take-content-area .take-text-wrapper p {
     margin-bottom: 1.5rem;
-    width: 69%;
-    margin-left: 2rem;
+    width: 78%;
+    margin-left: 3rem;
+    margin-top: 2rem;
     font-family: Roboto, sans-serif; }
   .take-content-area .take-text-wrapper .icons-title {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     margin-left: 1rem;
     margin-top: 5rem; }
     .take-content-area .take-text-wrapper .icons-title img {
-      height: 2rem;
-      width: 2rem; }
+      height: 3rem;
+      width: 3rem; }
     .take-content-area .take-text-wrapper .icons-title h2 {
       margin: 0;
-      padding-left: 10px;
+      padding-left: 2rem;
       font-family: Roboto, sans-serif; }
 
 .take-content-area .takebox {
@@ -1452,11 +1451,16 @@ header {
   .steps-container {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex; }
+    display: flex;
+    margin-left: 5rem;
+    width: 1240px; }
   .icons-title {
     display: inline-block !important;
     height: 35px;
     margin: 0 0 25px; }
+    .icons-title img {
+      margin-bottom: 0.5rem;
+      margin-left: 1.8rem; }
   .iconbutton {
     display: none; }
   .share-box {
@@ -1475,7 +1479,8 @@ header {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin-top: 15rem; } }
+    margin-top: 15rem;
+    background: #e0e0e0; } }
 
 /* hide mobile show desktop */
 @media only screen and (min-width: 620px) {
@@ -1514,7 +1519,21 @@ header {
     margin: 0 auto;
     display: none; }
     .take-text-wrapper.active {
-      display: block; } }
+      display: block; }
+    .take-text-wrapper p {
+      margin-left: 4rem !important; }
+    .take-text-wrapper h2 {
+      padding-left: 3rem !important; }
+  .icons-title img {
+    height: 3rem;
+    width: 3rem;
+    margin-left: -1rem; }
+  .icons {
+    position: absolute;
+    margin-left: -1; }
+  .town {
+    margin-left: 2rem;
+    margin-top: 0.5rem; } }
 
 .error404 {
   height: 100vh;
