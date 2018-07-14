@@ -2,16 +2,26 @@
     .gform_ajax_spinner{
         display:none;
     }
+    .gform_button{
+        @include button-style($color__brand-blue, $color__text-white);
+        font-weight: 200;
+        
+    }
+    #gform_submit_button_1{
+        width:10rem;
+    }
     #gform_1{
         display:none;
     }
     .gform_wrapper{
+        box-shadow: 3px 3px #aaaaaa;
+        border: #c1c1c1 solid 1px;
         text-align: left;
-        max-width: 40%;
+        max-width: 55%;
         margin: 0 auto;
         
-        
     }   
+    
   .iconbutton{
         @include button-style($color__brand-blue, $color__text-white);
         margin-top: 3rem;
@@ -21,6 +31,7 @@
       .desktopbutton{
         @include button-style($color__brand-blue, $color__text-white);
         width: 28rem;
+        font-weight:200;
         margin-top: 5rem;
         margin-bottom: 1.5rem;
     }
@@ -86,13 +97,24 @@
         font-size: 48px;
         }
     }
+    .event-container{
+        display:flex;
+        position:absolute;
+    }
+    .host-events{
+        display:flex;
+        position:relative;
+    }
+    .event-date{
+        bottom: 50%;
+        position: absolute;
+    }
     // # COLOUR FOOD SECURITY BANNER
     .foodcolour{
         display: flex;
         position: relative;
         justify-content: center;
         font-size: 5rem;
-        margin-top: 20rem;
         color:white;
         .foodhashtag{
             position: absolute;
