@@ -47,12 +47,14 @@
 				</nav><!-- #site-navigation -->
 				
 				<div class="socials">
-					<div class="social-media-icons">
+					<?php echo do_shortcode("[smbtoolbar]"); ?>
+
+					<!-- <div class="social-media-icons">
 						<i class="fab fa-facebook-square" aria-hidden="true"></i>
 						<i class="fab fa-youtube-square"></i>
 						<i class="fab fa-twitter-square" aria-hidden="true"></i>
 						<i class="fab fa-linkedin"></i>
-					</div>
+					</div> -->
 					<h3>Liu institute For Global Issues</h3>
 					<p class="address">
 						6476 NW Marine Drive

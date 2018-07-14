@@ -5,6 +5,7 @@
 
 	@include desktop {
 		padding: 2rem;
+		padding-top: 4rem;
 	}
 }
 
@@ -20,22 +21,34 @@
 	@include desktop {
 		display: flex;
 		justify-content: space-between;
+		align-content: flex-start;
 		width: 100%;
 	}
 	
 	img {
-		width:auto;
+		width: auto;
 	}
 }
-.copy {
-	font-size: 13px;
-	text-align: center;
 
+.mobile-footer {
 	@include desktop {
-		margin-left: 4rem;
-		text-align: left;
+		position: relative;
+	}
+
+	.copy {
+		text-align: center;
+	
+		@include desktop {
+			color: $color__text-white;
+			margin: 0;
+			margin-left: 4rem;
+			text-align: left;
+			position: absolute;
+			bottom: 25%;
+		}
 	}
 }
+
 
 .info {
 	font-family:$font__headings;
@@ -53,43 +66,45 @@
 		min-width: 180px;
 	}
 
-	.social-media-icons {
-		padding: 1.5rem 0;
+	// .social-media-icons {
+	// 	padding: 1.5rem 0;
 
-		@include desktop {
-			padding: 0;
-		}
+	// 	@include desktop {
+	// 		padding: 0;
+	// 	}
 	
-		.fab {
-			border-radius: 50%;
-			font-size: 2.5rem;
-			padding: 0 $base__space-unit/2;
+	// 	.fab {
+	// 		border-radius: 50%;
+	// 		font-size: 2.5rem;
+	// 		padding: 0 $base__space-unit/2;
 
-			@include desktop {
-				font-size: 2rem;
-				padding: 0 $base__space-unit/4;
+	// 		@include desktop {
+	// 			font-size: 2rem;
+	// 			padding: 0 $base__space-unit/4;
 
-				&:first-of-type {
-					padding-left: 0;
-				}
-			}
-		}
+	// 			&:first-of-type {
+	// 				padding-left: 0;
+	// 			}
+	// 		}
+	// 	}
 		
-		.fa-facebook-square {
-			color: $color__facebook;
-		}
-		.fa-youtube-square {
-			color: $color__youtube;
-		}
+	// 	.fa-facebook-square {
+	// 		color: $color__facebook;
+	// 	}
+	// 	.fa-youtube-square {
+	// 		color: $color__youtube;
+	// 	}
 		
-		.fa-twitter-square {
-			color: $color__twitter;
-		}
+	// 	.fa-twitter-square {
+	// 		color: $color__twitter;
+	// 	}
 		
-		.fa-linkedin {
-			color: $color__linkedin;
-		}
-	}
+	// 	.fa-linkedin {
+	// 		color: $color__linkedin;
+	// 	}
+	// }
+
+
 }
 
 .logo {
@@ -129,6 +144,7 @@
 		width:auto;
 		height:auto;
 	}
+
 	p {
 		margin:0;
 		padding-right:1rem;
@@ -159,17 +175,11 @@
 }
 
 @include desktop-footer {
-	.footer-text {
-		flex-direction: row;
-		align-items: center;
-	}
-
 	.footer-navigation  {
 		display: flex;
 		width: 69%;
-		justify-content: center;
+		margin-top: 1.5rem;
 		flex-direction: column;
-		z-index: 99;
 
 		.links-container {
 			position: relative;
@@ -180,7 +190,6 @@
 		}
 
 		.share-host {
-			// color: $color__text-light !important;
 			position: absolute;
 			top: 50px;
 			left: 43%;
@@ -191,42 +200,13 @@
 			}
 		}
 
-		ul  {
+		ul {
 			list-style: none;
 			margin: 0;
 			padding-left: 0;
-
-			ul  {
-				box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-				float: left;
-				position: absolute;
-				top: $base__space-unit;
-				left: -999rem;
-				z-index: 99999;
-
-				ul  {
-					left: -999rem;
-					top: 0;
-				}
-
-				li  {
-					&:hover > ul,
-					&.focus > ul  {
-						left: 100%;
-					}
-				}
-
-				a  {
-					width: 200px;
-				}
-			}
-
-			li:hover > ul,
-			li.focus > ul  {
-				left: auto;
-			}
 		}
-		li  {
+
+		li {
 			float: left;
 			font-family: $font__headings;
 			font-weight: bold;
@@ -234,9 +214,21 @@
 			position: relative;
 			text-transform: uppercase;
 		}
-		a  {
+		
+		a {
 			display: block;
 			text-decoration: none;
 		}
+	}
+}
+
+.sxc-follow-buttons {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: space-between;
+	
+	@include desktop {
+		justify-content: flex-start;
 	}
 }
