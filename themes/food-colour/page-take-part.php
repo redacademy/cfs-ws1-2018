@@ -108,27 +108,32 @@
               <?php echo CFS()->get( 'shareinfo' );?>
             </div>
           </div>
+</div>
 
-
-
-<div>
+<div class="host-events">
 <?php while ( have_posts() ) : the_post(); ?>
-<img class='eventmap-image' src="<?php echo esc_url(get_bloginfo('template_directory')); ?>/assets/images/event_map.png" alt="sharebackground"/>
 
 <?php
   $args = array( 'post_type' => 'event', 'posts_per_page' => 4,);
   $event = new WP_Query( $args );
   ?>
-  <?php while ( $event->have_posts() ) : $event->the_post();
-  the_title();
-  echo '<div class="content">';
-  the_content();
-  echo '</div>';
-endwhile;
+  <img class='eventmap-image' src="<?php echo esc_url(get_bloginfo('template_directory')); ?>/assets/images/event_map.png" alt="sharebackground"/>
+  <?php while ( $event->have_posts() ) : $event->the_post(); ?>
+  <div class="event-container">
+  <div class="inner">
+  <?php the_title(); ?>
+  <?php the_content(); ?>
+  </div>
+  </div>
+
+<div class="event-date">
+<p><?php echo CFS()->get('date');?></p>
+<p><?php echo CFS()->get('country');?></p>
+<p><?php echo CFS()->get('city');?></p>
+</div>
+<?php endwhile;
 ?>
 
-
-<p><?php echo CFS()->get('date');?></p>
 
 <?php wp_reset_postdata(); ?>
 
@@ -149,5 +154,3 @@ endwhile;
   
     </div>
   </body>
-
-

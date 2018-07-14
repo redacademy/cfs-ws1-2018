@@ -1347,12 +1347,34 @@ header {
 .take-content-area .gform_ajax_spinner {
   display: none; }
 
+.take-content-area .gform_button {
+  background-color: #2F80ED;
+  border-radius: 3px;
+  color: #FFFFFF !important;
+  font-family: Montserrat, sans-serif;
+  font-weight: bold;
+  padding: 0.75rem;
+  text-align: center;
+  text-transform: uppercase;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  letter-spacing: 1.5px;
+  font-weight: 200; }
+  .take-content-area .gform_button:hover {
+    background-color: #115bbf; }
+
+.take-content-area #gform_submit_button_1 {
+  width: 10rem; }
+
 .take-content-area #gform_1 {
   display: none; }
 
 .take-content-area .gform_wrapper {
+  -webkit-box-shadow: 3px 3px #aaaaaa;
+          box-shadow: 3px 3px #aaaaaa;
+  border: #c1c1c1 solid 1px;
   text-align: left;
-  max-width: 40%;
+  max-width: 55%;
   margin: 0 auto; }
 
 .take-content-area .iconbutton {
@@ -1388,6 +1410,7 @@ header {
   transition: all 0.5s ease-in-out;
   letter-spacing: 1.5px;
   width: 28rem;
+  font-weight: 200;
   margin-top: 5rem;
   margin-bottom: 1.5rem; }
   .take-content-area .desktopbutton:hover {
@@ -1453,6 +1476,22 @@ header {
   color: #FD5E46;
   font-size: 48px; }
 
+.event-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute; }
+
+.host-events {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative; }
+
+.event-date {
+  bottom: 50%;
+  position: absolute; }
+
 .foodcolour {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1462,7 +1501,6 @@ header {
       -ms-flex-pack: center;
           justify-content: center;
   font-size: 5rem;
-  margin-top: 20rem;
   color: white; }
   .foodcolour .foodhashtag {
     position: absolute;
