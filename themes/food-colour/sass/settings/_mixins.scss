@@ -17,14 +17,14 @@
     }
 }
 
-@mixin mobile-portrait {
-	@media only screen and (orientation:portrait) and (max-width: $desktop-width) {
-		@content;
-	}
+@mixin desktop-footer {
+    @media (min-width: 1000px) {
+	  @content;
+    }
 }
 
-@mixin mobile-landscape {
-	@media only screen and (orientation:landscape) and (max-width: $desktop-width) {
+@mixin mobile-portrait {
+	@media only screen and (orientation:portrait) and (max-width: $desktop-width) {
 		@content;
 	}
 }
@@ -32,6 +32,8 @@
 
 @mixin button-style ($bg_color: $color__background-body, $color: $color__text-main) {
 	background-color: $bg_color;
+	border: 0;
+
 	border-radius: 3px;
 	color: $color !important;
 	font-family: $font__headings;

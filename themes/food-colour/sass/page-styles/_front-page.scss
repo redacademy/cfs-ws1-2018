@@ -20,22 +20,12 @@
         color: white;
         width: 90%;
         button {
-            width: 100%;
-            color: $color__button__FrontPage;
-            font-weight: 700;
-            letter-spacing: 1.5px;
-            text-transform: uppercase;
-            border-color: white;
-            background-color: white;
-            &:hover {
-                background-color: darken(white, 10);
-            }
+            @include button-style($color__background-body, $color__button__FrontPage);
         }
         .title-1 {
             h1{
                 line-height: 35px;
                 font-size: 35px;
-    
             }
         }
         .title-2 {

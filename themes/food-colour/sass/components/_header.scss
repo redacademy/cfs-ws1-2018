@@ -31,9 +31,39 @@ header {
             border-width: thin;
         }
     }
+    @include mobile-portrait {
+            align-items: baseline;
+        .menu-main-menu-container {
+            position: absolute;
+            top: 106px;
+            left: 0px;
+        };
+        #primary-menu {
+            align-items: center;
+            grid-template-columns: 100%;
+            grid-template-rows: 1fr 1fr 1fr;
+            height: 340px;
+            li a{
+                border-width: medium;
+            };
+        };
+        .site-branding{
+            position: relative;
+            top: 31px;
+        };
+        .menu-toggle{
+            position: relative;
+            top: 28px;
+        };
+    }
 
     @include desktop {
         margin: 0 10%;
+        align-items: center !important;
+        height: 100px !important;
+        #primary-menu {
+            display: block !important;
+        }
     }
 
     .site-branding {
