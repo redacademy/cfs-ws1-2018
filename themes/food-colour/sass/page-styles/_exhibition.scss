@@ -4,15 +4,6 @@
     }
 
     display: block;
-
-    @include mobile-portrait {
-        // height: 100vw;
-        // transform: rotate(90deg);
-    }
-
-    @include mobile-landscape {
-        transform: rotate(0deg);
-    }
 }
 
 .exhibition-container {

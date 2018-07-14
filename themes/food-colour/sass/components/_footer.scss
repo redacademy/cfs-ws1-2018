@@ -19,6 +19,7 @@
 
 	@include desktop {
 		display: flex;
+		justify-content: space-between;
 		width: 100%;
 	}
 	
@@ -31,7 +32,7 @@
 	text-align: center;
 
 	@include desktop {
-		margin-left:4rem;
+		margin-left: 4rem;
 		text-align: left;
 	}
 }
@@ -47,19 +48,37 @@
 // social media icons
 .socials {
 	margin-top: $base__space-unit;
+
+	@include desktop {
+		min-width: 180px;
+	}
+
 	.social-media-icons {
 		padding: 1.5rem 0;
+
+		@include desktop {
+			padding: 0;
+		}
 	
 		.fab {
 			border-radius: 50%;
 			font-size: 2.5rem;
 			padding: 0 $base__space-unit/2;
+
+			@include desktop {
+				font-size: 2rem;
+				padding: 0 $base__space-unit/4;
+
+				&:first-of-type {
+					padding-left: 0;
+				}
+			}
 		}
 		
 		.fa-facebook-square {
 			color: $color__facebook;
 		}
-		.fa-youtube {
+		.fa-youtube-square {
 			color: $color__youtube;
 		}
 		
@@ -73,11 +92,10 @@
 	}
 }
 
-
-
 .logo {
 	background-color: #e2e2f3;
 }
+
 .red {
 	height: 35px;
 	width: auto;
@@ -86,9 +104,11 @@
 	background-color: #e2dede;
 	margin-bottom: -1.5rem;
 }
+
 .redtext {
 	font-weight:bold;
 }
+
 .copyrights {
 	display:flex;
 }
@@ -116,53 +136,60 @@
 }
 
 .logo-container {
-	display: flex;
-	flex-wrap: wrap;
+	display: grid;
 }
+
 .logo-bottom-images {
 	display: grid;
 	grid-gap: 2rem;
 	grid-template: 1fr 1fr / 1fr 1fr;
 	
-	@include desktop {
+	@include desktop-footer {
 		grid-template: 1fr / 1fr 1fr 1fr;
 	}
 
 	img {
 		width: auto;
 		height: auto;
-		// padding: 0 2rem 2rem 0;
-		// padding-left: 0;
 	}
 }
 
-
-.links-container {
-	position: relative;
-	left: 25%;
-}
-.share-host {
-	position: absolute;
-	top: 50px;
-	left: 23%;
-}
 .footer-navigation {
 	display: none;
 }
 
-@include desktop  {
+@include desktop-footer {
 	.footer-text {
 		flex-direction: row;
 		align-items: center;
 	}
 
 	.footer-navigation  {
-		display:block;
 		display: flex;
 		width: 69%;
 		justify-content: center;
 		flex-direction: column;
 		z-index: 99;
+
+		.links-container {
+			position: relative;
+			margin-left: auto;
+			margin-right: auto;
+			left: 0;
+			right: 0;
+		}
+
+		.share-host {
+			// color: $color__text-light !important;
+			position: absolute;
+			top: 50px;
+			left: 43%;
+
+			a {
+				color: $color__text-light;
+				padding: $base__space-unit/2 0;
+			}
+		}
 
 		ul  {
 			list-style: none;

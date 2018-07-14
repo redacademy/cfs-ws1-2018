@@ -49,7 +49,7 @@
 				<div class="socials">
 					<div class="social-media-icons">
 						<i class="fab fa-facebook-square" aria-hidden="true"></i>
-						<i class="fab fa-youtube"></i>
+						<i class="fab fa-youtube-square"></i>
 						<i class="fab fa-twitter-square" aria-hidden="true"></i>
 						<i class="fab fa-linkedin"></i>
 					</div>
