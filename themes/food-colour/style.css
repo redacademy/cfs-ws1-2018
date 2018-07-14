@@ -798,8 +798,7 @@ object {
   padding: 4.5rem 0 1.5rem 0; }
   @media (min-width: 620px) {
     .footer-info-container {
-      padding: 2rem;
-      padding-top: 4rem; } }
+      padding: 4rem; } }
 
 .address {
   font-size: 0.7rem;
@@ -822,20 +821,21 @@ object {
   .footer-text img {
     width: auto; }
 
-@media (min-width: 620px) {
-  .mobile-footer {
-    position: relative; } }
-
-.mobile-footer .copy {
-  text-align: center; }
+.mobile-footer {
+  font-family: Montserrat, sans-serif; }
   @media (min-width: 620px) {
-    .mobile-footer .copy {
-      color: #FFFFFF;
-      margin: 0;
-      margin-left: 4rem;
-      text-align: left;
-      position: absolute;
-      bottom: 25%; } }
+    .mobile-footer {
+      position: relative; } }
+  .mobile-footer .copy {
+    text-align: center; }
+    @media (min-width: 620px) {
+      .mobile-footer .copy {
+        color: #FFFFFF;
+        margin: 0;
+        margin-left: 4rem;
+        text-align: left;
+        position: absolute;
+        bottom: 25%; } }
 
 .info {
   font-family: Montserrat, sans-serif; }
@@ -889,7 +889,8 @@ object {
     .design {
       -webkit-box-pack: end;
           -ms-flex-pack: end;
-              justify-content: flex-end; } }
+              justify-content: flex-end;
+      padding-right: 4rem; } }
   .design img {
     width: auto;
     height: auto; }
@@ -955,6 +956,7 @@ object {
 
 .sxc-follow-buttons {
   margin: 0;
+  margin-top: 3rem;
   padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -966,7 +968,8 @@ object {
     .sxc-follow-buttons {
       -webkit-box-pack: start;
           -ms-flex-pack: start;
-              justify-content: flex-start; } }
+              justify-content: flex-start;
+      margin: 0; } }
 
 /* Header */
 header {
@@ -980,17 +983,6 @@ header {
   margin: 0 5%;
   max-width: 1240px;
   padding: 0; }
-  header #primary-menu a {
-    border-bottom: solid;
-    border-width: 0; }
-  header #primary-menu :nth-child(1) a {
-    border-color: #4B66A0; }
-  header #primary-menu :nth-child(2) a {
-    border-color: #B2423E; }
-  header #primary-menu :nth-child(3) a {
-    border-color: #D99A50; }
-  header #primary-menu :hover {
-    border-width: thin; }
   @media only screen and (orientation: portrait) and (max-width: 620px) {
     header {
       -webkit-box-align: baseline;
@@ -1032,6 +1024,22 @@ header {
     display: -ms-flexbox;
     display: flex;
     z-index: 98; }
+
+#primary-menu a {
+  border-bottom: solid;
+  border-width: 0; }
+
+#primary-menu :nth-child(1) a {
+  border-color: #4B66A0; }
+
+#primary-menu :nth-child(2) a {
+  border-color: #B2423E; }
+
+#primary-menu :nth-child(3) a {
+  border-color: #D99A50; }
+
+#primary-menu :hover {
+  border-width: thin; }
 
 .single-exhibition {
   display: block; }
@@ -1349,6 +1357,7 @@ header {
 
 .take-content-area .gform_button {
   background-color: #2F80ED;
+  border: 0;
   border-radius: 3px;
   color: #FFFFFF !important;
   font-family: Montserrat, sans-serif;

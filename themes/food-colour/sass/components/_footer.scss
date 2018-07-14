@@ -4,8 +4,7 @@
 	padding: $base__space-unit*3 0 $base__space-unit 0;
 
 	@include desktop {
-		padding: 2rem;
-		padding-top: 4rem;
+		padding: 4rem;
 	}
 }
 
@@ -31,6 +30,7 @@
 }
 
 .mobile-footer {
+	font-family: $font__headings;
 	@include desktop {
 		position: relative;
 	}
@@ -65,46 +65,6 @@
 	@include desktop {
 		min-width: 180px;
 	}
-
-	// .social-media-icons {
-	// 	padding: 1.5rem 0;
-
-	// 	@include desktop {
-	// 		padding: 0;
-	// 	}
-	
-	// 	.fab {
-	// 		border-radius: 50%;
-	// 		font-size: 2.5rem;
-	// 		padding: 0 $base__space-unit/2;
-
-	// 		@include desktop {
-	// 			font-size: 2rem;
-	// 			padding: 0 $base__space-unit/4;
-
-	// 			&:first-of-type {
-	// 				padding-left: 0;
-	// 			}
-	// 		}
-	// 	}
-		
-	// 	.fa-facebook-square {
-	// 		color: $color__facebook;
-	// 	}
-	// 	.fa-youtube-square {
-	// 		color: $color__youtube;
-	// 	}
-		
-	// 	.fa-twitter-square {
-	// 		color: $color__twitter;
-	// 	}
-		
-	// 	.fa-linkedin {
-	// 		color: $color__linkedin;
-	// 	}
-	// }
-
-
 }
 
 .logo {
@@ -138,6 +98,7 @@
 
 	@include desktop {
 		justify-content: flex-end;
+		padding-right: 4rem;
 	}
 
 	img {
@@ -224,11 +185,13 @@
 
 .sxc-follow-buttons {
 	margin: 0;
+	margin-top: $base__space-unit * 2;
 	padding: 0;
 	display: flex;
 	justify-content: space-between;
 	
 	@include desktop {
 		justify-content: flex-start;
+		margin: 0;
 	}
 }

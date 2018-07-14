@@ -7,30 +7,7 @@ header {
     margin: 0 5%;
     max-width: $max-width;
     padding: 0;
-    #primary-menu {
-        a{
-            border-bottom: solid;
-            border-width: 0;
-        }
-        :nth-child(1){
-            a {
-                border-color: $border__bottom__nav__1;
-            }
-        }
-        :nth-child(2){
-            a {
-                border-color: $border__bottom__nav__2;
-            }
-        }
-        :nth-child(3){
-            a {
-                border-color: $border__bottom__nav__3;
-            }
-        }
-        :hover{
-            border-width: thin;
-        }
-    }
+
     @include mobile-portrait {
             align-items: baseline;
         .menu-main-menu-container {
@@ -70,5 +47,30 @@ header {
         align-items: center;
         display: flex;
         z-index: 98;
+    }
+}
+
+#primary-menu {
+    a{
+        border-bottom: solid;
+        border-width: 0;
+    }
+    :nth-child(1){
+        a {
+            border-color: $border__bottom__nav__1;
+        }
+    }
+    :nth-child(2){
+        a {
+            border-color: $border__bottom__nav__2;
+        }
+    }
+    :nth-child(3){
+        a {
+            border-color: $border__bottom__nav__3;
+        }
+    }
+    :hover{
+        border-width: thin;
     }
 }
