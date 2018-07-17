@@ -44,7 +44,7 @@ get_header(); ?>
 					echo "<h1>" . $fptitle_3 . "</h1>";
 					echo '<img src="'.esc_url($fpimage_3).'" rel="lightbox">'; 
 					echo "<p>" . $fptext_3 . "</p>";
-					echo "<a href='https://drive.google.com/drive/folders/1KR6gb1ulL1tunhDn1yw26WX_2GnKU7-I?usp=sharing'><button>Download Files</button></a>";
+					echo "<a target='_blank' href='https://drive.google.com/drive/folders/1KR6gb1ulL1tunhDn1yw26WX_2GnKU7-I?usp=sharing'><button>Download Files</button></a>";
 				echo "</section>";
 				echo "<hr class='bottom-line' align='center'>";
 				echo "<p class='hashtag'>#ColourFoodSecurity</p>";

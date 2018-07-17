@@ -16,6 +16,8 @@ function food_colour_scripts() {
 
 	wp_enqueue_script( 'food-colour-main', get_template_directory_uri() . '/build/js/main.min.js', array( 'jquery' ), false, true );
 
+	wp_enqueue_script( 'food-colour-events', get_template_directory_uri() . '/build/js/events.min.js', array( 'jquery' ), false, true );
+
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}

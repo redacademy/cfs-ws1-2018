@@ -108,4 +108,3 @@ require get_template_directory() . '/inc/Login-logo-link.php';
  * Enqueues
  */
 require get_template_directory() . '/inc/enqueues.php';
-
