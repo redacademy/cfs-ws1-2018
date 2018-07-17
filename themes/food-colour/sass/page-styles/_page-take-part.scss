@@ -14,7 +14,7 @@
         display:none;
     }
     .gform_wrapper{
-        box-shadow: 3px 3px #aaaaaa;
+        box-shadow: 0.5px 0.5px #aaaaaa;
         border: #c1c1c1 solid 1px;
         text-align: left;
         max-width: 55%;
@@ -27,7 +27,7 @@
         margin-top: 3rem;
         margin-bottom: 3rem;
         width:100%;
-      }
+    }
       .desktopbutton{
         @include button-style($color__brand-blue, $color__text-white);
         width: 28rem;
@@ -35,8 +35,14 @@
         margin-top: 5rem;
         margin-bottom: 1.5rem;
     }
+    .downloadbutton{
+        @include button-style($color__brand-blue, $color__text-white);
+        display: flex;
+        margin-top: 5rem;
+        align-self: flex-end;
+        margin-right: 20rem;
+    }
     .bigbutton{
-        display:block;
         text-align: center;
     }
     .take-text-wrapper{
@@ -78,6 +84,16 @@
             font-size:0.5rem;
         } 
     }
+    .cloud-container{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        .cloudbackground{
+            width: 200px;
+            height: 150px;
+            margin-top: 5rem;
+        }
+    }
     .bannertext{
         position: absolute;
         margin-left:5rem;
@@ -99,15 +115,18 @@
     }
     .event-container{
         display:flex;
-        position:absolute;
+        flex-direction: row-reverse;
+        align-items: center;
     }
     .host-events{
+        height:50vh;
+        background-size: cover,cover;
         display:flex;
-        position:relative;
+       
+
     }
     .event-date{
         bottom: 50%;
-        position: absolute;
     }
     // # COLOUR FOOD SECURITY BANNER
     .foodcolour{
@@ -124,46 +143,63 @@
     } 
     
     
-@include desktop{
-    .steps-container{
-    display:flex;
-    margin-left: 5rem;
-    width:$max-width;
- } 
- .icons-title {
-    display: inline-block!important;
-    height: 35px;
-    margin: 0 0 25px;
-    img {
-        margin-bottom: 0.5rem;
-        margin-left: 1.8rem;
-        
-      }
-}
-
- .iconbutton{
-     display:none;
- }
- .share-box{
-    padding: 6rem!important;
-    width: 54%;
-        p{
-            font-size:29px;
+    @include desktop{
+        .take-content-area{
+        .takebox{
+            p{
+                font-size:1rem;
+            }
+            h1{
+                font-size:5rem;
+            }
         }
- }
- .desktop-image {
-     margin-left: 6rem;
-     width: 800px;
-     padding: 1rem;
+        .steps-container{
+            display:flex;
+            margin-left: 5rem;
+            width:$max-width;
+        } 
+        .town{
+            margin-left: 2rem!important;
+            margin-top: 0.5rem!important;
+        }
+        .icons-title {
+            display: inline-block!important;
+            height: 35px;
+            margin: 0 0 25px;
+            img {
+                margin-bottom: 0.5rem;
+                margin-left: 1.8rem;
+                
+            }
+        }
+        .cloud-container{
+            display:none;
+            
+        
+        }
+        .iconbutton{
+            display:none;
+        }
+        .share-box{
+            padding: 6rem!important;
+            width: 54%;
+            p{
+                font-size:29px;
+            }
+        }
+        .desktop-image {
+            margin-left: 6rem;
+            width: 800px;
+            padding: 1rem;
     }
     .share-container{
         display:flex;
         justify-content: center;
         margin-top: 15rem;
-        background: rgba(224,224,224,1);
+        background:#F2F2F2;
     }
-} 
-
+ } 
+}
 /* hide mobile show desktop */
 @media only screen and (min-width: 620px) {
    .mobile-image {
@@ -192,6 +228,7 @@
 }
 
 @include mobile-portrait {
+.take-content-area{
     .take-text-wrapper{
         width: 90%;
         margin: 0 auto;
@@ -215,8 +252,8 @@
         position:absolute;
         margin-left:-1;
     }
-    .town{
-            margin-left: 2rem;
-            margin-top: 0.5rem;
+    .gform_wrapper{
+        max-width: 95%;
     }
+  }
 }

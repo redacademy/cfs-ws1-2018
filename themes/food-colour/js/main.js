@@ -81,9 +81,19 @@ jQuery(document).ready(function($) {
         }
     }
     });
+
 //click big button to show forms
     $("#forms").click(function(){
         $("#gform_1").toggle();
     });
+    
+    $("#gform_submit_button_1").click(function(){
+        $("#cloud").toggle();
+    });
+
+    $("#formsmobile").click(function(){
+        $("#gform_1").toggle();
+    });
+    
 });
 
