@@ -1039,7 +1039,7 @@ header {
   border-color: #D99A50; }
 
 #primary-menu :hover {
-  border-width: thin; }
+  border-width: 2px; }
 
 .single-exhibition {
   display: block; }

@@ -11,6 +11,7 @@ get_header(); ?>
 
             <?php while ( have_posts() ) : the_post(); ?>
                 <div class="exhibition-container" style="background-image: url(<?php echo esc_url( CFS()->get('map') ); ?>)">
+                <?php echo esc_url(get_bloginfo('template_directory'));. '/assets/images/event_map.png'); ?>
                 <?php $site_permalink = get_the_permalink(); ?>
                     
                     <?php
