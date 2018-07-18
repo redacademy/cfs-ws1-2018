@@ -123,6 +123,16 @@
         font-size: 48px;
         }
     }
+    .event-main-container{
+        margin-left: auto;
+        align-self: center;
+        margin-right: auto;
+            h2{
+                color:$color__brand-blue;
+                font-family:$font__main;
+                font-size:2rem;
+            }
+    }
     .event-container{
         display:flex;
         flex-direction: row-reverse;
