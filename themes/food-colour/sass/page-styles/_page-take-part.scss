@@ -20,6 +20,9 @@
         max-width: 55%;
         margin: 0 auto;
         
+    }
+    .gform_confirmation_message_1{
+        margin-left:32.5rem;
     }   
     
   .iconbutton{
@@ -37,10 +40,11 @@
     }
     .downloadbutton{
         @include button-style($color__brand-blue, $color__text-white);
-        display: flex;
         margin-top: 5rem;
         align-self: flex-end;
-        margin-right: 20rem;
+        margin-left: 40rem;
+        width: 10rem;
+        font-weight:200;
     }
     .bigbutton{
         text-align: center;
@@ -81,17 +85,23 @@
             text-transform:uppercase;
         }
         p{
-            font-size:0.5rem;
+            font-size:0.7rem;
         } 
     }
     .cloud-container{
         display:flex;
         flex-direction: column;
         align-items: center;
+        &.activated{
+            display:flex
+        }
         .cloudbackground{
             width: 200px;
             height: 150px;
             margin-top: 5rem;
+        }
+        @include desktop {
+            display:none;
         }
     }
     .bannertext{
@@ -119,7 +129,7 @@
         align-items: center;
     }
     .host-events{
-        height:50vh;
+        height:100vh;
         background-size: cover,cover;
         display:flex;
        
@@ -172,12 +182,10 @@
                 
             }
         }
-        .cloud-container{
-            display:none;
-            
-        
-        }
         .iconbutton{
+            display:none;
+        }
+        .mobile-forms{
             display:none;
         }
         .share-box{
@@ -191,16 +199,16 @@
             margin-left: 6rem;
             width: 800px;
             padding: 1rem;
-    }
-    .share-container{
-        display:flex;
-        justify-content: center;
-        margin-top: 15rem;
-        background:#F2F2F2;
-    }
- } 
+        }
+        .share-container{
+            display:flex;
+            justify-content: center;
+            margin-top: 15rem;
+            background:#F2F2F2;
+        }
+    } 
 }
-/* hide mobile show desktop */
+/* hide mobile show desktop sharebackground img */
 @media only screen and (min-width: 620px) {
    .mobile-image {
        display:none;
@@ -209,7 +217,7 @@
        display:block;
    }
 }
-/* show mobile hide desktop */
+/* show mobile hide desktop sharebackground img */
 @include mobile-portrait {
     .mobile-image {
         display:block;
@@ -229,6 +237,9 @@
 
 @include mobile-portrait {
 .take-content-area{
+    .cloud-container{
+        display:none;
+    }
     .take-text-wrapper{
         width: 90%;
         margin: 0 auto;

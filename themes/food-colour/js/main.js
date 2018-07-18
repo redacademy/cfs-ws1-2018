@@ -88,7 +88,7 @@ jQuery(document).ready(function($) {
     });
     
     $("#gform_submit_button_1").click(function(){
-        $("#cloud").toggle();
+        $("#cloud").toggleClass('activated');
     });
 
     $("#formsmobile").click(function(){

@@ -74,13 +74,16 @@
             echo "<p>" . $title_3_text . "</p>";
             echo "<a href='#done'<button class='iconbutton' id='formsmobile'>FILL THE FORM</button></a>";
             echo "</div>";
+            // echo "<div class='mobile-forms'>";
+            // echo CFS()->get('form');
+            // echo "</div>";
             echo "<div class='take-text-wrapper'>";
             echo "<div class='icons-title'>";
             echo "<img src=" . $image_4 . " class='icons'>";
             echo "<h2 id='done'>" . $title_4 . "</h2>";
             echo "</div>";
             echo "<p>" . $title_4_text . "</p>";
-            echo "<a href='#finish'https://drive.google.com/drive/folders/1KR6gb1ulL1tunhDn1yw26WX_2GnKU7-I?usp=sharing'><button class='iconbutton'>DOWNLOAD</button><a/>";
+            echo "<a target='_blank' ='#finish' href='https://drive.google.com/drive/folders/1KR6gb1ulL1tunhDn1yw26WX_2GnKU7-I?usp=sharing'><button class='iconbutton'>DOWNLOAD</button></a>";
             echo "</div>";
             echo "<div class='take-text-wrapper'>";
             echo "<div class='icons-title'>";
@@ -101,7 +104,8 @@
               <h2>Download your files</h2>
             <img class='cloudbackground' src="<?php echo esc_url(get_bloginfo('template_directory')); ?>/assets/images/cloud.png"
             alt="cloud background" />
-            <button class='downloadbutton'>ok</button>
+            <a target='_blank' href='https://drive.google.com/drive/folders/1KR6gb1ulL1tunhDn1yw26WX_2GnKU7-I?usp=sharing'><button class='downloadbutton'>ok</button></a>
+            
             </div>
             
           <div class='share-container' id='share'>
@@ -129,13 +133,13 @@
 
   <?php while ( $event->have_posts() ) : $event->the_post(); ?>
   <div class="event-container">
-  <div class="inner">
+  <div class="event-title">
   <?php the_title(); ?>
   <?php the_content(); ?>
   </div>
   </div>
 
-<div class="event-date" style='background>
+<div class="event-date">
 <p><?php echo CFS()->get('date');?></p>
 <p><?php echo CFS()->get('country');?></p>
 <p><?php echo CFS()->get('city');?></p>
