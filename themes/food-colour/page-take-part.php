@@ -128,20 +128,25 @@
   ?>
 
   <?php while ( $event->have_posts() ) : $event->the_post(); ?>
-  <div class="event-container">
-  <div class="inner">
-  <?php the_title(); ?>
-  <?php the_content(); ?>
-  </div>
+  <div class="event-container" event-title="<?php the_title(); ?>" event-content="<?php the_content(); ?>">
+    <div class="inner">
+      <?php //the_title(); ?>
+      <?php //the_content(); ?>
+    </div>
+
+    <div class="event-date">
+      <p><?php echo CFS()->get('date');?></p>
+      <p><?php echo CFS()->get('country');?></p>
+      <p><?php echo CFS()->get('city');?></p>
+    </div>
   </div>
 
-<div class="event-date" style='background>
-<p><?php echo CFS()->get('date');?></p>
-<p><?php echo CFS()->get('country');?></p>
-<p><?php echo CFS()->get('city');?></p>
-</div>
+
 <?php endwhile;
 ?>
+
+<div class="event-main-container">
+</div>
 
 
 <?php wp_reset_postdata(); ?>
