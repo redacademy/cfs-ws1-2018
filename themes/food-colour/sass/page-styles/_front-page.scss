@@ -58,7 +58,7 @@
     }
     @include desktop {
         .background-image-main {
-            height: 1704px;
+            height: 2050px;
         }
         .background-map-main {
             visibility: visible;
@@ -69,35 +69,59 @@
             color: white;
             width: 80%;
             .title-1 {
+                margin: 140px 0 140px 0;
                 button {
                     width: 150px;
+                }
+                hr{
+                    width: 135px;
+                    margin: 0;
                 }
                 h1{
                     font-size: 100px;
                     letter-spacing: 5px;
                     line-height: 90px;
+                    font-weight: 900;
+                }
+                p{
+                    line-height: 34px;
+                    font-size: 16px;
+                    letter-spacing: 1.5px;
+                    font-weight: 100;
                 }
             }
             .title-2 {
                 display: grid;
                 grid-template-columns: 60% 40%;
-                margin: 50px 0 150px 0;
+                margin: 50px 0 140px 0;
+                h1{
+                    line-height: 47px;
+                    font-weight: 700;
+                    font-size: 48px;
+                    margin: 0;
+                }
                 img {
                     grid-column-start: 1;
                     grid-row-start: 1;
                     grid-row-end: 4;
+                    margin: auto 0;
                 }
                 button {
                     width: 150px;
                 }
                 p {
                     margin: 15px 60px 15px 0;
+                    line-height: 24px;
+                    font-size: 16px;
+                    letter-spacing: 1.5px;
+                    font-weight: 100;
                 }
             }
             .title-3 {
                 display: grid;
                 grid-template-columns: 40% 60%;
                 grid-template-rows: 0fr 0fr 0fr;
+                margin: 140px 0 140px 0;
                 img {
                     grid-column-start: 2;
                     grid-row-start: 1;
@@ -105,11 +129,21 @@
                     height: 400px;
                     bottom: 100px;
                 }
+                h1{
+                    line-height: 47px;
+                    font-weight: 700;
+                    font-size: 48px;
+                    margin: 0;
+                }
                 button {
                     width: 200px;
                 }
                 p {
                     margin: 15px 60px 15px 0;
+                    line-height: 24px;
+                    font-size: 16px;
+                    letter-spacing: 1.5px;
+                    font-weight: 100;
                 }
             }
             .bottom-line {
