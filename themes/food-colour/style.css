@@ -1092,7 +1092,7 @@ object {
 .single-exhibition {
   display: block; }
   .single-exhibition header, .single-exhibition footer {
-    display: none; }
+    display: none !important; }
 
 .exhibition-container {
   background-size: cover;

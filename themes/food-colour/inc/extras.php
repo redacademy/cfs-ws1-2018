@@ -32,3 +32,31 @@ function food_colour_add_file_types_to_uploads($file_types){
 	return $file_types;
 	}
 add_action('upload_mimes', 'food_colour_add_file_types_to_uploads');
+
+/**
+ * Load OG meta to header
+ */
+function food_colour_og_metadata() {
+	if (is_singular('exhibition')) {
+		$title = get_the_title();
+		$description = CFS()->get('description');
+		$url = get_permalink();
+		$site_name = get_bloginfo();
+		$image = CFS()->get('map');
+
+		echo "\t<meta property='og:title' content='$title' />\n";
+		if ($description) {
+			echo "\t<meta property='og:description' content='$description' />\n";
+			echo "\t<meta property='twitter:description' content='$description' />\n";
+		}
+		echo "\t<meta property='og:type' content='article' />\n";
+		echo "\t<meta property='og:url' content='$url' />\n";
+		echo "\t<meta property='og:site_name' content='$site_name' />\n";
+		echo "\t<meta property='og:image' content='$image' />\n";
+
+		echo "\t<meta property='twitter:card' content='summary_large_image' />\n";
+		echo "\t<meta property='twitter:title' content='$title' />\n";
+		echo "\t<meta property='twitter:image' content='$image' />\n";
+	}
+}
+add_action('wp_head', 'food_colour_og_metadata');
