@@ -1,6 +1,9 @@
 .site-content {
     overflow: hidden;
 }
+.bottom-line {
+    width: 100% !important;
+}
 .image-wrapper {
     position: relative;
     .background-image-main {
@@ -21,6 +24,7 @@
         width: 90%;
         button {
             @include button-style($color__background-body, $color__button__FrontPage);
+            width: 100%;
         }
         .title-1 {
             h1{
@@ -121,7 +125,7 @@
                 display: grid;
                 grid-template-columns: 40% 60%;
                 grid-template-rows: 0fr 0fr 0fr;
-                margin: 140px 0 140px 0;
+                margin: 230px 0 140px 0;
                 img {
                     grid-column-start: 2;
                     grid-row-start: 1;
