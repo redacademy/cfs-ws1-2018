@@ -1,6 +1,8 @@
 <?php
 /**
 * Template Name: About
+*
+* @package Food_Colour_Theme
 */
 ?>
 <body id="primary" class="about-content-area">

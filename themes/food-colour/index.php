@@ -2,7 +2,7 @@
 /**
  * The main template file.
  *
- * @package RED_Starter_Theme
+ * @package Food_Colour_Theme
  */
 
 get_header(); ?>

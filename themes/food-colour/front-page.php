@@ -1,10 +1,9 @@
 <?php
 /**
  * Template Name: Home
- *front page (home page) template file.
- * 
+ * Front page (home page) template file.
  *
- * @package WordPress
+ * @package Food_Colour_Theme
  * 
  */
 get_header(); ?>

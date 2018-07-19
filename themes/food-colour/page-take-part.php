@@ -1,6 +1,8 @@
 <?php
 /**
-* Template Name: take_part
+* Template Name: Take part
+*
+* @package Food_Colour_Theme
 */
 ?>
 

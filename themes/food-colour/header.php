@@ -2,7 +2,7 @@
 /**
  * The header for our theme.
  *
- * @package RED_Starter_Theme
+ * @package Food_Colour_Theme
  */
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>

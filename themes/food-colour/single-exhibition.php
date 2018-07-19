@@ -2,6 +2,7 @@
 /**
  * The template for displaying single exhibition.
  * 
+ * @package Food_Colour_Theme
  */
 
 get_header(); ?>

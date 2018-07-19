@@ -1,6 +1,12 @@
 <?php
+/**
+ * Custom login logo and url for this theme.
+ *
+ * @package Food_Colour_Theme
+ */
+
 // Changing the logo
-function my_login_logo() { ?>
+function food_colour_my_login_logo() { ?>
     <style type="text/css">
         #login h1 a, .login h1 a {
             background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/assets/images/logo.png);
@@ -12,12 +18,12 @@ function my_login_logo() { ?>
         }
     </style>
 <?php }
-add_action( 'login_enqueue_scripts', 'my_login_logo' );
+add_action( 'login_enqueue_scripts', 'food_colour_my_login_logo' );
 
 // Changing the url
-function my_login_logo_url() {
+function food_colour_my_login_logo_url() {
     return esc_url( home_url( '/' ) );
 }
-add_filter( 'login_headerurl', 'my_login_logo_url' );
+add_filter( 'login_headerurl', 'food_colour_my_login_logo_url' );
 
 ?>
