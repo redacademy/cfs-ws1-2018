@@ -28,54 +28,54 @@
     height: 100vh;
     justify-content: center;
     max-height: 100vh;
+}
 
-    .exhibition-nav-toggle { 
-        img {
-            height: 40px;
-            transition: all 0.5s ease-in-out;
-            width: 40px;
+.exhibition-nav-toggle { 
+    img {
+        height: 40px;
+        transition: all 0.5s ease-in-out;
+        width: 40px;
 
-            &:hover {
-                filter: invert(.5);
-            }
+        &:hover {
+            filter: invert(.5);
         }
     }
+}
 
-    .exhibition-nav {
-        align-self: center;
-        background: $color__text-main;
-        border-radius: 2px;
-        display: flex;
-        flex-direction: column;
-        height: 80%;
-        transition: visibility 0s, opacity .5s ease-in-out;
-        visibility: hidden;
-    
-        @include desktop {
-            visibility: visible;
-        }
+.exhibition-nav {
+    align-self: center;
+    background: $color__text-main;
+    border-radius: 2px;
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+    transition: visibility 0s, opacity .5s ease-in-out;
+    visibility: hidden;
 
-        .exhibition-icon {
-            border-radius: 2px;
-            transition: all 0.5s ease-in-out;
-
-            &:hover {
-                filter: invert(.9);
-            }
-        }
-
-        .exhibition-icon-active {
-            background: $color__background-body;
-
-            &:hover {
-                filter: invert(0);
-            }
-        }
-
-        .exhibition-icon-active img {
-            filter: invert(.9);
-        }
+    @include desktop {
+        visibility: visible;
     }
+}
+
+.exhibition-icon {
+    border-radius: 2px;
+    transition: all 0.5s ease-in-out;
+
+    &:hover {
+        filter: invert(.9);
+    }
+}
+
+.exhibition-icon-active {
+    background: $color__background-body;
+
+    &:hover {
+        filter: invert(0);
+    }
+}
+
+.exhibition-icon-active img {
+    filter: invert(.9);
 }
 
 .exhibition-description {
@@ -93,79 +93,79 @@
     transition: visibility 0s, opacity .5s ease-in-out;
     width: 45%;
 
-    .close-btn {
-        cursor: pointer;
-        position: absolute;
-        right: 10px;
-        top: 10px;
-
-        img {
-            filter: invert(.9);
-            transition: all .5s ease-in-out;
-
-            &:hover {
-                filter: invert(.5);
-            }
-        }
-    }
-
     hr {
         width: 30%;
         margin-left: 0;
     }
+}
 
-    .exhibition-meta {
-        color: $color__text-light;
-        display: block;
-        font-size: $font__size-xsmall;
+.close-btn {
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top: 10px;
 
-        @include desktop {
-            font-size: $font__size-small;
+    img {
+        filter: invert(.9);
+        transition: all .5s ease-in-out;
+
+        &:hover {
+            filter: invert(.5);
         }
+    }
+}
+
+.exhibition-meta {
+    color: $color__text-light;
+    display: block;
+    font-size: $font__size-xsmall;
+
+    @include desktop {
+        font-size: $font__size-small;
+    }
+    
+
+    &::before {
+        width: 20px;
+        height: 20px;
+        background: black;
+        border-top: 1px solid $color__brand-blue;
+    }
+
+    a {
+        color: $color__brand-blue !important;
+        transition: all 0.5s ease-in-out;
+
+        &:hover {
+            color: darken($color__brand-blue, 15) !important;
+        }
+    }
+}
+
+.exhibition-social {
+    display: flex;
+    justify-content: space-between;
+
+    a {
+        flex-basis: 49%;
+    }
+
+    .exhibition-twitter {
+        @include button-style($color__twitter, $color__text-white);
+    }
+
+    .exhibition-facebook {
+        @include button-style($color__facebook, $color__text-white);
+    }
+
+    .fab {
+        font-size: 15px;
+        margin-right: $base__space-unit/3;
         
 
-        &::before {
-            width: 20px;
-            height: 20px;
-            background: black;
-            border-top: 1px solid $color__brand-blue;
-        }
-
-        a {
-            color: $color__brand-blue !important;
-            transition: all 0.5s ease-in-out;
-
-            &:hover {
-                color: darken($color__brand-blue, 15) !important;
-            }
-        }
-
-        .exhibition-social {
-            display: flex;
-            justify-content: space-between;
-
-            a {
-                flex-basis: 49%;
-            }
-
-            .exhibition-twitter {
-                @include button-style($color__twitter, $color__text-white);
-            }
-
-            .exhibition-facebook {
-                @include button-style($color__facebook, $color__text-white);
-            }
-
-            .fab {
-                font-size: 15px;
-                margin-right: $base__space-unit/3;
-                
-
-                @include desktop {
-                    font-size: 20px;
-                    margin-right: $base__space-unit;
-                }
-            }
+        @include desktop {
+            font-size: 20px;
+            margin-right: $base__space-unit;
         }
     }
 }

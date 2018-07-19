@@ -7,7 +7,7 @@ Capstone client project for RED Academy Web Development course 2018.
 
 ## Authors
 * [Lucas Da Cunha](https://github.com/Lcunha25)
-* Tony Tran
+* [Tony Tran](https://github.com/codeMrRobot)
 * [Katerina Vopalkova](https://github.com/kachniss)
 
 ## Based on

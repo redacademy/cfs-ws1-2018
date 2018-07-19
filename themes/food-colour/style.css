@@ -1076,48 +1076,53 @@ header {
       -ms-flex-pack: center;
           justify-content: center;
   max-height: 100vh; }
-  .exhibition-nav-container .exhibition-nav-toggle img {
-    height: 40px;
-    -webkit-transition: all 0.5s ease-in-out;
-    transition: all 0.5s ease-in-out;
-    width: 40px; }
-    .exhibition-nav-container .exhibition-nav-toggle img:hover {
-      -webkit-filter: invert(0.5);
-              filter: invert(0.5); }
-  .exhibition-nav-container .exhibition-nav {
-    -ms-flex-item-align: center;
-        align-self: center;
-    background: #333333;
-    border-radius: 2px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    height: 80%;
-    -webkit-transition: visibility 0s, opacity .5s ease-in-out;
-    transition: visibility 0s, opacity .5s ease-in-out;
-    visibility: hidden; }
-    @media (min-width: 620px) {
-      .exhibition-nav-container .exhibition-nav {
-        visibility: visible; } }
-    .exhibition-nav-container .exhibition-nav .exhibition-icon {
-      border-radius: 2px;
-      -webkit-transition: all 0.5s ease-in-out;
-      transition: all 0.5s ease-in-out; }
-      .exhibition-nav-container .exhibition-nav .exhibition-icon:hover {
-        -webkit-filter: invert(0.9);
-                filter: invert(0.9); }
-    .exhibition-nav-container .exhibition-nav .exhibition-icon-active {
-      background: #fff; }
-      .exhibition-nav-container .exhibition-nav .exhibition-icon-active:hover {
-        -webkit-filter: invert(0);
-                filter: invert(0); }
-    .exhibition-nav-container .exhibition-nav .exhibition-icon-active img {
-      -webkit-filter: invert(0.9);
-              filter: invert(0.9); }
+
+.exhibition-nav-toggle img {
+  height: 40px;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  width: 40px; }
+  .exhibition-nav-toggle img:hover {
+    -webkit-filter: invert(0.5);
+            filter: invert(0.5); }
+
+.exhibition-nav {
+  -ms-flex-item-align: center;
+      align-self: center;
+  background: #333333;
+  border-radius: 2px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 80%;
+  -webkit-transition: visibility 0s, opacity .5s ease-in-out;
+  transition: visibility 0s, opacity .5s ease-in-out;
+  visibility: hidden; }
+  @media (min-width: 620px) {
+    .exhibition-nav {
+      visibility: visible; } }
+
+.exhibition-icon {
+  border-radius: 2px;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out; }
+  .exhibition-icon:hover {
+    -webkit-filter: invert(0.9);
+            filter: invert(0.9); }
+
+.exhibition-icon-active {
+  background: #fff; }
+  .exhibition-icon-active:hover {
+    -webkit-filter: invert(0);
+            filter: invert(0); }
+
+.exhibition-icon-active img {
+  -webkit-filter: invert(0.9);
+          filter: invert(0.9); }
 
 .exhibition-description {
   -ms-flex-item-align: center;
@@ -1135,87 +1140,90 @@ header {
   -webkit-transition: visibility 0s, opacity .5s ease-in-out;
   transition: visibility 0s, opacity .5s ease-in-out;
   width: 45%; }
-  .exhibition-description .close-btn {
-    cursor: pointer;
-    position: absolute;
-    right: 10px;
-    top: 10px; }
-    .exhibition-description .close-btn img {
-      -webkit-filter: invert(0.9);
-              filter: invert(0.9);
-      -webkit-transition: all .5s ease-in-out;
-      transition: all .5s ease-in-out; }
-      .exhibition-description .close-btn img:hover {
-        -webkit-filter: invert(0.5);
-                filter: invert(0.5); }
   .exhibition-description hr {
     width: 30%;
     margin-left: 0; }
-  .exhibition-description .exhibition-meta {
-    color: #828282;
-    display: block;
-    font-size: 10px; }
+
+.close-btn {
+  cursor: pointer;
+  position: absolute;
+  right: 10px;
+  top: 10px; }
+  .close-btn img {
+    -webkit-filter: invert(0.9);
+            filter: invert(0.9);
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out; }
+    .close-btn img:hover {
+      -webkit-filter: invert(0.5);
+              filter: invert(0.5); }
+
+.exhibition-meta {
+  color: #828282;
+  display: block;
+  font-size: 10px; }
+  @media (min-width: 620px) {
+    .exhibition-meta {
+      font-size: 12px; } }
+  .exhibition-meta::before {
+    width: 20px;
+    height: 20px;
+    background: black;
+    border-top: 1px solid #2F80ED; }
+  .exhibition-meta a {
+    color: #2F80ED !important;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out; }
+    .exhibition-meta a:hover {
+      color: #115bbf !important; }
+
+.exhibition-social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .exhibition-social a {
+    -ms-flex-preferred-size: 49%;
+        flex-basis: 49%; }
+  .exhibition-social .exhibition-twitter {
+    background-color: #55ACEE;
+    border: 0;
+    border-radius: 3px;
+    color: #FFFFFF !important;
+    font-family: Montserrat, sans-serif;
+    font-weight: bold;
+    padding: 0.75rem;
+    text-align: center;
+    text-transform: uppercase;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    letter-spacing: 1.5px; }
+    .exhibition-social .exhibition-twitter:hover {
+      background-color: #1689e0; }
+  .exhibition-social .exhibition-facebook {
+    background-color: #3B5999;
+    border: 0;
+    border-radius: 3px;
+    color: #FFFFFF !important;
+    font-family: Montserrat, sans-serif;
+    font-weight: bold;
+    padding: 0.75rem;
+    text-align: center;
+    text-transform: uppercase;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    letter-spacing: 1.5px; }
+    .exhibition-social .exhibition-facebook:hover {
+      background-color: #263962; }
+  .exhibition-social .fab {
+    font-size: 15px;
+    margin-right: 0.5rem; }
     @media (min-width: 620px) {
-      .exhibition-description .exhibition-meta {
-        font-size: 12px; } }
-    .exhibition-description .exhibition-meta::before {
-      width: 20px;
-      height: 20px;
-      background: black;
-      border-top: 1px solid #2F80ED; }
-    .exhibition-description .exhibition-meta a {
-      color: #2F80ED !important;
-      -webkit-transition: all 0.5s ease-in-out;
-      transition: all 0.5s ease-in-out; }
-      .exhibition-description .exhibition-meta a:hover {
-        color: #115bbf !important; }
-    .exhibition-description .exhibition-meta .exhibition-social {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: justify;
-          -ms-flex-pack: justify;
-              justify-content: space-between; }
-      .exhibition-description .exhibition-meta .exhibition-social a {
-        -ms-flex-preferred-size: 49%;
-            flex-basis: 49%; }
-      .exhibition-description .exhibition-meta .exhibition-social .exhibition-twitter {
-        background-color: #55ACEE;
-        border: 0;
-        border-radius: 3px;
-        color: #FFFFFF !important;
-        font-family: Montserrat, sans-serif;
-        font-weight: bold;
-        padding: 0.75rem;
-        text-align: center;
-        text-transform: uppercase;
-        -webkit-transition: all 0.5s ease-in-out;
-        transition: all 0.5s ease-in-out;
-        letter-spacing: 1.5px; }
-        .exhibition-description .exhibition-meta .exhibition-social .exhibition-twitter:hover {
-          background-color: #1689e0; }
-      .exhibition-description .exhibition-meta .exhibition-social .exhibition-facebook {
-        background-color: #3B5999;
-        border: 0;
-        border-radius: 3px;
-        color: #FFFFFF !important;
-        font-family: Montserrat, sans-serif;
-        font-weight: bold;
-        padding: 0.75rem;
-        text-align: center;
-        text-transform: uppercase;
-        -webkit-transition: all 0.5s ease-in-out;
-        transition: all 0.5s ease-in-out;
-        letter-spacing: 1.5px; }
-        .exhibition-description .exhibition-meta .exhibition-social .exhibition-facebook:hover {
-          background-color: #263962; }
-      .exhibition-description .exhibition-meta .exhibition-social .fab {
-        font-size: 15px;
-        margin-right: 0.5rem; }
-        @media (min-width: 620px) {
-          .exhibition-description .exhibition-meta .exhibition-social .fab {
-            font-size: 20px;
-            margin-right: 1.5rem; } }
+      .exhibition-social .fab {
+        font-size: 20px;
+        margin-right: 1.5rem; } }
 
 .exhibition-back {
   -webkit-box-align: center;
