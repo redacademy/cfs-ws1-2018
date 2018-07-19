@@ -13,8 +13,8 @@
             '<h3></h3>' +
             '<hr>' +
             '<p>' + content + '</p>' +
-            '<button>Add to Google calendar</button>' +
-            '<button>Facebook event</button>'
+            '<button class="google-cal">Add to Google calendar</button>' +
+            '<button class="facebook-event">Facebook event</button>'
         );
     }
 })(jQuery);
