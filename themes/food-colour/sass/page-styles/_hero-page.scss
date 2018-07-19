@@ -30,7 +30,7 @@
             p{
                 font-family: Roboto;
                 font-style: normal;
-                font-weight: 100;
+                font-weight: 400;
                 line-height: 34px;
                 font-size: 16px;
                 color: #FFFFFF;
@@ -40,6 +40,8 @@
     }
 }
 .about-entry-content {
+    width: 90%;
+    margin: 50px auto 50px auto;
     .hero-text-wrapper{
         max-width: $max-width;
         margin: 0 auto;
@@ -56,13 +58,26 @@
                 padding-left: 10px;
             }
         }
+        p {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 200;
+            line-height: 20px;
+            font-size: 12px;
+        }
+    }
+}
+.about-content-area{
+    hr{
+        width: 80%;
+        background-color: #BDBDBD;
     }
 }
 @include desktop {
     .hero-image{
         article{
             .entry-header {
-                margin: 0 5%;
+                margin: 0 10%;
                 top: 35%;
                 a {
                     font-size: 100px;
@@ -70,14 +85,46 @@
             }
             .entry-content {
                 max-width: 1240px;
-                margin: 24px auto 0 auto;
+                margin: 24px auto 0 10%;
                 top: 45%;
+                p{
+                    font-weight: 400;
+                    font-size: 24px;
+                    font-family: Roboto;
+                    font-style: normal;
+                    line-height: 34px;
+                    color: #FFFFFF;
+                    letter-spacing: 1px;
+                }
             }
         }
     }
     .about-entry-content{
         max-width: 1240px;
-        margin: 0 10%;
+        margin: 120px 10% 0 10%;
         width: 80%;
+        .hero-text-wrapper{
+            .icon-title{
+                img {
+                    height: 40px;
+                }
+                h2 a{
+                    font-weight: 700;
+                    line-height: 59px;
+                    font-size: 36px;
+                    color: #0A3E8E;
+                }
+            }
+            p{
+                margin: 50px 0;
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: 200;
+                line-height: 24px;
+                font-size: 18px;
+                color: #333333;
+                letter-spacing: 1px;
+            }
+        }
     }
 }

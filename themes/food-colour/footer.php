@@ -37,7 +37,7 @@
 				<nav id="site-navigation" class="footer-navigation" role="navigation">
 					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html( 'Primary Menu' ); ?></button>
 					<div class=links-container>
-						<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+						<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'footer-menu' ) ); ?>
 						<div class="share-host">
 							<a href="#host">Host</a>
 							<a href="#share">Share</a>

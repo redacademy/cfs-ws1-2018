@@ -5,11 +5,17 @@ jQuery(document).ready(function($) {
     $('.menu-toggle').on('click', function(){
         if ($('header').height() <= 100) {
             $('#masthead').css({
-                'height': '400px',
+                'height': '467px',
                 'align-items': 'baseline',
             });
             $('#primary-menu').css({
                 'display': 'grid',
+            })
+            $('.menu-toggle').css({
+                'top': '28px',
+            })
+            $('.site-branding').css({
+                'top': '31px',
             })
         } else if ($('header').height() >= 200) {
             $('#masthead').css({

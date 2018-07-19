@@ -49,6 +49,28 @@
     .bigbutton{
         text-align: center;
     }
+    .host-text{
+        display:flex;
+        justify-content:center;
+        font-family:$font__main;
+        font-size:3rem;
+        color:$color_brand-dark-blue;
+        margin-top:10rem;
+        @include mobile-portrait{
+            font-size:2rem;
+        }
+    }
+    .host-text::before{
+        content: "";
+        width:120px;
+        height:3px;
+        background-color: $color__brand-blue;
+        margin-right: -7.5rem;
+        @include desktop{
+            display:none;
+        }
+    }
+
     .take-text-wrapper{
       width: 90%;
       margin: 0 auto;
@@ -81,11 +103,12 @@
         display: flex;
         flex-direction: column;
         h1{
-            font-size:1.3rem;
+            font-size:2rem;
             text-transform:uppercase;
         }
         p{
-            font-size:0.7rem;
+            font-size: 0.9rem;
+            font-weight: 200;
         } 
     }
     .cloud-container{
@@ -106,8 +129,11 @@
     }
     .bannertext{
         position: absolute;
-        margin-left:5rem;
-        width: 39%;
+        margin-left:2rem;
+        @include desktop{
+            margin-left:5rem;
+        }
+        
     }
      
     .mobile-image{
@@ -167,7 +193,7 @@
         .take-content-area{
         .takebox{
             p{
-                font-size:1rem;
+                font-size:2rem;
             }
             h1{
                 font-size:5rem;

@@ -24,14 +24,17 @@
           <?php if ( is_home() && ! is_front_page() ) : ?>
           <?php endif; ?>
           <?php while ( have_posts() ) : the_post(); ?>
-          <?php get_template_part( 'template-parts/content' ); ?>
+          <?php get_template_part( 'template-parts/content-take' ); ?>
           <?php endwhile; ?>
           <?php the_posts_navigation(); ?>
           <?php else : ?>
           <?php get_template_part( 'template-parts/content', 'none' ); ?>
           <?php endif; ?>
           </section>
-
+          <div>
+          
+          <h2 class="host-text"> Host an exhibition</h2>
+          </div>
 
  <?php
             $image = CFS()->get('image');
@@ -49,54 +52,54 @@
             $image_5 = CFS()->get('image_5');
             $title_5 = CFS()->get('title_5');
             $title_5_text = CFS()->get('text_5');
-            echo "<div class='steps-container'>";
-            echo "<div class='take-text-wrapper'>";
-            echo "<div class='icons-title'>";
-            echo "<img src=" . $image . " class='icons'>";
-            echo "<h2>" . $title . "</h2>";
-            echo "<p class='town'>" . $title_text . "</p>";
-            echo "</div>";
-            echo "<a href='#next'><button class='iconbutton'>GOT IT, NEXT!</button></a>";
-            echo "</div>";
-            echo "<div class='take-text-wrapper'>";
-            echo "<div class='icons-title'>";
-            echo "<img src=" . $image_2 . " class='icons'>";
-            echo "<h2 id='next'>" . $title_2 . "</h2>";
-            echo "</div>";
-            echo "<p>" . $title_2_text . "</p>";
-            echo "<a href='#fill'><button class='iconbutton'>GOT IT, NEXT!</button></a>";
-            echo "</div>";
-            echo "<div class='take-text-wrapper'>";
-            echo "<div class='icons-title'>";
-            echo "<img src=" . $image_3 . " class='icons'>";
-            echo "<h2 id='fill'>" . $title_3 . "</h2>";
-            echo "</div>";
-            echo "<p>" . $title_3_text . "</p>";
-            echo "<a href='#done'<button class='iconbutton' id='formsmobile'>FILL THE FORM</button></a>";
-            echo "</div>";
-            // echo "<div class='mobile-forms'>";
+  ?>
+            <div class='steps-container'>
+              <div class='take-text-wrapper'>
+                <div class='icons-title'>
+                <img src="<?php echo $image ?>" class='icons'>
+                <h2><?php echo $title ?></h2>
+                <p class='town'><?php echo $title_text ?></p>
+                </div>
+              <a href='#next'><button class='iconbutton'>GOT IT, NEXT!</button></a>
+              </div>
+            <div class='take-text-wrapper'>
+              <div class='icons-title'>
+                <img src="<?php echo $image_2 ?>" class='icons'>
+                <h2 id='next'><?php echo $title_2?></h2>
+              </div>
+              <p><?php echo $title_2_text?></p>
+              <a href='#fill'><button class='iconbutton'>GOT IT, NEXT!</button></a>
+            </div>
+            <div class='take-text-wrapper'>
+              <div class='icons-title'>
+                <img src="<?php echo $image_3 ?>" class='icons'>
+                <h2 id='fill'><?php echo $title_3 ?></h2>
+              </div>
+              <p><?php echo $title_3_text ?></p>
+              <a href='#done'<button class='iconbutton' id='formsmobile'>FILL THE FORM</button></a>
+            </div>
+            <!-- // echo "<div class='mobile-forms'>";
             // echo CFS()->get('form');
-            // echo "</div>";
-            echo "<div class='take-text-wrapper'>";
-            echo "<div class='icons-title'>";
-            echo "<img src=" . $image_4 . " class='icons'>";
-            echo "<h2 id='done'>" . $title_4 . "</h2>";
-            echo "</div>";
-            echo "<p>" . $title_4_text . "</p>";
-            echo "<a target='_blank' ='#finish' href='https://drive.google.com/drive/folders/1KR6gb1ulL1tunhDn1yw26WX_2GnKU7-I?usp=sharing'><button class='iconbutton'>DOWNLOAD</button></a>";
-            echo "</div>";
-            echo "<div class='take-text-wrapper'>";
-            echo "<div class='icons-title'>";
-            echo "<img src=" . $image_5 . " class='icons'>";
-            echo "<h2 id='finish'>" . $title_5 . "</h2>";
-            echo "</div>";
-            echo "<p>" . $title_5_text . "</p>";
-            echo "</div>";
-            echo "</div>";
-            echo "<div class='bigbutton'>";
-            echo "<button class='desktopbutton' id='forms'>REGISTER & DOWNLOAD</button>";
-            echo "</div>"
-            ?>
+            // echo "</div>"; -->
+            <div class='take-text-wrapper'>
+              <div class='icons-title'>
+                <img src="<?php echo $image_4 ?>"class='icons'>
+                <h2 id='done'> <?php echo $title_4 ?></h2>
+              </div>
+              <p><?php echo $title_4_text ?></p>
+              <a target='_blank' ='#finish' href='https://drive.google.com/drive/folders/1KR6gb1ulL1tunhDn1yw26WX_2GnKU7-I?usp=sharing'><button class='iconbutton'>DOWNLOAD</button></a>
+            </div>
+            <div class='take-text-wrapper'>
+              <div class='icons-title'>
+                <img src="<?php echo $image_5 ?>" class='icons'>
+                <h2 id='finish'><?php echo $title_5 ?></h2>
+              </div>
+              <p><?php echo $title_5_text ?></p>
+            </div>
+            </div>
+            <div class='bigbutton'>
+              <button class='desktopbutton' id='forms'>REGISTER & DOWNLOAD</button>
+            </div>
             <?php echo CFS()->get('form');?>
 
 
