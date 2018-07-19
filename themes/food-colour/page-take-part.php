@@ -24,14 +24,17 @@
           <?php if ( is_home() && ! is_front_page() ) : ?>
           <?php endif; ?>
           <?php while ( have_posts() ) : the_post(); ?>
-          <?php get_template_part( 'template-parts/content' ); ?>
+          <?php get_template_part( 'template-parts/content-take' ); ?>
           <?php endwhile; ?>
           <?php the_posts_navigation(); ?>
           <?php else : ?>
           <?php get_template_part( 'template-parts/content', 'none' ); ?>
           <?php endif; ?>
           </section>
-
+          <div>
+          
+          <h2 class="host-text"> Host an exhibition</h2>
+          </div>
 
  <?php
             $image = CFS()->get('image');
