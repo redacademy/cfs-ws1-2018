@@ -20,3 +20,15 @@ function red_starter_body_classes( $classes ) {
 	return $classes;
 }
 add_filter( 'body_class', 'red_starter_body_classes' );
+
+/**
+ * Allow svg upload to media gallery
+ */
+
+function add_file_types_to_uploads($file_types){
+	$new_filetypes = array();
+	$new_filetypes['svg'] = 'image/svg+xml';
+	$file_types = array_merge($file_types, $new_filetypes );
+	return $file_types;
+	}
+add_action('upload_mimes', 'add_file_types_to_uploads');

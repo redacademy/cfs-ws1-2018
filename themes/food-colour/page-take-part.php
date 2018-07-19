@@ -72,15 +72,18 @@
             echo "<h2 id='fill'>" . $title_3 . "</h2>";
             echo "</div>";
             echo "<p>" . $title_3_text . "</p>";
-            echo "<a href='#done'<button class='iconbutton'>FILL THE FORM</button></a>";
+            echo "<a href='#done'<button class='iconbutton' id='formsmobile'>FILL THE FORM</button></a>";
             echo "</div>";
+            // echo "<div class='mobile-forms'>";
+            // echo CFS()->get('form');
+            // echo "</div>";
             echo "<div class='take-text-wrapper'>";
             echo "<div class='icons-title'>";
             echo "<img src=" . $image_4 . " class='icons'>";
             echo "<h2 id='done'>" . $title_4 . "</h2>";
             echo "</div>";
             echo "<p>" . $title_4_text . "</p>";
-            echo "<a href='#finish'https://drive.google.com/drive/folders/1KR6gb1ulL1tunhDn1yw26WX_2GnKU7-I?usp=sharing'><button class='iconbutton'>DOWNLOAD</button><a/>";
+            echo "<a target='_blank' ='#finish' href='https://drive.google.com/drive/folders/1KR6gb1ulL1tunhDn1yw26WX_2GnKU7-I?usp=sharing'><button class='iconbutton'>DOWNLOAD</button></a>";
             echo "</div>";
             echo "<div class='take-text-wrapper'>";
             echo "<div class='icons-title'>";
@@ -95,6 +98,15 @@
             echo "</div>"
             ?>
             <?php echo CFS()->get('form');?>
+
+
+            <div class='cloud-container' id='cloud'>
+              <h2>Download your files</h2>
+            <img class='cloudbackground' src="<?php echo esc_url(get_bloginfo('template_directory')); ?>/assets/images/cloud.png"
+            alt="cloud background" />
+            <a target='_blank' href='https://drive.google.com/drive/folders/1KR6gb1ulL1tunhDn1yw26WX_2GnKU7-I?usp=sharing'><button class='downloadbutton'>ok</button></a>
+            
+            </div>
             
           <div class='share-container' id='share'>
             <img class='mobile-image' src="<?php echo esc_url(get_bloginfo('template_directory')); ?>/assets/images/share_now.png" alt="sharebackground"
@@ -110,34 +122,41 @@
           </div>
 </div>
 
-<div class="host-events">
+<div class="host-events" style="background-image: url(<?php echo esc_url(get_bloginfo('template_directory')); ?>/assets/images/event_map.png)">
+
 <?php while ( have_posts() ) : the_post(); ?>
 
 <?php
   $args = array( 'post_type' => 'event', 'posts_per_page' => 4,);
   $event = new WP_Query( $args );
   ?>
-  <img class='eventmap-image' src="<?php echo esc_url(get_bloginfo('template_directory')); ?>/assets/images/event_map.png" alt="sharebackground"/>
+
   <?php while ( $event->have_posts() ) : $event->the_post(); ?>
-  <div class="event-container">
-  <div class="inner">
-  <?php the_title(); ?>
-  <?php the_content(); ?>
-  </div>
+  <div class="event-container" event-title="<?php the_title(); ?>" event-content="<?php the_content(); ?>">
+    <div class="inner">
+      <?php //the_title(); ?>
+      <?php //the_content(); ?>
+    </div>
+
+    <div class="event-date">
+      <p><?php echo CFS()->get('date');?></p>
+      <p><?php echo CFS()->get('country');?></p>
+      <p><?php echo CFS()->get('city');?></p>
+    </div>
   </div>
 
-<div class="event-date">
-<p><?php echo CFS()->get('date');?></p>
-<p><?php echo CFS()->get('country');?></p>
-<p><?php echo CFS()->get('city');?></p>
-</div>
+
 <?php endwhile;
 ?>
+
+<div class="event-main-container">
+</div>
 
 
 <?php wp_reset_postdata(); ?>
 
 <?php endwhile; // End of the loop. ?>     
+
 </div>
 
           <div class='foodcolour'>

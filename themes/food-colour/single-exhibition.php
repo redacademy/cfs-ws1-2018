@@ -16,7 +16,7 @@ get_header(); ?>
                     <?php
                         $args = array( 
                             'post_type' => 'exhibition',
-                            'posts_per_page' => 12, 
+                            'posts_per_page' => 11, 
                         ); 
                         $exhibitions = new WP_Query( $args );
                     ?>

@@ -1076,7 +1076,7 @@ header {
   border-color: #D99A50; }
 
 #primary-menu :hover {
-  border-width: thin; }
+  border-width: 2px; }
 
 .single-exhibition {
   display: block; }
@@ -1447,12 +1447,15 @@ header {
   display: none; }
 
 .take-content-area .gform_wrapper {
-  -webkit-box-shadow: 3px 3px #aaaaaa;
-          box-shadow: 3px 3px #aaaaaa;
+  -webkit-box-shadow: 0.5px 0.5px #aaaaaa;
+          box-shadow: 0.5px 0.5px #aaaaaa;
   border: #c1c1c1 solid 1px;
   text-align: left;
   max-width: 55%;
   margin: 0 auto; }
+
+.take-content-area .gform_confirmation_message_1 {
+  margin-left: 32.5rem; }
 
 .take-content-area .iconbutton {
   background-color: #2F80ED;
@@ -1493,8 +1496,29 @@ header {
   .take-content-area .desktopbutton:hover {
     background-color: #115bbf; }
 
+.take-content-area .downloadbutton {
+  background-color: #2F80ED;
+  border: 0;
+  border-radius: 3px;
+  color: #FFFFFF !important;
+  font-family: Montserrat, sans-serif;
+  font-weight: bold;
+  padding: 0.75rem;
+  text-align: center;
+  text-transform: uppercase;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  letter-spacing: 1.5px;
+  margin-top: 5rem;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin-left: 40rem;
+  width: 10rem;
+  font-weight: 200; }
+  .take-content-area .downloadbutton:hover {
+    background-color: #115bbf; }
+
 .take-content-area .bigbutton {
-  display: block;
   text-align: center; }
 
 .take-content-area .take-text-wrapper {
@@ -1534,7 +1558,30 @@ header {
     font-size: 1.3rem;
     text-transform: uppercase; }
   .take-content-area .takebox p {
-    font-size: 0.5rem; }
+    font-size: 0.7rem; }
+
+.take-content-area .cloud-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .take-content-area .cloud-container.activated {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .take-content-area .cloud-container .cloudbackground {
+    width: 200px;
+    height: 150px;
+    margin-top: 5rem; }
+  @media (min-width: 620px) {
+    .take-content-area .cloud-container {
+      display: none; } }
 
 .take-content-area .bannertext {
   position: absolute;
@@ -1553,21 +1600,37 @@ header {
   color: #FD5E46;
   font-size: 48px; }
 
+.event-main-container {
+  margin-left: auto;
+  -ms-flex-item-align: center;
+      align-self: center;
+  margin-right: auto; }
+  .event-main-container h2 {
+    color: #2F80ED;
+    font-family: Roboto, sans-serif;
+    font-size: 2rem; }
+
 .event-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: absolute; }
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
 
 .host-events {
+  height: 100vh;
+  background-size: cover,cover;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
-  position: relative; }
+  display: flex; }
 
 .event-date {
-  bottom: 50%;
-  position: absolute; }
+  bottom: 50%; }
 
 .foodcolour {
   display: -webkit-box;
@@ -1584,31 +1647,40 @@ header {
     padding: 2rem; }
 
 @media (min-width: 620px) {
-  .steps-container {
+  .take-content-area .takebox p {
+    font-size: 1rem; }
+  .take-content-area .takebox h1 {
+    font-size: 5rem; }
+  .take-content-area .steps-container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     margin-left: 5rem;
     width: 1240px; }
-  .icons-title {
+  .take-content-area .town {
+    margin-left: 2rem !important;
+    margin-top: 0.5rem !important; }
+  .take-content-area .icons-title {
     display: inline-block !important;
     height: 35px;
     margin: 0 0 25px; }
-    .icons-title img {
+    .take-content-area .icons-title img {
       margin-bottom: 0.5rem;
       margin-left: 1.8rem; }
-  .iconbutton {
+  .take-content-area .iconbutton {
     display: none; }
-  .share-box {
+  .take-content-area .mobile-forms {
+    display: none; }
+  .take-content-area .share-box {
     padding: 6rem !important;
     width: 54%; }
-    .share-box p {
+    .take-content-area .share-box p {
       font-size: 29px; }
-  .desktop-image {
+  .take-content-area .desktop-image {
     margin-left: 6rem;
     width: 800px;
     padding: 1rem; }
-  .share-container {
+  .take-content-area .share-container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1616,16 +1688,16 @@ header {
         -ms-flex-pack: center;
             justify-content: center;
     margin-top: 15rem;
-    background: #e0e0e0; } }
+    background: #F2F2F2; } }
 
-/* hide mobile show desktop */
+/* hide mobile show desktop sharebackground img */
 @media only screen and (min-width: 620px) {
   .mobile-image {
     display: none; }
   .desktop-image {
     display: block; } }
 
-/* show mobile hide desktop */
+/* show mobile hide desktop sharebackground img */
 @media only screen and (orientation: portrait) and (max-width: 620px) {
   .mobile-image {
     display: block; }
@@ -1651,26 +1723,27 @@ header {
       background-color: #d9d9d9; } }
 
 @media only screen and (orientation: portrait) and (max-width: 620px) {
-  .take-text-wrapper {
+  .take-content-area .cloud-container {
+    display: none; }
+  .take-content-area .take-text-wrapper {
     width: 90%;
     margin: 0 auto;
     display: none; }
-    .take-text-wrapper.active {
+    .take-content-area .take-text-wrapper.active {
       display: block; }
-    .take-text-wrapper p {
+    .take-content-area .take-text-wrapper p {
       margin-left: 4rem !important; }
-    .take-text-wrapper h2 {
+    .take-content-area .take-text-wrapper h2 {
       padding-left: 3rem !important; }
-  .icons-title img {
+  .take-content-area .icons-title img {
     height: 3rem;
     width: 3rem;
     margin-left: -1rem; }
-  .icons {
+  .take-content-area .icons {
     position: absolute;
     margin-left: -1; }
-  .town {
-    margin-left: 2rem;
-    margin-top: 0.5rem; } }
+  .take-content-area .gform_wrapper {
+    max-width: 95%; } }
 
 .error404 {
   height: 100vh;
