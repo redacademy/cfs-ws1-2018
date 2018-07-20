@@ -136,8 +136,6 @@
   <?php while ( $event->have_posts() ) : $event->the_post(); ?>
   <div class="event-container" event-title="<?php the_title(); ?>" event-content="<?php the_content(); ?>">
     <div class="inner">
-      <?php //the_title(); ?>
-      <?php //the_content(); ?>
     </div>
 
     <div class="event-date">

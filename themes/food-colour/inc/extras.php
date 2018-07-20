@@ -39,7 +39,10 @@ add_action('upload_mimes', 'food_colour_add_file_types_to_uploads');
 function food_colour_og_metadata() {
 	if (is_singular('exhibition')) {
 		$title = get_the_title();
-		$description = CFS()->get('description');
+		$description = (CFS()->get('description'));
+		$description = str_replace("'", "&#39;", $description);
+		$description = str_replace('"', '&#34;', $description);
+
 		$url = get_permalink();
 		$site_name = get_bloginfo();
 		$image = CFS()->get('map');
