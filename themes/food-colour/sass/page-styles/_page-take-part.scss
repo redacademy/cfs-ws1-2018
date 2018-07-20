@@ -15,10 +15,11 @@
     }
     .gform_wrapper{
         box-shadow: 0.5px 0.5px #aaaaaa;
-        border: #c1c1c1 solid 1px;
+        // border: #c1c1c1 solid 1px;
         text-align: left;
-        max-width: 55%;
+        max-width: 50%;
         margin: 0 auto;
+        padding:1rem;
         
     }
     .gform_confirmation_message_1{
@@ -48,6 +49,14 @@
     }
     .bigbutton{
         text-align: center;
+    }
+    .google-cal{
+        @include button-style($color__brand-blue, $color__text-white);
+        margin-right:2rem;
+    }
+    .facebook-event{
+        @include button-style($color__text-white, $color__brand-blue);
+        border: 2px solid;
     }
     .host-text{
         display:flex;
@@ -156,7 +165,15 @@
             h2{
                 color:$color__brand-blue;
                 font-family:$font__main;
-                font-size:2rem;
+                font-size:3rem;
+            }
+            hr{
+                width: 5rem;
+                height: 2px;
+                margin-left: 0;
+            }
+            p{
+                font-size:1rem;
             }
     }
     .event-container{

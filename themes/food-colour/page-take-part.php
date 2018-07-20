@@ -79,10 +79,7 @@
               </div>
               <p><?php echo $title_3_text ?></p>
               <a href='#done'<button class='iconbutton' id='formsmobile'>FILL THE FORM</button></a>
-            </div>
-            <!-- // echo "<div class='mobile-forms'>";
-            // echo CFS()->get('form');
-            // echo "</div>"; -->
+            </div>        
             <div class='take-text-wrapper'>
               <div class='icons-title'>
                 <img src="<?php echo $image_4 ?>"class='icons'>

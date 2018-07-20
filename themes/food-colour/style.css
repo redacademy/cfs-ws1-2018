@@ -1473,10 +1473,10 @@ object {
 .take-content-area .gform_wrapper {
   -webkit-box-shadow: 0.5px 0.5px #aaaaaa;
           box-shadow: 0.5px 0.5px #aaaaaa;
-  border: #c1c1c1 solid 1px;
   text-align: left;
-  max-width: 55%;
-  margin: 0 auto; }
+  max-width: 50%;
+  margin: 0 auto;
+  padding: 1rem; }
 
 .take-content-area .gform_confirmation_message_1 {
   margin-left: 32.5rem; }
@@ -1544,6 +1544,40 @@ object {
 
 .take-content-area .bigbutton {
   text-align: center; }
+
+.take-content-area .google-cal {
+  background-color: #2F80ED;
+  border: 0;
+  border-radius: 3px;
+  color: #FFFFFF !important;
+  font-family: Montserrat, sans-serif;
+  font-weight: bold;
+  padding: 0.75rem;
+  text-align: center;
+  text-transform: uppercase;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  letter-spacing: 1.5px;
+  margin-right: 2rem; }
+  .take-content-area .google-cal:hover {
+    background-color: #115bbf; }
+
+.take-content-area .facebook-event {
+  background-color: #FFFFFF;
+  border: 0;
+  border-radius: 3px;
+  color: #2F80ED !important;
+  font-family: Montserrat, sans-serif;
+  font-weight: bold;
+  padding: 0.75rem;
+  text-align: center;
+  text-transform: uppercase;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  letter-spacing: 1.5px;
+  border: 2px solid; }
+  .take-content-area .facebook-event:hover {
+    background-color: #d9d9d9; }
 
 .take-content-area .host-text {
   display: -webkit-box;
@@ -1660,7 +1694,13 @@ object {
   .event-main-container h2 {
     color: #2F80ED;
     font-family: Roboto, sans-serif;
-    font-size: 2rem; }
+    font-size: 3rem; }
+  .event-main-container hr {
+    width: 5rem;
+    height: 2px;
+    margin-left: 0; }
+  .event-main-container p {
+    font-size: 1rem; }
 
 .event-container {
   display: -webkit-box;
