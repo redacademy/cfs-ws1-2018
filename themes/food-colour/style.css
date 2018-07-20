@@ -1558,7 +1558,8 @@ object {
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
   letter-spacing: 1.5px;
-  margin-right: 2rem; }
+  margin-right: 2rem;
+  border: 2px solid; }
   .take-content-area .google-cal:hover {
     background-color: #115bbf; }
 

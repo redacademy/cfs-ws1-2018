@@ -86,7 +86,7 @@
                 <h2 id='done'> <?php echo $title_4 ?></h2>
               </div>
               <p><?php echo $title_4_text ?></p>
-              <a target='_blank' ='#finish' href='https://drive.google.com/drive/folders/1KR6gb1ulL1tunhDn1yw26WX_2GnKU7-I?usp=sharing'><button class='iconbutton'>DOWNLOAD</button></a>
+              <a target='_blank' id='finish' href='https://drive.google.com/drive/folders/1KR6gb1ulL1tunhDn1yw26WX_2GnKU7-I?usp=sharing'><button class='iconbutton'>DOWNLOAD</button></a>
             </div>
             <div class='take-text-wrapper'>
               <div class='icons-title'>
