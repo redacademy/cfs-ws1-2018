@@ -1073,21 +1073,21 @@ object {
   position: absolute;
   top: 106px;
   left: 0px; }
-  .menu-main-menu-container #primary-menu {
+  .menu-main-menu-container #primary-menu, .menu-main-menu-container #footer-menu {
     height: 350px;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
-    .menu-main-menu-container #primary-menu a {
+    .menu-main-menu-container #primary-menu a, .menu-main-menu-container #footer-menu a {
       border-bottom: solid;
       border-width: 0; }
-    .menu-main-menu-container #primary-menu :nth-child(1) a {
+    .menu-main-menu-container #primary-menu :nth-child(1) a, .menu-main-menu-container #footer-menu :nth-child(1) a {
       border-color: #4B66A0; }
-    .menu-main-menu-container #primary-menu :nth-child(2) a {
+    .menu-main-menu-container #primary-menu :nth-child(2) a, .menu-main-menu-container #footer-menu :nth-child(2) a {
       border-color: #B2423E; }
-    .menu-main-menu-container #primary-menu :nth-child(3) a {
+    .menu-main-menu-container #primary-menu :nth-child(3) a, .menu-main-menu-container #footer-menu :nth-child(3) a {
       border-color: #D99A50; }
-    .menu-main-menu-container #primary-menu :hover {
+    .menu-main-menu-container #primary-menu :hover, .menu-main-menu-container #footer-menu :hover {
       border-width: 2px; }
 
 .single-exhibition {
