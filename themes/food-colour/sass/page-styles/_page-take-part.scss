@@ -161,7 +161,8 @@
     .event-main-container{
         margin-left: auto;
         align-self: center;
-        margin-right: auto;
+        margin-right: 3rem;
+        max-width:50%;
             h2{
                 color:$color__brand-blue;
                 font-family:$font__main;

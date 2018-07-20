@@ -101,7 +101,6 @@
             </div>
             <?php echo CFS()->get('form');?>
 
-
             <div class='cloud-container' id='cloud'>
               <h2>Download your files</h2>
             <img class='cloudbackground' src="<?php echo esc_url(get_bloginfo('template_directory')); ?>/assets/images/cloud.png"
@@ -135,11 +134,7 @@
 
   <?php while ( $event->have_posts() ) : $event->the_post(); ?>
   <div class="event-container" event-title="<?php the_title(); ?>" event-content="<?php the_content(); ?>">
-    <div class="inner">
-      <?php //the_title(); ?>
-      <?php //the_content(); ?>
-    </div>
-
+    
     <div class="event-date">
       <p><?php echo CFS()->get('date');?></p>
       <p><?php echo CFS()->get('country');?></p>
