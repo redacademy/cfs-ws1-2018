@@ -938,7 +938,7 @@ object {
     height: auto; }
   .design p {
     margin: 0;
-    padding-right: 1rem; }
+    padding-right: 0.5rem; }
 
 .logo-container {
   display: grid; }
