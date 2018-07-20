@@ -11,8 +11,8 @@ function exhibition_custom_post_type() {
 	$labels = array(
 		'name'                  =>  'Exhibitions', 'Post Type General Name',
 		'singular_name'         =>  'Exhibition', 'Post Type Singular Name',
-		'menu_name'             =>  'Exhibition',
-		'name_admin_bar'        =>  'Exhibition',
+		'menu_name'             =>  'Exhibitions',
+		'name_admin_bar'        =>  'Exhibitions',
 		'archives'              =>  'Exhibition Archives', 
 		'attributes'            =>  'Exhibition Attributes', 
 		'parent_item_colon'     =>  'Parent Exhibition:', 
@@ -66,8 +66,8 @@ function event_custom_post_type() {
 	$labels = array(
 		'name'                  =>  'Events', 'Post Type General Name',
 		'singular_name'         =>  'Event', 'Post Type Singular Name', 
-		'menu_name'             =>  'Event', 
-		'name_admin_bar'        =>  'Post Type', 
+		'menu_name'             =>  'Events', 
+		'name_admin_bar'        =>  'Events', 
 		'archives'              =>  'Event Archives', 
 		'attributes'            =>  'Event Attributes', 
 		'parent_item_colon'     =>  'Parent Event:', 
