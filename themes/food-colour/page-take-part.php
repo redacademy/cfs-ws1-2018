@@ -134,7 +134,9 @@
 
   <?php while ( $event->have_posts() ) : $event->the_post(); ?>
   <div class="event-container" event-title="<?php the_title(); ?>" event-content="<?php the_content(); ?>">
-    
+    <div class="inner">
+    </div>
+
     <div class="event-date">
       <p><?php echo CFS()->get('date');?></p>
       <p><?php echo CFS()->get('country');?></p>

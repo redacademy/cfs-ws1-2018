@@ -1,9 +1,11 @@
-# Colors of Food Security
+# Colours of Food Security
 
 This is a project for LUGE Research Group at the University of British Columbia.
 It contains custom WordPress template and a plugin for custom post types. 
 
 Capstone client project for RED Academy Web Development course 2018.
+
+![Colours of Food Security Screenshot](themes/food-colour/screenshot.png "This is a screenshot of the Colours of Food Security theme")
 
 ## Authors
 * [Lucas Da Cunha](https://github.com/Lcunha25)
