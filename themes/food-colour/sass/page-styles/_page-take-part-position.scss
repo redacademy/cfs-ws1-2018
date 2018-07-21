@@ -1,0 +1,36 @@
+.host-events {
+    height: auto;
+    display: grid;
+}
+
+.event-container {
+    display: block;
+    margin-bottom: $base__space-unit * 2;
+}
+
+.event-calendar {
+    padding: $base__space-unit;
+    margin-left: $base__space-unit * 2;
+
+    
+}
+
+.event-date {
+    display: grid;
+    grid-template: 1fr 1fr 1fr / 120px 1fr;
+    margin: auto;
+    max-width: 400px;
+
+    .date-box {
+        max-width: 80px;
+        grid-row: 1 / 4;
+    }
+
+    p {
+        margin: 0;
+    }
+}
+
+.event-end {
+    padding: 3px;
+}

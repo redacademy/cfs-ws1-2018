@@ -1717,11 +1717,12 @@ object {
 .event-end {
   background: #2F80ED;
   border-radius: 1rem;
-  width: 81px;
+  width: 100%;
   color: #FFFFFF;
-  padding: 6px;
+  padding: 2px;
   font-family: Roboto, sans-serif;
-  font-weight: 700; }
+  font-weight: 700;
+  text-align: center; }
 
 .event-container {
   display: -webkit-box;
@@ -1734,6 +1735,16 @@ object {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
+
+.event-names {
+  font-family: Montserrat, sans-serif;
+  font-weight: 700;
+  color: #0A3E8E;
+  font-size: 2rem;
+  margin-left: 1rem; }
+  @media (min-width: 620px) {
+    .event-names {
+      display: none; } }
 
 .host-events {
   height: 100vh;
@@ -1751,7 +1762,8 @@ object {
   font-family: Roboto, sans-serif;
   font-size: 1.2rem;
   font-weight: 700;
-  max-width: 70%;
+  height: 55px;
+  width: 90px;
   padding: 0 2rem;
   margin-right: 1rem; }
 
@@ -1824,7 +1836,7 @@ object {
     background: #F2F2F2; } }
 
 /* hide mobile show desktop sharebackground img */
-@media only screen and (min-width: 620px) {
+@media (min-width: 800px) {
   .mobile-image {
     display: none; }
   .desktop-image {
@@ -1964,3 +1976,29 @@ object {
         max-width: 250px; }
         .error404 .page-content .error-text-content a:hover {
           background-color: #115bbf; }
+
+.host-events {
+  height: auto;
+  display: grid; }
+
+.event-container {
+  display: block;
+  margin-bottom: 3rem; }
+
+.event-calendar {
+  padding: 1.5rem;
+  margin-left: 3rem; }
+
+.event-date {
+  display: grid;
+  grid-template: 1fr 1fr 1fr / 120px 1fr;
+  margin: auto;
+  max-width: 400px; }
+  .event-date .date-box {
+    max-width: 80px;
+    grid-row: 1 / 4; }
+  .event-date p {
+    margin: 0; }
+
+.event-end {
+  padding: 3px; }
