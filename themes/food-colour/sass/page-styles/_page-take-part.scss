@@ -53,7 +53,11 @@
     .google-cal{
         @include button-style($color__brand-blue, $color__text-white);
         margin-right:2rem;
-        border: 2px solid;
+        border: 2px solid $color__brand-blue;
+
+        &:hover {
+            border: 2px solid darken($color__brand-blue, 15);
+        }
     }
     .facebook-event{
         @include button-style($color__text-white, $color__brand-blue);
