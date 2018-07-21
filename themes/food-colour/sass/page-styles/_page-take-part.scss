@@ -184,18 +184,18 @@
     .event-end{
         background:$color__brand-blue;
         border-radius: 1rem;
+<<<<<<< HEAD
         width: 85%;
         min-width: 100px;
+=======
+        width: 100px;
+>>>>>>> cc5b84518e5ca2273f70747698cec649641321c3
         color: $color__text-white;
-        padding: 2px;
+        padding: 5px;
         font-family:$font__main;
         font-weight:700;
         font-size:0.6rem;
-        // padding-top:0.5rem;
         text-align: center;
-            @include desktop{
-                width:30%;
-            }
     }
     .country-title{
         font-size:1rem;
@@ -354,7 +354,7 @@
 
 @include mobile-portrait {
 .take-content-area{
-    .cloud-container{
+    .cloud-container,.cloud-container.activated{
         display:none;
     }
     .take-text-wrapper{
