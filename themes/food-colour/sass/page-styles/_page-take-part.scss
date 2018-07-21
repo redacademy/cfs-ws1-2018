@@ -15,7 +15,6 @@
     }
     .gform_wrapper{
         box-shadow: 0.5px 0.5px #aaaaaa;
-        // border: #c1c1c1 solid 1px;
         text-align: left;
         max-width: 50%;
         margin: 0 auto;
@@ -121,7 +120,7 @@
             text-transform:uppercase;
         }
         p{
-            font-size: 0.9rem;
+            font-size: 0.7rem;
             font-weight: 200;
         } 
     }
@@ -185,12 +184,22 @@
     .event-end{
         background:$color__brand-blue;
         border-radius: 1rem;
-        width: 100%;
+        width: 85%;
         color: $color__text-white;
         padding: 2px;
         font-family:$font__main;
         font-weight:700;
+        font-size:0.6rem;
+        // padding-top:0.5rem;
         text-align: center;
+            @include desktop{
+                width:30%;
+            }
+    }
+    .country-title{
+        font-size:1rem;
+        font-weight:700;
+        font-family:$font__main;
     }
     .event-container{
         display:flex;
@@ -226,9 +235,10 @@
         font-size:1.2rem;
         font-weight:700;
         height: 55px;
-        width: 90px;
+        width: 100%;
         padding: 0 2rem;
         margin-right:1rem;
+        text-align: center;
 
     }
     .branch-text{
@@ -261,10 +271,12 @@
         .take-content-area{
         .takebox{
             p{
-                font-size:2rem;
+                font-size:1.5rem;
+                width: 40%;
             }
             h1{
                 font-size:5rem;
+                width: 50%;
             }
         }
         .steps-container{

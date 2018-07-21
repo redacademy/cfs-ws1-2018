@@ -1657,7 +1657,7 @@ object {
     font-size: 2rem;
     text-transform: uppercase; }
   .take-content-area .takebox p {
-    font-size: 0.9rem;
+    font-size: 0.7rem;
     font-weight: 200; }
 
 .take-content-area .cloud-container {
@@ -1722,12 +1722,21 @@ object {
 .event-end {
   background: #2F80ED;
   border-radius: 1rem;
-  width: 100%;
+  width: 85%;
   color: #FFFFFF;
   padding: 2px;
   font-family: Roboto, sans-serif;
   font-weight: 700;
+  font-size: 0.6rem;
   text-align: center; }
+  @media (min-width: 620px) {
+    .event-end {
+      width: 30%; } }
+
+.country-title {
+  font-size: 1rem;
+  font-weight: 700;
+  font-family: Roboto, sans-serif; }
 
 .event-container {
   display: -webkit-box;
@@ -1768,9 +1777,10 @@ object {
   font-size: 1.2rem;
   font-weight: 700;
   height: 55px;
-  width: 90px;
+  width: 100%;
   padding: 0 2rem;
-  margin-right: 1rem; }
+  margin-right: 1rem;
+  text-align: center; }
 
 .branch-text {
   font-size: 2rem;
@@ -1798,9 +1808,11 @@ object {
 
 @media (min-width: 620px) {
   .take-content-area .takebox p {
-    font-size: 2rem; }
+    font-size: 1.5rem;
+    width: 40%; }
   .take-content-area .takebox h1 {
-    font-size: 5rem; }
+    font-size: 5rem;
+    width: 50%; }
   .take-content-area .steps-container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2000,7 +2012,7 @@ object {
   margin: auto;
   max-width: 400px; }
   .event-date .date-box {
-    max-width: 80px;
+    max-width: 100px;
     grid-row: 1 / 4; }
   .event-date p {
     margin: 0; }
