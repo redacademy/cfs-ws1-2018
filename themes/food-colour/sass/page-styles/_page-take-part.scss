@@ -53,6 +53,7 @@
     .google-cal{
         @include button-style($color__brand-blue, $color__text-white);
         margin-right:2rem;
+        border: 2px solid;
     }
     .facebook-event{
         @include button-style($color__text-white, $color__brand-blue);
@@ -161,7 +162,8 @@
     .event-main-container{
         margin-left: auto;
         align-self: center;
-        margin-right: auto;
+        margin-right: 3rem;
+        max-width:50%;
             h2{
                 color:$color__brand-blue;
                 font-family:$font__main;

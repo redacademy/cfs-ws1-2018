@@ -86,7 +86,7 @@
                 <h2 id='done'> <?php echo $title_4 ?></h2>
               </div>
               <p><?php echo $title_4_text ?></p>
-              <a target='_blank' ='#finish' href='https://drive.google.com/drive/folders/1KR6gb1ulL1tunhDn1yw26WX_2GnKU7-I?usp=sharing'><button class='iconbutton'>DOWNLOAD</button></a>
+              <a target='_blank' id='finish' href='https://drive.google.com/drive/folders/1KR6gb1ulL1tunhDn1yw26WX_2GnKU7-I?usp=sharing'><button class='iconbutton'>DOWNLOAD</button></a>
             </div>
             <div class='take-text-wrapper'>
               <div class='icons-title'>
@@ -100,7 +100,6 @@
               <button class='desktopbutton' id='forms'>REGISTER & DOWNLOAD</button>
             </div>
             <?php echo CFS()->get('form');?>
-
 
             <div class='cloud-container' id='cloud'>
               <h2>Download your files</h2>
@@ -134,11 +133,8 @@
   ?>
 
   <?php while ( $event->have_posts() ) : $event->the_post(); ?>
-  <div class="event-container" event-title="<?php the_title(); ?>" event-content="<?php the_content(); ?>">
-    <div class="inner">
-      <?php //the_title(); ?>
-      <?php //the_content(); ?>
-    </div>
+  <div class="event-container" event-title="<?php the_title(); ?>" event-google="<?php echo CFS()->get('google_calendar'); ?>" event-facebook="<?php echo CFS()->get('facebook_event'); ?>" event-organization="<?php echo CFS()->get('organization'); ?>" event-branch="<?php echo CFS()->get('branch'); ?>" event-address="<?php echo CFS()->get('address'); ?>">
+
 
     <div class="event-date">
       <p><?php echo CFS()->get('date');?></p>

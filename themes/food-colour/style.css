@@ -938,7 +938,7 @@ object {
     height: auto; }
   .design p {
     margin: 0;
-    padding-right: 1rem; }
+    padding-right: 0.5rem; }
 
 .logo-container {
   display: grid; }
@@ -1073,21 +1073,21 @@ object {
   position: absolute;
   top: 106px;
   left: 0px; }
-  .menu-main-menu-container #primary-menu {
+  .menu-main-menu-container #primary-menu, .menu-main-menu-container #footer-menu {
     height: 350px;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
-    .menu-main-menu-container #primary-menu a {
+    .menu-main-menu-container #primary-menu a, .menu-main-menu-container #footer-menu a {
       border-bottom: solid;
       border-width: 0; }
-    .menu-main-menu-container #primary-menu :nth-child(1) a {
+    .menu-main-menu-container #primary-menu :nth-child(1) a, .menu-main-menu-container #footer-menu :nth-child(1) a {
       border-color: #4B66A0; }
-    .menu-main-menu-container #primary-menu :nth-child(2) a {
+    .menu-main-menu-container #primary-menu :nth-child(2) a, .menu-main-menu-container #footer-menu :nth-child(2) a {
       border-color: #B2423E; }
-    .menu-main-menu-container #primary-menu :nth-child(3) a {
+    .menu-main-menu-container #primary-menu :nth-child(3) a, .menu-main-menu-container #footer-menu :nth-child(3) a {
       border-color: #D99A50; }
-    .menu-main-menu-container #primary-menu :hover {
+    .menu-main-menu-container #primary-menu :hover, .menu-main-menu-container #footer-menu :hover {
       border-width: 2px; }
 
 .single-exhibition {
@@ -1571,7 +1571,8 @@ object {
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
   letter-spacing: 1.5px;
-  margin-right: 2rem; }
+  margin-right: 2rem;
+  border: 2px solid; }
   .take-content-area .google-cal:hover {
     background-color: #115bbf; }
 
@@ -1703,7 +1704,8 @@ object {
   margin-left: auto;
   -ms-flex-item-align: center;
       align-self: center;
-  margin-right: auto; }
+  margin-right: 3rem;
+  max-width: 50%; }
   .event-main-container h2 {
     color: #2F80ED;
     font-family: Roboto, sans-serif;
