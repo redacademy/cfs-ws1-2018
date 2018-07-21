@@ -938,7 +938,7 @@ object {
     height: auto; }
   .design p {
     margin: 0;
-    padding-right: 1rem; }
+    padding-right: 0.5rem; }
 
 .logo-container {
   display: grid; }
@@ -1314,7 +1314,7 @@ object {
 .image-wrapper {
   position: relative; }
   .image-wrapper .background-image-main {
-    height: 1484px; }
+    height: 1510px; }
   .image-wrapper .background-map-main {
     position: absolute;
     visibility: hidden;
@@ -1366,7 +1366,7 @@ object {
       margin: 30px 0 5px 0; }
   @media (min-width: 620px) {
     .image-wrapper .background-image-main {
-      height: 2050px; }
+      height: 2680px; }
     .image-wrapper .background-map-main {
       visibility: visible; }
     .image-wrapper #content {
@@ -1441,8 +1441,21 @@ object {
         width: 100%;
         margin: 70px 0; }
       .image-wrapper #content .hashtag {
-        font-size: 100px;
-        margin: 100px 0; } }
+        margin: 10% 5%;
+        font-size: 55px; } }
+
+@media (min-width: 1100px) {
+  #primary .image-wrapper .background-image-main {
+    height: 2139px; }
+  #content .hashtag {
+    font-size: 100px;
+    margin: 100px 5%; } }
+
+@media (min-width: 800px) {
+  .image-wrapper .background-image-main {
+    height: 2350px; }
+  .image-wrapper #content .hashtag {
+    font-size: 70px; } }
 
 .take-content-area .gform_ajax_spinner {
   display: none; }
