@@ -1572,9 +1572,11 @@ object {
   transition: all 0.5s ease-in-out;
   letter-spacing: 1.5px;
   margin-right: 2rem;
-  border: 2px solid; }
+  border: 2px solid #2F80ED; }
   .take-content-area .google-cal:hover {
     background-color: #115bbf; }
+  .take-content-area .google-cal:hover {
+    border: 2px solid #115bbf; }
 
 .take-content-area .facebook-event {
   background-color: #FFFFFF;
@@ -1979,3 +1981,29 @@ object {
         max-width: 250px; }
         .error404 .page-content .error-text-content a:hover {
           background-color: #115bbf; }
+
+.host-events {
+  height: auto;
+  display: grid; }
+
+.event-container {
+  display: block;
+  margin-bottom: 3rem; }
+
+.event-calendar {
+  padding: 1.5rem;
+  margin-left: 3rem; }
+
+.event-date {
+  display: grid;
+  grid-template: 1fr 1fr 1fr / 120px 1fr;
+  margin: auto;
+  max-width: 400px; }
+  .event-date .date-box {
+    max-width: 80px;
+    grid-row: 1 / 4; }
+  .event-date p {
+    margin: 0; }
+
+.event-end {
+  padding: 3px; }
