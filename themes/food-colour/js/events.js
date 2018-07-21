@@ -13,16 +13,17 @@
             '<h3 class="branch-text">' + branch + '</h3>' +
             '<hr>' +
             '<p class="organization-text">' + organization + '</p>' +
-            '<p>' + address + '</p>' + 
-            '<p>' + number + '</p>'
+            '<p>' + address + '</p>' +
+            '<p>' + number + '</p>' +
+            '<div class="event-social"></div>'
         );
 
         if (google) {
-            $('.event-main-container').append('<a target="_blank" href="' + google + '" class="google-cal">Add to Google calendar</a>');
+            $('.event-social').append('<a target="_blank" href="' + google + '" class="google-cal">Add to Google calendar</a>');
         }
 
         if (facebook) {
-            $('.event-main-container').append('<a target="_blank" href="' + facebook + '" class="facebook-event">Facebook event</a>');
+            $('.event-social').append('<a target="_blank" href="' + facebook + '" class="facebook-event">Facebook event</a>');
         }
     }
 })(jQuery);

@@ -141,6 +141,7 @@
           <p><?php echo CFS()->get('city');?></p>
           <p class="event-end"><?php echo CFS()->get('end_date');?></p>
         </div>
+        <div class="event-description"></div>
       </div>
     <?php endwhile; ?>
   </div>  
