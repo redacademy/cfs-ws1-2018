@@ -181,16 +181,28 @@
     .event-end{
         background:$color__brand-blue;
         border-radius: 1rem;
-        width: 81px;
+        width: 100%;
         color: $color__text-white;
-        padding: 6px;
+        padding: 2px;
         font-family:$font__main;
         font-weight:700;
+        text-align: center;
     }
     .event-container{
         display:flex;
         flex-direction: row-reverse;
         align-items: center;
+    }
+    .event-names{
+        font-family:$font__headings;
+        font-weight:700;
+        color:$color_brand-dark-blue;
+        font-size: 2rem;
+        margin-left: 1rem;
+            @include desktop{
+                display:none;
+            }
+
     }
     .host-events{
         height:100vh;
@@ -209,7 +221,8 @@
         font-family:$font__main;
         font-size:1.2rem;
         font-weight:700;
-        max-width: 70%;
+        height: 55px;
+        width: 90px;
         padding: 0 2rem;
         margin-right:1rem;
 
@@ -296,7 +309,7 @@
     } 
 }
 /* hide mobile show desktop sharebackground img */
-@media only screen and (min-width: 620px) {
+@include desktop-image{
    .mobile-image {
        display:none;
    }

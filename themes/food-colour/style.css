@@ -1572,11 +1572,9 @@ object {
   transition: all 0.5s ease-in-out;
   letter-spacing: 1.5px;
   margin-right: 2rem;
-  border: 2px solid #2F80ED; }
+  border: 2px solid; }
   .take-content-area .google-cal:hover {
     background-color: #115bbf; }
-  .take-content-area .google-cal:hover {
-    border: 2px solid #115bbf; }
 
 .take-content-area .facebook-event {
   background-color: #FFFFFF;
@@ -1722,11 +1720,12 @@ object {
 .event-end {
   background: #2F80ED;
   border-radius: 1rem;
-  width: 81px;
+  width: 100%;
   color: #FFFFFF;
-  padding: 6px;
+  padding: 2px;
   font-family: Roboto, sans-serif;
-  font-weight: 700; }
+  font-weight: 700;
+  text-align: center; }
 
 .event-container {
   display: -webkit-box;
@@ -1739,6 +1738,16 @@ object {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
+
+.event-names {
+  font-family: Montserrat, sans-serif;
+  font-weight: 700;
+  color: #0A3E8E;
+  font-size: 2rem;
+  margin-left: 1rem; }
+  @media (min-width: 620px) {
+    .event-names {
+      display: none; } }
 
 .host-events {
   height: 100vh;
@@ -1756,7 +1765,8 @@ object {
   font-family: Roboto, sans-serif;
   font-size: 1.2rem;
   font-weight: 700;
-  max-width: 70%;
+  height: 55px;
+  width: 90px;
   padding: 0 2rem;
   margin-right: 1rem; }
 
@@ -1829,7 +1839,7 @@ object {
     background: #F2F2F2; } }
 
 /* hide mobile show desktop sharebackground img */
-@media only screen and (min-width: 620px) {
+@media (min-width: 800px) {
   .mobile-image {
     display: none; }
   .desktop-image {
