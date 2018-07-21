@@ -870,7 +870,7 @@ object {
 
 .copy {
   text-align: center; }
-  @media (min-width: 620px) {
+  @media (min-width: 1000px) {
     .copy {
       color: #FFFFFF;
       margin: 0;
@@ -1972,7 +1972,13 @@ object {
 
 .host-events {
   height: auto;
-  display: grid; }
+  display: grid;
+  grid-template: auto auto / 1fr;
+  margin: 3rem 0; }
+  @media (min-width: 620px) {
+    .host-events {
+      grid-template: auto / 1fr 9fr;
+      grid-column-gap: 40px; } }
 
 .event-container {
   display: block;
@@ -1983,15 +1989,46 @@ object {
   margin-left: 3rem; }
 
 .event-date {
+  cursor: pointer;
   display: grid;
-  grid-template: 1fr 1fr 1fr / 120px 1fr;
-  margin: auto;
-  max-width: 400px; }
+  grid-template: 1fr 1fr 1fr / 80px 1fr;
+  grid-column-gap: 40px; }
   .event-date .date-box {
+    height: 80px;
     max-width: 80px;
-    grid-row: 1 / 4; }
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    grid-row: 1 / 4;
+    padding: 0.75rem; }
   .event-date p {
     margin: 0; }
 
 .event-end {
-  padding: 3px; }
+  font-size: 12px;
+  padding: 4px;
+  text-align: center; }
+
+.event-main-container {
+  display: none; }
+  @media (min-width: 620px) {
+    .event-main-container {
+      display: block;
+      margin: 0;
+      max-width: 600px;
+      place-self: center; } }
+  .event-main-container h2 {
+    margin: 0; }
+
+.event-social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap; }
+  .event-social a {
+    display: block;
+    margin-bottom: 1.5rem; }
