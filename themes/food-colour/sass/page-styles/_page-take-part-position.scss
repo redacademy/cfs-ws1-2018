@@ -48,6 +48,14 @@
     text-align: center;
 }
 
+.event-description {
+    display: none;
+
+    @include desktop {
+        display: none;
+    }
+}
+
 .event-main-container {
     display: none;
 

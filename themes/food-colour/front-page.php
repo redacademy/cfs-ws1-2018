@@ -27,7 +27,7 @@ get_header(); ?>
 				<section class='title-1'>
 					<h1> <?php echo $fptitle_1 ?> </h1>
 					<p><?php echo $fptext_1 ?> </p>
-					<a href='"<?php echo get_site_url()?>"/exhibition/all'><button>Exhibition</button></a>
+					<a href='<?php echo get_site_url()?>/exhibition/all'><button>Exhibition</button></a>
 				</section>
 				<section class='title-2'>
 					<div>
@@ -36,7 +36,7 @@ get_header(); ?>
 					</div>
 					<img src="<?php echo esc_url($fpimage_2) ?>" rel="lightbox">
 					<p><?php echo $fptext_2 ?> </p>
-					<a href='"<?php echo get_site_url() ?>"/about'><button>About</button></a>
+					<a href='<?php echo get_site_url() ?>/about'><button>About</button></a>
 				</section>
 				<section class='title-3'>
 					<hr align='left'>

@@ -1718,6 +1718,7 @@ object {
   background: #2F80ED;
   border-radius: 1rem;
   width: 85%;
+  min-width: 100px;
   color: #FFFFFF;
   padding: 2px;
   font-family: Roboto, sans-serif;
@@ -2030,6 +2031,12 @@ object {
   font-size: 12px;
   padding: 4px;
   text-align: center; }
+
+.event-description {
+  display: none; }
+  @media (min-width: 620px) {
+    .event-description {
+      display: none; } }
 
 .event-main-container {
   display: none; }
