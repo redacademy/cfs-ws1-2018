@@ -5,7 +5,7 @@ jQuery(document).ready(function($) {
     $('.menu-toggle').on('click', function(){
         if ($('header').height() <= 100) {
             $('#masthead').css({
-                'height': '467px',
+                'height': '400px',
                 'align-items': 'baseline',
             });
             $('#primary-menu').css({

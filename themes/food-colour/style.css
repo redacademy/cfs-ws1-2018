@@ -732,10 +732,11 @@ object {
     margin: 0; }
     .hero-image article .entry-header {
       position: absolute;
+      left: 5%;
       top: 15%;
       z-index: 1; }
       .hero-image article .entry-header a {
-        font-family: Montserrat;
+        font-family: Roboto;
         font-style: normal;
         font-size: 24px;
         text-transform: uppercase;
@@ -748,7 +749,7 @@ object {
       left: 5%;
       top: 30%;
       z-index: 1; }
-      .hero-image article .entry-content p {
+      .hero-image article .entry-content h2 {
         font-family: Roboto;
         font-style: normal;
         font-weight: 400;
@@ -759,7 +760,8 @@ object {
 
 .about-entry-content {
   width: 90%;
-  margin: 50px auto 50px auto; }
+  margin: 50px auto 50px auto;
+  text-align: justify; }
   .about-entry-content .hero-text-wrapper {
     max-width: 1240px;
     margin: 0 auto; }
@@ -788,15 +790,15 @@ object {
 
 @media (min-width: 620px) {
   .hero-image article .entry-header {
-    margin: 0 10%;
-    top: 35%; }
+    margin: 0 5%;
+    top: 25%; }
     .hero-image article .entry-header a {
       font-size: 100px; }
   .hero-image article .entry-content {
     max-width: 1240px;
-    margin: 24px auto 0 10%;
+    margin: 24px auto 0 5%;
     top: 45%; }
-    .hero-image article .entry-content p {
+    .hero-image article .entry-content h2 {
       font-weight: 400;
       font-size: 24px;
       font-family: Roboto;
@@ -806,8 +808,8 @@ object {
       letter-spacing: 1px; }
   .about-entry-content {
     max-width: 1240px;
-    margin: 120px 10% 0 10%;
-    width: 80%; }
+    margin: 120px 15% 0;
+    width: 70%; }
     .about-entry-content .hero-text-wrapper .icon-title img {
       height: 40px; }
     .about-entry-content .hero-text-wrapper .icon-title h2 a {
@@ -1025,20 +1027,13 @@ object {
   margin: 0 5%;
   max-width: 1240px;
   padding: 0; }
-  @media only screen and (orientation: portrait) and (max-width: 620px) {
-    #masthead {
-      -webkit-box-align: baseline;
-          -ms-flex-align: baseline;
-              align-items: baseline; }
-      #masthead #primary-menu {
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
-        grid-template-columns: 100%;
-        grid-template-rows: 1fr 1fr 1fr;
-        height: 340px; }
-        #masthead #primary-menu li a {
-          border-width: medium; } }
+  #masthead #primary-menu {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr 1fr;
+    height: 340px; }
   @media (min-width: 620px) {
     #masthead {
       margin: 0 10%;
@@ -1447,14 +1442,14 @@ object {
 @media (min-width: 1100px) {
   #primary .image-wrapper .background-image-main {
     height: 2139px; }
-  #content .hashtag {
+  .image-wrapper #content .hashtag {
     font-size: 100px;
     margin: 100px 5%; } }
 
 @media (min-width: 800px) {
   .image-wrapper .background-image-main {
     height: 2350px; }
-  .image-wrapper #content .hashtag {
+  .image-wrapper .hashtag {
     font-size: 70px; } }
 
 .take-content-area .gform_ajax_spinner {
@@ -1657,7 +1652,7 @@ object {
     font-size: 2rem;
     text-transform: uppercase; }
   .take-content-area .takebox p {
-    font-size: 0.9rem;
+    font-size: 0.7rem;
     font-weight: 200; }
 
 .take-content-area .cloud-container {
@@ -1722,11 +1717,21 @@ object {
 .event-end {
   background: #2F80ED;
   border-radius: 1rem;
-  width: 81px;
+  width: 85%;
   color: #FFFFFF;
-  padding: 6px;
+  padding: 2px;
   font-family: Roboto, sans-serif;
-  font-weight: 700; }
+  font-weight: 700;
+  font-size: 0.6rem;
+  text-align: center; }
+  @media (min-width: 620px) {
+    .event-end {
+      width: 30%; } }
+
+.country-title {
+  font-size: 1rem;
+  font-weight: 700;
+  font-family: Roboto, sans-serif; }
 
 .event-container {
   display: -webkit-box;
@@ -1739,6 +1744,16 @@ object {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
+
+.event-names {
+  font-family: Montserrat, sans-serif;
+  font-weight: 700;
+  color: #0A3E8E;
+  font-size: 2rem;
+  margin-left: 1rem; }
+  @media (min-width: 620px) {
+    .event-names {
+      display: none; } }
 
 .host-events {
   height: 100vh;
@@ -1756,9 +1771,11 @@ object {
   font-family: Roboto, sans-serif;
   font-size: 1.2rem;
   font-weight: 700;
-  max-width: 70%;
+  height: 55px;
+  width: 100%;
   padding: 0 2rem;
-  margin-right: 1rem; }
+  margin-right: 1rem;
+  text-align: center; }
 
 .branch-text {
   font-size: 2rem;
@@ -1786,9 +1803,11 @@ object {
 
 @media (min-width: 620px) {
   .take-content-area .takebox p {
-    font-size: 2rem; }
+    font-size: 1.5rem;
+    width: 40%; }
   .take-content-area .takebox h1 {
-    font-size: 5rem; }
+    font-size: 5rem;
+    width: 50%; }
   .take-content-area .steps-container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1829,7 +1848,7 @@ object {
     background: #F2F2F2; } }
 
 /* hide mobile show desktop sharebackground img */
-@media only screen and (min-width: 620px) {
+@media (min-width: 800px) {
   .mobile-image {
     display: none; }
   .desktop-image {

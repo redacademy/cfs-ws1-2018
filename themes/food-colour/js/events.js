@@ -13,7 +13,7 @@
             '<h3 class="branch-text">' + branch + '</h3>' +
             '<hr>' +
             '<p class="organization-text">' + organization + '</p>' +
-            '<p>' + address + '</p>' + 
+            '<p>' + address + '</p>' +
             '<p>' + number + '</p>' +
             '<div class="event-social"></div>'
         );

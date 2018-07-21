@@ -15,7 +15,6 @@
     }
     .gform_wrapper{
         box-shadow: 0.5px 0.5px #aaaaaa;
-        // border: #c1c1c1 solid 1px;
         text-align: left;
         max-width: 50%;
         margin: 0 auto;
@@ -121,7 +120,7 @@
             text-transform:uppercase;
         }
         p{
-            font-size: 0.9rem;
+            font-size: 0.7rem;
             font-weight: 200;
         } 
     }
@@ -185,16 +184,38 @@
     .event-end{
         background:$color__brand-blue;
         border-radius: 1rem;
-        width: 81px;
+        width: 85%;
         color: $color__text-white;
-        padding: 6px;
+        padding: 2px;
         font-family:$font__main;
         font-weight:700;
+        font-size:0.6rem;
+        // padding-top:0.5rem;
+        text-align: center;
+            @include desktop{
+                width:30%;
+            }
+    }
+    .country-title{
+        font-size:1rem;
+        font-weight:700;
+        font-family:$font__main;
     }
     .event-container{
         display:flex;
         flex-direction: row-reverse;
         align-items: center;
+    }
+    .event-names{
+        font-family:$font__headings;
+        font-weight:700;
+        color:$color_brand-dark-blue;
+        font-size: 2rem;
+        margin-left: 1rem;
+            @include desktop{
+                display:none;
+            }
+
     }
     .host-events{
         height:100vh;
@@ -213,9 +234,11 @@
         font-family:$font__main;
         font-size:1.2rem;
         font-weight:700;
-        max-width: 70%;
+        height: 55px;
+        width: 100%;
         padding: 0 2rem;
         margin-right:1rem;
+        text-align: center;
 
     }
     .branch-text{
@@ -248,10 +271,12 @@
         .take-content-area{
         .takebox{
             p{
-                font-size:2rem;
+                font-size:1.5rem;
+                width: 40%;
             }
             h1{
                 font-size:5rem;
+                width: 50%;
             }
         }
         .steps-container{
@@ -300,7 +325,7 @@
     } 
 }
 /* hide mobile show desktop sharebackground img */
-@media only screen and (min-width: 620px) {
+@include desktop-image{
    .mobile-image {
        display:none;
    }

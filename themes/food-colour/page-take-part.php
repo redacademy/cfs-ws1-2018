@@ -122,7 +122,7 @@
             </div>
           </div>
 </div>
-
+<h2 class ="event-names"> Events schedule </h2>
 <div class="host-events" style="background-image: url(<?php echo esc_url(get_bloginfo('template_directory')); ?>/assets/images/event_map.png)">
 
 <?php while ( have_posts() ) : the_post(); ?>
