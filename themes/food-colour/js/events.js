@@ -10,9 +10,9 @@
     function eventsOnClick(title, google, facebook, organization, branch, address) {
         $('.event-main-container').html(
             '<h2>' + title + '</h2>' +
-            '<h3>' + branch + '</h3>' +
+            '<h3 class="branch-text">' + branch + '</h3>' +
             '<hr>' +
-            '<p>' + organization + '</p>' +
+            '<p class="organization-text">' + organization + '</p>' +
             '<p>' + address + '</p>'
         );
 

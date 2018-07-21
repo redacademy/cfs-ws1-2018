@@ -178,6 +178,15 @@
                 font-size:1rem;
             }
     }
+    .event-end{
+        background:$color__brand-blue;
+        border-radius: 1rem;
+        width: 81px;
+        color: $color__text-white;
+        padding: 6px;
+        font-family:$font__main;
+        font-weight:700;
+    }
     .event-container{
         display:flex;
         flex-direction: row-reverse;
@@ -191,7 +200,30 @@
 
     }
     .event-date{
-        bottom: 50%;
+        margin-left: 1rem;
+        
+    }
+    .date-box{
+        background-color:$color__brand-blue;
+        color:$color__text-white;
+        font-family:$font__main;
+        font-size:1.2rem;
+        font-weight:700;
+        max-width: 70%;
+        padding: 0 2rem;
+        margin-right:1rem;
+
+    }
+    .branch-text{
+        font-size: 2rem;
+        font-weight: lighter;
+        font-family:$font__main;
+    }
+    .organization-text{
+        font-size:1.5rem;
+        font-weight: 700;
+        font-family:$font__main;
+
     }
     // # COLOUR FOOD SECURITY BANNER
     .foodcolour{
