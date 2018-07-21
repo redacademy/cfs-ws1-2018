@@ -9,10 +9,11 @@
         margin: 0;
         .entry-header {
             position: absolute;
+            left: 5%;
             top: 15%;
             z-index: 1;
             a {
-                font-family: Montserrat;
+                font-family: Roboto;
                 font-style: normal;
                 font-size: 24px;
                 text-transform: uppercase;
@@ -27,7 +28,7 @@
             left: 5%;
             top: 30%;
             z-index: 1;
-            p{
+            h2 {
                 font-family: Roboto;
                 font-style: normal;
                 font-weight: 400;
@@ -42,6 +43,7 @@
 .about-entry-content {
     width: 90%;
     margin: 50px auto 50px auto;
+    text-align: justify;
     .hero-text-wrapper{
         max-width: $max-width;
         margin: 0 auto;
@@ -77,17 +79,17 @@
     .hero-image{
         article{
             .entry-header {
-                margin: 0 10%;
-                top: 35%;
+                margin: 0 5%;
+                top: 25%;
                 a {
                     font-size: 100px;
                 }
             }
             .entry-content {
                 max-width: 1240px;
-                margin: 24px auto 0 10%;
+                margin: 24px auto 0 5%;
                 top: 45%;
-                p{
+                h2{
                     font-weight: 400;
                     font-size: 24px;
                     font-family: Roboto;
@@ -101,8 +103,8 @@
     }
     .about-entry-content{
         max-width: 1240px;
-        margin: 120px 10% 0 10%;
-        width: 80%;
+        margin: 120px 15% 0;
+        width: 70%;
         .hero-text-wrapper{
             .icon-title{
                 img {
