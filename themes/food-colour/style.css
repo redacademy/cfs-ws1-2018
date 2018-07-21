@@ -1719,6 +1719,15 @@ object {
   .event-main-container p {
     font-size: 1rem; }
 
+.event-end {
+  background: #2F80ED;
+  border-radius: 1rem;
+  width: 81px;
+  color: #FFFFFF;
+  padding: 6px;
+  font-family: Roboto, sans-serif;
+  font-weight: 700; }
+
 .event-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1739,7 +1748,27 @@ object {
   display: flex; }
 
 .event-date {
-  bottom: 50%; }
+  margin-left: 1rem; }
+
+.date-box {
+  background-color: #2F80ED;
+  color: #FFFFFF;
+  font-family: Roboto, sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  max-width: 70%;
+  padding: 0 2rem;
+  margin-right: 1rem; }
+
+.branch-text {
+  font-size: 2rem;
+  font-weight: lighter;
+  font-family: Roboto, sans-serif; }
+
+.organization-text {
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-family: Roboto, sans-serif; }
 
 .foodcolour {
   display: -webkit-box;
