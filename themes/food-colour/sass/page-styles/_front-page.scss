@@ -7,7 +7,7 @@
 .image-wrapper {
     position: relative;
     .background-image-main {
-        height: 1484px;
+        height: 1510px;
     }
     .background-map-main {
         position: absolute;
@@ -62,7 +62,7 @@
     }
     @include desktop {
         .background-image-main {
-            height: 2050px;
+            height: 2680px;
         }
         .background-map-main {
             visibility: visible;
@@ -155,9 +155,29 @@
                 margin: 70px 0;
             }
             .hashtag {
-                font-size: 100px;
-                margin: 100px 0;
+                margin: 10% 5%;
+                font-size: 55px;
             }
         }
     }
 }
+@include desktop-main-page {
+    #primary .image-wrapper .background-image-main {
+        height: 2139px;
+    }
+    #content .hashtag {
+        font-size: 100px;
+        margin: 100px 5%;
+    }
+}
+@include desktop-image{
+    .image-wrapper .background-image-main {
+        height: 2350px;
+    }
+    .image-wrapper #content .hashtag {
+        font-size: 70px;
+    }
+}
+// @include desktop {
+
+// }
