@@ -184,17 +184,13 @@
     .event-end{
         background:$color__brand-blue;
         border-radius: 1rem;
-        width: 85%;
+        width: 75px;
         color: $color__text-white;
-        padding: 2px;
+        padding: 5px;
         font-family:$font__main;
         font-weight:700;
         font-size:0.6rem;
-        // padding-top:0.5rem;
         text-align: center;
-            @include desktop{
-                width:30%;
-            }
     }
     .country-title{
         font-size:1rem;
@@ -353,7 +349,7 @@
 
 @include mobile-portrait {
 .take-content-area{
-    .cloud-container{
+    .cloud-container,.cloud-container.activated{
         display:none;
     }
     .take-text-wrapper{

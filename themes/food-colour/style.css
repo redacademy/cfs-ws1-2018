@@ -1717,16 +1717,13 @@ object {
 .event-end {
   background: #2F80ED;
   border-radius: 1rem;
-  width: 85%;
+  width: 75px;
   color: #FFFFFF;
-  padding: 2px;
+  padding: 5px;
   font-family: Roboto, sans-serif;
   font-weight: 700;
   font-size: 0.6rem;
   text-align: center; }
-  @media (min-width: 620px) {
-    .event-end {
-      width: 30%; } }
 
 .country-title {
   font-size: 1rem;
@@ -1880,7 +1877,7 @@ object {
       background-color: #d9d9d9; } }
 
 @media only screen and (orientation: portrait) and (max-width: 620px) {
-  .take-content-area .cloud-container {
+  .take-content-area .cloud-container, .take-content-area .cloud-container.activated {
     display: none; }
   .take-content-area .take-text-wrapper {
     width: 90%;

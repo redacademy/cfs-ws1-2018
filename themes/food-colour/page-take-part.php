@@ -78,7 +78,7 @@
                 <h2 id='fill'><?php echo $title_3 ?></h2>
               </div>
               <p><?php echo $title_3_text ?></p>
-              <a href='#done'<button class='iconbutton' id='formsmobile'>FILL THE FORM</button></a>
+              <a href='#done'><button class='iconbutton' id='formsmobile'>FILL THE FORM</button></a>
             </div>        
             <div class='take-text-wrapper'>
               <div class='icons-title'>
