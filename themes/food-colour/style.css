@@ -1969,3 +1969,29 @@ object {
         max-width: 250px; }
         .error404 .page-content .error-text-content a:hover {
           background-color: #115bbf; }
+
+.host-events {
+  height: auto;
+  display: grid; }
+
+.event-container {
+  display: block;
+  margin-bottom: 3rem; }
+
+.event-calendar {
+  padding: 1.5rem;
+  margin-left: 3rem; }
+
+.event-date {
+  display: grid;
+  grid-template: 1fr 1fr 1fr / 120px 1fr;
+  margin: auto;
+  max-width: 400px; }
+  .event-date .date-box {
+    max-width: 80px;
+    grid-row: 1 / 4; }
+  .event-date p {
+    margin: 0; }
+
+.event-end {
+  padding: 3px; }
