@@ -165,7 +165,7 @@
     #primary .image-wrapper .background-image-main {
         height: 2139px;
     }
-    #content .hashtag {
+    .image-wrapper #content .hashtag {
         font-size: 100px;
         margin: 100px 5%;
     }
@@ -174,10 +174,7 @@
     .image-wrapper .background-image-main {
         height: 2350px;
     }
-    .image-wrapper #content .hashtag {
+    .image-wrapper .hashtag {
         font-size: 70px;
     }
 }
-// @include desktop {
-
-// }

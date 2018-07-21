@@ -7,19 +7,11 @@
     margin: 0 5%;
     max-width: $max-width;
     padding: 0;
-
-    @include mobile-portrait {
-            align-items: baseline;
-        
-        #primary-menu {
-            align-items: center;
-            grid-template-columns: 100%;
-            grid-template-rows: 1fr 1fr 1fr;
-            height: 340px;
-            li a{
-                border-width: medium;
-            };
-        };
+    #primary-menu {
+        align-items: center;
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr 1fr 1fr;
+        height: 340px;
     }
 
     @include desktop {

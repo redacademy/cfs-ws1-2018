@@ -23,33 +23,30 @@ get_header(); ?>
 				$fptext_3 = CFS()->get('fp_text_3');
 				$fptext_3 = CFS()->get('fp_text_3');
 				$fpimage_3 = CFS()->get('fp_image_3');
-
-				echo "<section class='title-1'>";
-					echo "<h1>" .  $fptitle_1 . "</h1>";
-					echo "<p>" . $fptext_1 . "</p>";
-					echo "<a href='" . get_site_url() . "/exhibition/all'><button>Exhibition</button></a>";
-				echo "</section>";
-				echo "<section class='title-2'>";
-					echo "<div>";
-					echo "<hr align='left'>";
-					echo "<h1>" . $fptitle_2 . "</h1>";
-					echo "</div>";
-					echo '<img src="'.esc_url($fpimage_2).'" rel="lightbox">'; 
-					echo "<p>" . $fptext_2 . "</p>";
-					echo "<a href='" . get_site_url() . "/about'><button>About</button></a>";
-				echo "</section>";
-				echo "<section class='title-3'>";
-					echo "<hr align='left'>";
-					echo "<h1>" . $fptitle_3 . "</h1>";
-					echo '<img src="'.esc_url($fpimage_3).'" rel="lightbox">'; 
-					echo "<p>" . $fptext_3 . "</p>";
-					echo "<a target='_blank' href='https://drive.google.com/drive/folders/1KR6gb1ulL1tunhDn1yw26WX_2GnKU7-I?usp=sharing'><button>Download Files</button></a>";
-				echo "</section>";
-				echo "<hr class='bottom-line' align='center'>";
-				echo "<p class='hashtag'>#ColourFoodSecurity</p>";
-				
-			?>
-
+?>
+				<section class='title-1'>
+					<h1> <?php echo $fptitle_1 ?> </h1>
+					<p><?php echo $fptext_1 ?> </p>
+					<a href='"<?php echo get_site_url()?>"/exhibition/all'><button>Exhibition</button></a>
+				</section>
+				<section class='title-2'>
+					<div>
+						<hr align='left'>
+						<h1> <?php echo $fptitle_2 ?> </h1>
+					</div>
+					<img src="<?php echo esc_url($fpimage_2) ?>" rel="lightbox">
+					<p><?php echo $fptext_2 ?> </p>
+					<a href='"<?php echo get_site_url() ?>"/about'><button>About</button></a>
+				</section>
+				<section class='title-3'>
+					<hr align='left'>
+					<h1> <?php echo $fptitle_3 ?> </h1>
+					<img src="<?php echo esc_url($fpimage_3) ?>" rel="lightbox"> 
+					<p><?php echo $fptext_3 ?> </p>
+					<a target='_blank' href='https://drive.google.com/drive/folders/1KR6gb1ulL1tunhDn1yw26WX_2GnKU7-I?usp=sharing'><button>Download Files</button></a>
+				</section>
+				<hr class='bottom-line' align='center'>
+				<p class='hashtag'>#ColourFoodSecurity</p>
 			</div>
 		</div>
 	</div>
