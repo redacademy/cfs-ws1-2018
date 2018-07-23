@@ -1,45 +1,42 @@
-(function($) {
-    // desktop/mobile check
-    var target;
+(function($) {   
     var mobile;
 
     checkScreenWidth();
-
+        
+    // initial event load
+    eventsOnClick($('.event-container').first().attr('event-title'), $('.event-container').first().attr('event-google'), $('.event-container').first().attr('event-facebook'), $('.event-container').first().attr('event-organization'), $('.event-container').first().attr('event-branch'), $('.event-container').first().attr('event-address'), $('.event-container').first().attr('event-number'));
 
     $(window).resize(function(){
         checkScreenWidth();
     });
 
-    
+    // desktop/mobile check
     function checkScreenWidth() {
         if ($(window).width() <= 620) {
-            target = '.event-description';
             mobile = true;
+            $('.event-description').hide();
         } else {
-            target = '.event-main-container';
             mobile = false;
         }
-
-        eventsOnClick($('.event-container').first().attr('event-title'), $('.event-container').first().attr('event-google'), $('.event-container').first().attr('event-facebook'), $('.event-container').first().attr('event-organization'), $('.event-container').first().attr('event-branch'), $('.event-container').first().attr('event-address'), $('.event-container').first().attr('event-number'));
     }
-    
-    // initial event load
-    eventsOnClick($('.event-container').first().attr('event-title'), $('.event-container').first().attr('event-google'), $('.event-container').first().attr('event-facebook'), $('.event-container').first().attr('event-organization'), $('.event-container').first().attr('event-branch'), $('.event-container').first().attr('event-address'), $('.event-container').first().attr('event-number'));
     
     // onclick change
     $('.event-container').on('click', function() {
        eventsOnClick(this.getAttribute('event-title'), this.getAttribute('event-google'), this.getAttribute('event-facebook'), this.getAttribute('event-organization'), this.getAttribute('event-branch'), this.getAttribute('event-address'), this.getAttribute('event-number'));
-    //    console.log($(this).context.lastElementChild);
-       if (mobile) {
-        $('.event-description').toggle();
-        // $(this).context.lastElementChild().show();
-       }
        
-    //    $(this).next('.event-description').show();
+       // jquery animation for mobile 
+       if (mobile) {
+            if($(this).find('.event-description').css('display') === 'none') {
+                $('.event-description').slideUp();
+                $(this).find('.event-description').slideDown();
+            } else {
+                $('.event-description').slideUp();
+            }
+       }   
     });
 
     function eventsOnClick(title, google, facebook, organization, branch, address, number) {
-        $(target).html(
+        $('.event-main-container').html(
             '<h2>' + title + '</h2>' +
             '<h3 class="branch-text">' + branch + '</h3>' +
             '<hr>' +
