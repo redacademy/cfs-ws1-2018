@@ -1704,12 +1704,15 @@ object {
 .event-end {
   background: #2F80ED;
   border-radius: 1rem;
-  width: 100%;
+  width: 100px;
   color: #FFFFFF;
   padding: 2px;
   font-family: Roboto, sans-serif;
   font-weight: 700;
   text-align: center; }
+  .event-end:hover {
+    background-color: #2F80ED;
+    opacity: 0.7; }
 
 .event-container {
   display: -webkit-box;
@@ -1753,6 +1756,9 @@ object {
   width: 90px;
   padding: 0 2rem;
   margin-right: 1rem; }
+  .date-box:hover {
+    background-color: #2F80ED;
+    opacity: 0.7; }
 
 .branch-text {
   font-size: 2rem;
@@ -1807,6 +1813,7 @@ object {
   .take-content-area .desktop-image {
     margin-left: 6rem;
     width: 800px;
+    height: 580px;
     padding: 1rem; }
   .take-content-area .share-container {
     display: -webkit-box;

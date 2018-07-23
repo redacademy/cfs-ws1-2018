@@ -100,6 +100,5 @@ jQuery(document).ready(function($) {
     $("#formsmobile").click(function(){
         $("#gform_1").toggle();
     });
-    
 });
 
