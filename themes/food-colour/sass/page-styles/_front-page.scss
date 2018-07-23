@@ -68,7 +68,7 @@
             visibility: visible;
         }
         #content {
-            max-width: 1240px;
+            max-width: $max-width;
             margin: 0 10%;
             color: white;
             width: 80%;

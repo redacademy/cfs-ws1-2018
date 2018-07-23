@@ -1648,12 +1648,6 @@ object {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column; }
-  .take-content-area .takebox h1 {
-    font-size: 2rem;
-    text-transform: uppercase; }
-  .take-content-area .takebox p {
-    font-size: 0.7rem;
-    font-weight: 200; }
 
 .take-content-area .cloud-container {
   display: -webkit-box;
@@ -1677,13 +1671,6 @@ object {
   @media (min-width: 620px) {
     .take-content-area .cloud-container {
       display: none; } }
-
-.take-content-area .bannertext {
-  position: absolute;
-  margin-left: 2rem; }
-  @media (min-width: 620px) {
-    .take-content-area .bannertext {
-      margin-left: 5rem; } }
 
 .take-content-area .mobile-image {
   margin-left: 1rem;
@@ -1717,18 +1704,12 @@ object {
 .event-end {
   background: #2F80ED;
   border-radius: 1rem;
-  width: 100px;
+  width: 100%;
   color: #FFFFFF;
-  padding: 5px;
+  padding: 2px;
   font-family: Roboto, sans-serif;
   font-weight: 700;
-  font-size: 0.6rem;
   text-align: center; }
-
-.country-title {
-  font-size: 1rem;
-  font-weight: 700;
-  font-family: Roboto, sans-serif; }
 
 .event-container {
   display: -webkit-box;
@@ -1769,10 +1750,9 @@ object {
   font-size: 1.2rem;
   font-weight: 700;
   height: 55px;
-  width: 100%;
+  width: 90px;
   padding: 0 2rem;
-  margin-right: 1rem;
-  text-align: center; }
+  margin-right: 1rem; }
 
 .branch-text {
   font-size: 2rem;
@@ -1799,12 +1779,6 @@ object {
     padding: 2rem; }
 
 @media (min-width: 620px) {
-  .take-content-area .takebox p {
-    font-size: 1.5rem;
-    width: 40%; }
-  .take-content-area .takebox h1 {
-    font-size: 5rem;
-    width: 50%; }
   .take-content-area .steps-container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1857,8 +1831,6 @@ object {
     display: block; }
   .desktop-image {
     display: none; }
-  .foodcolour {
-    display: none; }
   .desktopbutton {
     display: none;
     background-color: #fff;
@@ -1877,7 +1849,7 @@ object {
       background-color: #d9d9d9; } }
 
 @media only screen and (orientation: portrait) and (max-width: 620px) {
-  .take-content-area .cloud-container, .take-content-area .cloud-container.activated {
+  .take-content-area .cloud-container {
     display: none; }
   .take-content-area .take-text-wrapper {
     width: 90%;
@@ -2054,3 +2026,72 @@ object {
   .event-social a {
     display: block;
     margin-bottom: 1.5rem; }
+
+.foodcolour {
+  display: none; }
+  .foodcolour img {
+    height: 150px; }
+  .foodcolour .foodhashtag h2 {
+    text-align: center;
+    font-size: 25px; }
+
+@media (min-width: 620px) {
+  .foodcolour {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .foodcolour img {
+      height: 250px; }
+    .foodcolour .foodhashtag h2 {
+      font-size: 55px; } }
+
+@media (min-width: 1100px) {
+  .foodcolour img {
+    height: 350px; }
+  .foodcolour .foodhashtag {
+    padding: 0; }
+    .foodcolour .foodhashtag h2 {
+      font-size: 100px; } }
+
+.bannertext {
+  position: absolute;
+  margin: 0 5%;
+  width: 90%;
+  max-width: 1240px; }
+  .bannertext h1 {
+    font-family: Roboto;
+    font-style: normal;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-weight: 700; }
+  .bannertext p {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    font-size: 16px;
+    color: #fff;
+    letter-spacing: 1px; }
+
+@media (min-width: 620px) {
+  .bannertext {
+    margin: 0 10%;
+    width: 80%; }
+    .bannertext p {
+      font-weight: 400;
+      font-size: 24px;
+      font-family: Roboto;
+      line-height: 34px;
+      color: #fff;
+      letter-spacing: 1px; }
+    .bannertext h1 {
+      font-size: 100px;
+      font-family: Roboto;
+      text-transform: uppercase;
+      color: #fff;
+      text-decoration: none;
+      letter-spacing: 1px;
+      font-weight: 700; } }
