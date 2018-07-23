@@ -1473,18 +1473,29 @@ object {
     background-color: #115bbf; }
 
 .take-content-area #gform_submit_button_1 {
-  width: 10rem; }
+  width: 12rem; }
+  @media (min-width: 620px) {
+    .take-content-area #gform_submit_button_1 {
+      margin-left: 15rem; } }
 
 .take-content-area #gform_1 {
-  display: none; }
+  display: none;
+  border: #c1c1c1 solid 1px;
+  -webkit-box-shadow: 3.5px 3.5px #aaaaaa;
+          box-shadow: 3.5px 3.5px #aaaaaa;
+  padding: 3rem; }
+  .take-content-area #gform_1 h3 {
+    font-weight: 700;
+    font-family: Roboto, sans-serif; }
+    @media (min-width: 620px) {
+      .take-content-area #gform_1 h3 {
+        margin: 0 100px 45px; } }
 
 .take-content-area .gform_wrapper {
-  -webkit-box-shadow: 0.5px 0.5px #aaaaaa;
-          box-shadow: 0.5px 0.5px #aaaaaa;
   text-align: left;
   max-width: 50%;
   margin: 0 auto;
-  padding: 1rem; }
+  padding-bottom: 4rem; }
 
 .take-content-area .gform_confirmation_message_1 {
   margin-left: 32.5rem; }
@@ -1541,11 +1552,11 @@ object {
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
   letter-spacing: 1.5px;
-  margin-top: 5rem;
+  margin-top: 10rem;
   -ms-flex-item-align: end;
       align-self: flex-end;
-  margin-left: 40rem;
-  width: 10rem;
+  margin-left: 25rem;
+  width: 12rem;
   font-weight: 200; }
   .take-content-area .downloadbutton:hover {
     background-color: #115bbf; }
@@ -1659,7 +1670,17 @@ object {
           flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+  border: #c1c1c1 solid 1px;
+  -webkit-box-shadow: 3.5px 3.5px #aaaaaa;
+          box-shadow: 3.5px 3.5px #aaaaaa;
+  margin-left: 22.5rem;
+  margin-right: 22.5rem;
+  height: 69%; }
+  .take-content-area .cloud-container h2 {
+    margin-left: -20rem;
+    padding-top: 0.5rem;
+    font-family: Roboto, sans-serif; }
   .take-content-area .cloud-container.activated {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1856,7 +1877,7 @@ object {
       background-color: #d9d9d9; } }
 
 @media only screen and (orientation: portrait) and (max-width: 620px) {
-  .take-content-area .cloud-container {
+  .take-content-area .cloud-container, .take-content-area .cloud-container.activated {
     display: none; }
   .take-content-area .take-text-wrapper {
     width: 90%;

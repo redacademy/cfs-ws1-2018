@@ -8,19 +8,31 @@
         
     }
     #gform_submit_button_1{
-        width:10rem;
+        width:12rem;
+        @include desktop{
+            margin-left:15rem;
+        }
     }
+    
     #gform_1{
         display:none;
+        border: #c1c1c1 solid 1px;
+        box-shadow: 3.5px 3.5px #aaaaaa;
+        padding:3rem;
+            h3{
+                font-weight: 700;
+                font-family: $font__main;
+                @include desktop{
+                    margin: 0 100px 45px;
+                }
+            }
     }
     .gform_wrapper{
-        box-shadow: 0.5px 0.5px #aaaaaa;
-        // border: #c1c1c1 solid 1px;
         text-align: left;
         max-width: 50%;
         margin: 0 auto;
-        padding:1rem;
-        
+        padding-bottom:4rem;
+             
     }
     .gform_confirmation_message_1{
         margin-left:32.5rem;
@@ -41,10 +53,10 @@
     }
     .downloadbutton{
         @include button-style($color__brand-blue, $color__text-white);
-        margin-top: 5rem;
+        margin-top: 10rem;
         align-self: flex-end;
-        margin-left: 40rem;
-        width: 10rem;
+        margin-left: 25rem;
+        width: 12rem;
         font-weight:200;
     }
     .bigbutton{
@@ -121,6 +133,16 @@
         display:flex;
         flex-direction: column;
         align-items: center;
+        border: #c1c1c1 solid 1px;
+        box-shadow: 3.5px 3.5px #aaaaaa;
+        margin-left: 22.5rem;
+        margin-right: 22.5rem;
+        height: 69%;
+            h2{
+                margin-left: -20rem;
+                padding-top:0.5rem;
+                font-family:$font__main;
+            }
         &.activated{
             display:flex
         }
@@ -322,7 +344,7 @@
 
 @include mobile-portrait {
 .take-content-area{
-    .cloud-container{
+    .cloud-container, .cloud-container.activated{
         display:none;
     }
     .take-text-wrapper{
