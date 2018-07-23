@@ -116,14 +116,6 @@
         position: relative;
         display: flex;
         flex-direction: column;
-        h1{
-            font-size:2rem;
-            text-transform:uppercase;
-        }
-        p{
-            font-size: 0.9rem;
-            font-weight: 200;
-        } 
     }
     .cloud-container{
         display:flex;
@@ -140,14 +132,6 @@
         @include desktop {
             display:none;
         }
-    }
-    .bannertext{
-        position: absolute;
-        margin-left:2rem;
-        @include desktop{
-            margin-left:5rem;
-        }
-        
     }
      
     .mobile-image{
@@ -259,14 +243,6 @@
     
     @include desktop{
         .take-content-area{
-        .takebox{
-            p{
-                font-size:2rem;
-            }
-            h1{
-                font-size:5rem;
-            }
-        }
         .steps-container{
             display:flex;
             margin-left: 5rem;
