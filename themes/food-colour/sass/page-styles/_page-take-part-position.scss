@@ -2,7 +2,7 @@
     height: auto;
     display: grid;
     grid-template: auto auto / 1fr;
-    margin: $base__space-unit * 2 0;
+    padding: $base__space-unit * 2 0;
 
     @include desktop {
         grid-template: auto / 1fr 9fr;
@@ -17,9 +17,8 @@
 
 .event-calendar {
     padding: $base__space-unit;
-    margin-left: $base__space-unit * 2;
+    margin-left: $base__space-unit * 3;
 
-    
 }
 
 .event-date {
@@ -63,7 +62,7 @@
         display: block;
         margin: 0;
         max-width: 600px;
-        place-self: center;
+        place-self: start center;
     }
 
     h2 {
@@ -71,7 +70,7 @@
     }
 }
 
-.event-social {
+.event-social, .event-social-single {
     display: flex;
     flex-flow: wrap;
 

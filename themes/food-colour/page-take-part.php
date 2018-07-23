@@ -141,7 +141,29 @@
           <p><?php echo CFS()->get('city');?></p>
           <p class="event-end"><?php echo CFS()->get('end_date');?></p>
         </div>
-        <div class="event-description"></div>
+        <div class="event-description">
+          <h2><?php the_title(); ?></h2>
+          <h3 class="branch-text"><?php echo CFS()->get('branch'); ?></h3>
+          <hr>
+          <p class="organization-text"><?php echo CFS()->get('organization'); ?></p>
+          <p><?php echo CFS()->get('address'); ?></p>
+          <p><?php echo CFS()->get('number'); ?></p>
+          <div class="event-social-single">
+            <?php
+              if ( CFS()->get('google_calendar')) {
+                echo '<a target="_blank" href="' . CFS()->get('google_calendar') . '" class="google-cal">Add to Google calendar</a>';
+              }
+
+              if ( CFS()->get('facebook_event')) {
+                echo '<a target="_blank" href="' . CFS()->get('facebook_event') . '" class="facebook-event">Facebook event</a>';
+              }
+      
+            ?>
+          
+          </div>
+
+        
+        </div>
       </div>
     <?php endwhile; ?>
   </div>  

@@ -28,6 +28,7 @@
             }
     }
     .gform_wrapper{
+        box-shadow: 0.5px 0.5px #aaaaaa;
         text-align: left;
         max-width: 50%;
         margin: 0 auto;
@@ -128,6 +129,14 @@
         position: relative;
         display: flex;
         flex-direction: column;
+        h1{
+            font-size:2rem;
+            text-transform:uppercase;
+        }
+        p{
+            font-size: 0.7rem;
+            font-weight: 200;
+        } 
     }
     .cloud-container{
         display:flex;
@@ -154,6 +163,14 @@
         @include desktop {
             display:none;
         }
+    }
+    .bannertext{
+        position: absolute;
+        margin-left:2rem;
+        @include desktop{
+            margin-left:5rem;
+        }
+        
     }
      
     .mobile-image{
@@ -193,14 +210,16 @@
         border-radius: 1rem;
         width: 100px;
         color: $color__text-white;
-        padding: 2px;
+        padding: 5px;
         font-family:$font__main;
         font-weight:700;
+        font-size:0.6rem;
         text-align: center;
-        &:hover{
-            background-color:$color__brand-blue;
-            opacity: 0.7;
-        }
+    }
+    .country-title{
+        font-size:1rem;
+        font-weight:700;
+        font-family:$font__main;
     }
     .event-container{
         display:flex;
@@ -222,6 +241,7 @@
         height:100vh;
         background-size: cover,cover;
         display:flex;
+       
 
     }
     .event-date{
@@ -235,13 +255,10 @@
         font-size:1.2rem;
         font-weight:700;
         height: 55px;
-        width: 90px;
+        width: 100%;
         padding: 0 2rem;
         margin-right:1rem;
-        &:hover {
-            background-color:$color__brand-blue;
-            opacity: 0.7;
-        }
+        text-align: center;
 
     }
     .branch-text{
@@ -272,6 +289,16 @@
     
     @include desktop{
         .take-content-area{
+        .takebox{
+            p{
+                font-size:1.5rem;
+                width: 40%;
+            }
+            h1{
+                font-size:5rem;
+                width: 50%;
+            }
+        }
         .steps-container{
             display:flex;
             margin-left: 5rem;
@@ -307,7 +334,6 @@
         .desktop-image {
             margin-left: 6rem;
             width: 800px;
-            height:580px;
             padding: 1rem;
         }
         .share-container{
@@ -335,6 +361,9 @@
     .desktop-image {
         display:none;
     }
+    .foodcolour{
+        display:none;
+    }
     .desktopbutton{
         display:none;
         @include button-style;
@@ -344,7 +373,7 @@
 
 @include mobile-portrait {
 .take-content-area{
-    .cloud-container, .cloud-container.activated{
+    .cloud-container,.cloud-container.activated{
         display:none;
     }
     .take-text-wrapper{
