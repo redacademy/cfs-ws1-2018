@@ -10,7 +10,7 @@
   <?php get_header(); ?>
   <div id="primary" class="content-area">
     <main id="main" class="site-main" role="main">
-      <div class="takebox" id="host">
+      <div class="takebox">
         <img class='takebackground' src="<?php echo esc_url(get_bloginfo('template_directory')); ?>/assets/images/take_part.png"
           alt="take background" />
         <div class="bannertext">
@@ -35,7 +35,7 @@
           </section>
           <div>
           
-          <h2 class="host-text"> Host an exhibition</h2>
+          <h2 class="host-text" id="host"> Host an exhibition</h2>
           </div>
 
  <?php

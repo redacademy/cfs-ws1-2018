@@ -1481,8 +1481,8 @@ object {
 .take-content-area #gform_1 {
   display: none;
   border: #c1c1c1 solid 1px;
-  -webkit-box-shadow: 3.5px 3.5px #aaaaaa;
-          box-shadow: 3.5px 3.5px #aaaaaa;
+  -webkit-box-shadow: 5px 5px 35px 10px #eeeeee;
+          box-shadow: 5px 5px 35px 10px #eeeeee;
   padding: 3rem; }
   .take-content-area #gform_1 h3 {
     font-weight: 700;
@@ -1678,8 +1678,8 @@ object {
       -ms-flex-align: center;
           align-items: center;
   border: #c1c1c1 solid 1px;
-  -webkit-box-shadow: 3.5px 3.5px #aaaaaa;
-          box-shadow: 3.5px 3.5px #aaaaaa;
+  -webkit-box-shadow: 5px 5px 35px 10px #eeeeee;
+          box-shadow: 5px 5px 35px 10px #eeeeee;
   margin-left: 22.5rem;
   margin-right: 22.5rem;
   height: 75%; }
