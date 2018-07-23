@@ -1717,12 +1717,7 @@ object {
 .event-end {
   background: #2F80ED;
   border-radius: 1rem;
-<<<<<<< HEAD
-  width: 85%;
-  min-width: 100px;
-=======
   width: 100px;
->>>>>>> cc5b84518e5ca2273f70747698cec649641321c3
   color: #FFFFFF;
   padding: 5px;
   font-family: Roboto, sans-serif;
