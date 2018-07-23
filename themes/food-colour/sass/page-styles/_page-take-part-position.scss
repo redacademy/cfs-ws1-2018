@@ -1,6 +1,13 @@
 .host-events {
     height: auto;
     display: grid;
+    grid-template: auto auto / 1fr;
+    margin: $base__space-unit * 2 0;
+
+    @include desktop {
+        grid-template: auto / 1fr 9fr;
+        grid-column-gap: 40px;
+    }
 }
 
 .event-container {
@@ -16,21 +23,60 @@
 }
 
 .event-date {
+    cursor: pointer;
     display: grid;
-    grid-template: 1fr 1fr 1fr / 120px 1fr;
-    margin: auto;
-    max-width: 400px;
+    grid-template: 1fr 1fr 1fr / 80px 1fr;
+    grid-column-gap: 40px;
 
     .date-box {
+        height: 80px;
         max-width: 80px;
+        display: flex;
+        justify-content: center;
         grid-row: 1 / 4;
+        padding: $base__space-unit / 2;
     }
 
     p {
-        margin: 0;
+        margin: 0; 
     }
 }
 
 .event-end {
-    padding: 3px;
+    font-size: $font__size-small;
+    padding: 4px;
+    text-align: center;
+}
+
+.event-description {
+    display: none;
+
+    @include desktop {
+        display: none;
+    }
+}
+
+.event-main-container {
+    display: none;
+
+    @include desktop {
+        display: block;
+        margin: 0;
+        max-width: 600px;
+        place-self: center;
+    }
+
+    h2 {
+        margin: 0;
+    }
+}
+
+.event-social {
+    display: flex;
+    flex-flow: wrap;
+
+    a {
+        display: block;
+        margin-bottom: $base__space-unit;
+    }
 }

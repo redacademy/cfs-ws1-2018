@@ -45,7 +45,7 @@
 .copy {
 	text-align: center;
 
-	@include desktop {
+	@include desktop-footer {
 		color: $color__text-white;
 		margin: 0;
 		margin-left: 4rem;
