@@ -1473,7 +1473,7 @@ object {
     background-color: #115bbf; }
 
 .take-content-area #gform_submit_button_1 {
-  max-width: 12rem; }
+  width: 12rem; }
 
 .take-content-area #gform_1 {
   display: none;
@@ -1566,7 +1566,11 @@ object {
     background-color: #115bbf; }
 
 .take-content-area .bigbutton {
-  text-align: center; }
+  text-align: center;
+  display: none; }
+  @media (min-width: 620px) {
+    .take-content-area .bigbutton {
+      display: block; } }
 
 .take-content-area .google-cal {
   background-color: #2F80ED;

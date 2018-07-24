@@ -8,7 +8,7 @@
         
     }
     #gform_submit_button_1{
-        max-width:12rem;
+        width:12rem;
     }
     
     #gform_1{
@@ -61,6 +61,10 @@
     }
     .bigbutton{
         text-align: center;
+        display:none;
+        @include desktop{
+            display:block;
+        }
     }
     .google-cal{
         @include button-style($color__brand-blue, $color__text-white);
@@ -330,3 +334,17 @@
     }
   }
 }
+
+
+// @include mobile-portrait {
+//     .take-content-area{
+//         .take-text-wrapper{
+//             width: 90%;
+//             margin: 0 auto;
+//             display:none;
+//             &.active {
+//                 display:block;
+//             }
+//         }
+//     }
+// }
