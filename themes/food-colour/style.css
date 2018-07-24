@@ -2098,7 +2098,8 @@ object {
       text-decoration: none;
       letter-spacing: 1px;
       font-weight: 700;
-      margin: 0; }
+      margin: 0;
+      line-height: 100px; }
   .steps-container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2109,10 +2110,10 @@ object {
     .steps-container .take-text-wrapper {
       margin: 0 10px;
       display: initial; }
+      .steps-container .take-text-wrapper h2 {
+        min-height: 62px; }
     .steps-container .icons-title {
       margin: 10px 0; }
-      .steps-container .icons-title h2 {
-        padding: 15px 0; }
       .steps-container .icons-title img {
         margin: 0 30%; }
   .bigbutton .desktopbutton {
