@@ -17,7 +17,7 @@
     #gform_1{
         display:none;
         border: #c1c1c1 solid 1px;
-        box-shadow: 3.5px 3.5px #aaaaaa;
+        box-shadow: 5px 5px 35px 10px #eeeeee;
         padding:3rem;
             h3{
                 font-weight: 700;
@@ -28,7 +28,6 @@
             }
     }
     .gform_wrapper{
-        box-shadow: 0.5px 0.5px #aaaaaa;
         text-align: left;
         max-width: 50%;
         margin: 0 auto;
@@ -126,10 +125,10 @@
         flex-direction: column;
         align-items: center;
         border: #c1c1c1 solid 1px;
-        box-shadow: 3.5px 3.5px #aaaaaa;
+        box-shadow: 5px 5px 35px 10px #eeeeee;
         margin-left: 22.5rem;
         margin-right: 22.5rem;
-        height: 69%;
+        height: 75%;
             h2{
                 margin-left: -20rem;
                 padding-top:0.5rem;
@@ -189,6 +188,10 @@
         font-weight:700;
         font-size:0.6rem;
         text-align: center;
+        &:hover{
+               background-color:$color__brand-blue;
+               opacity: 0.7;
+                }
     }
     .country-title{
         font-size:1rem;
@@ -233,6 +236,10 @@
         padding: 0 2rem;
         margin-right:1rem;
         text-align: center;
+        &:hover{
+            background-color:$color__brand-blue;
+            opacity: 0.7;
+             }
 
     }
     .branch-text{
@@ -287,6 +294,7 @@
             margin-left: 6rem;
             width: 800px;
             padding: 1rem;
+            height:580px;
         }
         .share-container{
             display:flex;

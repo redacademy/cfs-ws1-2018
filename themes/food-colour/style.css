@@ -1481,8 +1481,8 @@ object {
 .take-content-area #gform_1 {
   display: none;
   border: #c1c1c1 solid 1px;
-  -webkit-box-shadow: 3.5px 3.5px #aaaaaa;
-          box-shadow: 3.5px 3.5px #aaaaaa;
+  -webkit-box-shadow: 5px 5px 35px 10px #eeeeee;
+          box-shadow: 5px 5px 35px 10px #eeeeee;
   padding: 3rem; }
   .take-content-area #gform_1 h3 {
     font-weight: 700;
@@ -1492,8 +1492,6 @@ object {
         margin: 0 100px 45px; } }
 
 .take-content-area .gform_wrapper {
-  -webkit-box-shadow: 0.5px 0.5px #aaaaaa;
-          box-shadow: 0.5px 0.5px #aaaaaa;
   text-align: left;
   max-width: 50%;
   margin: 0 auto;
@@ -1664,11 +1662,11 @@ object {
       -ms-flex-align: center;
           align-items: center;
   border: #c1c1c1 solid 1px;
-  -webkit-box-shadow: 3.5px 3.5px #aaaaaa;
-          box-shadow: 3.5px 3.5px #aaaaaa;
+  -webkit-box-shadow: 5px 5px 35px 10px #eeeeee;
+          box-shadow: 5px 5px 35px 10px #eeeeee;
   margin-left: 22.5rem;
   margin-right: 22.5rem;
-  height: 69%; }
+  height: 75%; }
   .take-content-area .cloud-container h2 {
     margin-left: -20rem;
     padding-top: 0.5rem;
@@ -1724,6 +1722,9 @@ object {
   font-weight: 700;
   font-size: 0.6rem;
   text-align: center; }
+  .event-end:hover {
+    background-color: #2F80ED;
+    opacity: 0.7; }
 
 .country-title {
   font-size: 1rem;
@@ -1773,6 +1774,9 @@ object {
   padding: 0 2rem;
   margin-right: 1rem;
   text-align: center; }
+  .date-box:hover {
+    background-color: #2F80ED;
+    opacity: 0.7; }
 
 .branch-text {
   font-size: 2rem;
@@ -1817,7 +1821,8 @@ object {
   .take-content-area .desktop-image {
     margin-left: 6rem;
     width: 800px;
-    padding: 1rem; }
+    padding: 1rem;
+    height: 580px; }
   .take-content-area .share-container {
     display: -webkit-box;
     display: -ms-flexbox;
