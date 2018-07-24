@@ -1481,8 +1481,8 @@ object {
 .take-content-area #gform_1 {
   display: none;
   border: #c1c1c1 solid 1px;
-  -webkit-box-shadow: 3.5px 3.5px #aaaaaa;
-          box-shadow: 3.5px 3.5px #aaaaaa;
+  -webkit-box-shadow: 5px 5px 35px 10px #eeeeee;
+          box-shadow: 5px 5px 35px 10px #eeeeee;
   padding: 3rem; }
   .take-content-area #gform_1 h3 {
     font-weight: 700;
@@ -1492,8 +1492,6 @@ object {
         margin: 0 100px 45px; } }
 
 .take-content-area .gform_wrapper {
-  -webkit-box-shadow: 0.5px 0.5px #aaaaaa;
-          box-shadow: 0.5px 0.5px #aaaaaa;
   text-align: left;
   max-width: 50%;
   margin: 0 auto;
@@ -1664,11 +1662,11 @@ object {
       -ms-flex-align: center;
           align-items: center;
   border: #c1c1c1 solid 1px;
-  -webkit-box-shadow: 3.5px 3.5px #aaaaaa;
-          box-shadow: 3.5px 3.5px #aaaaaa;
+  -webkit-box-shadow: 5px 5px 35px 10px #eeeeee;
+          box-shadow: 5px 5px 35px 10px #eeeeee;
   margin-left: 22.5rem;
   margin-right: 22.5rem;
-  height: 69%; }
+  height: 75%; }
   .take-content-area .cloud-container h2 {
     margin-left: -20rem;
     padding-top: 0.5rem;
@@ -1715,7 +1713,7 @@ object {
     font-size: 1rem; }
 
 .event-end {
-  background: #2F80ED;
+  background: lightgrey;
   border-radius: 1rem;
   width: 100px;
   color: #FFFFFF;
@@ -1763,7 +1761,7 @@ object {
   margin-left: 1rem; }
 
 .date-box {
-  background-color: #2F80ED;
+  background-color: lightgrey;
   color: #FFFFFF;
   font-family: Roboto, sans-serif;
   font-size: 1.2rem;
@@ -1817,6 +1815,7 @@ object {
   .take-content-area .desktop-image {
     margin-left: 6rem;
     width: 800px;
+    height: 580px;
     padding: 1rem; }
   .take-content-area .share-container {
     display: -webkit-box;
@@ -1873,7 +1872,7 @@ object {
 .error404 {
   height: 100vh;
   width: 100vw; }
-  .error404 header, .error404 footer {
+  .error404 #masthead, .error404 footer {
     display: none; }
   .error404 .page-content {
     margin: 0;
@@ -1959,6 +1958,7 @@ object {
 
 .host-events {
   height: auto;
+  min-height: 100vh;
   display: grid;
   grid-template: auto auto / 1fr;
   padding: 3rem 0; }
@@ -1970,10 +1970,24 @@ object {
 .event-container {
   display: block;
   margin-bottom: 3rem; }
+  .event-container:hover .date-box, .event-container:active .date-box, .event-container:focus .date-box {
+    background-color: #2F80ED;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out; }
+  .event-container:hover .event-end, .event-container:active .event-end, .event-container:focus .event-end {
+    background-color: #2F80ED;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out; }
+  .event-container .event-active {
+    background-color: #2F80ED;
+    color: #FFFFFF;
+    font-family: Roboto, sans-serif; }
 
 .event-calendar {
-  padding: 1.5rem;
-  margin-left: 4.5rem; }
+  padding: 1.5rem; }
+  @media (min-width: 620px) {
+    .event-calendar {
+      margin-left: 4.5rem; } }
 
 .event-date {
   cursor: pointer;

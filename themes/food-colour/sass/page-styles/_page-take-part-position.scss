@@ -1,5 +1,6 @@
 .host-events {
     height: auto;
+    min-height: 100vh;
     display: grid;
     grid-template: auto auto / 1fr;
     padding: $base__space-unit * 2 0;
@@ -13,11 +14,27 @@
 .event-container {
     display: block;
     margin-bottom: $base__space-unit * 2;
+    &:hover, &:active, &:focus{
+        .date-box{
+        background-color:$color__brand-blue;
+        transition: all 0.5s ease-in-out;
+        }
+        .event-end{
+        background-color:$color__brand-blue; 
+        transition: all 0.5s ease-in-out;
+        }
+    }
+    .event-active{
+            background-color:$color__brand-blue;
+            color:$color__text-white;
+            font-family:$font__main;
+    }
 }
-
 .event-calendar {
     padding: $base__space-unit;
-    margin-left: $base__space-unit * 3;
+    @include desktop{
+        margin-left: $base__space-unit * 3;
+    }
 
 }
 
