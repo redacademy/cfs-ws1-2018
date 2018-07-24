@@ -1817,6 +1817,7 @@ object {
   .take-content-area .desktop-image {
     margin-left: 6rem;
     width: 800px;
+    height: 580px;
     padding: 1rem; }
   .take-content-area .share-container {
     display: -webkit-box;
