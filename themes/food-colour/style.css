@@ -1807,14 +1807,8 @@ object {
     display: none; }
   .take-content-area .mobile-forms {
     display: none; }
-  .take-content-area .share-box {
-    padding: 6rem !important;
-    width: 54%; }
-    .take-content-area .share-box p {
-      font-size: 29px; }
   .take-content-area .desktop-image {
-    margin-left: 6rem;
-    width: 800px;
+    width: 500px;
     height: 580px;
     padding: 1rem; }
   .take-content-area .share-container {
@@ -2040,6 +2034,9 @@ object {
     display: block;
     margin-bottom: 1.5rem; }
 
+.mobile-image {
+  display: initial; }
+
 .foodcolour img {
   height: 150px; }
 
@@ -2066,6 +2063,10 @@ object {
     grid-column-end: 3; }
 
 @media (min-width: 620px) {
+  .mobile-image {
+    display: none; }
+  .share-box p {
+    font-size: 29px; }
   .foodcolour {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2112,12 +2113,18 @@ object {
     width: 400px; } }
 
 @media (min-width: 1100px) {
+  .desktop-image {
+    width: 800px;
+    margin-left: 6rem; }
   .foodcolour img {
     height: 350px; }
   .foodcolour .foodhashtag {
     padding: 0; }
     .foodcolour .foodhashtag h2 {
-      font-size: 100px; } }
+      font-size: 100px; }
+  .share-box {
+    padding: 6rem !important;
+    width: 54%; } }
 
 .bannertext {
   position: absolute;
