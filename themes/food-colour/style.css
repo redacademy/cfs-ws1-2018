@@ -1713,7 +1713,7 @@ object {
     font-size: 1rem; }
 
 .event-end {
-  background: #2F80ED;
+  background: lightgrey;
   border-radius: 1rem;
   width: 100px;
   color: #FFFFFF;
@@ -1722,9 +1722,6 @@ object {
   font-weight: 700;
   font-size: 0.6rem;
   text-align: center; }
-  .event-end:hover {
-    background-color: #2F80ED;
-    opacity: 0.7; }
 
 .country-title {
   font-size: 1rem;
@@ -1764,7 +1761,7 @@ object {
   margin-left: 1rem; }
 
 .date-box {
-  background-color: #2F80ED;
+  background-color: lightgrey;
   color: #FFFFFF;
   font-family: Roboto, sans-serif;
   font-size: 1.2rem;
@@ -1774,9 +1771,6 @@ object {
   padding: 0 2rem;
   margin-right: 1rem;
   text-align: center; }
-  .date-box:hover {
-    background-color: #2F80ED;
-    opacity: 0.7; }
 
 .branch-text {
   font-size: 2rem;
@@ -1976,6 +1970,18 @@ object {
 .event-container {
   display: block;
   margin-bottom: 3rem; }
+  .event-container:hover .date-box, .event-container:active .date-box, .event-container:focus .date-box {
+    background-color: #2F80ED;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out; }
+  .event-container:hover .event-end, .event-container:active .event-end, .event-container:focus .event-end {
+    background-color: #2F80ED;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out; }
+  .event-container .event-active {
+    background-color: #2F80ED;
+    color: #FFFFFF;
+    font-family: Roboto, sans-serif; }
 
 .event-calendar {
   padding: 1.5rem; }
