@@ -20,15 +20,21 @@
         transition: all 0.5s ease-in-out;
         }
         .event-end{
-        background-color:$color__brand-blue; 
+        background-color:$color__brand-blue;
         transition: all 0.5s ease-in-out;
         }
     }
-    .event-active{
+}
+.event-active{
+        background-color:$color__brand-blue;
+        color:$color__text-white;
+        font-family:$font__main;
+            .date-box{
             background-color:$color__brand-blue;
-            color:$color__text-white;
-            font-family:$font__main;
-    }
+            }
+            .event-end{
+            background-color:$color__brand-blue;
+            }
 }
 .event-calendar {
     padding: $base__space-unit;
