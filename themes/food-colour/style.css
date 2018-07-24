@@ -1978,10 +1978,15 @@ object {
     background-color: #2F80ED;
     -webkit-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out; }
-  .event-container .event-active {
-    background-color: #2F80ED;
-    color: #FFFFFF;
-    font-family: Roboto, sans-serif; }
+
+.event-active {
+  background-color: #2F80ED;
+  color: #FFFFFF;
+  font-family: Roboto, sans-serif; }
+  .event-active .date-box {
+    background-color: #2F80ED; }
+  .event-active .event-end {
+    background-color: #2F80ED; }
 
 .event-calendar {
   padding: 1.5rem; }
