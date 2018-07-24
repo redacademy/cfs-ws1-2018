@@ -1474,9 +1474,6 @@ object {
 
 .take-content-area #gform_submit_button_1 {
   width: 12rem; }
-  @media (min-width: 620px) {
-    .take-content-area #gform_submit_button_1 {
-      margin-left: 15rem; } }
 
 .take-content-area #gform_1 {
   display: none;
@@ -1496,6 +1493,14 @@ object {
   max-width: 50%;
   margin: 0 auto;
   padding-bottom: 4rem; }
+
+.take-content-area .gform_footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end; }
 
 .take-content-area .gform_confirmation_message_1 {
   margin-left: 32.5rem; }
@@ -1554,14 +1559,18 @@ object {
   margin-top: 10rem;
   -ms-flex-item-align: end;
       align-self: flex-end;
-  margin-left: 25rem;
   width: 12rem;
+  margin: 2rem 0;
   font-weight: 200; }
   .take-content-area .downloadbutton:hover {
     background-color: #115bbf; }
 
 .take-content-area .bigbutton {
-  text-align: center; }
+  text-align: center;
+  display: none; }
+  @media (min-width: 620px) {
+    .take-content-area .bigbutton {
+      display: block; } }
 
 .take-content-area .google-cal {
   background-color: #2F80ED;
@@ -1627,7 +1636,8 @@ object {
 
 .take-content-area .take-text-wrapper {
   width: 90%;
-  margin: 0 auto; }
+  margin: 0 auto;
+  display: none; }
   .take-content-area .take-text-wrapper p {
     font-family: Roboto, sans-serif; }
   .take-content-area .take-text-wrapper .icons-title img {
@@ -1664,20 +1674,20 @@ object {
   border: #c1c1c1 solid 1px;
   -webkit-box-shadow: 5px 5px 35px 10px #eeeeee;
           box-shadow: 5px 5px 35px 10px #eeeeee;
-  margin-left: 22.5rem;
-  margin-right: 22.5rem;
-  height: 75%; }
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%; }
   .take-content-area .cloud-container h2 {
-    margin-left: -20rem;
     padding-top: 0.5rem;
-    font-family: Roboto, sans-serif; }
+    font-family: Roboto, sans-serif;
+    width: 90%; }
   .take-content-area .cloud-container.activated {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; }
   .take-content-area .cloud-container .cloudbackground {
-    width: 200px;
-    height: 150px;
+    width: auto;
+    height: auto;
     margin-top: 5rem; }
   @media (min-width: 620px) {
     .take-content-area .cloud-container {
@@ -1822,7 +1832,7 @@ object {
     background: #F2F2F2; } }
 
 /* hide mobile show desktop sharebackground img */
-@media (min-width: 800px) {
+@media (min-width: 620px) {
   .mobile-image {
     display: none; }
   .desktop-image {
@@ -1855,6 +1865,8 @@ object {
 @media only screen and (orientation: portrait) and (max-width: 620px) {
   .take-content-area .cloud-container, .take-content-area .cloud-container.activated {
     display: none; }
+  .take-content-area .take-text-wrapper.active {
+    display: grid; }
   .take-content-area .icons-title img {
     width: 3rem; }
   .take-content-area .icons {
@@ -1974,13 +1986,13 @@ object {
     transition: all 0.5s ease-in-out; }
 
 .event-active {
-  background-color: #2F80ED;
-  color: #FFFFFF;
   font-family: Roboto, sans-serif; }
   .event-active .date-box {
-    background-color: #2F80ED; }
+    background-color: #2F80ED;
+    color: #FFFFFF; }
   .event-active .event-end {
-    background-color: #2F80ED; }
+    background-color: #2F80ED;
+    color: #FFFFFF; }
 
 .event-calendar {
   padding: 1.5rem; }

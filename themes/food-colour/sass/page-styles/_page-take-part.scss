@@ -9,9 +9,6 @@
     }
     #gform_submit_button_1{
         width:12rem;
-        @include desktop{
-            margin-left:15rem;
-        }
     }
     
     #gform_1{
@@ -34,6 +31,10 @@
         padding-bottom:4rem;
              
     }
+    .gform_footer{
+        display:flex;
+        justify-content:flex-end;
+    }
     .gform_confirmation_message_1{
         margin-left:32.5rem;
     }   
@@ -54,12 +55,16 @@
         @include button-style($color__brand-blue, $color__text-white);
         margin-top: 10rem;
         align-self: flex-end;
-        margin-left: 25rem;
         width: 12rem;
+        margin: 2rem 0;
         font-weight:200;
     }
     .bigbutton{
         text-align: center;
+        display:none;
+        @include desktop{
+            display:block;
+        }
     }
     .google-cal{
         @include button-style($color__brand-blue, $color__text-white);
@@ -99,6 +104,7 @@
     .take-text-wrapper{
       width: 90%;
       margin: 0 auto;
+      display:none;
       p {
          font-family:$font__main;
       }
@@ -126,20 +132,20 @@
         align-items: center;
         border: #c1c1c1 solid 1px;
         box-shadow: 5px 5px 35px 10px #eeeeee;
-        margin-left: 22.5rem;
-        margin-right: 22.5rem;
-        height: 75%;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
             h2{
-                margin-left: -20rem;
                 padding-top:0.5rem;
                 font-family:$font__main;
+                width:90%;
             }
         &.activated{
             display:flex
         }
         .cloudbackground{
-            width: 200px;
-            height: 150px;
+            width: auto;
+            height: auto;
             margin-top: 5rem;
         }
         @include desktop {
@@ -288,7 +294,7 @@
     } 
 }
 /* hide mobile show desktop sharebackground img */
-@include desktop-image{
+@include desktop {
    .mobile-image {
        display:none;
    }
@@ -317,6 +323,9 @@
     .cloud-container,.cloud-container.activated{
         display:none;
     }
+    .take-text-wrapper.active {
+        display: grid;
+    }
     .icons-title img{
         width: 3rem;
     }
@@ -329,3 +338,4 @@
     }
   }
 }
+

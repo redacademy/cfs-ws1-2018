@@ -95,10 +95,12 @@ jQuery(document).ready(function($) {
     
     $("#gform_submit_button_1").click(function(){
         $("#cloud").toggleClass('activated');
+        
     });
 
     $("#formsmobile").click(function(){
         $("#gform_1").toggle();
     });
+    
 });
 
