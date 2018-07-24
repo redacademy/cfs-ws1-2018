@@ -1878,7 +1878,7 @@ object {
 .error404 {
   height: 100vh;
   width: 100vw; }
-  .error404 header, .error404 footer {
+  .error404 #masthead, .error404 footer {
     display: none; }
   .error404 .page-content {
     margin: 0;
@@ -1964,6 +1964,7 @@ object {
 
 .host-events {
   height: auto;
+  min-height: 100vh;
   display: grid;
   grid-template: auto auto / 1fr;
   padding: 3rem 0; }
