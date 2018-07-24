@@ -1492,8 +1492,6 @@ object {
         margin: 0 100px 45px; } }
 
 .take-content-area .gform_wrapper {
-  -webkit-box-shadow: 5px 5px 35px 10px #eeeeee;
-          box-shadow: 5px 5px 35px 10px #eeeeee;
   text-align: left;
   max-width: 50%;
   margin: 0 auto;
@@ -1724,6 +1722,9 @@ object {
   font-weight: 700;
   font-size: 0.6rem;
   text-align: center; }
+  .event-end:hover {
+    background-color: #2F80ED;
+    opacity: 0.7; }
 
 .country-title {
   font-size: 1rem;
@@ -1773,6 +1774,9 @@ object {
   padding: 0 2rem;
   margin-right: 1rem;
   text-align: center; }
+  .date-box:hover {
+    background-color: #2F80ED;
+    opacity: 0.7; }
 
 .branch-text {
   font-size: 2rem;
