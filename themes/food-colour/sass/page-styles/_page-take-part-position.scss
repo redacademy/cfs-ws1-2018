@@ -24,18 +24,11 @@
         transition: all 0.5s ease-in-out;
         }
     }
-}
-.event-active{
-        background-color:$color__brand-blue;
-        color:$color__text-white;
-        font-family:$font__main;
-        font-size:1.2rem;
-        font-weight:700;
-        height: 55px;
-        width: 100%;
-        padding: 0 2rem;
-        margin-right:1rem;
-        text-align: center;
+    .event-active{
+            background-color:$color__brand-blue;
+            color:$color__text-white;
+            font-family:$font__main;
+    }
 }
 .event-calendar {
     padding: $base__space-unit;
