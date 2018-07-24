@@ -5,6 +5,7 @@
         
     // initial event load
     eventsOnClick($('.event-container').first().attr('event-title'), $('.event-container').first().attr('event-google'), $('.event-container').first().attr('event-facebook'), $('.event-container').first().attr('event-organization'), $('.event-container').first().attr('event-branch'), $('.event-container').first().attr('event-address'), $('.event-container').first().attr('event-number'));
+    $('.event-container').first().addClass('event-active');
 
     $(window).resize(function(){
         checkScreenWidth();

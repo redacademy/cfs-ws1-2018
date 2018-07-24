@@ -128,7 +128,10 @@
 <?php while ( have_posts() ) : the_post(); ?>
 
 <?php
-  $args = array( 'post_type' => 'event', 'posts_per_page' => 4,);
+  $args = array(
+    'post_type' => 'event',
+    'posts_per_page' => 4,
+  );
   $event = new WP_Query( $args );
   ?>
 
@@ -136,7 +139,11 @@
     <?php while ( $event->have_posts() ) : $event->the_post(); ?>
       <div class="event-container" event-title="<?php the_title(); ?>" event-google="<?php echo CFS()->get('google_calendar'); ?>" event-facebook="<?php echo CFS()->get('facebook_event'); ?>" event-organization="<?php echo CFS()->get('organization'); ?>" event-branch="<?php echo CFS()->get('branch'); ?>" event-address="<?php echo CFS()->get('address'); ?>" event-number="<?php echo CFS()->get('number'); ?>">
         <div class="event-date">
-          <p class="date-box"><?php echo CFS()->get('start_date');?></p>
+          <div class="date-box">
+            <?php echo date('M', strtotime(CFS()->get('start_date'))); ?>
+            <br>
+            <?php echo date('t', strtotime(CFS()->get('start_date'))); ?>
+          </div>
           <p class="country-title"><?php echo CFS()->get('country');?></p>
           <p><?php echo CFS()->get('city');?></p>
           <p class="event-end"><?php echo CFS()->get('end_date');?></p>

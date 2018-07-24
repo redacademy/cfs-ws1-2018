@@ -1,3 +1,6 @@
+.mobile-image {
+    display: initial;
+}
 .foodcolour {
     img {
         height: 150px;
@@ -30,6 +33,14 @@
     }
 }
 @include desktop {
+    .mobile-image {
+        display: none;
+    }
+    .share-box{
+        p{
+            font-size:29px;
+        }
+    }
     .foodcolour {
         display: flex;
         img {
@@ -86,6 +97,10 @@
     }
 }
 @include desktop-main-page {
+    .desktop-image {
+        width: 800px;
+        margin-left: 6rem;
+    }
     .foodcolour {
         img {
             height: 350px;
@@ -96,6 +111,10 @@
                 font-size: 100px;
             } 
         }
+    }
+    .share-box{
+        padding: 6rem!important;
+        width: 54%;
     }
 }
 .bannertext {
