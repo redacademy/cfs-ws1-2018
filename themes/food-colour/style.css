@@ -1808,7 +1808,7 @@ object {
   .take-content-area .mobile-forms {
     display: none; }
   .take-content-area .desktop-image {
-    width: 500px;
+    width: 425px;
     height: 580px;
     padding: 1rem; }
   .take-content-area .share-container {
@@ -2092,7 +2092,8 @@ object {
       color: #fff;
       text-decoration: none;
       letter-spacing: 1px;
-      font-weight: 700; }
+      font-weight: 700;
+      margin: 0; }
   .steps-container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2114,7 +2115,7 @@ object {
 
 @media (min-width: 1100px) {
   .desktop-image {
-    width: 800px;
+    width: 800px !important;
     margin-left: 6rem; }
   .foodcolour img {
     height: 350px; }

@@ -71,6 +71,7 @@
             text-decoration: none;
             letter-spacing: 1px;
             font-weight: 700;
+            margin: 0;
         }
     }
     .steps-container{
@@ -98,7 +99,7 @@
 }
 @include desktop-main-page {
     .desktop-image {
-        width: 800px;
+        width: 800px !important;
         margin-left: 6rem;
     }
     .foodcolour {
