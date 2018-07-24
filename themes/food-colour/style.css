@@ -1486,7 +1486,7 @@ object {
     font-family: Roboto, sans-serif; }
     @media (min-width: 620px) {
       .take-content-area #gform_1 h3 {
-        margin: 0 100px 45px; } }
+        margin: 0 65px 45px; } }
 
 .take-content-area .gform_wrapper {
   text-align: left;
@@ -1556,11 +1556,11 @@ object {
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
   letter-spacing: 1.5px;
-  margin-top: 10rem;
+  margin-left: 23rem;
   -ms-flex-item-align: end;
       align-self: flex-end;
   width: 12rem;
-  margin: 2rem 0;
+  margin: 5rem 0;
   font-weight: 200; }
   .take-content-area .downloadbutton:hover {
     background-color: #115bbf; }
@@ -1678,7 +1678,8 @@ object {
   margin-right: auto;
   width: 50%; }
   .take-content-area .cloud-container h2 {
-    padding-top: 0.5rem;
+    padding-top: 1.5rem;
+    padding-left: 5rem;
     font-family: Roboto, sans-serif;
     width: 90%; }
   .take-content-area .cloud-container.activated {
