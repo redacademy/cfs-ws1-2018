@@ -23,6 +23,8 @@
     // onclick change
     $('.event-container').on('click', function() {
        eventsOnClick(this.getAttribute('event-title'), this.getAttribute('event-google'), this.getAttribute('event-facebook'), this.getAttribute('event-organization'), this.getAttribute('event-branch'), this.getAttribute('event-address'), this.getAttribute('event-number'));
+       $('.event-container').removeClass('event-active');
+       $(this).addClass('event-active');
        
        // jquery animation for mobile 
        if (mobile) {

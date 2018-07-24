@@ -1,5 +1,6 @@
 .host-events {
     height: auto;
+    min-height: 100vh;
     display: grid;
     grid-template: auto auto / 1fr;
     padding: $base__space-unit * 2 0;
