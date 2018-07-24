@@ -17,7 +17,9 @@
 
 .event-calendar {
     padding: $base__space-unit;
-    margin-left: $base__space-unit * 3;
+    @include desktop{
+        margin-left: $base__space-unit * 3;
+    }
 
 }
 

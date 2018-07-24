@@ -1977,8 +1977,10 @@ object {
   margin-bottom: 3rem; }
 
 .event-calendar {
-  padding: 1.5rem;
-  margin-left: 4.5rem; }
+  padding: 1.5rem; }
+  @media (min-width: 620px) {
+    .event-calendar {
+      margin-left: 4.5rem; } }
 
 .event-date {
   cursor: pointer;
