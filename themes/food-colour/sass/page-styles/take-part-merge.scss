@@ -1,5 +1,4 @@
 .foodcolour {
-    display:none;
     img {
         height: 150px;
     }
@@ -7,6 +6,28 @@
         text-align: center;
         font-size: 25px;
     }   
+}
+.bigbutton {
+    width: 90%;
+    margin: 0 5%;
+    .desktopbutton{
+        width: 100%;
+    }
+}
+.take-text-wrapper {
+    display: grid;
+    grid-template-columns: 0.2fr 1fr;
+    grid-template-rows: 0.2fr 1fr 1fr;
+    .icons-title{
+        margin-top: 1rem;
+    }
+    p {
+        grid-column-start: 2;
+    }
+    a{
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
 }
 @include desktop {
     .foodcolour {
@@ -19,6 +40,49 @@
                 font-size: 55px;
             } 
         }  
+    }
+    #host .bannertext {
+        margin: 0 10%;
+        width: 80%;
+        p{
+            font-weight: 400;
+            font-size: 24px;
+            font-family: Roboto;
+            line-height: 34px;
+            color: #fff;
+            letter-spacing: 1px;
+        }
+        h1{
+            font-size: 100px;
+            font-family: Roboto;
+            text-transform: uppercase;
+            color: #fff;
+            text-decoration: none;
+            letter-spacing: 1px;
+            font-weight: 700;
+        }
+    }
+    .steps-container{
+        display:flex;
+        margin: 0 10%;
+        width: 80%;
+        max-width:$max-width;
+        .take-text-wrapper {
+            margin: 0 10px;
+            display: initial;
+        }
+        .icons-title{
+            margin: 10px 0;
+            h2{
+                padding: 15px 0;
+            }
+            img {
+                margin: 0 30%;
+            }   
+        }
+    }
+    .bigbutton .desktopbutton {
+        width: 400px;
     }
 }
 @include desktop-main-page {
@@ -57,28 +121,5 @@
         font-size: 16px;
         color: #fff;
         letter-spacing: 1px;
-    }
-}
-@include desktop {
-    .bannertext {
-        margin: 0 10%;
-        width: 80%;
-        p{
-            font-weight: 400;
-            font-size: 24px;
-            font-family: Roboto;
-            line-height: 34px;
-            color: #fff;
-            letter-spacing: 1px;
-        }
-        h1{
-            font-size: 100px;
-            font-family: Roboto;
-            text-transform: uppercase;
-            color: #fff;
-            text-decoration: none;
-            letter-spacing: 1px;
-            font-weight: 700;
-        }
     }
 }

@@ -58,41 +58,41 @@
             <div class='steps-container'>
               <div class='take-text-wrapper'>
                 <div class='icons-title'>
-                <img src="<?php echo $image ?>" class='icons'>
+                  <img src="<?php echo $image ?>" class='icons'>
+                </div>
                 <h2><?php echo $title ?></h2>
                 <p class='town'><?php echo $title_text ?></p>
-                </div>
-              <a href='#next'><button class='iconbutton'>GOT IT, NEXT!</button></a>
+                <a href='#next'><button class='iconbutton'>GOT IT, NEXT!</button></a>
               </div>
             <div class='take-text-wrapper'>
               <div class='icons-title'>
                 <img src="<?php echo $image_2 ?>" class='icons'>
-                <h2 id='next'><?php echo $title_2?></h2>
               </div>
+              <h2 id='next'><?php echo $title_2?></h2>
               <p><?php echo $title_2_text?></p>
               <a href='#fill'><button class='iconbutton'>GOT IT, NEXT!</button></a>
             </div>
             <div class='take-text-wrapper'>
               <div class='icons-title'>
                 <img src="<?php echo $image_3 ?>" class='icons'>
-                <h2 id='fill'><?php echo $title_3 ?></h2>
               </div>
+              <h2 id='fill'><?php echo $title_3 ?></h2>
               <p><?php echo $title_3_text ?></p>
               <a href='#done'><button class='iconbutton' id='formsmobile'>FILL THE FORM</button></a>
             </div>        
             <div class='take-text-wrapper'>
               <div class='icons-title'>
                 <img src="<?php echo $image_4 ?>"class='icons'>
-                <h2 id='done'> <?php echo $title_4 ?></h2>
               </div>
+              <h2 id='done'> <?php echo $title_4 ?></h2>
               <p><?php echo $title_4_text ?></p>
               <a target='_blank' id='finish' href='https://drive.google.com/drive/folders/1KR6gb1ulL1tunhDn1yw26WX_2GnKU7-I?usp=sharing'><button class='iconbutton'>DOWNLOAD</button></a>
             </div>
             <div class='take-text-wrapper'>
               <div class='icons-title'>
                 <img src="<?php echo $image_5 ?>" class='icons'>
-                <h2 id='finish'><?php echo $title_5 ?></h2>
               </div>
+              <h2 id='finish'><?php echo $title_5 ?></h2>
               <p><?php echo $title_5_text ?></p>
             </div>
             </div>
