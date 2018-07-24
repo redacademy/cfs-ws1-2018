@@ -1636,7 +1636,8 @@ object {
 
 .take-content-area .take-text-wrapper {
   width: 90%;
-  margin: 0 auto; }
+  margin: 0 auto;
+  display: none; }
   .take-content-area .take-text-wrapper p {
     font-family: Roboto, sans-serif; }
   .take-content-area .take-text-wrapper .icons-title img {
@@ -1864,6 +1865,8 @@ object {
 @media only screen and (orientation: portrait) and (max-width: 620px) {
   .take-content-area .cloud-container, .take-content-area .cloud-container.activated {
     display: none; }
+  .take-content-area .take-text-wrapper.active {
+    display: grid; }
   .take-content-area .icons-title img {
     width: 3rem; }
   .take-content-area .icons {

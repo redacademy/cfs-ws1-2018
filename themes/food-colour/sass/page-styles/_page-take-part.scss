@@ -104,6 +104,7 @@
     .take-text-wrapper{
       width: 90%;
       margin: 0 auto;
+      display:none;
       p {
          font-family:$font__main;
       }
@@ -322,6 +323,9 @@
     .cloud-container,.cloud-container.activated{
         display:none;
     }
+    .take-text-wrapper.active {
+        display: grid;
+    }
     .icons-title img{
         width: 3rem;
     }
@@ -335,16 +339,3 @@
   }
 }
 
-
-// @include mobile-portrait {
-//     .take-content-area{
-//         .take-text-wrapper{
-//             width: 90%;
-//             margin: 0 auto;
-//             display:none;
-//             &.active {
-//                 display:block;
-//             }
-//         }
-//     }
-// }
