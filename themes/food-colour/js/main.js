@@ -92,9 +92,12 @@ jQuery(document).ready(function($) {
     $("#forms").click(function(){
         $("#gform_1").toggle();
     });
+<<<<<<< HEAD
+=======
+
+>>>>>>> 9f7fb06799292f35da903df004d82d451ddf7072
     $("#formsmobile").click(function(){
         $("#gform_1").toggle();
     });
-    
 });
 

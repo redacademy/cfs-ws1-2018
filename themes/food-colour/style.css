@@ -1502,9 +1502,6 @@ object {
       -ms-flex-pack: end;
           justify-content: flex-end; }
 
-.take-content-area .gform_confirmation_message_1 {
-  margin-left: 32.5rem; }
-
 .take-content-area .takebox {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -1692,17 +1689,10 @@ object {
     padding-left: 5rem;
     font-family: Roboto, sans-serif;
     width: 90%; }
-  .take-content-area .cloud-container.activated {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex; }
   .take-content-area .cloud-container .cloudbackground {
     width: auto;
     height: auto;
     margin-top: 5rem; }
-  @media (min-width: 620px) {
-    .take-content-area .cloud-container {
-      display: none; } }
 
 .take-content-area .share-box {
   padding: 1rem; }
