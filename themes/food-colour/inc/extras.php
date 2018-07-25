@@ -61,9 +61,6 @@ function food_colour_og_metadata() {
 	}
 }
 add_action('wp_head', 'food_colour_og_metadata');
-
-
-add_filter( 'gform_validation', 'custom_validation' );
 function custom_validation( $validation_result ) {
     $form = $validation_result['form'];
  
@@ -85,9 +82,8 @@ function custom_validation( $validation_result ) {
         }
  
     }
- 
     //Assign modified $form object back to the validation result
     $validation_result['form'] = $form;
     return $validation_result;
- 
 }
+add_filter( 'gform_validation', 'custom_validation' );

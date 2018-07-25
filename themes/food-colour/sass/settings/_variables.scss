@@ -36,18 +36,6 @@ $color__link: $color__text-main;
 $color__link-visited: darken($color__text-main, 10);
 $color__link-hover: darken($color__text-main, 10);
 
-// Typography
-/*
-FONT WEIGHT
-Montserrat: Regular - normal
-            Bold - 700
-            ExtraBold - 900
-Roboto:     Light - 100
-            Regular - normal
-            Bold - 700
-            Black - 900
-*/
-
 $font__main: Roboto, sans-serif;
 $font__headings: Montserrat, sans-serif;
 $font__code: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;

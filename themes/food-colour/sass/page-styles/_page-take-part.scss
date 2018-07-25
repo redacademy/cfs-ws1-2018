@@ -369,7 +369,7 @@
 }
 .bigbutton {
     width: 90%;
-    margin: 0 5%;
+    margin: 0 auto;
     .desktopbutton{
         width: 100%;
     }
@@ -418,7 +418,7 @@
     }
     .steps-container{
         display:flex;
-        margin: 0 10%;
+        margin: 0 auto;
         width: 80%;
         max-width:$max-width;
         .take-text-wrapper {

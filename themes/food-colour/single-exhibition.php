@@ -63,9 +63,9 @@ get_header(); ?>
                         <img src= <?php echo esc_url( get_template_directory_uri() ) . "/assets/images/back-button.svg"; ?> />
                     </a>
                 </div>
-            <?php endwhile; // End of the loop. ?>
+            <?php endwhile; ?>
 
-		</main><!-- #main -->
+		</main>
 
-    </div><!-- #primary -->
+    </div>
     <?php get_footer(); ?>
