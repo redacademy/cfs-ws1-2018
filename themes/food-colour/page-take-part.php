@@ -100,18 +100,6 @@
               <button class='desktopbutton' id='forms'>REGISTER & DOWNLOAD</button>
             </div>
             <?php echo CFS()->get('form');?>
-
-            <!-- <div class='cloud-container' id='cloud'>
-              <h2>Download your files</h2>
-            <img class='cloudbackground' src="
-            <?php 
-            // echo esc_url(get_bloginfo('template_directory')); 
-            ?>
-            /assets/images/cloud.png"
-            alt="cloud background" />
-            <a target='_blank' href='https://drive.google.com/drive/folders/1KR6gb1ulL1tunhDn1yw26WX_2GnKU7-I?usp=sharing'><button class='downloadbutton'>ok</button></a>
-            
-            </div> -->
             
           <div class='share-container' id='share'>
             <img class='mobile-image' src="<?php echo esc_url(get_bloginfo('template_directory')); ?>/assets/images/share_now.png" alt="sharebackground"
@@ -185,7 +173,7 @@
 
 <?php wp_reset_postdata(); ?>
 
-<?php endwhile; // End of the loop. ?>     
+<?php endwhile; ?>     
 
 </div>
 

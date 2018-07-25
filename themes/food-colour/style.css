@@ -222,16 +222,6 @@ td,
 th {
   padding: 0; }
 
-/*
-FONT WEIGHT
-Montserrat: Regular - normal
-            Bold - 700
-            ExtraBold - 900
-Roboto:     Light - 100
-            Regular - normal
-            Bold - 700
-            Black - 900
-*/
 /*--------------------------------------------------------------
 # Embedded Fonts
 --------------------------------------------------------------*/
@@ -1908,7 +1898,7 @@ object {
 
 .bigbutton {
   width: 90%;
-  margin: 0 5%; }
+  margin: 0 auto; }
   .bigbutton .desktopbutton {
     width: 100%; }
 
@@ -1948,7 +1938,7 @@ object {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin: 0 10%;
+    margin: 0 auto;
     width: 80%;
     max-width: 1240px; }
     .steps-container .take-text-wrapper {
