@@ -1841,7 +1841,8 @@ object {
 @media (min-width: 620px) {
   .take-content-area .icons-title {
     display: inline-block !important;
-    margin: 0 0 25px; }
+    margin: 0 0 25px;
+    height: 54px; }
     .take-content-area .icons-title img {
       margin-bottom: 0.5rem;
       margin-left: 1.8rem; }
