@@ -35,9 +35,7 @@
         display:flex;
         justify-content:flex-end;
     }
-    .gform_confirmation_message_1{
-        margin-left:32.5rem;
-    }   
+  
     .takebox{
         justify-content: center;
         color: #fff;
@@ -150,16 +148,10 @@
                 font-family:$font__main;
                 width:90%;
             }
-        &.activated{
-            display:flex
-        }
         .cloudbackground{
             width: auto;
             height: auto;
             margin-top: 5rem;
-        }
-        @include desktop {
-            display:none;
         }
     }
     .share-box{
@@ -345,9 +337,6 @@
 
 @include mobile-portrait {
 .take-content-area{
-    .cloud-container,.cloud-container.activated{
-        display:none;
-    }
     .take-text-wrapper.active {
         display: grid;
     }
