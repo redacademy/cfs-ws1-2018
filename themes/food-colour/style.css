@@ -1066,7 +1066,7 @@ object {
 
 .menu-main-menu-container {
   position: absolute;
-  top: 106px;
+  top: 70px;
   left: 0px; }
   .menu-main-menu-container #primary-menu, .menu-main-menu-container #footer-menu {
     height: 350px;
@@ -1891,8 +1891,6 @@ object {
       background-color: #d9d9d9; } }
 
 @media only screen and (orientation: portrait) and (max-width: 620px) {
-  .take-content-area .cloud-container, .take-content-area .cloud-container.activated {
-    display: none; }
   .take-content-area .take-text-wrapper.active {
     display: grid; }
   .take-content-area .icons-title img {

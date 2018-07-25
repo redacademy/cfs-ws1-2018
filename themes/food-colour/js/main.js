@@ -78,10 +78,10 @@ jQuery(document).ready(function($) {
             var $target = $(target);
             $target.focus();
             if ($target.is(":focus")) { // Checking if the target was focused
-            return false;
+                return false;
             } else {
-            $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
-            $target.focus(); // Set focus again
+                $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+                $target.focus(); // Set focus again
             }
         });
         }
@@ -90,17 +90,7 @@ jQuery(document).ready(function($) {
 
 //click big button to show forms
     $("#forms").click(function(){
-        $("#gform_1").toggle();
-    });
-    
-    $("#gform_submit_button_1").click(function(){
-        $("#cloud").toggleClass('activated');
-        
-    });
-
-    $("#formsmobile").click(function(){
-        $("#gform_1").toggle();
-    });
-    
+        $("#gform_1").show();
+    });    
 });
 

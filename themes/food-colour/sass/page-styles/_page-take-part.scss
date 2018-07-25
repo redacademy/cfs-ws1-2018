@@ -343,9 +343,6 @@
 
 @include mobile-portrait {
 .take-content-area{
-    .cloud-container,.cloud-container.activated{
-        display:none;
-    }
     .take-text-wrapper.active {
         display: grid;
     }
