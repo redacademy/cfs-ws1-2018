@@ -90,7 +90,11 @@ jQuery(document).ready(function($) {
 
 //click big button to show forms
     $("#forms").click(function(){
-        $("#gform_1").show();
-    });    
+        $("#gform_1").toggle();
+    });
+    $("#formsmobile").click(function(){
+        $("#gform_1").toggle();
+    });
+    
 });
 

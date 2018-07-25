@@ -20,7 +20,7 @@
                 font-weight: 700;
                 font-family: $font__main;
                 @include desktop{
-                    margin: 0 100px 45px;
+                    margin: 0 65px 45px;
                 }
             }
     }
@@ -59,10 +59,10 @@
     }
     .downloadbutton{
         @include button-style($color__brand-blue, $color__text-white);
-        margin-top: 10rem;
+        margin-left: 23rem;
         align-self: flex-end;
         width: 12rem;
-        margin: 2rem 0;
+        margin: 5rem 0;
         font-weight:200;
     }
     .bigbutton{
@@ -145,7 +145,8 @@
         margin-right: auto;
         width: 50%;
             h2{
-                padding-top:0.5rem;
+                padding-top:1.5rem;
+                padding-left:5rem;
                 font-family:$font__main;
                 width:90%;
             }
@@ -296,6 +297,7 @@
         .icons-title {
             display: inline-block!important;
             margin: 0 0 25px;
+            height: 54px;
             img {
                 margin-bottom: 0.5rem;
                 margin-left: 1.8rem;
