@@ -19,26 +19,31 @@
     #content {
         position: absolute;
         top: 0;
-        margin: 0 5%;
         color: white;
-        width: 90%;
+        width: 100%;
         button {
             @include button-style($color__background-body, $color__button__FrontPage);
             width: 100%;
         }
         .title-1 {
+            width: 90%;
+            margin: 0 auto;
             h1{
                 line-height: 35px;
                 font-size: 35px;
             }
         }
         .title-2 {
+            width: 90%;
+            margin: 0 auto;
             h1{
                 font-size: 25px;
                 font-weight: 500;
             }
         }
         .title-3 {
+            width: 90%;
+            margin: 0 auto;
             h1{
                 font-size: 25px;
                 font-weight: 500;
@@ -68,12 +73,12 @@
             visibility: visible;
         }
         #content {
-            max-width: $max-width;
-            margin: 0 10%;
             color: white;
-            width: 80%;
+            width: 100%;
             .title-1 {
-                margin: 140px 0 140px 0;
+                margin: 140px auto;
+                width: 80%;
+                max-width: $max-width;
                 button {
                     width: 150px;
                 }
@@ -97,7 +102,9 @@
             .title-2 {
                 display: grid;
                 grid-template-columns: 60% 40%;
-                margin: 50px 0 140px 0;
+                margin: 50px auto 140px auto;
+                width: 80%;
+                max-width: $max-width;
                 h1{
                     line-height: 47px;
                     font-weight: 700;
@@ -125,7 +132,10 @@
                 display: grid;
                 grid-template-columns: 40% 60%;
                 grid-template-rows: 0fr 0fr 0fr;
-                margin: 230px 0 140px 0;
+                margin: 230px auto 140px auto;
+                width: 80%;
+                max-width: $max-width;
+                
                 img {
                     grid-column-start: 2;
                     grid-row-start: 1;

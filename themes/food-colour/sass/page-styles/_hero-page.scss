@@ -9,25 +9,29 @@
         margin: 0;
         .entry-header {
             position: absolute;
-            left: 5%;
             top: 15%;
             z-index: 1;
-            a {
-                font-family: Roboto;
-                font-style: normal;
-                font-size: 24px;
-                text-transform: uppercase;
-                color: #FFFFFF;
-                text-decoration: none;
-                letter-spacing: 1px;
-                font-weight: bold;
+            width: 100%;
+            h2 {
+                width: 90%;
+                margin: 0 auto;
+                a {
+                    font-family: Roboto;
+                    font-style: normal;
+                    font-size: 24px;
+                    text-transform: uppercase;
+                    color: #FFFFFF;
+                    text-decoration: none;
+                    letter-spacing: 1px;
+                    font-weight: bold;
+                }
             }
         }
         .entry-content {
             position: absolute;
-            left: 5%;
             top: 30%;
             z-index: 1;
+            width: 100%;
             h2 {
                 font-family: Roboto;
                 font-style: normal;
@@ -36,6 +40,8 @@
                 font-size: 16px;
                 color: #FFFFFF;
                 letter-spacing: 1px;
+                width: 90%;
+                margin: 0 auto;
             }
         }
     }
@@ -79,16 +85,20 @@
     .hero-image{
         article{
             .entry-header {
-                margin: 0 5%;
                 top: 25%;
-                a {
-                    font-size: 100px;
+                width: 100%;
+                h2{
+                    width: 80%;
+                    margin: 0 auto;
+                    max-width: $max-width;
+                    a {
+                        font-size: 100px;
+                    }
                 }
             }
             .entry-content {
-                max-width: 1240px;
-                margin: 24px auto 0 5%;
                 top: 45%;
+                width: 100%;
                 h2{
                     font-weight: 400;
                     font-size: 24px;
@@ -97,13 +107,16 @@
                     line-height: 34px;
                     color: #FFFFFF;
                     letter-spacing: 1px;
+                    width: 80%;
+                    margin: 24px auto 0 auto;
+                    max-width: $max-width;
                 }
             }
         }
     }
     .about-entry-content{
         max-width: 1240px;
-        margin: 120px 15% 0;
+        margin: 120px auto 0;
         width: 70%;
         .hero-text-wrapper{
             .icon-title{

@@ -722,23 +722,26 @@ object {
     margin: 0; }
     .hero-image article .entry-header {
       position: absolute;
-      left: 5%;
       top: 15%;
-      z-index: 1; }
-      .hero-image article .entry-header a {
-        font-family: Roboto;
-        font-style: normal;
-        font-size: 24px;
-        text-transform: uppercase;
-        color: #FFFFFF;
-        text-decoration: none;
-        letter-spacing: 1px;
-        font-weight: bold; }
+      z-index: 1;
+      width: 100%; }
+      .hero-image article .entry-header h2 {
+        width: 90%;
+        margin: 0 auto; }
+        .hero-image article .entry-header h2 a {
+          font-family: Roboto;
+          font-style: normal;
+          font-size: 24px;
+          text-transform: uppercase;
+          color: #FFFFFF;
+          text-decoration: none;
+          letter-spacing: 1px;
+          font-weight: bold; }
     .hero-image article .entry-content {
       position: absolute;
-      left: 5%;
       top: 30%;
-      z-index: 1; }
+      z-index: 1;
+      width: 100%; }
       .hero-image article .entry-content h2 {
         font-family: Roboto;
         font-style: normal;
@@ -746,7 +749,9 @@ object {
         line-height: 34px;
         font-size: 16px;
         color: #FFFFFF;
-        letter-spacing: 1px; }
+        letter-spacing: 1px;
+        width: 90%;
+        margin: 0 auto; }
 
 .about-entry-content {
   width: 90%;
@@ -780,14 +785,17 @@ object {
 
 @media (min-width: 620px) {
   .hero-image article .entry-header {
-    margin: 0 5%;
-    top: 25%; }
-    .hero-image article .entry-header a {
-      font-size: 100px; }
+    top: 25%;
+    width: 100%; }
+    .hero-image article .entry-header h2 {
+      width: 80%;
+      margin: 0 auto;
+      max-width: 1240px; }
+      .hero-image article .entry-header h2 a {
+        font-size: 100px; }
   .hero-image article .entry-content {
-    max-width: 1240px;
-    margin: 24px auto 0 5%;
-    top: 45%; }
+    top: 45%;
+    width: 100%; }
     .hero-image article .entry-content h2 {
       font-weight: 400;
       font-size: 24px;
@@ -795,10 +803,13 @@ object {
       font-style: normal;
       line-height: 34px;
       color: #FFFFFF;
-      letter-spacing: 1px; }
+      letter-spacing: 1px;
+      width: 80%;
+      margin: 24px auto 0 auto;
+      max-width: 1240px; }
   .about-entry-content {
     max-width: 1240px;
-    margin: 120px 15% 0;
+    margin: 120px auto 0;
     width: 70%; }
     .about-entry-content .hero-text-wrapper .icon-title img {
       height: 40px; }
@@ -1311,9 +1322,8 @@ object {
   .image-wrapper #content {
     position: absolute;
     top: 0;
-    margin: 0 5%;
     color: white;
-    width: 90%; }
+    width: 100%; }
     .image-wrapper #content button {
       background-color: #fff;
       border: 0;
@@ -1330,19 +1340,28 @@ object {
       width: 100%; }
       .image-wrapper #content button:hover {
         background-color: #d9d9d9; }
-    .image-wrapper #content .title-1 h1 {
-      line-height: 35px;
-      font-size: 35px; }
-    .image-wrapper #content .title-2 h1 {
-      font-size: 25px;
-      font-weight: 500; }
-    .image-wrapper #content .title-3 h1 {
-      font-size: 25px;
-      font-weight: 500; }
-    .image-wrapper #content .title-3 img {
-      position: relative;
-      bottom: 40px;
-      padding: 0 10%; }
+    .image-wrapper #content .title-1 {
+      width: 90%;
+      margin: 0 auto; }
+      .image-wrapper #content .title-1 h1 {
+        line-height: 35px;
+        font-size: 35px; }
+    .image-wrapper #content .title-2 {
+      width: 90%;
+      margin: 0 auto; }
+      .image-wrapper #content .title-2 h1 {
+        font-size: 25px;
+        font-weight: 500; }
+    .image-wrapper #content .title-3 {
+      width: 90%;
+      margin: 0 auto; }
+      .image-wrapper #content .title-3 h1 {
+        font-size: 25px;
+        font-weight: 500; }
+      .image-wrapper #content .title-3 img {
+        position: relative;
+        bottom: 40px;
+        padding: 0 10%; }
     .image-wrapper #content .hashtag {
       text-align: center;
       font-size: 25px; }
@@ -1357,12 +1376,12 @@ object {
     .image-wrapper .background-map-main {
       visibility: visible; }
     .image-wrapper #content {
-      max-width: 1240px;
-      margin: 0 10%;
       color: white;
-      width: 80%; }
+      width: 100%; }
       .image-wrapper #content .title-1 {
-        margin: 140px 0 140px 0; }
+        margin: 140px auto;
+        width: 80%;
+        max-width: 1240px; }
         .image-wrapper #content .title-1 button {
           width: 150px; }
         .image-wrapper #content .title-1 hr {
@@ -1381,7 +1400,9 @@ object {
       .image-wrapper #content .title-2 {
         display: grid;
         grid-template-columns: 60% 40%;
-        margin: 50px 0 140px 0; }
+        margin: 50px auto 140px auto;
+        width: 80%;
+        max-width: 1240px; }
         .image-wrapper #content .title-2 h1 {
           line-height: 47px;
           font-weight: 700;
@@ -1404,7 +1425,9 @@ object {
         display: grid;
         grid-template-columns: 40% 60%;
         grid-template-rows: 0fr 0fr 0fr;
-        margin: 230px 0 140px 0; }
+        margin: 230px auto 140px auto;
+        width: 80%;
+        max-width: 1240px; }
         .image-wrapper #content .title-3 img {
           grid-column-start: 2;
           grid-row-start: 1;
@@ -1909,25 +1932,27 @@ object {
     width: 100%; }
 
 @media (min-width: 620px) {
-  .takebox .bannertext {
-    margin: 0 10%;
-    width: 80%; }
-    .takebox .bannertext p {
-      font-weight: 400;
-      font-size: 24px;
-      font-family: Roboto;
-      line-height: 34px;
-      color: #fff;
-      letter-spacing: 1px; }
-    .takebox .bannertext h1 {
-      font-size: 100px;
-      font-family: Roboto;
-      text-transform: uppercase;
-      color: #fff;
-      text-decoration: none;
-      letter-spacing: 1px;
-      font-weight: 700;
-      margin: 0; }
+  .takebox .bannertext p {
+    font-weight: 400;
+    font-size: 24px;
+    font-family: Roboto;
+    line-height: 34px;
+    color: #fff;
+    letter-spacing: 1px;
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1240px; }
+  .takebox .bannertext h1 {
+    font-size: 100px;
+    font-family: Roboto;
+    text-transform: uppercase;
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-weight: 700;
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1240px; }
   .mobile-image {
     display: none; }
   .share-box p {
@@ -1984,9 +2009,7 @@ object {
 
 .bannertext {
   position: absolute;
-  margin: 0 5%;
-  width: 90%;
-  max-width: 1240px; }
+  width: 100%; }
   .bannertext h1 {
     font-family: Roboto;
     font-style: normal;
@@ -1995,7 +2018,9 @@ object {
     color: #fff;
     text-decoration: none;
     letter-spacing: 1px;
-    font-weight: 700; }
+    font-weight: 700;
+    width: 90%;
+    margin: 0 auto; }
   .bannertext p {
     font-family: Roboto;
     font-style: normal;
@@ -2003,7 +2028,9 @@ object {
     line-height: 26px;
     font-size: 16px;
     color: #fff;
-    letter-spacing: 1px; }
+    letter-spacing: 1px;
+    width: 90%;
+    margin: 0 auto; }
 
 .host-events {
   height: auto;

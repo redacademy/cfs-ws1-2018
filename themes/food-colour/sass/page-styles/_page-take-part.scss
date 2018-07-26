@@ -382,8 +382,6 @@
 }
 @include desktop {
     .takebox .bannertext {
-        margin: 0 10%;
-        width: 80%;
         p{
             font-weight: 400;
             font-size: 24px;
@@ -391,6 +389,9 @@
             line-height: 34px;
             color: #fff;
             letter-spacing: 1px;
+            width: 80%;
+            margin: 0 auto;
+            max-width: 1240px;
         }
         h1{
             font-size: 100px;
@@ -400,7 +401,9 @@
             text-decoration: none;
             letter-spacing: 1px;
             font-weight: 700;
-            margin: 0;
+            width: 80%;
+            margin: 0 auto;
+            max-width: 1240px;
         }
     }
     .mobile-image {
@@ -481,9 +484,7 @@
 }
 .bannertext {
     position: absolute;
-    margin: 0 5%;
-    width: 90%;
-    max-width: $max-width;
+    width: 100%;
     h1 {
         font-family: Roboto;
         font-style: normal;
@@ -492,7 +493,9 @@
         color: #fff;
         text-decoration: none;
         letter-spacing: 1px;
-        font-weight: 700;       
+        font-weight: 700;
+        width: 90%;
+        margin: 0 auto;
     }
     p {
         font-family: Roboto;
@@ -502,6 +505,8 @@
         font-size: 16px;
         color: #fff;
         letter-spacing: 1px;
+        width: 90%;
+        margin: 0 auto;
     }
 }
 .host-events {
