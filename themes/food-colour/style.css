@@ -1466,6 +1466,7 @@ object {
   width: 12rem; }
 
 .take-content-area #gform_1 {
+  display: none;
   border: #c1c1c1 solid 1px;
   -webkit-box-shadow: 5px 5px 35px 10px #eeeeee;
           box-shadow: 5px 5px 35px 10px #eeeeee;
@@ -1482,16 +1483,10 @@ object {
   max-width: 50%;
   margin: 0 auto;
   padding-bottom: 4rem; }
-
-.take-content-area .form-mobile .gform_wrapper {
-  width: 90vw;
-  margin: auto; }
-
-.take-content-area .form-mobile {
-  display: none; }
-
-.take-content-area .form-desktop {
-  display: none; }
+  @media (min-width: 620px) {
+    .take-content-area .gform_wrapper {
+      width: 90vw;
+      margin: auto; } }
 
 .take-content-area .gform_footer {
   display: -webkit-box;

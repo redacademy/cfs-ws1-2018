@@ -12,7 +12,7 @@
     }
     
     #gform_1{
-        // display:none;
+        display:none;
         border: #c1c1c1 solid 1px;
         box-shadow: 5px 5px 35px 10px #eeeeee;
         padding:3rem;
@@ -29,29 +29,13 @@
         text-align: left;
         max-width: 50%;
         margin: 0 auto;
-        padding-bottom:4rem;       
+        padding-bottom:4rem; 
+        
+        @include desktop {
+            width: 90vw;
+            margin: auto;
+        }
     }
-
-    .form-mobile .gform_wrapper {
-        width: 90vw;
-        margin: auto;
-    }
-
-    .form-mobile {
-        display: none;
-    }
-    .form-desktop {
-        display: none;
-    }
-
-    // @include desktop {
-    //     .form-mobile {
-    //         display: none;
-    //     }
-    //     .form-desktop {
-    //         display: block;
-    //     }
-    // }
 
     .gform_footer{
         display:flex;

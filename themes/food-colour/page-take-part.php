@@ -78,9 +78,8 @@
               </div>
               <h2 id='fill'><?php echo $title_3 ?></h2>
               <p><?php echo $title_3_text ?></p>
-              <a href='#form-mobile'><button class='iconbutton' id='formsmobile'>FILL THE FORM</button></a>
-            </div>    
-            <div class="form-mobile" id="form-mobile"><?php echo CFS()->get('form');?></div>    
+              <a href='#form-container'><button class='iconbutton' id='formsmobile'>FILL THE FORM</button></a>
+            </div>       
             <div class='take-text-wrapper'>
               <div class='icons-title'>
                 <img src="<?php echo $image_4 ?>"class='icons'>
@@ -100,7 +99,7 @@
             <div class='bigbutton'>
               <button class='desktopbutton' id='forms'>REGISTER &amp; DOWNLOAD</button>
             </div>
-            <div class="form-desktop"><?php echo CFS()->get('form');?></div>
+            <div id="form-container"><?php echo CFS()->get('form');?></div>
             
           <div class='share-container' id='share'>
             <img class='mobile-image' src="<?php echo esc_url(get_bloginfo('template_directory')); ?>/assets/images/share_now.png" alt="sharebackground"
