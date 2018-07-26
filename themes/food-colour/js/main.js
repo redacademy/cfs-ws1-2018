@@ -84,10 +84,10 @@ jQuery(document).ready(function($) {
 
 //click big button to show forms
     $('#forms').click(function(){
-        $('#gform_1').toggle();
+        $('#gform_1').slideDown();
     });
     $('#formsmobile').click(function(){
-        $('#gform_1').toggle();
+        $('#gform_1').slideDown();
     });
 });
 
