@@ -1939,11 +1939,12 @@ object {
     .foodcolour .foodhashtag h2 {
       font-size: 55px; }
   .steps-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: grid;
     margin: 0 auto;
     width: 80%;
+    max-width: 1240px;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 300px 80px 1fr;
     max-width: 1240px; }
     .steps-container .take-text-wrapper {
       margin: 0 10px;
@@ -1954,6 +1955,14 @@ object {
         padding: 15px 0; }
       .steps-container .icons-title img {
         margin: 0 30%; }
+    .steps-container #form-container {
+      grid-row-start: 3;
+      grid-column-start: 1;
+      grid-column-end: 6; }
+    .steps-container .bigbutton {
+      grid-row-start: 2;
+      grid-column-start: 1;
+      grid-column-end: 6; }
   .bigbutton .desktopbutton {
     width: 400px; } }
 
@@ -1996,7 +2005,6 @@ object {
 
 .host-events {
   height: auto;
-  min-height: 100vh;
   display: grid;
   grid-template: auto auto / 1fr;
   padding: 3rem 0; }

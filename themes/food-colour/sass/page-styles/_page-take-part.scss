@@ -423,9 +423,12 @@
         }  
     }
     .steps-container{
-        display:flex;
+        display: grid;
         margin: 0 auto;
         width: 80%;
+        max-width: 1240px;
+        grid-template-columns: 20% 20% 20% 20% 20%;
+        grid-template-rows: 300px 80px 1fr;
         max-width:$max-width;
         .take-text-wrapper {
             margin: 0 10px;
@@ -439,6 +442,16 @@
             img {
                 margin: 0 30%;
             }   
+        }
+        #form-container {
+            grid-row-start: 3;
+            grid-column-start: 1;
+            grid-column-end: 6;
+        }
+        .bigbutton {
+            grid-row-start: 2;
+            grid-column-start: 1;
+            grid-column-end: 6;
         }
     }
     .bigbutton .desktopbutton {
@@ -493,7 +506,6 @@
 }
 .host-events {
     height: auto;
-    min-height: 100vh;
     display: grid;
     grid-template: auto auto / 1fr;
     padding: $base__space-unit * 2 0;
