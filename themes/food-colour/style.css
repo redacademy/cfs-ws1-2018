@@ -1026,7 +1026,7 @@ object {
     height: 340px; }
   @media (min-width: 620px) {
     #masthead {
-      margin: 0 10%;
+      margin: 0 auto;
       -webkit-box-align: center !important;
           -ms-flex-align: center !important;
               align-items: center !important;
