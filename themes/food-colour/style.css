@@ -1221,6 +1221,8 @@ object {
   .exhibition-social a {
     -ms-flex-preferred-size: 49%;
         flex-basis: 49%; }
+    .exhibition-social a:hover {
+      color: #FFFFFF !important; }
   .exhibition-social .exhibition-twitter {
     background-color: #55ACEE;
     border: 0;
