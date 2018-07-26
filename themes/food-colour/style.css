@@ -722,7 +722,7 @@ object {
     margin: 0; }
     .hero-image article .entry-header {
       position: absolute;
-      top: 15%;
+      top: 25%;
       z-index: 1;
       width: 100%; }
       .hero-image article .entry-header h2 {
@@ -1025,7 +1025,8 @@ object {
   display: -ms-flexbox;
   display: flex;
   height: 100px;
-  margin: 0 5%;
+  margin: 0 auto;
+  width: 90%;
   max-width: 1240px;
   padding: 0; }
   #masthead #primary-menu {
@@ -1041,7 +1042,8 @@ object {
       -webkit-box-align: center !important;
           -ms-flex-align: center !important;
               align-items: center !important;
-      height: 100px !important; }
+      height: 100px !important;
+      width: 80%; }
       #masthead .menu-main-menu-container {
         position: absolute;
         top: unset;
