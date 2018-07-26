@@ -1971,7 +1971,7 @@ object {
     width: 80%;
     max-width: 1240px;
     grid-template-columns: 20% 20% 20% 20% 20%;
-    grid-template-rows: 300px 80px 1fr;
+    grid-template-rows: 390px 80px 1fr;
     max-width: 1240px; }
     .steps-container .take-text-wrapper {
       margin: 0 10px;
