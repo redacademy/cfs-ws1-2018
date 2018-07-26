@@ -1,9 +1,9 @@
 /*!
-Theme Name: RED Starter Theme
+Theme Name: Food Colour Theme
 Theme URI: http://underscores.me/
-Author: RED Academy
+Author: RED Academy Students
 Author URI: http://www.redacademy.com
-Description: A WordPress starter theme for RED Academy students.
+Description: A WordPress theme for Colours of Food Security website.
 Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -12,7 +12,7 @@ Tags:
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 
-RED Starter Theme is based on Underscores http://underscores.me/, (C) 2012-2015 Automattic, Inc.
+Food Colour Theme is based on Underscores http://underscores.me/, (C) 2012-2015 Automattic, Inc.
 Underscores is distributed under the terms of the GNU GPL v2 or later.
 
 Normalizing styles have been helped along thanks to the fine work of
@@ -1483,6 +1483,10 @@ object {
   max-width: 50%;
   margin: 0 auto;
   padding-bottom: 4rem; }
+  @media (min-width: 620px) {
+    .take-content-area .gform_wrapper {
+      width: 90vw;
+      margin: auto; } }
 
 .take-content-area .gform_footer {
   display: -webkit-box;
@@ -1885,7 +1889,7 @@ object {
 
 .mobile-image {
   margin-left: 1rem;
-  width: 80vh;
+  width: 42vh;
   padding: 1rem;
   display: initial; }
 

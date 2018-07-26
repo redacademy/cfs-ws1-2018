@@ -9,6 +9,9 @@
 
     $(window).resize(function(){
         checkScreenWidth();
+        $('.form-mobile').hide();
+        $('.form-mobile').hide();
+
     });
 
     // desktop/mobile check
