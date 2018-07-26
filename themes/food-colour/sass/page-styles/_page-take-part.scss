@@ -27,13 +27,13 @@
     
     .gform_wrapper{
         text-align: left;
-        max-width: 50%;
-        margin: 0 auto;
+        margin: 0 $base__space-unit;
         padding-bottom:4rem; 
         
         @include desktop {
             width: 90vw;
             margin: auto;
+            max-width: 75%;
         }
     }
 

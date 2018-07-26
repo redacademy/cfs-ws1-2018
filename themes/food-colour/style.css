@@ -1507,13 +1507,13 @@ object {
 
 .take-content-area .gform_wrapper {
   text-align: left;
-  max-width: 50%;
-  margin: 0 auto;
+  margin: 0 1.5rem;
   padding-bottom: 4rem; }
   @media (min-width: 620px) {
     .take-content-area .gform_wrapper {
       width: 90vw;
-      margin: auto; } }
+      margin: auto;
+      max-width: 75%; } }
 
 .take-content-area .gform_footer {
   display: -webkit-box;

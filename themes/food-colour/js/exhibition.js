@@ -2,11 +2,13 @@ jQuery(document).ready(function($) {
     /**
      * Hide and show exhibition description
      */
-    if($(window).width() > 620) {
-        $('.exhibition-description').css('opacity', '1');  
-    } else {
-        $('.exhibition-description').css('opacity', '0');  
-    }
+    // if($(window).width() > 620) {
+        $('.exhibition-description').css('opacity', '1');
+        $('.exhibition-nav').css('opacity', '1');
+        $('.exhibition-nav').css('visibility', 'visible'); 
+    // } else {
+        // $('.exhibition-description').css('opacity', '0');  
+    // }
     
 
     $('.close-btn').on('click', function() {
@@ -27,6 +29,8 @@ jQuery(document).ready(function($) {
         if ($('.exhibition-nav').css('opacity') === '0') {
             $('.exhibition-nav').css('opacity', '1');
             $('.exhibition-nav').css('visibility', 'visible');
+            $('.exhibition-description').show(0);
+            $('.exhibition-description').css('opacity', '1');
         } else {
             $('.exhibition-nav').css('opacity', '0');
 
