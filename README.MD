@@ -24,4 +24,4 @@ Capstone client project for RED Academy Web Development course 2018.
     * Custom Post Types
 
 ## License
-This project is licensed under the ISC license.
+This project is licensed under the GNU license.

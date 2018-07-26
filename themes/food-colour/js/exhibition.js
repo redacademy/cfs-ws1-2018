@@ -53,6 +53,9 @@ jQuery(document).ready(function($) {
 
     function setExhibitionNav() {  
         var items;
+        var isFirefox = navigator.userAgent.toLowerCase().indexOf('firefox') > -1;
+        
+
         if($(window).height() < 620 || $(window).width() < 620) {
             items = Math.ceil($('.exhibition-icon-img').length / 2);
         } else {
@@ -70,9 +73,15 @@ jQuery(document).ready(function($) {
             'height': iconHeight,
             'width': iconHeight,
         });
-        $('.exhibition-nav').css({
-            'height': iconHeight * items,
-        });
+        if(isFirefox) {
+            $('.exhibition-nav').css({
+                'height': iconHeight * 1.1 * items,
+            });
+        } else {
+            $('.exhibition-nav').css({
+                'height': iconHeight * items,
+            });
+        }
         
         if($(window).height() < 620 || $(window).width() < 620) {
             $('.exhibition-nav').css({
