@@ -147,6 +147,10 @@
 
     a {
         flex-basis: 49%;
+
+        &:hover {
+            color: $color__text-white !important;
+        }
     }
 
     .exhibition-twitter {
