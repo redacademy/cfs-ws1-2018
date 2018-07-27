@@ -30,6 +30,7 @@
         .entry-content {
             position: absolute;
             top: 30%;
+            padding-top: 20px;
             z-index: 1;
             width: 100%;
             margin: 0;
@@ -98,7 +99,7 @@
                 }
             }
             .entry-content {
-                top: 45%;
+                padding-top: 100px;
                 width: 100%;
                 h2{
                     font-weight: 400;
