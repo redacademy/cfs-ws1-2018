@@ -46,6 +46,10 @@ jQuery(document).ready(function($) {
       $($('.take-text-wrapper')[nextItem]).addClass('active');
     });
 
+    $('#finish').click(function() {
+        $('.take-text-wrapper').next().addClass('active');
+    });
+
     // smooth scroll from css tricks // for Host/Share links @ take part page
     // Select all links with hashes
     $('a[href*="#"]')

@@ -741,7 +741,8 @@ object {
       position: absolute;
       top: 30%;
       z-index: 1;
-      width: 100%; }
+      width: 100%;
+      margin: 0; }
       .hero-image article .entry-content h2 {
         font-family: Roboto;
         font-style: normal;
@@ -805,7 +806,6 @@ object {
       color: #FFFFFF;
       letter-spacing: 1px;
       width: 80%;
-      margin: 24px auto 0 auto;
       max-width: 1240px; }
   .about-entry-content {
     max-width: 1240px;
@@ -1670,7 +1670,6 @@ object {
   width: 90%;
   margin: 0 auto;
   display: none;
-  display: grid;
   grid-template-columns: 0.2fr 1fr;
   grid-template-rows: 0.2fr 1fr 1fr; }
   .take-content-area .take-text-wrapper a {
