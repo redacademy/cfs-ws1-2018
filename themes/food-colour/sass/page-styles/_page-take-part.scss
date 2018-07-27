@@ -115,7 +115,7 @@
         width: 90%;
         margin: 0 auto;
         display:none;
-        // display: grid;
+        display: grid;
         grid-template-columns: 0.2fr 1fr;
         grid-template-rows: 0.2fr 1fr 1fr;
         a{
@@ -343,9 +343,6 @@
 
 @include mobile-portrait {
 .take-content-area{
-    .take-text-wrapper.active {
-        display: grid;
-    }
     .icons-title img{
         width: 3rem;
     }

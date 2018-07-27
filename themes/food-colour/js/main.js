@@ -26,29 +26,6 @@ jQuery(document).ready(function($) {
             })
         }
     });
-    
-    //* take part steps 1,2,3,4,5 toggle on click
-    var $firstItem = $($('.take-text-wrapper')[0]);
-    $firstItem.addClass('active');
-    var clicked2 = false;
-    var clicked3 = false;
-    $('.iconbutton').click(function(e) {
-      var $this = $(this).closest('.take-text-wrapper');
-      if ($this.index() == 2 && clicked2 == false) {
-        clicked2 = true;
-          e.preventDefault();
-      }
-      if ($this.index() == 3 && clicked3 == false) {
-        clicked3 = true;
-          e.preventDefault();
-      }
-      var nextItem = $this.index() + 1;
-      $($('.take-text-wrapper')[nextItem]).addClass('active');
-    });
-
-    $('#finish').click(function() {
-        $('.take-text-wrapper').next().addClass('active');
-    });
 
     // smooth scroll from css tricks // for Host/Share links @ take part page
     // Select all links with hashes
